@@ -1,8 +1,8 @@
 [project]
 name = "op_inflation_buster"
-version = "0.37.0"
+version = "0.38.0"
 authors = [{ name = "thekeogh" }]
-description = "OP firepower. Level 50 economy. Quiet payout probe."
+description = "OP firepower. Level 20 cash economy."
 
 [tool.sdkmod]
 name = "OP inflation buster"

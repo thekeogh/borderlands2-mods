@@ -1,14 +1,14 @@
 # OP inflation buster
 
-**OP firepower. Level 50 cash economy.**
+**OP firepower. Level 20 cash economy.**
 
-## Experimental build 0.37.0
+## Experimental build 0.38.0
 
-This build keeps the level-50 equipment pricing, respec, slot cost, cash pickups and mission reward previews verified in earlier OP5 tests. Enemy and container cash pickups, grenade ammo and health purchases matched wallet changes. It also corrects the larger `GD_Currency.A_Item.Currency_Big` pickup variant seen in enemy-drop logs; that variant still needs a live pickup check. The user saw $13,005 on first focus for an undiscovered mission across several restarts. Mission turn-in and slot cash payouts remain untested. Other currencies are untouched. **This remains an experimental build.**
+The cash ceiling is now level 20. OP5 testing showed about $20 per cash pickup, a $4,432 vending rifle, $4,954 DPUH value, and $964 respec cost. Mission previews showed $86 for “A Train to Catch” and $434 for an undiscovered mission. A slot spin cost and deducted $463; its weapon sold and bought back for $471. The earlier level-50 build also matched wallet changes for enemy and container cash pickups, grenade ammo, health, selling and buyback. Mission turn-in, slot cash payouts and the `Currency_Big` pickup variant remain unverified. Equipment levels and other currencies are untouched. **This remains an experimental build.**
 
-Logging is now capped and focused: a few cash corrections, one summary per mission, unexpected high mission UI values, and positive credit grants or announcements that may reveal untested payout paths. The nearby pickup scans, cash use traces, item card reports and startup function lists are removed. Check the mission reward on first focus after updating; removing those probes may affect UI timing.
+Logging stays capped and focused: a few cash corrections, one sample per item class to confirm the preview is actually level 20, one summary per mission, unexpected high mission UI values, and positive credit grants or announcements that may reveal untested payout paths. The nearby pickup scans and verbose traces remain removed.
 
-**Known scope:** vendor stock, sell-screen and inventory-card prices changed in earlier tests. Item of the Day, ammo, health, respec, cash slot cost, several cash pickups, and one buyback matched wallet changes in OP5 tests. BL2 has no refill-all option in the user's game. Respawn keeps its vanilla percentage of cash on hand. The wallet cap is unchanged.
+**Known scope:** vendor stock, sell-screen and inventory-card prices are capped. Item of the Day, ammo, health, respec, cash slot cost, several cash pickups, and buyback were checked at level 50. BL2 has no refill-all option in the user's game. Respawn keeps its vanilla percentage of cash on hand. The wallet cap is unchanged.
 
 ## Install
 
@@ -20,4 +20,4 @@ Run `python3 package.py` from this directory. The archive contains `op_inflation
 
 ## Test requests
 
-After updating, check an undiscovered mission reward on first focus and one ordinary cash pickup. Note any visible inflated reward or wallet mismatch. Send only related `OP inflation buster` lines and any `ERR` lines from `unrealsdk.log`.
+After installing v0.38, check: an item card and its actual equipment level; a vendor sale and buyback; one cash pickup; ammo and health purchases; slot cash cost; respec cost; active and undiscovered mission reward previews on first focus; and Item of the Day on first focus. For transactions, record shown amount and wallet before/after. Turn-in and slot cash payout can wait until they occur naturally. Send `Value sample`, `Mission cash`, `Cash grant correction`, and any `ERR` lines if something differs.

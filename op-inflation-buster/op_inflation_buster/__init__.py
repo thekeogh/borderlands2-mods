@@ -1,4 +1,4 @@
-"""OP inflation buster: use a level-50 copy for inventory monetary value."""
+"""OP inflation buster: price cash economy at the configured level."""
 
 from copy import copy
 from typing import Any
@@ -10,9 +10,9 @@ from unrealsdk.hooks import Block, Type, prevent_hooking_direct_calls
 from unrealsdk.unreal import BoundFunction, UObject, WeakPointer, WrappedStruct
 
 
-CEILING = 50
+CEILING = 20
 VANILLA_PRICE_GROWTH = 1.12
-RESPEC_CAP = 28900  # floor(100 * 1.12 ** 50)
+RESPEC_CAP = int(100 * VANILLA_PRICE_GROWTH ** CEILING)
 CASH_ITEM_DEFINITIONS = {
     "GD_Currency.A_Item.Currency",
     "GD_Currency.A_Item.Currency_Big",
@@ -162,7 +162,7 @@ def mission_reward_pre(
     _ret: Any,
     func: BoundFunction,
 ) -> tuple[type[Block], int] | None:
-    """Ask the game's reward formula for the same mission at stage 50."""
+    """Ask the game's reward formula for the same mission at the cash ceiling."""
     try:
         reward = mission.AlternativeReward if args.bGetAltReward else mission.Reward
         if reward.CurrencyRewardType != unrealsdk.find_enum("ECurrencyType").CURRENCY_Credits:
@@ -175,11 +175,11 @@ def mission_reward_pre(
             vanilla = int(func(**call_args))
             try:
                 mission.GameStage = CEILING
-                level_50 = int(func(**call_args))
+                ceiling_value = int(func(**call_args))
             finally:
                 mission.GameStage = stage
             player_stage_preview = None
-            if level_50 >= vanilla:
+            if ceiling_value >= vanilla:
                 pawn = getattr(args.InWPC, "Pawn", None)
                 if pawn is not None:
                     player_stage = int(pawn.GameStage)
@@ -190,7 +190,7 @@ def mission_reward_pre(
                         finally:
                             pawn.GameStage = player_stage
             locked_stage_preview = None
-            if level_50 >= vanilla and not bool(mission.bGameStageLocked):
+            if ceiling_value >= vanilla and not bool(mission.bGameStageLocked):
                 original_lock = bool(mission.bGameStageLocked)
                 try:
                     mission.GameStage = CEILING
@@ -201,7 +201,7 @@ def mission_reward_pre(
                     mission.GameStage = stage
         capped = next(
             (
-                value for value in (level_50, player_stage_preview, locked_stage_preview)
+                value for value in (ceiling_value, player_stage_preview, locked_stage_preview)
                 if value is not None and 0 < value < vanilla
             ),
             None,
@@ -222,7 +222,7 @@ def mission_reward_pre(
 
 
 def cap_inventory_value(inventory: UObject, owner: UObject, source: str) -> None:
-    """Value a temporary level-50 copy and override only the money cache."""
+    """Value a temporary copy at the cash ceiling and override only money."""
     try:
         definition = inventory.DefinitionData
         stage = int(definition.GameStage)
@@ -244,35 +244,47 @@ def cap_inventory_value(inventory: UObject, owner: UObject, source: str) -> None
         original_value = int(inventory.GetMonetaryValue())
         if original_value <= 0:
             return None
-        level_50_definition = copy(definition)
-        level_50_definition.GameStage = min(stage, CEILING)
-        level_50_definition.ManufacturerGradeIndex = min(grade, CEILING)
+        ceiling_definition = copy(definition)
+        ceiling_definition.GameStage = min(stage, CEILING)
+        ceiling_definition.ManufacturerGradeIndex = min(grade, CEILING)
         if inventory.Class.Name == "WillowWeapon":
             preview = inventory.CreateWeaponFromDef(
-                NewWeaponDef=level_50_definition,
+                NewWeaponDef=ceiling_definition,
                 PlayerOwner=owner,
                 bForceSelectNameParts=True,
             )
         else:
             preview = inventory.CreateItemFromDef(
-                NewItemDef=level_50_definition,
+                NewItemDef=ceiling_definition,
                 PlayerOwner=owner,
                 NewQuantity=1,
                 bForceSelectNameParts=True,
             )
         if preview is None:
-            raise RuntimeError("level-50 preview creation returned None")
-        level_50_value = int(preview.GetMonetaryValue())
+            raise RuntimeError("cash-ceiling preview creation returned None")
+        ceiling_value = int(preview.GetMonetaryValue())
 
-        if level_50_value > 0 and level_50_value != original_value:
-            inventory.OverrideMonetaryValue(NewMonetaryValue=level_50_value)
+        sample_key = f"valuation {inventory.Class.Name}"
+        if _reports.get(sample_key, 0) == 0 and _reports.get("valuation samples", 0) < 6:
+            _reports[sample_key] = 1
+            _reports["valuation samples"] = _reports.get("valuation samples", 0) + 1
+            logging.info(
+                f"[OP inflation buster] Value sample: {inventory.Class.Name} "
+                f"source={source} stage={stage} grade={grade} "
+                f"preview_stage={preview.DefinitionData.GameStage} "
+                f"preview_grade={preview.DefinitionData.ManufacturerGradeIndex} "
+                f"vanilla={original_value} ceiling={ceiling_value}"
+            )
+
+        if ceiling_value > 0 and ceiling_value != original_value:
+            inventory.OverrideMonetaryValue(NewMonetaryValue=ceiling_value)
             actual_value = int(inventory.GetMonetaryValue())
-            if actual_value != level_50_value:
+            if actual_value != ceiling_value:
                 inventory.OverrideMonetaryValue(NewMonetaryValue=original_value)
-                raise RuntimeError(f"override returned {actual_value}, expected {level_50_value}")
+                raise RuntimeError(f"override returned {actual_value}, expected {ceiling_value}")
             _touched[address] = (WeakPointer(inventory), original_value)
     except Exception as exc:
-        logging.error(f"[OP inflation buster] Level-50 preview failed: {exc!r}")
+        logging.error(f"[OP inflation buster] Cash-ceiling preview failed: {exc!r}")
     finally:
         _in_progress.discard(address)
     return None
@@ -445,7 +457,7 @@ def on_enable() -> None:
                 _dynamic_hooks.append((path, Type.PRE, identifier))
         except Exception as exc:
             logging.error(f"[OP inflation buster] Vendor hook failed: {path}: {exc!r}")
-    logging.info("[OP inflation buster] Enabled. Quiet payout probe v0.37")
+    logging.info(f"[OP inflation buster] Enabled. Cash ceiling {CEILING}, respec cap {RESPEC_CAP}, v0.38")
 
 
 def on_disable() -> None:
