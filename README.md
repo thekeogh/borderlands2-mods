@@ -4,5 +4,9 @@ This repository is a collection of mods for **Borderlands 2** and **Borderlands:
 
 ## Mods
 
-- [OP inflation buster](op-inflation-buster/)  
-Keeps Overpower gear and combat difficulty while bringing Borderlands 2 cash values down to roughly level 20.
+- **[OP inflation buster](op-inflation-buster/)**<br>
+  Keeps Overpower gear and combat difficulty while bringing Borderlands 2 cash values down to roughly level 20.
+- **[Respawn Delay](respawn-delay/)**<br>
+  Adds an in-game option to set Borderlands 2's respawn delay.
+- **[UVHM No Health Regen Please](uvhm-no-health-regen-please/)**<br>
+  Disables enemy health regeneration in Borderlands 2 Ultimate Vault Hunter Mode.
