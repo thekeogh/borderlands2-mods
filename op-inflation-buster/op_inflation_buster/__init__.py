@@ -10,13 +10,24 @@ from unrealsdk.hooks import Block, Type, prevent_hooking_direct_calls
 from unrealsdk.unreal import BoundFunction, UObject, WeakPointer, WrappedStruct
 
 
-CEILING = 20
+CEILING = 1
 VANILLA_PRICE_GROWTH = 1.12
 RESPEC_CAP = int(100 * VANILLA_PRICE_GROWTH ** CEILING)
 CASH_ITEM_DEFINITIONS = {
     "GD_Currency.A_Item.Currency",
     "GD_Currency.A_Item.Currency_Big",
+    "GD_Currency.A_Item.Currency_Crystal",
+    "GD_Skeleton_Crystal.A_Item.Currency_CrystalBones",
 }
+# These grant fixed money or return money already taken from the player.
+UNSCALED_CASH_DEFINITIONS = {
+    "GD_RatShared.Pools.Item_RatShared_StolenMoney",
+    "GD_Allium_GrandmaData.A_Item.CurrencyOneDollar",
+    "GD_Z3_ChosenOneData.ItemDefs.ID_MO_ChosenOne_Cash",
+}
+CASH_PICKUP_FORMULA = "GD_Economy.CashPickups.Init_CashPickupCalc"
+CREDITS_ATTRIBUTE = "D_Attributes.Currency.CreditsOnHand"
+MAX_DIAGNOSTICS = 8
 _dynamic_hooks: list[tuple[str, Type, str]] = []
 _touched: dict[int, tuple[WeakPointer[UObject], int]] = {}
 _attempted: dict[int, WeakPointer[UObject]] = {}
@@ -25,7 +36,46 @@ _reports: dict[str, int] = {}
 _last_vendor: WeakPointer[UObject] | None = None
 _slot_actors: dict[int, WeakPointer[UObject]] = {}
 _slot_original_costs: dict[int, tuple[WeakPointer[UObject], int, Any, Any, Any]] = {}
-_cash_before: dict[int, tuple[WeakPointer[UObject], int, int]] = {}
+_cash_before: dict[int, tuple[WeakPointer[UObject], int, int, bool]] = {}
+_cash_definitions: dict[int, tuple[WeakPointer[UObject], bool]] = {}
+
+
+def report_problem(key: str, message: str, *, error: bool = False) -> None:
+    """Report each problem once, with a small total budget per enabled session."""
+    if key in _reports or len(_reports) >= MAX_DIAGNOSTICS:
+        return
+    _reports[key] = 1
+    emit = logging.error if error else logging.info
+    emit(f"[OP inflation buster] {message}")
+
+
+def is_scaled_cash_definition(item: UObject) -> bool:
+    """Recognize level-scaled cash effects, including matching DLC/mod pickups."""
+    path = item._path_name()
+    if path in UNSCALED_CASH_DEFINITIONS:
+        return False
+    if item.FormOfCurrency != unrealsdk.find_enum("ECurrencyType").CURRENCY_Credits:
+        return False
+    if path in CASH_ITEM_DEFINITIONS:
+        return True
+    address = item._get_address()
+    cached = _cash_definitions.get(address)
+    if cached is not None and cached[0]() == item:
+        return cached[1]
+    scaled = False
+    for effect in getattr(item, "AttributeSlotEffects", ()):
+        attribute = effect.AttributeToModify
+        if not effect.bExternalSlot or attribute is None or attribute._path_name() != CREDITS_ATTRIBUTE:
+            continue
+        for value in (effect.BaseModifierValue, effect.PerGradeUpgrade):
+            formula = value.InitializationDefinition
+            if formula is not None and formula._path_name() == CASH_PICKUP_FORMULA:
+                scaled = True
+                break
+        if scaled:
+            break
+    _cash_definitions[address] = (WeakPointer(item), scaled)
+    return scaled
 
 
 def interactive_object_probe(
@@ -41,7 +91,7 @@ def interactive_object_probe(
         if definition is not None and "slotmachine" in definition._path_name().lower():
             _slot_actors[actor._get_address()] = WeakPointer(actor)
     except Exception as exc:
-        logging.error(f"[OP inflation buster] Interactive object probe failed: {exc!r}")
+        report_problem("slot tracking", f"Interactive object probe failed: {exc!r}", error=True)
     return None
 
 
@@ -57,7 +107,10 @@ def cash_use_probe(
         if inventory is None or inventory.Class.Name != "WillowUsableItem":
             return None
         definition = inventory.DefinitionData
-        if definition.ItemDefinition._path_name() not in CASH_ITEM_DEFINITIONS:
+        item = definition.ItemDefinition
+        if item._path_name() in UNSCALED_CASH_DEFINITIONS:
+            return None
+        if item.FormOfCurrency != unrealsdk.find_enum("ECurrencyType").CURRENCY_Credits:
             return None
         pc = get_pc()
         wallet = None
@@ -67,29 +120,26 @@ def cash_use_probe(
         if wallet is not None:
             address = inventory._get_address()
             if phase == "PRE":
-                _cash_before[address] = (WeakPointer(inventory), wallet, int(definition.GameStage))
+                # CurrencyItemLevel resolves ExpLevel in the game's cash formula.
+                stage = int(getattr(inventory, "ExpLevel", definition.GameStage))
+                _cash_before[address] = (WeakPointer(inventory), wallet, stage, is_scaled_cash_definition(item))
             else:
                 before = _cash_before.pop(address, None)
                 if before is not None and before[0]() == inventory:
-                    old_wallet, stage = before[1:]
+                    old_wallet, stage, scaled = before[1:]
                     gain = wallet - old_wallet
-                    if stage > CEILING and gain > 0:
+                    if stage > CEILING and gain > 0 and not scaled:
+                        path = item._path_name()
+                        report_problem(
+                            f"unknown cash {path}",
+                            f"Unrecognized cash pickup: item={path} level={stage} "
+                            f"gain={gain} wallet={old_wallet}->{wallet}",
+                        )
+                    elif stage > CEILING and gain > 0:
                         capped_gain = max(1, round(gain * VANILLA_PRICE_GROWTH ** (CEILING - stage)))
                         pc.PlayerReplicationInfo.AddCurrencyOnHand(credits, capped_gain - gain)
-                        wallet = int(pc.PlayerReplicationInfo.GetCurrencyOnHand(credits))
-                        item_path = definition.ItemDefinition._path_name()
-                        report_key = "big cash correction" if item_path.endswith("Currency_Big") else "cash correction"
-                        report_limit = 10 if report_key == "big cash correction" else 3
-                        if _reports.get(report_key, 0) < report_limit:
-                            _reports[report_key] = _reports.get(report_key, 0) + 1
-                            logging.info(
-                                f"[OP inflation buster] Cash grant correction: "
-                                f"item={item_path} stage={stage} "
-                                f"vanilla_gain={gain} capped_gain={capped_gain} "
-                                f"wallet={old_wallet}->{wallet}"
-                            )
     except Exception as exc:
-        logging.error(f"[OP inflation buster] Cash use probe failed: {exc!r}")
+        report_problem("cash pickup", f"Cash use probe failed: {exc!r}", error=True)
     return None
 
 
@@ -127,8 +177,8 @@ def slot_cost_pre(
             )
         actual_cost = int(actor.CostsToUseAmount[0])
         if actual_cost != capped_cost:
-            logging.error(
-                f"[OP inflation buster] Slot cost override returned {actual_cost}, expected {capped_cost}"
+            report_problem(
+                "slot override", f"Slot cost override returned {actual_cost}, expected {capped_cost}", error=True,
             )
             return None
         _slot_original_costs[actor._get_address()] = (
@@ -136,7 +186,7 @@ def slot_cost_pre(
         )
         return Block
     except Exception as exc:
-        logging.error(f"[OP inflation buster] Slot cost cap failed: {exc!r}")
+        report_problem("slot cost", f"Slot cost cap failed: {exc!r}", error=True)
         return None
 
 
@@ -152,7 +202,7 @@ def respec_cost_pre(
         capped_cost = min(vanilla_cost, RESPEC_CAP)
         return Block, capped_cost
     except Exception as exc:
-        logging.error(f"[OP inflation buster] Respec cost cap failed: {exc!r}")
+        report_problem("respec", f"Respec cost cap failed: {exc!r}", error=True)
         return None
 
 
@@ -167,12 +217,47 @@ def mission_reward_pre(
         reward = mission.AlternativeReward if args.bGetAltReward else mission.Reward
         if reward.CurrencyRewardType != unrealsdk.find_enum("ECurrencyType").CURRENCY_Credits:
             return None
+        call_args = {"InWPC": args.InWPC, "bGetAltReward": args.bGetAltReward}
+        return preview_mission_cash(mission, args.InWPC, func, call_args)
+    except Exception as exc:
+        report_problem("mission preview", f"Mission cash preview failed: {exc!r}", error=True)
+    return None
+
+
+def optional_mission_cash_pre(
+    mission: UObject,
+    args: WrappedStruct,
+    _ret: Any,
+    func: BoundFunction,
+) -> tuple[type[Block], int] | None:
+    """Cap extra credits on missions whose main reward is another currency."""
+    try:
+        call_args = {
+            str(field.Name): getattr(args, str(field.Name))
+            for field in args._type._properties()
+            if str(field.Name) != "ReturnValue"
+        }
+        pc = next((value for value in call_args.values() if hasattr(value, "Pawn")), None)
+        return preview_mission_cash(mission, pc, func, call_args)
+    except Exception as exc:
+        report_problem("optional mission preview", f"Optional mission cash preview failed: {exc!r}", error=True)
+    return None
+
+
+def preview_mission_cash(
+    mission: UObject,
+    pc: UObject | None,
+    func: BoundFunction,
+    call_args: dict[str, Any],
+) -> tuple[type[Block], int] | None:
+    try:
         stage = int(mission.GameStage)
         if stage <= CEILING:
             return None
-        call_args = {"InWPC": args.InWPC, "bGetAltReward": args.bGetAltReward}
         with prevent_hooking_direct_calls():
             vanilla = int(func(**call_args))
+            if vanilla <= 0:
+                return None
             try:
                 mission.GameStage = CEILING
                 ceiling_value = int(func(**call_args))
@@ -180,7 +265,7 @@ def mission_reward_pre(
                 mission.GameStage = stage
             player_stage_preview = None
             if ceiling_value >= vanilla:
-                pawn = getattr(args.InWPC, "Pawn", None)
+                pawn = getattr(pc, "Pawn", None)
                 if pawn is not None:
                     player_stage = int(pawn.GameStage)
                     if player_stage > CEILING:
@@ -207,24 +292,25 @@ def mission_reward_pre(
             None,
         )
         if capped is not None:
-            path = mission._path_name()
-            if _reports.get(path, 0) == 0 and _reports.get("mission summaries", 0) < 20:
-                _reports[path] = 1
-                _reports["mission summaries"] = _reports.get("mission summaries", 0) + 1
-                logging.info(f"[OP inflation buster] Mission cash: {path} {vanilla}->{capped}")
             return Block, capped
-        if _reports.get("mission unchanged", 0) < 2:
-            _reports["mission unchanged"] = _reports.get("mission unchanged", 0) + 1
-            logging.info(f"[OP inflation buster] Mission cash unchanged: {mission._path_name()} stage={stage} vanilla={vanilla}")
+        report_problem(
+            f"mission unchanged {mission._path_name()}",
+            f"Mission cash unchanged: {mission._path_name()} stage={stage} vanilla={vanilla}",
+        )
     except Exception as exc:
-        logging.error(f"[OP inflation buster] Mission cash preview failed: {exc!r}")
+        report_problem("mission preview", f"Mission cash preview failed: {exc!r}", error=True)
     return None
 
 
 def cap_inventory_value(inventory: UObject, owner: UObject, source: str) -> None:
     """Value a temporary copy at the cash ceiling and override only money."""
     try:
+        if inventory.GetCurrencyTypeInventoryIsValuedIn() != unrealsdk.find_enum("ECurrencyType").CURRENCY_Credits:
+            return None
         definition = inventory.DefinitionData
+        item = getattr(definition, "ItemDefinition", None)
+        if item is not None and item._path_name() in UNSCALED_CASH_DEFINITIONS:
+            return None
         stage = int(definition.GameStage)
         grade = int(definition.ManufacturerGradeIndex)
     except (AttributeError, TypeError, ValueError):
@@ -264,18 +350,6 @@ def cap_inventory_value(inventory: UObject, owner: UObject, source: str) -> None
             raise RuntimeError("cash-ceiling preview creation returned None")
         ceiling_value = int(preview.GetMonetaryValue())
 
-        sample_key = f"valuation {inventory.Class.Name}"
-        if _reports.get(sample_key, 0) == 0 and _reports.get("valuation samples", 0) < 6:
-            _reports[sample_key] = 1
-            _reports["valuation samples"] = _reports.get("valuation samples", 0) + 1
-            logging.info(
-                f"[OP inflation buster] Value sample: {inventory.Class.Name} "
-                f"source={source} stage={stage} grade={grade} "
-                f"preview_stage={preview.DefinitionData.GameStage} "
-                f"preview_grade={preview.DefinitionData.ManufacturerGradeIndex} "
-                f"vanilla={original_value} ceiling={ceiling_value}"
-            )
-
         if ceiling_value > 0 and ceiling_value != original_value:
             inventory.OverrideMonetaryValue(NewMonetaryValue=ceiling_value)
             actual_value = int(inventory.GetMonetaryValue())
@@ -284,7 +358,7 @@ def cap_inventory_value(inventory: UObject, owner: UObject, source: str) -> None
                 raise RuntimeError(f"override returned {actual_value}, expected {ceiling_value}")
             _touched[address] = (WeakPointer(inventory), original_value)
     except Exception as exc:
-        logging.error(f"[OP inflation buster] Cash-ceiling preview failed: {exc!r}")
+        report_problem("inventory preview", f"Cash-ceiling preview failed: source={source} error={exc!r}", error=True)
     finally:
         _in_progress.discard(address)
     return None
@@ -301,7 +375,7 @@ def cap_backpack(pc: UObject) -> None:
             if item is not None:
                 cap_inventory_value(item, owner, "backpack")
     except Exception as exc:
-        logging.error(f"[OP inflation buster] Backpack scan failed: {exc!r}")
+        report_problem("backpack", f"Backpack scan failed: {exc!r}", error=True)
 
 
 def vendor_movie_start(
@@ -315,7 +389,7 @@ def vendor_movie_start(
         if pc is not None:
             cap_backpack(pc)
     except Exception as exc:
-        logging.error(f"[OP inflation buster] Vendor start scan failed: {exc!r}")
+        report_problem("vendor start", f"Vendor start scan failed: {exc!r}", error=True)
     return None
 
 
@@ -330,7 +404,7 @@ def item_card_pre(
         if pc is not None and pc.Pawn is not None and args.InventoryItem is not None:
             cap_inventory_value(args.InventoryItem, pc.Pawn, "item card")
     except Exception as exc:
-        logging.error(f"[OP inflation buster] Item card value failed: {exc!r}")
+        report_problem("item card", f"Item card value failed: {exc!r}", error=True)
     return None
 
 
@@ -355,7 +429,7 @@ def item_of_the_day_focus_pre(
             if expected_price > 0 and cached_price > expected_price:
                 data.Price = expected_price
     except Exception as exc:
-        logging.error(f"[OP inflation buster] Item of the day focus probe failed: {exc!r}")
+        report_problem("item of the day", f"Item of the day focus probe failed: {exc!r}", error=True)
     return None
 
 
@@ -376,68 +450,18 @@ def vendor_price_pre(
     return None
 
 
-def cash_gain_probe(
-    obj: UObject,
-    args: WrappedStruct,
-    _ret: Any,
-    _func: BoundFunction,
-) -> None:
-    """Record uncommon cash grant paths for mission and slot payout checks."""
-    try:
-        if args._type.Name == "AddCurrencyOnHand":
-            label = "direct credit grant"
-            if _reports.get(label, 0) >= 20:
-                return None
-            credits = unrealsdk.find_enum("ECurrencyType").CURRENCY_Credits
-            if args.FormOfCurrency != credits or int(args.AddValue) <= 0:
-                return None
-            amount = int(args.AddValue)
-        else:
-            label = "credit announcement"
-            if _reports.get(label, 0) >= 20:
-                return None
-            fields = [
-                f"{field.Name}={getattr(args, str(field.Name))!r}"[:120]
-                for field in args._type._properties()
-            ]
-            amount = ", ".join(fields)
-        _reports[label] = _reports.get(label, 0) + 1
-        logging.info(f"[OP inflation buster] {label}: {amount}")
-    except Exception as exc:
-        logging.error(f"[OP inflation buster] Cash grant probe failed: {exc!r}")
-    return None
-
-
-def mission_ui_high_probe(
-    _movie: UObject,
-    args: WrappedStruct,
-    _ret: Any,
-    _func: BoundFunction,
-) -> None:
-    try:
-        credits = int(args.Credits)
-        if credits > 100000 and _reports.get("early mission UI value", 0) < 2:
-            _reports["early mission UI value"] = _reports.get("early mission UI value", 0) + 1
-            logging.info(f"[OP inflation buster] Early mission UI value: {credits}")
-    except Exception as exc:
-        logging.error(f"[OP inflation buster] Mission UI probe failed: {exc!r}")
-    return None
-
-
 def on_enable() -> None:
     hooks = (
         ("WillowGame.WillowUsableItem:GivenTo", Type.PRE, "cash_before", cash_use_pre),
         ("WillowGame.WillowUsableItem:GivenTo", Type.POST, "cash_after", cash_use_post),
         ("WillowGame.WillowPlayerController:GetSkillTreeResetCost", Type.PRE, "respec", respec_cost_pre),
         ("WillowGame.MissionDefinition:GetCurrencyReward", Type.PRE, "mission", mission_reward_pre),
+        ("WillowGame.MissionDefinition:GetOptionalCreditReward", Type.PRE, "optional_mission_cash", optional_mission_cash_pre),
         ("WillowGame.WillowInteractiveObject:InitializeFromDefinition", Type.PRE, "slot_actor", interactive_object_probe),
         ("WillowGame.WillowInteractiveObject:Behavior_ChangeUsabilityCost", Type.PRE, "slot_cost", slot_cost_pre),
         ("WillowGame.VendingMachineExGFxMovie:Start", Type.PRE, "backpack", vendor_movie_start),
         ("WillowGame.ItemCardGFxObject:SetItemCardEx", Type.PRE, "item_card", item_card_pre),
         ("WillowGame.VendingMachineExGFxMovie:SwitchToItemOfTheDay", Type.PRE, "item_of_the_day", item_of_the_day_focus_pre),
-        ("WillowGame.WillowPlayerReplicationInfo:AddCurrencyOnHand", Type.PRE, "credit_grant", cash_gain_probe),
-        ("WillowGame.WillowPlayerController:ScriptAnnounceCreditGain", Type.PRE, "credit_announce", cash_gain_probe),
-        ("WillowGame.StatusMenuExGFxMovie:SetRewardsTotalCredits", Type.PRE, "mission_ui", mission_ui_high_probe),
     )
     for path, hook_type, name, callback in hooks:
         identifier = f"op_inflation_buster.{name}"
@@ -445,9 +469,9 @@ def on_enable() -> None:
             if unrealsdk.hooks.add_hook(path, hook_type, identifier, callback):
                 _dynamic_hooks.append((path, hook_type, identifier))
             else:
-                logging.error(f"[OP inflation buster] Hook unavailable: {path}")
+                report_problem(f"hook {path}", f"Hook unavailable: {path}", error=True)
         except Exception as exc:
-            logging.error(f"[OP inflation buster] Hook failed: {path}: {exc!r}")
+            report_problem(f"hook {path}", f"Hook failed: {path}: {exc!r}", error=True)
 
     for class_name in ("WillowPawn", "WillowVendingMachineBase", "WillowVendingMachine"):
         path = f"WillowGame.{class_name}:GetSellingPriceForInventory"
@@ -456,8 +480,7 @@ def on_enable() -> None:
             if unrealsdk.hooks.add_hook(path, Type.PRE, identifier, vendor_price_pre):
                 _dynamic_hooks.append((path, Type.PRE, identifier))
         except Exception as exc:
-            logging.error(f"[OP inflation buster] Vendor hook failed: {path}: {exc!r}")
-    logging.info(f"[OP inflation buster] Enabled. Cash ceiling {CEILING}, respec cap {RESPEC_CAP}, v0.38")
+            report_problem(f"hook {path}", f"Vendor hook failed: {path}: {exc!r}", error=True)
 
 
 def on_disable() -> None:
@@ -478,28 +501,26 @@ def on_disable() -> None:
                 UsedType=used_type,
             )
         except Exception as exc:
-            logging.error(f"[OP inflation buster] Slot cost restore failed: {exc!r}")
+            report_problem("slot restore", f"Slot cost restore failed: {exc!r}", error=True)
     _slot_original_costs.clear()
 
 
-    restored = 0
     for pointer, original_value in _touched.values():
         inventory = pointer()
         if inventory is None:
             continue
         try:
             inventory.OverrideMonetaryValue(NewMonetaryValue=original_value)
-            restored += 1
         except Exception as exc:
-            logging.error(f"[OP inflation buster] Value restore failed: {exc!r}")
+            report_problem("inventory restore", f"Value restore failed: {exc!r}", error=True)
     _touched.clear()
     _cash_before.clear()
+    _cash_definitions.clear()
     _attempted.clear()
     _in_progress.clear()
     _reports.clear()
     _last_vendor = None
     _slot_actors.clear()
-    logging.info(f"[OP inflation buster] Disabled. Restored {restored} monetary values")
 
 
 build_mod()

@@ -1,8 +1,8 @@
 [project]
 name = "op_inflation_buster"
-version = "0.38.0"
-authors = [{ name = "thekeogh" }]
-description = "OP firepower. Level 20 cash economy."
+version = "0.41.0"
+authors = [{ name = "keogh" }]
+description = "Reduce cash inflation with a cash economy based on level 1 values."
 
 [tool.sdkmod]
 name = "OP inflation buster"

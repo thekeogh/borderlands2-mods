@@ -1,8 +1,12 @@
 # OP inflation buster
 
-Keep your Overpower gear and combat difficulty while bringing Borderlands 2's cash economy down to roughly level 20 values. Cash drops, item prices, mission cash rewards, vending machine purchases, ammo and health costs, respecs, and slot machine costs are adjusted so money stays useful at high levels. Selling and buying back gear use the adjusted prices too.
+Reduce cash inflation in Borderlands 2 with a cash economy based on roughly **level 1 values**. Smaller cash payouts and more readable prices keep collecting, selling and spending money useful throughout your playthrough.
+
+Cash drops, Crystalisk gems, Tiny Tina DLC crystal bones, item prices, mission cash rewards, vending machine purchases, ammo and health costs, respecs, and slot machine costs are adjusted. Selling and buying back gear use the adjusted prices too. Larger money bundles can still pay more than $1.
 
 The mod changes money values only. Your gear levels and other currencies stay as they are. Co-op support is host only. **This mod is still in beta.**
+
+**Author:** keogh
 
 ## Install
 
