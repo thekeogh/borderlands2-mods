@@ -1,0 +1,1186 @@
+{
+  "scenario": "05 / former level50 boundary",
+  "test_pack_version": "0.2.1",
+  "mod_version": "0.1.7",
+  "result": "05 captured checks pass, including post-level reload: locked mission49, owned weapon49, fresh vendors50 and level50 player/world stage.",
+  "captures": [
+    {
+      "file": "one-playthrough-0.1.7-20261105T180729.490325Z-e2a2cf93.json",
+      "sha256": "4ca7332e60c370780637e803eb5e2a28f65fdc3deb53b333f4e9b9dbf1aa5819",
+      "export_complete": true,
+      "errors": [],
+      "player_level": 49,
+      "playthrough": 2,
+      "op": 0,
+      "controller": "Loader.TheWorld:PersistentLevel.WillowPlayerController_2",
+      "threshold": 1,
+      "tuning_errors": {},
+      "mission_record": {
+        "status": 1,
+        "stored_stage": 49
+      },
+      "definition_stage": 49,
+      "definition_locked": true,
+      "equipped": [],
+      "ai_samples": [
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_5",
+            "class": "WillowAIPawn"
+          },
+          "stage": 49,
+          "level": 51,
+          "spawn_inventory_stage": 47
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_4",
+            "class": "WillowAIPawn"
+          },
+          "stage": 49,
+          "level": 50,
+          "spawn_inventory_stage": 47
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_0",
+            "class": "WillowAIPawn"
+          },
+          "stage": 49,
+          "level": 49,
+          "spawn_inventory_stage": 50
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_1",
+            "class": "WillowAIPawn"
+          },
+          "stage": 49,
+          "level": 51,
+          "spawn_inventory_stage": 50
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_2",
+            "class": "WillowAIPawn"
+          },
+          "stage": 49,
+          "level": 48,
+          "spawn_inventory_stage": 48
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_6",
+            "class": "WillowAIPawn"
+          },
+          "stage": 49,
+          "level": 48,
+          "spawn_inventory_stage": 47
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_3",
+            "class": "WillowAIPawn"
+          },
+          "stage": 49,
+          "level": 49,
+          "spawn_inventory_stage": 49
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_7",
+            "class": "WillowAIPawn"
+          },
+          "stage": 49,
+          "level": 49,
+          "spawn_inventory_stage": 47
+        },
+        {
+          "object": {
+            "path": "Ice_Dynamic.TheWorld:PersistentLevel.WillowAIPawn_1",
+            "class": "WillowAIPawn"
+          },
+          "stage": 0,
+          "level": 0,
+          "spawn_inventory_stage": 0
+        }
+      ],
+      "vendor_stock_levels": [
+        47,
+        48,
+        49
+      ],
+      "events": [
+        {
+          "sequence": 9,
+          "kind": "ui:ClientDoMissionStatusFanfare",
+          "utc": "2026-11-05T18:07:19.102+00:00",
+          "phase": "POST_UNCONDITIONAL",
+          "item": null
+        },
+        {
+          "sequence": 8,
+          "kind": "equipment:AddInventory",
+          "utc": "2026-11-05T18:07:19.085+00:00",
+          "phase": "POST_UNCONDITIONAL",
+          "item": {
+            "path": "Loader.TheWorld:PersistentLevel.WillowShield_0",
+            "class": "WillowShield"
+          }
+        },
+        {
+          "sequence": 7,
+          "kind": "engine:WillowClientShowLoadingMovie",
+          "utc": "2026-11-05T18:07:18.267+00:00",
+          "phase": "POST_UNCONDITIONAL",
+          "item": null
+        },
+        {
+          "sequence": 10,
+          "kind": "engine:ApplyMissionSaveGameData",
+          "utc": "2026-11-05T18:07:19.103+00:00",
+          "phase": "POST_UNCONDITIONAL",
+          "item": null
+        },
+        {
+          "sequence": 11,
+          "kind": "engine:SpawningProcessComplete",
+          "utc": "2026-11-05T18:07:19.134+00:00",
+          "phase": "POST_UNCONDITIONAL",
+          "item": null
+        },
+        {
+          "sequence": 12,
+          "kind": "engine:WillowClientDisableLoadingMovie",
+          "utc": "2026-11-05T18:07:19.366+00:00",
+          "phase": "POST_UNCONDITIONAL",
+          "item": null
+        },
+        {
+          "sequence": 13,
+          "kind": "engine:WillowClientShowLoadingMovie",
+          "utc": "2026-11-05T18:07:19.483+00:00",
+          "phase": "POST_UNCONDITIONAL",
+          "item": null
+        }
+      ]
+    },
+    {
+      "file": "one-playthrough-0.1.7-20261105T181103.523610Z-9a92e307.json",
+      "sha256": "2ad263057c7317f67d8f7e8f933533ba43537852b1ef0b8a63f13e172aeff265",
+      "export_complete": true,
+      "errors": [],
+      "player_level": 50,
+      "playthrough": 2,
+      "op": 0,
+      "controller": "Loader.TheWorld:PersistentLevel.WillowPlayerController_2",
+      "threshold": 1,
+      "tuning_errors": {},
+      "mission_record": {
+        "status": 1,
+        "stored_stage": 49
+      },
+      "definition_stage": 49,
+      "definition_locked": true,
+      "equipped": [
+        {
+          "slot": "Weapon",
+          "object": {
+            "path": "Loader.TheWorld:PersistentLevel.WillowWeapon_15",
+            "class": "WillowWeapon"
+          },
+          "game_stage": 49,
+          "exp_level": 49,
+          "definition_stage": 49
+        }
+      ],
+      "ai_samples": [
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_10",
+            "class": "WillowAIPawn"
+          },
+          "stage": 49,
+          "level": 48,
+          "spawn_inventory_stage": 49
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_20",
+            "class": "WillowAIPawn"
+          },
+          "stage": 49,
+          "level": 51,
+          "spawn_inventory_stage": 49
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_2",
+            "class": "WillowAIPawn"
+          },
+          "stage": 49,
+          "level": 48,
+          "spawn_inventory_stage": 48
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_21",
+            "class": "WillowAIPawn"
+          },
+          "stage": 49,
+          "level": 49,
+          "spawn_inventory_stage": 49
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_3",
+            "class": "WillowAIPawn"
+          },
+          "stage": 49,
+          "level": 49,
+          "spawn_inventory_stage": 49
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_7",
+            "class": "WillowAIPawn"
+          },
+          "stage": 49,
+          "level": 49,
+          "spawn_inventory_stage": 47
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_6",
+            "class": "WillowAIPawn"
+          },
+          "stage": 49,
+          "level": 48,
+          "spawn_inventory_stage": 47
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_12",
+            "class": "WillowAIPawn"
+          },
+          "stage": 49,
+          "level": 48,
+          "spawn_inventory_stage": 47
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_13",
+            "class": "WillowAIPawn"
+          },
+          "stage": 49,
+          "level": 49,
+          "spawn_inventory_stage": 50
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_9",
+            "class": "WillowAIPawn"
+          },
+          "stage": 49,
+          "level": 48,
+          "spawn_inventory_stage": 50
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_11",
+            "class": "WillowAIPawn"
+          },
+          "stage": 49,
+          "level": 50,
+          "spawn_inventory_stage": 47
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_8",
+            "class": "WillowAIPawn"
+          },
+          "stage": 49,
+          "level": 49,
+          "spawn_inventory_stage": 49
+        }
+      ],
+      "vendor_stock_levels": [
+        47,
+        48,
+        49
+      ],
+      "events": [
+        {
+          "sequence": 17,
+          "kind": "ui:NotifyAtMainMenu",
+          "utc": "2026-11-05T18:08:07.549+00:00",
+          "phase": "POST_UNCONDITIONAL",
+          "item": null
+        },
+        {
+          "sequence": 18,
+          "kind": "equipment:AddInventory",
+          "utc": "2026-11-05T18:08:49.678+00:00",
+          "phase": "POST_UNCONDITIONAL",
+          "item": {
+            "path": "Loader.TheWorld:PersistentLevel.WillowUsableItem_10",
+            "class": "WillowUsableItem"
+          }
+        },
+        {
+          "sequence": 19,
+          "kind": "equipment:AddInventory",
+          "utc": "2026-11-05T18:09:34.734+00:00",
+          "phase": "POST_UNCONDITIONAL",
+          "item": {
+            "path": "Loader.TheWorld:PersistentLevel.WillowUsableItem_14",
+            "class": "WillowUsableItem"
+          }
+        },
+        {
+          "sequence": 20,
+          "kind": "equipment:AddInventory",
+          "utc": "2026-11-05T18:09:39.933+00:00",
+          "phase": "POST_UNCONDITIONAL",
+          "item": {
+            "path": "Loader.TheWorld:PersistentLevel.WillowGrenadeMod_8",
+            "class": "WillowGrenadeMod"
+          }
+        },
+        {
+          "sequence": 21,
+          "kind": "equipment:AddInventory",
+          "utc": "2026-11-05T18:09:40.448+00:00",
+          "phase": "POST_UNCONDITIONAL",
+          "item": {
+            "path": "Loader.TheWorld:PersistentLevel.WillowUsableItem_11",
+            "class": "WillowUsableItem"
+          }
+        },
+        {
+          "sequence": 22,
+          "kind": "combat:TakeDamage",
+          "utc": "2026-11-05T18:10:29.093+00:00",
+          "phase": "PRE",
+          "item": null
+        },
+        {
+          "sequence": 23,
+          "kind": "combat:TakeDamage",
+          "utc": "2026-11-05T18:10:29.094+00:00",
+          "phase": "POST_UNCONDITIONAL",
+          "item": null
+        },
+        {
+          "sequence": 24,
+          "kind": "combat:TakeDamage",
+          "utc": "2026-11-05T18:10:29.719+00:00",
+          "phase": "PRE",
+          "item": null
+        },
+        {
+          "sequence": 25,
+          "kind": "combat:TakeDamage",
+          "utc": "2026-11-05T18:10:29.720+00:00",
+          "phase": "POST_UNCONDITIONAL",
+          "item": null
+        },
+        {
+          "sequence": 26,
+          "kind": "combat:TakeDamage",
+          "utc": "2026-11-05T18:10:39.567+00:00",
+          "phase": "PRE",
+          "item": null
+        },
+        {
+          "sequence": 27,
+          "kind": "combat:TakeDamage",
+          "utc": "2026-11-05T18:10:39.569+00:00",
+          "phase": "POST_UNCONDITIONAL",
+          "item": null
+        }
+      ]
+    },
+    {
+      "file": "one-playthrough-0.1.7-20261105T181218.428077Z-3d6b3f22.json",
+      "sha256": "7e882d88776209e3ccce839a90084723582e7e632aa756d2ecf5adfb3502feed",
+      "export_complete": true,
+      "errors": [],
+      "player_level": 50,
+      "playthrough": 2,
+      "op": 0,
+      "controller": "Loader.TheWorld:PersistentLevel.WillowPlayerController_2",
+      "threshold": 1,
+      "tuning_errors": {},
+      "mission_record": {
+        "status": 1,
+        "stored_stage": 49
+      },
+      "definition_stage": 49,
+      "definition_locked": true,
+      "equipped": [
+        {
+          "slot": "Weapon",
+          "object": {
+            "path": "Loader.TheWorld:PersistentLevel.WillowWeapon_15",
+            "class": "WillowWeapon"
+          },
+          "game_stage": 49,
+          "exp_level": 49,
+          "definition_stage": 49
+        }
+      ],
+      "ai_samples": [
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_8",
+            "class": "WillowAIPawn"
+          },
+          "stage": 49,
+          "level": 49,
+          "spawn_inventory_stage": 49
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_11",
+            "class": "WillowAIPawn"
+          },
+          "stage": 49,
+          "level": 50,
+          "spawn_inventory_stage": 47
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_9",
+            "class": "WillowAIPawn"
+          },
+          "stage": 49,
+          "level": 48,
+          "spawn_inventory_stage": 50
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_13",
+            "class": "WillowAIPawn"
+          },
+          "stage": 49,
+          "level": 49,
+          "spawn_inventory_stage": 50
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_12",
+            "class": "WillowAIPawn"
+          },
+          "stage": 49,
+          "level": 48,
+          "spawn_inventory_stage": 47
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_7",
+            "class": "WillowAIPawn"
+          },
+          "stage": 49,
+          "level": 49,
+          "spawn_inventory_stage": 47
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_3",
+            "class": "WillowAIPawn"
+          },
+          "stage": 49,
+          "level": 49,
+          "spawn_inventory_stage": 49
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_25",
+            "class": "WillowAIPawn"
+          },
+          "stage": 50,
+          "level": 49,
+          "spawn_inventory_stage": 51
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_2",
+            "class": "WillowAIPawn"
+          },
+          "stage": 49,
+          "level": 48,
+          "spawn_inventory_stage": 48
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_6",
+            "class": "WillowAIPawn"
+          },
+          "stage": 49,
+          "level": 48,
+          "spawn_inventory_stage": 47
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_24",
+            "class": "WillowAIPawn"
+          },
+          "stage": 50,
+          "level": 51,
+          "spawn_inventory_stage": 48
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_20",
+            "class": "WillowAIPawn"
+          },
+          "stage": 49,
+          "level": 51,
+          "spawn_inventory_stage": 49
+        }
+      ],
+      "vendor_stock_levels": [
+        47,
+        48,
+        49
+      ],
+      "events": [
+        {
+          "sequence": 28,
+          "kind": "ui:NotifyAtMainMenu",
+          "utc": "2026-11-05T18:11:08.674+00:00",
+          "phase": "POST_UNCONDITIONAL",
+          "item": null
+        },
+        {
+          "sequence": 29,
+          "kind": "equipment:AddInventory",
+          "utc": "2026-11-05T18:11:47.641+00:00",
+          "phase": "POST_UNCONDITIONAL",
+          "item": {
+            "path": "Loader.TheWorld:PersistentLevel.WillowUsableItem_9",
+            "class": "WillowUsableItem"
+          }
+        }
+      ]
+    },
+    {
+      "file": "one-playthrough-0.1.7-20261105T181356.004298Z-ac04a298.json",
+      "sha256": "2465d8f3f1fbafdb36c6734439f44cf182dc38bcb4dbd5ff61b5c466c4283430",
+      "export_complete": true,
+      "errors": [],
+      "player_level": 50,
+      "playthrough": 2,
+      "op": 0,
+      "controller": "Loader.TheWorld:PersistentLevel.WillowPlayerController_2",
+      "threshold": 1,
+      "tuning_errors": {},
+      "mission_record": {
+        "status": 1,
+        "stored_stage": 49
+      },
+      "definition_stage": 49,
+      "definition_locked": true,
+      "equipped": [
+        {
+          "slot": "Weapon",
+          "object": {
+            "path": "Loader.TheWorld:PersistentLevel.WillowWeapon_15",
+            "class": "WillowWeapon"
+          },
+          "game_stage": 49,
+          "exp_level": 49,
+          "definition_stage": 49
+        }
+      ],
+      "ai_samples": [
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_39",
+            "class": "WillowAIPawn"
+          },
+          "stage": 50,
+          "level": 50,
+          "spawn_inventory_stage": 50
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_41",
+            "class": "WillowAIPawn"
+          },
+          "stage": 50,
+          "level": 50,
+          "spawn_inventory_stage": 50
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_38",
+            "class": "WillowAIPawn"
+          },
+          "stage": 50,
+          "level": 51,
+          "spawn_inventory_stage": 48
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_40",
+            "class": "WillowAIPawn"
+          },
+          "stage": 50,
+          "level": 50,
+          "spawn_inventory_stage": 50
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_34",
+            "class": "WillowAIPawn"
+          },
+          "stage": 50,
+          "level": 50,
+          "spawn_inventory_stage": 50
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_36",
+            "class": "WillowAIPawn"
+          },
+          "stage": 50,
+          "level": 51,
+          "spawn_inventory_stage": 50
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_37",
+            "class": "WillowAIPawn"
+          },
+          "stage": 50,
+          "level": 51,
+          "spawn_inventory_stage": 50
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_35",
+            "class": "WillowAIPawn"
+          },
+          "stage": 50,
+          "level": 49,
+          "spawn_inventory_stage": 50
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_27",
+            "class": "WillowAIPawn"
+          },
+          "stage": 50,
+          "level": 52,
+          "spawn_inventory_stage": 49
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_33",
+            "class": "WillowAIPawn"
+          },
+          "stage": 50,
+          "level": 49,
+          "spawn_inventory_stage": 49
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_30",
+            "class": "WillowAIPawn"
+          },
+          "stage": 50,
+          "level": 49,
+          "spawn_inventory_stage": 50
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_31",
+            "class": "WillowAIPawn"
+          },
+          "stage": 50,
+          "level": 51,
+          "spawn_inventory_stage": 48
+        }
+      ],
+      "vendor_stock_levels": [
+        47,
+        48,
+        49
+      ],
+      "events": [
+        {
+          "sequence": 28,
+          "kind": "ui:NotifyAtMainMenu",
+          "utc": "2026-11-05T18:11:08.674+00:00",
+          "phase": "POST_UNCONDITIONAL",
+          "item": null
+        },
+        {
+          "sequence": 29,
+          "kind": "equipment:AddInventory",
+          "utc": "2026-11-05T18:11:47.641+00:00",
+          "phase": "POST_UNCONDITIONAL",
+          "item": {
+            "path": "Loader.TheWorld:PersistentLevel.WillowUsableItem_9",
+            "class": "WillowUsableItem"
+          }
+        },
+        {
+          "sequence": 30,
+          "kind": "equipment:AddInventory",
+          "utc": "2026-11-05T18:12:27.604+00:00",
+          "phase": "POST_UNCONDITIONAL",
+          "item": {
+            "path": "Loader.TheWorld:PersistentLevel.WillowVehicleWeapon_0",
+            "class": "WillowVehicleWeapon"
+          }
+        },
+        {
+          "sequence": 31,
+          "kind": "equipment:AddInventory",
+          "utc": "2026-11-05T18:12:56.657+00:00",
+          "phase": "POST_UNCONDITIONAL",
+          "item": {
+            "path": "Loader.TheWorld:PersistentLevel.WillowUsableItem_21",
+            "class": "WillowUsableItem"
+          }
+        },
+        {
+          "sequence": 32,
+          "kind": "equipment:AddInventory",
+          "utc": "2026-11-05T18:13:09.828+00:00",
+          "phase": "POST_UNCONDITIONAL",
+          "item": {
+            "path": "Loader.TheWorld:PersistentLevel.WillowUsableItem_24",
+            "class": "WillowUsableItem"
+          }
+        },
+        {
+          "sequence": 33,
+          "kind": "equipment:AddInventory",
+          "utc": "2026-11-05T18:13:40.048+00:00",
+          "phase": "POST_UNCONDITIONAL",
+          "item": {
+            "path": "Loader.TheWorld:PersistentLevel.WillowUsableItem_27",
+            "class": "WillowUsableItem"
+          }
+        }
+      ]
+    },
+    {
+      "file": "one-playthrough-0.1.7-20261105T181403.672091Z-aeefd160.json",
+      "sha256": "55c9dffb187ba8386155b9e056c851d72dc98c6ca5557d2543a0b067bae9bc03",
+      "export_complete": true,
+      "errors": [],
+      "player_level": 50,
+      "playthrough": 2,
+      "op": 0,
+      "controller": "Loader.TheWorld:PersistentLevel.WillowPlayerController_2",
+      "threshold": 1,
+      "tuning_errors": {},
+      "mission_record": {
+        "status": 1,
+        "stored_stage": 49
+      },
+      "definition_stage": 49,
+      "definition_locked": true,
+      "equipped": [
+        {
+          "slot": "Weapon",
+          "object": {
+            "path": "Loader.TheWorld:PersistentLevel.WillowWeapon_15",
+            "class": "WillowWeapon"
+          },
+          "game_stage": 49,
+          "exp_level": 49,
+          "definition_stage": 49
+        }
+      ],
+      "ai_samples": [
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_39",
+            "class": "WillowAIPawn"
+          },
+          "stage": 50,
+          "level": 50,
+          "spawn_inventory_stage": 50
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_41",
+            "class": "WillowAIPawn"
+          },
+          "stage": 50,
+          "level": 50,
+          "spawn_inventory_stage": 50
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_38",
+            "class": "WillowAIPawn"
+          },
+          "stage": 50,
+          "level": 51,
+          "spawn_inventory_stage": 48
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_40",
+            "class": "WillowAIPawn"
+          },
+          "stage": 50,
+          "level": 50,
+          "spawn_inventory_stage": 50
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_34",
+            "class": "WillowAIPawn"
+          },
+          "stage": 50,
+          "level": 50,
+          "spawn_inventory_stage": 50
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_36",
+            "class": "WillowAIPawn"
+          },
+          "stage": 50,
+          "level": 51,
+          "spawn_inventory_stage": 50
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_37",
+            "class": "WillowAIPawn"
+          },
+          "stage": 50,
+          "level": 51,
+          "spawn_inventory_stage": 50
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_35",
+            "class": "WillowAIPawn"
+          },
+          "stage": 50,
+          "level": 49,
+          "spawn_inventory_stage": 50
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_27",
+            "class": "WillowAIPawn"
+          },
+          "stage": 50,
+          "level": 52,
+          "spawn_inventory_stage": 49
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_30",
+            "class": "WillowAIPawn"
+          },
+          "stage": 50,
+          "level": 49,
+          "spawn_inventory_stage": 50
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_33",
+            "class": "WillowAIPawn"
+          },
+          "stage": 50,
+          "level": 49,
+          "spawn_inventory_stage": 49
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_31",
+            "class": "WillowAIPawn"
+          },
+          "stage": 50,
+          "level": 51,
+          "spawn_inventory_stage": 48
+        }
+      ],
+      "vendor_stock_levels": [
+        47,
+        48,
+        49
+      ],
+      "events": [
+        {
+          "sequence": 28,
+          "kind": "ui:NotifyAtMainMenu",
+          "utc": "2026-11-05T18:11:08.674+00:00",
+          "phase": "POST_UNCONDITIONAL",
+          "item": null
+        },
+        {
+          "sequence": 29,
+          "kind": "equipment:AddInventory",
+          "utc": "2026-11-05T18:11:47.641+00:00",
+          "phase": "POST_UNCONDITIONAL",
+          "item": {
+            "path": "Loader.TheWorld:PersistentLevel.WillowUsableItem_9",
+            "class": "WillowUsableItem"
+          }
+        },
+        {
+          "sequence": 30,
+          "kind": "equipment:AddInventory",
+          "utc": "2026-11-05T18:12:27.604+00:00",
+          "phase": "POST_UNCONDITIONAL",
+          "item": {
+            "path": "Loader.TheWorld:PersistentLevel.WillowVehicleWeapon_0",
+            "class": "WillowVehicleWeapon"
+          }
+        },
+        {
+          "sequence": 31,
+          "kind": "equipment:AddInventory",
+          "utc": "2026-11-05T18:12:56.657+00:00",
+          "phase": "POST_UNCONDITIONAL",
+          "item": {
+            "path": "Loader.TheWorld:PersistentLevel.WillowUsableItem_21",
+            "class": "WillowUsableItem"
+          }
+        },
+        {
+          "sequence": 32,
+          "kind": "equipment:AddInventory",
+          "utc": "2026-11-05T18:13:09.828+00:00",
+          "phase": "POST_UNCONDITIONAL",
+          "item": {
+            "path": "Loader.TheWorld:PersistentLevel.WillowUsableItem_24",
+            "class": "WillowUsableItem"
+          }
+        },
+        {
+          "sequence": 33,
+          "kind": "equipment:AddInventory",
+          "utc": "2026-11-05T18:13:40.048+00:00",
+          "phase": "POST_UNCONDITIONAL",
+          "item": {
+            "path": "Loader.TheWorld:PersistentLevel.WillowUsableItem_27",
+            "class": "WillowUsableItem"
+          }
+        },
+        {
+          "sequence": 34,
+          "kind": "equipment:AddInventory",
+          "utc": "2026-11-05T18:13:57.263+00:00",
+          "phase": "POST_UNCONDITIONAL",
+          "item": {
+            "path": "Loader.TheWorld:PersistentLevel.WillowWeapon_16",
+            "class": "WillowWeapon"
+          }
+        }
+      ]
+    },
+    {
+      "file": "one-playthrough-0.1.7-20261105T181628.306294Z-eac933f4.json",
+      "sha256": "17dd3a5df521e5ee47fbdd1ff1e0b1ddf7291c50c7bb193315fdea48565bf094",
+      "export_complete": true,
+      "errors": [],
+      "player_level": 50,
+      "playthrough": 2,
+      "op": 0,
+      "controller": "Loader.TheWorld:PersistentLevel.WillowPlayerController_5",
+      "threshold": 1,
+      "tuning_errors": {},
+      "mission_record": {
+        "status": 1,
+        "stored_stage": 49
+      },
+      "definition_stage": 49,
+      "definition_locked": true,
+      "equipped": [
+        {
+          "slot": "Weapon",
+          "object": {
+            "path": "Loader.TheWorld:PersistentLevel.WillowWeapon_19",
+            "class": "WillowWeapon"
+          },
+          "game_stage": 49,
+          "exp_level": 49
+        }
+      ],
+      "ai_samples": [
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_46",
+            "class": "WillowAIPawn"
+          },
+          "stage": 50,
+          "level": 51
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_42",
+            "class": "WillowAIPawn"
+          },
+          "stage": 50,
+          "level": 51
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_48",
+            "class": "WillowAIPawn"
+          },
+          "stage": 50,
+          "level": 50
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_47",
+            "class": "WillowAIPawn"
+          },
+          "stage": 50,
+          "level": 50
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_44",
+            "class": "WillowAIPawn"
+          },
+          "stage": 50,
+          "level": 50
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_43",
+            "class": "WillowAIPawn"
+          },
+          "stage": 50,
+          "level": 50
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_49",
+            "class": "WillowAIPawn"
+          },
+          "stage": 50,
+          "level": 50
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_45",
+            "class": "WillowAIPawn"
+          },
+          "stage": 50,
+          "level": 49
+        },
+        {
+          "object": {
+            "path": "Ice_Dynamic.TheWorld:PersistentLevel.WillowAIPawn_1",
+            "class": "WillowAIPawn"
+          },
+          "stage": 0,
+          "level": 0
+        }
+      ],
+      "vendor_stock_levels": [
+        48,
+        49,
+        50
+      ],
+      "vendor_game_stages": [
+        50
+      ]
+    }
+  ],
+  "checks": {
+    "player_levels": [
+      49,
+      50,
+      50,
+      50,
+      50
+    ],
+    "mission_remains49": true,
+    "sampled_owned_weapon_remains49": true,
+    "new_stage50_ai_observed": true,
+    "initial_stage49_ai_levels": [
+      48,
+      49,
+      50,
+      51
+    ],
+    "final_stage50_ai_levels": [
+      49,
+      50,
+      51,
+      52
+    ],
+    "existing_vendor_stock_remains47_to49": true,
+    "controller_reload_evidenced": true,
+    "reload_vendor_stage": 50,
+    "reload_vendor_stock_levels": [
+      48,
+      49,
+      50
+    ],
+    "reload_owned_weapon_level": 49,
+    "reload_accepted_mission_stage": 49
+  },
+  "user_report": {
+    "level_up_fine": true,
+    "owned_gear_unchanged": true,
+    "new_weapon": {
+      "source": "bullymong pile",
+      "type": "SMG",
+      "level": 50
+    }
+  },
+  "nested_diagnostic_errors": [
+    {
+      "path": "one-playthrough-0.1.7-20261105T180729.490325Z-e2a2cf93.json/sections/player_resources/resource_pools/errors",
+      "errors": [
+        "ResourcePoolMap: RuntimeError: Unknown object type MapProperty"
+      ]
+    },
+    {
+      "path": "one-playthrough-0.1.7-20261105T181103.523610Z-9a92e307.json/sections/player_resources/resource_pools/errors",
+      "errors": [
+        "ResourcePoolMap: RuntimeError: Unknown object type MapProperty"
+      ]
+    },
+    {
+      "path": "one-playthrough-0.1.7-20261105T181218.428077Z-3d6b3f22.json/sections/player_resources/resource_pools/errors",
+      "errors": [
+        "ResourcePoolMap: RuntimeError: Unknown object type MapProperty"
+      ]
+    },
+    {
+      "path": "one-playthrough-0.1.7-20261105T181356.004298Z-ac04a298.json/sections/player_resources/resource_pools/errors",
+      "errors": [
+        "ResourcePoolMap: RuntimeError: Unknown object type MapProperty"
+      ]
+    },
+    {
+      "path": "one-playthrough-0.1.7-20261105T181403.672091Z-aeefd160.json/sections/player_resources/resource_pools/errors",
+      "errors": [
+        "ResourcePoolMap: RuntimeError: Unknown object type MapProperty"
+      ]
+    }
+  ],
+  "limits": [
+    "Fresh level50 SMG is user visual evidence. AddInventory WillowWeapon_16 at18:13:57 is recorded, but this event does not expose its item level/type/source.",
+    "Equipped sample covers one weapon; all backpack gear levels are user evidence.",
+    "Reload JSON confirms sampled equipped weapon49; unchanged full backpack inventory remains user observation."
+  ],
+  "user_followup": {
+    "reload_and_f10_performed": true,
+    "enemy_level_observed": 50,
+    "vendor_level50_gear_observed": true,
+    "all_owned_inventory_unchanged": true,
+    "new_capture_uploaded": true,
+    "evidence_type": "user visual report; no additional JSON present at review"
+  }
+}

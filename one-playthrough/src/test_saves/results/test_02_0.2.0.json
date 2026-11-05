@@ -1,0 +1,171 @@
+{
+  "scenario": "02 / Cleaning up the Berg locked shield reward",
+  "test_pack_version": "0.2.0",
+  "mod_version": "0.1.7",
+  "result": "Reward level, mission lock and reload pass; turn-in screen level mismatch remains open",
+  "captures": [
+    {
+      "file": "one-playthrough-0.1.7-20261105T173943.130477Z-1c915a27.json",
+      "sha256": "e0ce747dffff4f1da24d860595d1a581cf524e6d065941eabec435498a8a7f29",
+      "trigger": "F10",
+      "export_complete": true,
+      "errors": [],
+      "player_level": 10,
+      "playthrough": 2,
+      "op": 0,
+      "controller": "Loader.TheWorld:PersistentLevel.WillowPlayerController_2",
+      "stored_mission": {
+        "status": 3,
+        "stored_stage": 5
+      },
+      "definition_stage": 5,
+      "definition_locked": true,
+      "cash": 10000,
+      "threshold": 1,
+      "tuning_errors": {}
+    },
+    {
+      "file": "one-playthrough-0.1.7-20261105T174043.866692Z-8d96f2a3.json",
+      "sha256": "e5897d7cd353299c33c087cd8f4e5b38eb776559c904d36d4af3578fb666a86c",
+      "trigger": "armed_mission_screen",
+      "export_complete": true,
+      "errors": [],
+      "player_level": 10,
+      "playthrough": 2,
+      "op": 0,
+      "controller": "Loader.TheWorld:PersistentLevel.WillowPlayerController_2",
+      "stored_mission": {
+        "status": 3,
+        "stored_stage": 5
+      },
+      "definition_stage": 5,
+      "definition_locked": true,
+      "cash": 10000,
+      "threshold": 1,
+      "tuning_errors": {}
+    },
+    {
+      "file": "one-playthrough-0.1.7-20261105T174118.930318Z-87147a17.json",
+      "sha256": "dc1125f018a311c904ef8003094b03adc6c505cb73d3d7f9adcc5f67fa4b001f",
+      "trigger": "F10",
+      "export_complete": true,
+      "errors": [],
+      "player_level": 10,
+      "playthrough": 2,
+      "op": 0,
+      "controller": "Loader.TheWorld:PersistentLevel.WillowPlayerController_2",
+      "stored_mission": {
+        "status": 4,
+        "stored_stage": 5
+      },
+      "definition_stage": 5,
+      "definition_locked": true,
+      "cash": 10015,
+      "threshold": 1,
+      "tuning_errors": {}
+    },
+    {
+      "file": "one-playthrough-0.1.7-20261105T174145.570488Z-e5bf9d46.json",
+      "sha256": "c4ce3535c44344e1c3571d3bf27b77621ed8d76fc99e426beeef3d328d796f40",
+      "trigger": "F10",
+      "export_complete": true,
+      "errors": [],
+      "player_level": 10,
+      "playthrough": 2,
+      "op": 0,
+      "controller": "Loader.TheWorld:PersistentLevel.WillowPlayerController_5",
+      "stored_mission": {
+        "status": 4,
+        "stored_stage": 5
+      },
+      "definition_stage": 5,
+      "definition_locked": true,
+      "cash": 10015,
+      "threshold": 1,
+      "tuning_errors": {}
+    }
+  ],
+  "checks": {
+    "item_reward_events": [
+      {
+        "sequence": 124,
+        "phase": "PRE",
+        "item_definition": "GD_Shields.A_Item.Shield_Standard",
+        "balance_definition": "GD_ItemGrades.Shields.ItemGrade_Gear_Shield_Standard_01_Common",
+        "game_stage": 5,
+        "grade": 5
+      },
+      {
+        "sequence": 125,
+        "phase": "POST_UNCONDITIONAL",
+        "item_definition": "GD_Shields.A_Item.Shield_Standard",
+        "balance_definition": "GD_ItemGrades.Shields.ItemGrade_Gear_Shield_Standard_01_Common",
+        "game_stage": 5,
+        "grade": 5
+      }
+    ],
+    "mission_completed_stage": 5,
+    "completion_persists_after_controller_reload": true,
+    "next_mission": "GD_Episode02.M_Ep2c_Henchman",
+    "next_mission_record": {
+      "status": 1,
+      "stored_stage": 10
+    },
+    "xp_query_and_ui_payload": 477,
+    "actual_xp_delta_available": false,
+    "cash_query": 15,
+    "actual_cash_delta": 15,
+    "expected_stage_queries_during_reward_screen": [
+      {
+        "sequence": 83,
+        "value": 10
+      },
+      {
+        "sequence": 121,
+        "value": 10
+      }
+    ]
+  },
+  "user_report": {
+    "journal_mission_level": 5,
+    "turn_in_screen_mission_level": 10,
+    "shield_level": 5,
+    "description": "Everything else seems correct, including shield, XP and cash."
+  },
+  "presentation_issue": {
+    "state": "open",
+    "observation": "GetExpectedGameStage returns player level 10 while saved and locked mission stage remains 5. Consistent with reported reward-screen label. Exact rendered Flash value is not directly captured.",
+    "exe_relationship": "Existing third-byte HUD patch is already in supplied EXE. Its responsibility for this screen is not established; no EXE changes proposed."
+  },
+  "nested_diagnostic_errors": [
+    {
+      "path": "one-playthrough-0.1.7-20261105T173943.130477Z-1c915a27.json/sections/player_resources/resource_pools/errors",
+      "errors": [
+        "ResourcePoolMap: RuntimeError: Unknown object type MapProperty"
+      ]
+    },
+    {
+      "path": "one-playthrough-0.1.7-20261105T174043.866692Z-8d96f2a3.json/sections/player_resources/resource_pools/errors",
+      "errors": [
+        "ResourcePoolMap: RuntimeError: Unknown object type MapProperty"
+      ]
+    },
+    {
+      "path": "one-playthrough-0.1.7-20261105T174118.930318Z-87147a17.json/sections/player_resources/resource_pools/errors",
+      "errors": [
+        "ResourcePoolMap: RuntimeError: Unknown object type MapProperty"
+      ]
+    },
+    {
+      "path": "one-playthrough-0.1.7-20261105T174145.570488Z-e5bf9d46.json/sections/player_resources/resource_pools/errors",
+      "errors": [
+        "ResourcePoolMap: RuntimeError: Unknown object type MapProperty"
+      ]
+    }
+  ],
+  "limits": [
+    "ExpPoints is unavailable; displayed/query XP 477 does not establish actual total-XP delta.",
+    "ResourcePoolMap MapProperty read is unsupported; no top-level export or event callback error observed.",
+    "Other test saves remain pending."
+  ]
+}

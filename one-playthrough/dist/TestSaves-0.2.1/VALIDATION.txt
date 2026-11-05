@@ -1,0 +1,8 @@
+All 11 delivered save files verified against their manifest and source.
+Outer SHA-1/CRC and raw protobuf roundtrips pass. Unique names/slots/GUIDs.
+Destinations are verified station ResourceNames. Mission progress/counts/set indices match game data.
+All five backpack guns and three supplied items have matching character-level grades/stages,
+unchanged seed parts and valid serial roundtrips. Original packed UVHM records preserved.
+XP table independently matches Gibbed's float-constant formula at all selected levels.
+Boundary saves start 5,000 XP below 50/61/73, allowing for discovery XP. Source save and SDK mod unchanged.
+These structural checks do not replace first in-game load/mission/gear validation.

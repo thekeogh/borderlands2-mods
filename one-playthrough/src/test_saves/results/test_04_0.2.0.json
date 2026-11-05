@@ -1,0 +1,2950 @@
+{
+  "scenario": "04 / level10 world, vendors, pickups and reload",
+  "test_pack_version": "0.2.0",
+  "mod_version": "0.1.7",
+  "result": "Captured world/vendor/mission/reload checks pass; user reports game looked good. Pickup/drop-level coverage incomplete.",
+  "captures": [
+    {
+      "file": "one-playthrough-0.1.7-20261105T175157.882772Z-1e7ae70d.json",
+      "sha256": "86f9dff6f06dbb84bfe736c2fb7a4aa26928b2dc69ae285c95af309702b7b8a7",
+      "export_complete": true,
+      "errors": [],
+      "player_level": 10,
+      "playthrough": 2,
+      "op": 0,
+      "controller": "Loader.TheWorld:PersistentLevel.WillowPlayerController_14",
+      "tuning_threshold": 1,
+      "tuning_errors": {},
+      "cash": 10000,
+      "accepted_mission": {
+        "status": 1,
+        "stored_stage": 10
+      },
+      "definition_stage": 10,
+      "definition_locked": true,
+      "pawns": [
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_114",
+            "class": "WillowAIPawn"
+          },
+          "game_stage": 10,
+          "exp_level": 10,
+          "inventory_spawn_stage": 11,
+          "awesome_level": 1
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_111",
+            "class": "WillowAIPawn"
+          },
+          "game_stage": 10,
+          "exp_level": 9,
+          "inventory_spawn_stage": 8,
+          "awesome_level": 1
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_115",
+            "class": "WillowAIPawn"
+          },
+          "game_stage": 10,
+          "exp_level": 10,
+          "inventory_spawn_stage": 10,
+          "awesome_level": 1
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_116",
+            "class": "WillowAIPawn"
+          },
+          "game_stage": 10,
+          "exp_level": 10,
+          "inventory_spawn_stage": 10,
+          "awesome_level": 1
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_110",
+            "class": "WillowAIPawn"
+          },
+          "game_stage": 10,
+          "exp_level": 10,
+          "inventory_spawn_stage": 10,
+          "awesome_level": 1
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_112",
+            "class": "WillowAIPawn"
+          },
+          "game_stage": 10,
+          "exp_level": 9,
+          "inventory_spawn_stage": 11,
+          "awesome_level": 1
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_113",
+            "class": "WillowAIPawn"
+          },
+          "game_stage": 10,
+          "exp_level": 11,
+          "inventory_spawn_stage": 10,
+          "awesome_level": 1
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_117",
+            "class": "WillowAIPawn"
+          },
+          "game_stage": 10,
+          "exp_level": 10,
+          "inventory_spawn_stage": 8,
+          "awesome_level": 1
+        },
+        {
+          "object": {
+            "path": "Ice_Dynamic.TheWorld:PersistentLevel.WillowAIPawn_1",
+            "class": "WillowAIPawn"
+          },
+          "game_stage": 0,
+          "exp_level": 0,
+          "inventory_spawn_stage": 0,
+          "awesome_level": 0
+        }
+      ],
+      "vendors": [
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowVendingMachine_22",
+            "class": "WillowVendingMachine"
+          },
+          "game_stage": 10,
+          "type": {
+            "path": "GD_Balance_Shopping.VendingMachines.InteractiveObj_VendingMachine_HealthItems",
+            "class": "InteractiveObjectDefinition"
+          }
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowVendingMachine_23",
+            "class": "WillowVendingMachine"
+          },
+          "game_stage": 10,
+          "type": {
+            "path": "GD_Balance_Shopping.VendingMachines.InteractiveObj_VendingMachine_GrenadesAndAmmo",
+            "class": "InteractiveObjectDefinition"
+          }
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowVendingMachine_24",
+            "class": "WillowVendingMachine"
+          },
+          "game_stage": 10,
+          "type": {
+            "path": "GD_Balance_Shopping.VendingMachines.VendingMachine_Weapons_Definition",
+            "class": "WillowVendingMachineDefinition"
+          }
+        }
+      ],
+      "stock": [
+        {
+          "vendor": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowVendingMachine_22",
+            "class": "WillowVendingMachine"
+          },
+          "stock_count": 30,
+          "sample": [
+            {
+              "object": {
+                "path": "Loader.TheWorld:PersistentLevel.WillowClassMod_18",
+                "class": "WillowClassMod"
+              },
+              "game_stage": 10,
+              "exp_level": 10,
+              "definition_stage": 10,
+              "balance": {
+                "path": "GD_ItemGrades.ClassMods.BalDef_ClassMod_Soldier_01_Common",
+                "class": "ClassModBalanceDefinition"
+              }
+            },
+            {
+              "object": {
+                "path": "Loader.TheWorld:PersistentLevel.WillowShield_69",
+                "class": "WillowShield"
+              },
+              "game_stage": 10,
+              "exp_level": 10,
+              "definition_stage": 10,
+              "balance": {
+                "path": "GD_ItemGrades.Shields.ItemGrade_Gear_Shield_Spike_Explosive_01_Common",
+                "class": "InventoryBalanceDefinition"
+              }
+            },
+            {
+              "object": {
+                "path": "Loader.TheWorld:PersistentLevel.WillowShield_70",
+                "class": "WillowShield"
+              },
+              "game_stage": 9,
+              "exp_level": 9,
+              "definition_stage": 9,
+              "balance": {
+                "path": "GD_ItemGrades.Shields.ItemGrade_Gear_Shield_Juggernaut_01_Common",
+                "class": "InventoryBalanceDefinition"
+              }
+            },
+            {
+              "object": {
+                "path": "Loader.TheWorld:PersistentLevel.WillowShield_71",
+                "class": "WillowShield"
+              },
+              "game_stage": 9,
+              "exp_level": 9,
+              "definition_stage": 9,
+              "balance": {
+                "path": "GD_ItemGrades.Shields.ItemGrade_Gear_Shield_Standard_01_Common",
+                "class": "InventoryBalanceDefinition"
+              }
+            }
+          ]
+        },
+        {
+          "vendor": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowVendingMachine_23",
+            "class": "WillowVendingMachine"
+          },
+          "stock_count": 30,
+          "sample": [
+            {
+              "object": {
+                "path": "Loader.TheWorld:PersistentLevel.WillowGrenadeMod_45",
+                "class": "WillowGrenadeMod"
+              },
+              "game_stage": 10,
+              "exp_level": 10,
+              "definition_stage": 10,
+              "balance": {
+                "path": "GD_GrenadeMods.A_Item.GM_AreaEffect",
+                "class": "InventoryBalanceDefinition"
+              }
+            },
+            {
+              "object": {
+                "path": "Loader.TheWorld:PersistentLevel.WillowGrenadeMod_46",
+                "class": "WillowGrenadeMod"
+              },
+              "game_stage": 8,
+              "exp_level": 8,
+              "definition_stage": 8,
+              "balance": {
+                "path": "GD_GrenadeMods.A_Item.GM_Standard",
+                "class": "InventoryBalanceDefinition"
+              }
+            },
+            {
+              "object": {
+                "path": "Loader.TheWorld:PersistentLevel.WillowGrenadeMod_47",
+                "class": "WillowGrenadeMod"
+              },
+              "game_stage": 10,
+              "exp_level": 10,
+              "definition_stage": 10,
+              "balance": {
+                "path": "GD_GrenadeMods.A_Item.GM_AreaEffect",
+                "class": "InventoryBalanceDefinition"
+              }
+            },
+            {
+              "object": {
+                "path": "Loader.TheWorld:PersistentLevel.WillowGrenadeMod_48",
+                "class": "WillowGrenadeMod"
+              },
+              "game_stage": 10,
+              "exp_level": 10,
+              "definition_stage": 10,
+              "balance": {
+                "path": "GD_GrenadeMods.A_Item.GM_AreaEffect_2_Uncommon",
+                "class": "InventoryBalanceDefinition"
+              }
+            }
+          ]
+        },
+        {
+          "vendor": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowVendingMachine_24",
+            "class": "WillowVendingMachine"
+          },
+          "stock_count": 30,
+          "sample": [
+            {
+              "object": {
+                "path": "Loader.TheWorld:PersistentLevel.WillowWeapon_107",
+                "class": "WillowWeapon"
+              },
+              "game_stage": 10,
+              "exp_level": 10,
+              "definition_stage": 10,
+              "balance": {
+                "path": "GD_Weap_Launchers.A_Weapons.RL_Vladof",
+                "class": "WeaponBalanceDefinition"
+              }
+            },
+            {
+              "object": {
+                "path": "Loader.TheWorld:PersistentLevel.WillowWeapon_108",
+                "class": "WillowWeapon"
+              },
+              "game_stage": 10,
+              "exp_level": 10,
+              "definition_stage": 10,
+              "balance": {
+                "path": "GD_Weap_Launchers.A_Weapons.RL_Vladof",
+                "class": "WeaponBalanceDefinition"
+              }
+            },
+            {
+              "object": {
+                "path": "Loader.TheWorld:PersistentLevel.WillowWeapon_109",
+                "class": "WillowWeapon"
+              },
+              "game_stage": 10,
+              "exp_level": 10,
+              "definition_stage": 10,
+              "balance": {
+                "path": "GD_Weap_AssaultRifle.A_Weapons.AR_Jakobs",
+                "class": "WeaponBalanceDefinition"
+              }
+            },
+            {
+              "object": {
+                "path": "Loader.TheWorld:PersistentLevel.WillowWeapon_110",
+                "class": "WillowWeapon"
+              },
+              "game_stage": 10,
+              "exp_level": 10,
+              "definition_stage": 10,
+              "balance": {
+                "path": "GD_Weap_Shotgun.A_Weapons.SG_Hyperion",
+                "class": "WeaponBalanceDefinition"
+              }
+            }
+          ]
+        }
+      ],
+      "equipped": {
+        "Weapon": {
+          "object": {
+            "path": "Loader.TheWorld:PersistentLevel.WillowWeapon_115",
+            "class": "WillowWeapon"
+          },
+          "game_stage": 10,
+          "exp_level": 10,
+          "definition_stage": 10,
+          "balance": {
+            "path": "GD_Weap_Pistol.A_Weapons_Legendary.Pistol_Vladof_5_Infinity",
+            "class": "WeaponBalanceDefinition"
+          }
+        },
+        "OffHandWeapon": null
+      },
+      "drop_sample_count": 6,
+      "transaction_event_count": 0,
+      "resource_values": [
+        1260.0,
+        220.0,
+        10.0,
+        1620.0,
+        900.0,
+        33.0
+      ]
+    },
+    {
+      "file": "one-playthrough-0.1.7-20261105T175300.074748Z-3aaad5df.json",
+      "sha256": "867e138754d15ecaf80f5d350cc40093d04299b5f30fad3be598a737da568f11",
+      "export_complete": true,
+      "errors": [],
+      "player_level": 10,
+      "playthrough": 2,
+      "op": 0,
+      "controller": "Loader.TheWorld:PersistentLevel.WillowPlayerController_14",
+      "tuning_threshold": 1,
+      "tuning_errors": {},
+      "cash": 10000,
+      "accepted_mission": {
+        "status": 1,
+        "stored_stage": 10
+      },
+      "definition_stage": 10,
+      "definition_locked": true,
+      "pawns": [
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_116",
+            "class": "WillowAIPawn"
+          },
+          "game_stage": 10,
+          "exp_level": 10,
+          "inventory_spawn_stage": 10,
+          "awesome_level": 1
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_119",
+            "class": "WillowAIPawn"
+          },
+          "game_stage": 10,
+          "exp_level": 10,
+          "inventory_spawn_stage": 10,
+          "awesome_level": 1
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_112",
+            "class": "WillowAIPawn"
+          },
+          "game_stage": 10,
+          "exp_level": 9,
+          "inventory_spawn_stage": 11,
+          "awesome_level": 1
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_120",
+            "class": "WillowAIPawn"
+          },
+          "game_stage": 10,
+          "exp_level": 10,
+          "inventory_spawn_stage": 10,
+          "awesome_level": 1
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_118",
+            "class": "WillowAIPawn"
+          },
+          "game_stage": 10,
+          "exp_level": 11,
+          "inventory_spawn_stage": 8,
+          "awesome_level": 1
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_114",
+            "class": "WillowAIPawn"
+          },
+          "game_stage": 10,
+          "exp_level": 10,
+          "inventory_spawn_stage": 11,
+          "awesome_level": 1
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_111",
+            "class": "WillowAIPawn"
+          },
+          "game_stage": 10,
+          "exp_level": 9,
+          "inventory_spawn_stage": 8,
+          "awesome_level": 1
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_115",
+            "class": "WillowAIPawn"
+          },
+          "game_stage": 10,
+          "exp_level": 10,
+          "inventory_spawn_stage": 10,
+          "awesome_level": 1
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_110",
+            "class": "WillowAIPawn"
+          },
+          "game_stage": 10,
+          "exp_level": 10,
+          "inventory_spawn_stage": 10,
+          "awesome_level": 1
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_123",
+            "class": "WillowAIPawn"
+          },
+          "game_stage": 10,
+          "exp_level": 10,
+          "inventory_spawn_stage": 10,
+          "awesome_level": 1
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_122",
+            "class": "WillowAIPawn"
+          },
+          "game_stage": 10,
+          "exp_level": 10,
+          "inventory_spawn_stage": 10,
+          "awesome_level": 1
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_121",
+            "class": "WillowAIPawn"
+          },
+          "game_stage": 10,
+          "exp_level": 9,
+          "inventory_spawn_stage": 11,
+          "awesome_level": 1
+        }
+      ],
+      "vendors": [
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowVendingMachine_22",
+            "class": "WillowVendingMachine"
+          },
+          "game_stage": 10,
+          "type": {
+            "path": "GD_Balance_Shopping.VendingMachines.InteractiveObj_VendingMachine_HealthItems",
+            "class": "InteractiveObjectDefinition"
+          }
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowVendingMachine_23",
+            "class": "WillowVendingMachine"
+          },
+          "game_stage": 10,
+          "type": {
+            "path": "GD_Balance_Shopping.VendingMachines.InteractiveObj_VendingMachine_GrenadesAndAmmo",
+            "class": "InteractiveObjectDefinition"
+          }
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowVendingMachine_24",
+            "class": "WillowVendingMachine"
+          },
+          "game_stage": 10,
+          "type": {
+            "path": "GD_Balance_Shopping.VendingMachines.VendingMachine_Weapons_Definition",
+            "class": "WillowVendingMachineDefinition"
+          }
+        }
+      ],
+      "stock": [
+        {
+          "vendor": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowVendingMachine_22",
+            "class": "WillowVendingMachine"
+          },
+          "stock_count": 30,
+          "sample": [
+            {
+              "object": {
+                "path": "Loader.TheWorld:PersistentLevel.WillowClassMod_18",
+                "class": "WillowClassMod"
+              },
+              "game_stage": 10,
+              "exp_level": 10,
+              "definition_stage": 10,
+              "balance": {
+                "path": "GD_ItemGrades.ClassMods.BalDef_ClassMod_Soldier_01_Common",
+                "class": "ClassModBalanceDefinition"
+              }
+            },
+            {
+              "object": {
+                "path": "Loader.TheWorld:PersistentLevel.WillowShield_69",
+                "class": "WillowShield"
+              },
+              "game_stage": 10,
+              "exp_level": 10,
+              "definition_stage": 10,
+              "balance": {
+                "path": "GD_ItemGrades.Shields.ItemGrade_Gear_Shield_Spike_Explosive_01_Common",
+                "class": "InventoryBalanceDefinition"
+              }
+            },
+            {
+              "object": {
+                "path": "Loader.TheWorld:PersistentLevel.WillowShield_70",
+                "class": "WillowShield"
+              },
+              "game_stage": 9,
+              "exp_level": 9,
+              "definition_stage": 9,
+              "balance": {
+                "path": "GD_ItemGrades.Shields.ItemGrade_Gear_Shield_Juggernaut_01_Common",
+                "class": "InventoryBalanceDefinition"
+              }
+            },
+            {
+              "object": {
+                "path": "Loader.TheWorld:PersistentLevel.WillowShield_71",
+                "class": "WillowShield"
+              },
+              "game_stage": 9,
+              "exp_level": 9,
+              "definition_stage": 9,
+              "balance": {
+                "path": "GD_ItemGrades.Shields.ItemGrade_Gear_Shield_Standard_01_Common",
+                "class": "InventoryBalanceDefinition"
+              }
+            }
+          ]
+        },
+        {
+          "vendor": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowVendingMachine_23",
+            "class": "WillowVendingMachine"
+          },
+          "stock_count": 30,
+          "sample": [
+            {
+              "object": {
+                "path": "Loader.TheWorld:PersistentLevel.WillowGrenadeMod_45",
+                "class": "WillowGrenadeMod"
+              },
+              "game_stage": 10,
+              "exp_level": 10,
+              "definition_stage": 10,
+              "balance": {
+                "path": "GD_GrenadeMods.A_Item.GM_AreaEffect",
+                "class": "InventoryBalanceDefinition"
+              }
+            },
+            {
+              "object": {
+                "path": "Loader.TheWorld:PersistentLevel.WillowGrenadeMod_46",
+                "class": "WillowGrenadeMod"
+              },
+              "game_stage": 8,
+              "exp_level": 8,
+              "definition_stage": 8,
+              "balance": {
+                "path": "GD_GrenadeMods.A_Item.GM_Standard",
+                "class": "InventoryBalanceDefinition"
+              }
+            },
+            {
+              "object": {
+                "path": "Loader.TheWorld:PersistentLevel.WillowGrenadeMod_47",
+                "class": "WillowGrenadeMod"
+              },
+              "game_stage": 10,
+              "exp_level": 10,
+              "definition_stage": 10,
+              "balance": {
+                "path": "GD_GrenadeMods.A_Item.GM_AreaEffect",
+                "class": "InventoryBalanceDefinition"
+              }
+            },
+            {
+              "object": {
+                "path": "Loader.TheWorld:PersistentLevel.WillowGrenadeMod_48",
+                "class": "WillowGrenadeMod"
+              },
+              "game_stage": 10,
+              "exp_level": 10,
+              "definition_stage": 10,
+              "balance": {
+                "path": "GD_GrenadeMods.A_Item.GM_AreaEffect_2_Uncommon",
+                "class": "InventoryBalanceDefinition"
+              }
+            }
+          ]
+        },
+        {
+          "vendor": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowVendingMachine_24",
+            "class": "WillowVendingMachine"
+          },
+          "stock_count": 30,
+          "sample": [
+            {
+              "object": {
+                "path": "Loader.TheWorld:PersistentLevel.WillowWeapon_107",
+                "class": "WillowWeapon"
+              },
+              "game_stage": 10,
+              "exp_level": 10,
+              "definition_stage": 10,
+              "balance": {
+                "path": "GD_Weap_Launchers.A_Weapons.RL_Vladof",
+                "class": "WeaponBalanceDefinition"
+              }
+            },
+            {
+              "object": {
+                "path": "Loader.TheWorld:PersistentLevel.WillowWeapon_108",
+                "class": "WillowWeapon"
+              },
+              "game_stage": 10,
+              "exp_level": 10,
+              "definition_stage": 10,
+              "balance": {
+                "path": "GD_Weap_Launchers.A_Weapons.RL_Vladof",
+                "class": "WeaponBalanceDefinition"
+              }
+            },
+            {
+              "object": {
+                "path": "Loader.TheWorld:PersistentLevel.WillowWeapon_109",
+                "class": "WillowWeapon"
+              },
+              "game_stage": 10,
+              "exp_level": 10,
+              "definition_stage": 10,
+              "balance": {
+                "path": "GD_Weap_AssaultRifle.A_Weapons.AR_Jakobs",
+                "class": "WeaponBalanceDefinition"
+              }
+            },
+            {
+              "object": {
+                "path": "Loader.TheWorld:PersistentLevel.WillowWeapon_110",
+                "class": "WillowWeapon"
+              },
+              "game_stage": 10,
+              "exp_level": 10,
+              "definition_stage": 10,
+              "balance": {
+                "path": "GD_Weap_Shotgun.A_Weapons.SG_Hyperion",
+                "class": "WeaponBalanceDefinition"
+              }
+            }
+          ]
+        }
+      ],
+      "equipped": {
+        "Weapon": {
+          "object": {
+            "path": "Loader.TheWorld:PersistentLevel.WillowWeapon_115",
+            "class": "WillowWeapon"
+          },
+          "game_stage": 10,
+          "exp_level": 10,
+          "definition_stage": 10,
+          "balance": {
+            "path": "GD_Weap_Pistol.A_Weapons_Legendary.Pistol_Vladof_5_Infinity",
+            "class": "WeaponBalanceDefinition"
+          }
+        },
+        "OffHandWeapon": null
+      },
+      "drop_sample_count": 8,
+      "transaction_event_count": 0,
+      "resource_values": [
+        1260.0,
+        220.0,
+        10.0,
+        1620.0,
+        900.0,
+        33.0
+      ]
+    },
+    {
+      "file": "one-playthrough-0.1.7-20261105T175323.002988Z-9a6d9f27.json",
+      "sha256": "91fcc9687692e012ebb5eaa53dd99eb09cbf831da5ae5da2fe74367d80ab374e",
+      "export_complete": true,
+      "errors": [],
+      "player_level": 10,
+      "playthrough": 2,
+      "op": 0,
+      "controller": "Loader.TheWorld:PersistentLevel.WillowPlayerController_14",
+      "tuning_threshold": 1,
+      "tuning_errors": {},
+      "cash": 10008,
+      "accepted_mission": {
+        "status": 1,
+        "stored_stage": 10
+      },
+      "definition_stage": 10,
+      "definition_locked": true,
+      "pawns": [
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_119",
+            "class": "WillowAIPawn"
+          },
+          "game_stage": 10,
+          "exp_level": 10,
+          "inventory_spawn_stage": 10,
+          "awesome_level": 1
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_116",
+            "class": "WillowAIPawn"
+          },
+          "game_stage": 10,
+          "exp_level": 10,
+          "inventory_spawn_stage": 10,
+          "awesome_level": 1
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_112",
+            "class": "WillowAIPawn"
+          },
+          "game_stage": 10,
+          "exp_level": 9,
+          "inventory_spawn_stage": 11,
+          "awesome_level": 1
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_120",
+            "class": "WillowAIPawn"
+          },
+          "game_stage": 10,
+          "exp_level": 10,
+          "inventory_spawn_stage": 10,
+          "awesome_level": 1
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_118",
+            "class": "WillowAIPawn"
+          },
+          "game_stage": 10,
+          "exp_level": 11,
+          "inventory_spawn_stage": 8,
+          "awesome_level": 1
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_113",
+            "class": "WillowAIPawn"
+          },
+          "game_stage": 10,
+          "exp_level": 11,
+          "inventory_spawn_stage": 10,
+          "awesome_level": 1
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_117",
+            "class": "WillowAIPawn"
+          },
+          "game_stage": 10,
+          "exp_level": 10,
+          "inventory_spawn_stage": 8,
+          "awesome_level": 1
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_124",
+            "class": "WillowAIPawn"
+          },
+          "game_stage": 10,
+          "exp_level": 9,
+          "inventory_spawn_stage": 8,
+          "awesome_level": 1
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_122",
+            "class": "WillowAIPawn"
+          },
+          "game_stage": 10,
+          "exp_level": 10,
+          "inventory_spawn_stage": 10,
+          "awesome_level": 1
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_123",
+            "class": "WillowAIPawn"
+          },
+          "game_stage": 10,
+          "exp_level": 10,
+          "inventory_spawn_stage": 10,
+          "awesome_level": 1
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_121",
+            "class": "WillowAIPawn"
+          },
+          "game_stage": 10,
+          "exp_level": 9,
+          "inventory_spawn_stage": 11,
+          "awesome_level": 1
+        },
+        {
+          "object": {
+            "path": "Ice_Dynamic.TheWorld:PersistentLevel.WillowAIPawn_1",
+            "class": "WillowAIPawn"
+          },
+          "game_stage": 0,
+          "exp_level": 0,
+          "inventory_spawn_stage": 0,
+          "awesome_level": 0
+        }
+      ],
+      "vendors": [
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowVendingMachine_22",
+            "class": "WillowVendingMachine"
+          },
+          "game_stage": 10,
+          "type": {
+            "path": "GD_Balance_Shopping.VendingMachines.InteractiveObj_VendingMachine_HealthItems",
+            "class": "InteractiveObjectDefinition"
+          }
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowVendingMachine_23",
+            "class": "WillowVendingMachine"
+          },
+          "game_stage": 10,
+          "type": {
+            "path": "GD_Balance_Shopping.VendingMachines.InteractiveObj_VendingMachine_GrenadesAndAmmo",
+            "class": "InteractiveObjectDefinition"
+          }
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowVendingMachine_24",
+            "class": "WillowVendingMachine"
+          },
+          "game_stage": 10,
+          "type": {
+            "path": "GD_Balance_Shopping.VendingMachines.VendingMachine_Weapons_Definition",
+            "class": "WillowVendingMachineDefinition"
+          }
+        }
+      ],
+      "stock": [
+        {
+          "vendor": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowVendingMachine_22",
+            "class": "WillowVendingMachine"
+          },
+          "stock_count": 30,
+          "sample": [
+            {
+              "object": {
+                "path": "Loader.TheWorld:PersistentLevel.WillowClassMod_18",
+                "class": "WillowClassMod"
+              },
+              "game_stage": 10,
+              "exp_level": 10,
+              "definition_stage": 10,
+              "balance": {
+                "path": "GD_ItemGrades.ClassMods.BalDef_ClassMod_Soldier_01_Common",
+                "class": "ClassModBalanceDefinition"
+              }
+            },
+            {
+              "object": {
+                "path": "Loader.TheWorld:PersistentLevel.WillowShield_69",
+                "class": "WillowShield"
+              },
+              "game_stage": 10,
+              "exp_level": 10,
+              "definition_stage": 10,
+              "balance": {
+                "path": "GD_ItemGrades.Shields.ItemGrade_Gear_Shield_Spike_Explosive_01_Common",
+                "class": "InventoryBalanceDefinition"
+              }
+            },
+            {
+              "object": {
+                "path": "Loader.TheWorld:PersistentLevel.WillowShield_70",
+                "class": "WillowShield"
+              },
+              "game_stage": 9,
+              "exp_level": 9,
+              "definition_stage": 9,
+              "balance": {
+                "path": "GD_ItemGrades.Shields.ItemGrade_Gear_Shield_Juggernaut_01_Common",
+                "class": "InventoryBalanceDefinition"
+              }
+            },
+            {
+              "object": {
+                "path": "Loader.TheWorld:PersistentLevel.WillowShield_71",
+                "class": "WillowShield"
+              },
+              "game_stage": 9,
+              "exp_level": 9,
+              "definition_stage": 9,
+              "balance": {
+                "path": "GD_ItemGrades.Shields.ItemGrade_Gear_Shield_Standard_01_Common",
+                "class": "InventoryBalanceDefinition"
+              }
+            }
+          ]
+        },
+        {
+          "vendor": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowVendingMachine_23",
+            "class": "WillowVendingMachine"
+          },
+          "stock_count": 30,
+          "sample": [
+            {
+              "object": {
+                "path": "Loader.TheWorld:PersistentLevel.WillowGrenadeMod_45",
+                "class": "WillowGrenadeMod"
+              },
+              "game_stage": 10,
+              "exp_level": 10,
+              "definition_stage": 10,
+              "balance": {
+                "path": "GD_GrenadeMods.A_Item.GM_AreaEffect",
+                "class": "InventoryBalanceDefinition"
+              }
+            },
+            {
+              "object": {
+                "path": "Loader.TheWorld:PersistentLevel.WillowGrenadeMod_46",
+                "class": "WillowGrenadeMod"
+              },
+              "game_stage": 8,
+              "exp_level": 8,
+              "definition_stage": 8,
+              "balance": {
+                "path": "GD_GrenadeMods.A_Item.GM_Standard",
+                "class": "InventoryBalanceDefinition"
+              }
+            },
+            {
+              "object": {
+                "path": "Loader.TheWorld:PersistentLevel.WillowGrenadeMod_47",
+                "class": "WillowGrenadeMod"
+              },
+              "game_stage": 10,
+              "exp_level": 10,
+              "definition_stage": 10,
+              "balance": {
+                "path": "GD_GrenadeMods.A_Item.GM_AreaEffect",
+                "class": "InventoryBalanceDefinition"
+              }
+            },
+            {
+              "object": {
+                "path": "Loader.TheWorld:PersistentLevel.WillowGrenadeMod_48",
+                "class": "WillowGrenadeMod"
+              },
+              "game_stage": 10,
+              "exp_level": 10,
+              "definition_stage": 10,
+              "balance": {
+                "path": "GD_GrenadeMods.A_Item.GM_AreaEffect_2_Uncommon",
+                "class": "InventoryBalanceDefinition"
+              }
+            }
+          ]
+        },
+        {
+          "vendor": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowVendingMachine_24",
+            "class": "WillowVendingMachine"
+          },
+          "stock_count": 30,
+          "sample": [
+            {
+              "object": {
+                "path": "Loader.TheWorld:PersistentLevel.WillowWeapon_107",
+                "class": "WillowWeapon"
+              },
+              "game_stage": 10,
+              "exp_level": 10,
+              "definition_stage": 10,
+              "balance": {
+                "path": "GD_Weap_Launchers.A_Weapons.RL_Vladof",
+                "class": "WeaponBalanceDefinition"
+              }
+            },
+            {
+              "object": {
+                "path": "Loader.TheWorld:PersistentLevel.WillowWeapon_108",
+                "class": "WillowWeapon"
+              },
+              "game_stage": 10,
+              "exp_level": 10,
+              "definition_stage": 10,
+              "balance": {
+                "path": "GD_Weap_Launchers.A_Weapons.RL_Vladof",
+                "class": "WeaponBalanceDefinition"
+              }
+            },
+            {
+              "object": {
+                "path": "Loader.TheWorld:PersistentLevel.WillowWeapon_109",
+                "class": "WillowWeapon"
+              },
+              "game_stage": 10,
+              "exp_level": 10,
+              "definition_stage": 10,
+              "balance": {
+                "path": "GD_Weap_AssaultRifle.A_Weapons.AR_Jakobs",
+                "class": "WeaponBalanceDefinition"
+              }
+            },
+            {
+              "object": {
+                "path": "Loader.TheWorld:PersistentLevel.WillowWeapon_110",
+                "class": "WillowWeapon"
+              },
+              "game_stage": 10,
+              "exp_level": 10,
+              "definition_stage": 10,
+              "balance": {
+                "path": "GD_Weap_Shotgun.A_Weapons.SG_Hyperion",
+                "class": "WeaponBalanceDefinition"
+              }
+            }
+          ]
+        }
+      ],
+      "equipped": {
+        "Weapon": {
+          "object": {
+            "path": "Loader.TheWorld:PersistentLevel.WillowWeapon_115",
+            "class": "WillowWeapon"
+          },
+          "game_stage": 10,
+          "exp_level": 10,
+          "definition_stage": 10,
+          "balance": {
+            "path": "GD_Weap_Pistol.A_Weapons_Legendary.Pistol_Vladof_5_Infinity",
+            "class": "WeaponBalanceDefinition"
+          }
+        },
+        "OffHandWeapon": null
+      },
+      "drop_sample_count": 6,
+      "transaction_event_count": 0,
+      "resource_values": [
+        1260.0,
+        220.0,
+        10.0,
+        1620.0,
+        900.0,
+        33.0
+      ]
+    },
+    {
+      "file": "one-playthrough-0.1.7-20261105T175409.320916Z-dce99096.json",
+      "sha256": "510ec637c8b946936612e4f22aba9a75a3ae2353152d68c22c68c5eaa1ffe939",
+      "export_complete": true,
+      "errors": [],
+      "player_level": 10,
+      "playthrough": 2,
+      "op": 0,
+      "controller": "Loader.TheWorld:PersistentLevel.WillowPlayerController_14",
+      "tuning_threshold": 1,
+      "tuning_errors": {},
+      "cash": 10020,
+      "accepted_mission": {
+        "status": 1,
+        "stored_stage": 10
+      },
+      "definition_stage": 10,
+      "definition_locked": true,
+      "pawns": [
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_118",
+            "class": "WillowAIPawn"
+          },
+          "game_stage": 10,
+          "exp_level": 11,
+          "inventory_spawn_stage": 8,
+          "awesome_level": 1
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_112",
+            "class": "WillowAIPawn"
+          },
+          "game_stage": 10,
+          "exp_level": 9,
+          "inventory_spawn_stage": 11,
+          "awesome_level": 1
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_120",
+            "class": "WillowAIPawn"
+          },
+          "game_stage": 10,
+          "exp_level": 10,
+          "inventory_spawn_stage": 10,
+          "awesome_level": 1
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_119",
+            "class": "WillowAIPawn"
+          },
+          "game_stage": 10,
+          "exp_level": 10,
+          "inventory_spawn_stage": 10,
+          "awesome_level": 1
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_126",
+            "class": "WillowAIPawn"
+          },
+          "game_stage": 10,
+          "exp_level": 10,
+          "inventory_spawn_stage": 10,
+          "awesome_level": 1
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_124",
+            "class": "WillowAIPawn"
+          },
+          "game_stage": 10,
+          "exp_level": 9,
+          "inventory_spawn_stage": 8,
+          "awesome_level": 1
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_116",
+            "class": "WillowAIPawn"
+          },
+          "game_stage": 10,
+          "exp_level": 10,
+          "inventory_spawn_stage": 10,
+          "awesome_level": 1
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_125",
+            "class": "WillowAIPawn"
+          },
+          "game_stage": 10,
+          "exp_level": 9,
+          "inventory_spawn_stage": 8,
+          "awesome_level": 1
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_113",
+            "class": "WillowAIPawn"
+          },
+          "game_stage": 10,
+          "exp_level": 11,
+          "inventory_spawn_stage": 10,
+          "awesome_level": 1
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_117",
+            "class": "WillowAIPawn"
+          },
+          "game_stage": 10,
+          "exp_level": 10,
+          "inventory_spawn_stage": 8,
+          "awesome_level": 1
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_122",
+            "class": "WillowAIPawn"
+          },
+          "game_stage": 10,
+          "exp_level": 10,
+          "inventory_spawn_stage": 10,
+          "awesome_level": 1
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_121",
+            "class": "WillowAIPawn"
+          },
+          "game_stage": 10,
+          "exp_level": 9,
+          "inventory_spawn_stage": 11,
+          "awesome_level": 1
+        }
+      ],
+      "vendors": [
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowVendingMachine_22",
+            "class": "WillowVendingMachine"
+          },
+          "game_stage": 10,
+          "type": {
+            "path": "GD_Balance_Shopping.VendingMachines.InteractiveObj_VendingMachine_HealthItems",
+            "class": "InteractiveObjectDefinition"
+          }
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowVendingMachine_23",
+            "class": "WillowVendingMachine"
+          },
+          "game_stage": 10,
+          "type": {
+            "path": "GD_Balance_Shopping.VendingMachines.InteractiveObj_VendingMachine_GrenadesAndAmmo",
+            "class": "InteractiveObjectDefinition"
+          }
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowVendingMachine_24",
+            "class": "WillowVendingMachine"
+          },
+          "game_stage": 10,
+          "type": {
+            "path": "GD_Balance_Shopping.VendingMachines.VendingMachine_Weapons_Definition",
+            "class": "WillowVendingMachineDefinition"
+          }
+        }
+      ],
+      "stock": [
+        {
+          "vendor": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowVendingMachine_22",
+            "class": "WillowVendingMachine"
+          },
+          "stock_count": 30,
+          "sample": [
+            {
+              "object": {
+                "path": "Loader.TheWorld:PersistentLevel.WillowClassMod_18",
+                "class": "WillowClassMod"
+              },
+              "game_stage": 10,
+              "exp_level": 10,
+              "definition_stage": 10,
+              "balance": {
+                "path": "GD_ItemGrades.ClassMods.BalDef_ClassMod_Soldier_01_Common",
+                "class": "ClassModBalanceDefinition"
+              }
+            },
+            {
+              "object": {
+                "path": "Loader.TheWorld:PersistentLevel.WillowShield_69",
+                "class": "WillowShield"
+              },
+              "game_stage": 10,
+              "exp_level": 10,
+              "definition_stage": 10,
+              "balance": {
+                "path": "GD_ItemGrades.Shields.ItemGrade_Gear_Shield_Spike_Explosive_01_Common",
+                "class": "InventoryBalanceDefinition"
+              }
+            },
+            {
+              "object": {
+                "path": "Loader.TheWorld:PersistentLevel.WillowShield_70",
+                "class": "WillowShield"
+              },
+              "game_stage": 9,
+              "exp_level": 9,
+              "definition_stage": 9,
+              "balance": {
+                "path": "GD_ItemGrades.Shields.ItemGrade_Gear_Shield_Juggernaut_01_Common",
+                "class": "InventoryBalanceDefinition"
+              }
+            },
+            {
+              "object": {
+                "path": "Loader.TheWorld:PersistentLevel.WillowShield_71",
+                "class": "WillowShield"
+              },
+              "game_stage": 9,
+              "exp_level": 9,
+              "definition_stage": 9,
+              "balance": {
+                "path": "GD_ItemGrades.Shields.ItemGrade_Gear_Shield_Standard_01_Common",
+                "class": "InventoryBalanceDefinition"
+              }
+            }
+          ]
+        },
+        {
+          "vendor": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowVendingMachine_23",
+            "class": "WillowVendingMachine"
+          },
+          "stock_count": 30,
+          "sample": [
+            {
+              "object": {
+                "path": "Loader.TheWorld:PersistentLevel.WillowGrenadeMod_45",
+                "class": "WillowGrenadeMod"
+              },
+              "game_stage": 10,
+              "exp_level": 10,
+              "definition_stage": 10,
+              "balance": {
+                "path": "GD_GrenadeMods.A_Item.GM_AreaEffect",
+                "class": "InventoryBalanceDefinition"
+              }
+            },
+            {
+              "object": {
+                "path": "Loader.TheWorld:PersistentLevel.WillowGrenadeMod_46",
+                "class": "WillowGrenadeMod"
+              },
+              "game_stage": 8,
+              "exp_level": 8,
+              "definition_stage": 8,
+              "balance": {
+                "path": "GD_GrenadeMods.A_Item.GM_Standard",
+                "class": "InventoryBalanceDefinition"
+              }
+            },
+            {
+              "object": {
+                "path": "Loader.TheWorld:PersistentLevel.WillowGrenadeMod_47",
+                "class": "WillowGrenadeMod"
+              },
+              "game_stage": 10,
+              "exp_level": 10,
+              "definition_stage": 10,
+              "balance": {
+                "path": "GD_GrenadeMods.A_Item.GM_AreaEffect",
+                "class": "InventoryBalanceDefinition"
+              }
+            },
+            {
+              "object": {
+                "path": "Loader.TheWorld:PersistentLevel.WillowGrenadeMod_48",
+                "class": "WillowGrenadeMod"
+              },
+              "game_stage": 10,
+              "exp_level": 10,
+              "definition_stage": 10,
+              "balance": {
+                "path": "GD_GrenadeMods.A_Item.GM_AreaEffect_2_Uncommon",
+                "class": "InventoryBalanceDefinition"
+              }
+            }
+          ]
+        },
+        {
+          "vendor": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowVendingMachine_24",
+            "class": "WillowVendingMachine"
+          },
+          "stock_count": 30,
+          "sample": [
+            {
+              "object": {
+                "path": "Loader.TheWorld:PersistentLevel.WillowWeapon_107",
+                "class": "WillowWeapon"
+              },
+              "game_stage": 10,
+              "exp_level": 10,
+              "definition_stage": 10,
+              "balance": {
+                "path": "GD_Weap_Launchers.A_Weapons.RL_Vladof",
+                "class": "WeaponBalanceDefinition"
+              }
+            },
+            {
+              "object": {
+                "path": "Loader.TheWorld:PersistentLevel.WillowWeapon_108",
+                "class": "WillowWeapon"
+              },
+              "game_stage": 10,
+              "exp_level": 10,
+              "definition_stage": 10,
+              "balance": {
+                "path": "GD_Weap_Launchers.A_Weapons.RL_Vladof",
+                "class": "WeaponBalanceDefinition"
+              }
+            },
+            {
+              "object": {
+                "path": "Loader.TheWorld:PersistentLevel.WillowWeapon_109",
+                "class": "WillowWeapon"
+              },
+              "game_stage": 10,
+              "exp_level": 10,
+              "definition_stage": 10,
+              "balance": {
+                "path": "GD_Weap_AssaultRifle.A_Weapons.AR_Jakobs",
+                "class": "WeaponBalanceDefinition"
+              }
+            },
+            {
+              "object": {
+                "path": "Loader.TheWorld:PersistentLevel.WillowWeapon_110",
+                "class": "WillowWeapon"
+              },
+              "game_stage": 10,
+              "exp_level": 10,
+              "definition_stage": 10,
+              "balance": {
+                "path": "GD_Weap_Shotgun.A_Weapons.SG_Hyperion",
+                "class": "WeaponBalanceDefinition"
+              }
+            }
+          ]
+        }
+      ],
+      "equipped": {
+        "Weapon": {
+          "object": {
+            "path": "Loader.TheWorld:PersistentLevel.WillowWeapon_115",
+            "class": "WillowWeapon"
+          },
+          "game_stage": 10,
+          "exp_level": 10,
+          "definition_stage": 10,
+          "balance": {
+            "path": "GD_Weap_Pistol.A_Weapons_Legendary.Pistol_Vladof_5_Infinity",
+            "class": "WeaponBalanceDefinition"
+          }
+        },
+        "OffHandWeapon": null
+      },
+      "drop_sample_count": 8,
+      "transaction_event_count": 0,
+      "resource_values": [
+        1260.0,
+        220.0,
+        10.0,
+        1620.0,
+        900.0,
+        33.0
+      ]
+    },
+    {
+      "file": "one-playthrough-0.1.7-20261105T175444.224140Z-46a000c9.json",
+      "sha256": "50c582995fc773f9071ec401c582258a49033401be96aa7f7bdb387f730f867d",
+      "export_complete": true,
+      "errors": [],
+      "player_level": 10,
+      "playthrough": 2,
+      "op": 0,
+      "controller": "Loader.TheWorld:PersistentLevel.WillowPlayerController_14",
+      "tuning_threshold": 1,
+      "tuning_errors": {},
+      "cash": 10020,
+      "accepted_mission": {
+        "status": 1,
+        "stored_stage": 10
+      },
+      "definition_stage": 10,
+      "definition_locked": true,
+      "pawns": [
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_113",
+            "class": "WillowAIPawn"
+          },
+          "game_stage": 10,
+          "exp_level": 11,
+          "inventory_spawn_stage": 10,
+          "awesome_level": 1
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_125",
+            "class": "WillowAIPawn"
+          },
+          "game_stage": 10,
+          "exp_level": 9,
+          "inventory_spawn_stage": 8,
+          "awesome_level": 1
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_124",
+            "class": "WillowAIPawn"
+          },
+          "game_stage": 10,
+          "exp_level": 9,
+          "inventory_spawn_stage": 8,
+          "awesome_level": 1
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_116",
+            "class": "WillowAIPawn"
+          },
+          "game_stage": 10,
+          "exp_level": 10,
+          "inventory_spawn_stage": 10,
+          "awesome_level": 1
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_126",
+            "class": "WillowAIPawn"
+          },
+          "game_stage": 10,
+          "exp_level": 10,
+          "inventory_spawn_stage": 10,
+          "awesome_level": 1
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_119",
+            "class": "WillowAIPawn"
+          },
+          "game_stage": 10,
+          "exp_level": 10,
+          "inventory_spawn_stage": 10,
+          "awesome_level": 1
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_112",
+            "class": "WillowAIPawn"
+          },
+          "game_stage": 10,
+          "exp_level": 9,
+          "inventory_spawn_stage": 11,
+          "awesome_level": 1
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_127",
+            "class": "WillowAIPawn"
+          },
+          "game_stage": 10,
+          "exp_level": 11,
+          "inventory_spawn_stage": 9,
+          "awesome_level": 1
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_118",
+            "class": "WillowAIPawn"
+          },
+          "game_stage": 10,
+          "exp_level": 11,
+          "inventory_spawn_stage": 8,
+          "awesome_level": 1
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_120",
+            "class": "WillowAIPawn"
+          },
+          "game_stage": 10,
+          "exp_level": 10,
+          "inventory_spawn_stage": 10,
+          "awesome_level": 1
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_128",
+            "class": "WillowAIPawn"
+          },
+          "game_stage": 10,
+          "exp_level": 10,
+          "inventory_spawn_stage": 10,
+          "awesome_level": 1
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_122",
+            "class": "WillowAIPawn"
+          },
+          "game_stage": 10,
+          "exp_level": 10,
+          "inventory_spawn_stage": 10,
+          "awesome_level": 1
+        }
+      ],
+      "vendors": [
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowVendingMachine_22",
+            "class": "WillowVendingMachine"
+          },
+          "game_stage": 10,
+          "type": {
+            "path": "GD_Balance_Shopping.VendingMachines.InteractiveObj_VendingMachine_HealthItems",
+            "class": "InteractiveObjectDefinition"
+          }
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowVendingMachine_23",
+            "class": "WillowVendingMachine"
+          },
+          "game_stage": 10,
+          "type": {
+            "path": "GD_Balance_Shopping.VendingMachines.InteractiveObj_VendingMachine_GrenadesAndAmmo",
+            "class": "InteractiveObjectDefinition"
+          }
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowVendingMachine_24",
+            "class": "WillowVendingMachine"
+          },
+          "game_stage": 10,
+          "type": {
+            "path": "GD_Balance_Shopping.VendingMachines.VendingMachine_Weapons_Definition",
+            "class": "WillowVendingMachineDefinition"
+          }
+        }
+      ],
+      "stock": [
+        {
+          "vendor": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowVendingMachine_22",
+            "class": "WillowVendingMachine"
+          },
+          "stock_count": 30,
+          "sample": [
+            {
+              "object": {
+                "path": "Loader.TheWorld:PersistentLevel.WillowClassMod_18",
+                "class": "WillowClassMod"
+              },
+              "game_stage": 10,
+              "exp_level": 10,
+              "definition_stage": 10,
+              "balance": {
+                "path": "GD_ItemGrades.ClassMods.BalDef_ClassMod_Soldier_01_Common",
+                "class": "ClassModBalanceDefinition"
+              }
+            },
+            {
+              "object": {
+                "path": "Loader.TheWorld:PersistentLevel.WillowShield_69",
+                "class": "WillowShield"
+              },
+              "game_stage": 10,
+              "exp_level": 10,
+              "definition_stage": 10,
+              "balance": {
+                "path": "GD_ItemGrades.Shields.ItemGrade_Gear_Shield_Spike_Explosive_01_Common",
+                "class": "InventoryBalanceDefinition"
+              }
+            },
+            {
+              "object": {
+                "path": "Loader.TheWorld:PersistentLevel.WillowShield_70",
+                "class": "WillowShield"
+              },
+              "game_stage": 9,
+              "exp_level": 9,
+              "definition_stage": 9,
+              "balance": {
+                "path": "GD_ItemGrades.Shields.ItemGrade_Gear_Shield_Juggernaut_01_Common",
+                "class": "InventoryBalanceDefinition"
+              }
+            },
+            {
+              "object": {
+                "path": "Loader.TheWorld:PersistentLevel.WillowShield_71",
+                "class": "WillowShield"
+              },
+              "game_stage": 9,
+              "exp_level": 9,
+              "definition_stage": 9,
+              "balance": {
+                "path": "GD_ItemGrades.Shields.ItemGrade_Gear_Shield_Standard_01_Common",
+                "class": "InventoryBalanceDefinition"
+              }
+            }
+          ]
+        },
+        {
+          "vendor": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowVendingMachine_23",
+            "class": "WillowVendingMachine"
+          },
+          "stock_count": 30,
+          "sample": [
+            {
+              "object": {
+                "path": "Loader.TheWorld:PersistentLevel.WillowGrenadeMod_45",
+                "class": "WillowGrenadeMod"
+              },
+              "game_stage": 10,
+              "exp_level": 10,
+              "definition_stage": 10,
+              "balance": {
+                "path": "GD_GrenadeMods.A_Item.GM_AreaEffect",
+                "class": "InventoryBalanceDefinition"
+              }
+            },
+            {
+              "object": {
+                "path": "Loader.TheWorld:PersistentLevel.WillowGrenadeMod_46",
+                "class": "WillowGrenadeMod"
+              },
+              "game_stage": 8,
+              "exp_level": 8,
+              "definition_stage": 8,
+              "balance": {
+                "path": "GD_GrenadeMods.A_Item.GM_Standard",
+                "class": "InventoryBalanceDefinition"
+              }
+            },
+            {
+              "object": {
+                "path": "Loader.TheWorld:PersistentLevel.WillowGrenadeMod_47",
+                "class": "WillowGrenadeMod"
+              },
+              "game_stage": 10,
+              "exp_level": 10,
+              "definition_stage": 10,
+              "balance": {
+                "path": "GD_GrenadeMods.A_Item.GM_AreaEffect",
+                "class": "InventoryBalanceDefinition"
+              }
+            },
+            {
+              "object": {
+                "path": "Loader.TheWorld:PersistentLevel.WillowGrenadeMod_48",
+                "class": "WillowGrenadeMod"
+              },
+              "game_stage": 10,
+              "exp_level": 10,
+              "definition_stage": 10,
+              "balance": {
+                "path": "GD_GrenadeMods.A_Item.GM_AreaEffect_2_Uncommon",
+                "class": "InventoryBalanceDefinition"
+              }
+            }
+          ]
+        },
+        {
+          "vendor": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowVendingMachine_24",
+            "class": "WillowVendingMachine"
+          },
+          "stock_count": 30,
+          "sample": [
+            {
+              "object": {
+                "path": "Loader.TheWorld:PersistentLevel.WillowWeapon_107",
+                "class": "WillowWeapon"
+              },
+              "game_stage": 10,
+              "exp_level": 10,
+              "definition_stage": 10,
+              "balance": {
+                "path": "GD_Weap_Launchers.A_Weapons.RL_Vladof",
+                "class": "WeaponBalanceDefinition"
+              }
+            },
+            {
+              "object": {
+                "path": "Loader.TheWorld:PersistentLevel.WillowWeapon_108",
+                "class": "WillowWeapon"
+              },
+              "game_stage": 10,
+              "exp_level": 10,
+              "definition_stage": 10,
+              "balance": {
+                "path": "GD_Weap_Launchers.A_Weapons.RL_Vladof",
+                "class": "WeaponBalanceDefinition"
+              }
+            },
+            {
+              "object": {
+                "path": "Loader.TheWorld:PersistentLevel.WillowWeapon_109",
+                "class": "WillowWeapon"
+              },
+              "game_stage": 10,
+              "exp_level": 10,
+              "definition_stage": 10,
+              "balance": {
+                "path": "GD_Weap_AssaultRifle.A_Weapons.AR_Jakobs",
+                "class": "WeaponBalanceDefinition"
+              }
+            },
+            {
+              "object": {
+                "path": "Loader.TheWorld:PersistentLevel.WillowWeapon_110",
+                "class": "WillowWeapon"
+              },
+              "game_stage": 10,
+              "exp_level": 10,
+              "definition_stage": 10,
+              "balance": {
+                "path": "GD_Weap_Shotgun.A_Weapons.SG_Hyperion",
+                "class": "WeaponBalanceDefinition"
+              }
+            }
+          ]
+        }
+      ],
+      "equipped": {
+        "Weapon": {
+          "object": {
+            "path": "Loader.TheWorld:PersistentLevel.WillowWeapon_115",
+            "class": "WillowWeapon"
+          },
+          "game_stage": 10,
+          "exp_level": 10,
+          "definition_stage": 10,
+          "balance": {
+            "path": "GD_Weap_Pistol.A_Weapons_Legendary.Pistol_Vladof_5_Infinity",
+            "class": "WeaponBalanceDefinition"
+          }
+        },
+        "OffHandWeapon": null
+      },
+      "drop_sample_count": 8,
+      "transaction_event_count": 0,
+      "resource_values": [
+        1260.0,
+        220.0,
+        10.0,
+        1620.0,
+        900.0,
+        33.0
+      ]
+    },
+    {
+      "file": "one-playthrough-0.1.7-20261105T175451.088673Z-a0aaf658.json",
+      "sha256": "85df4685bee3d9560c2dfa7abb932323b6ffca85afa602ef3cb5526d384693b2",
+      "export_complete": true,
+      "errors": [],
+      "player_level": 10,
+      "playthrough": 2,
+      "op": 0,
+      "controller": "Loader.TheWorld:PersistentLevel.WillowPlayerController_14",
+      "tuning_threshold": 1,
+      "tuning_errors": {},
+      "cash": 10020,
+      "accepted_mission": {
+        "status": 1,
+        "stored_stage": 10
+      },
+      "definition_stage": 10,
+      "definition_locked": true,
+      "pawns": [
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_113",
+            "class": "WillowAIPawn"
+          },
+          "game_stage": 10,
+          "exp_level": 11,
+          "inventory_spawn_stage": 10,
+          "awesome_level": 1
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_125",
+            "class": "WillowAIPawn"
+          },
+          "game_stage": 10,
+          "exp_level": 9,
+          "inventory_spawn_stage": 8,
+          "awesome_level": 1
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_124",
+            "class": "WillowAIPawn"
+          },
+          "game_stage": 10,
+          "exp_level": 9,
+          "inventory_spawn_stage": 8,
+          "awesome_level": 1
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_116",
+            "class": "WillowAIPawn"
+          },
+          "game_stage": 10,
+          "exp_level": 10,
+          "inventory_spawn_stage": 10,
+          "awesome_level": 1
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_126",
+            "class": "WillowAIPawn"
+          },
+          "game_stage": 10,
+          "exp_level": 10,
+          "inventory_spawn_stage": 10,
+          "awesome_level": 1
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_119",
+            "class": "WillowAIPawn"
+          },
+          "game_stage": 10,
+          "exp_level": 10,
+          "inventory_spawn_stage": 10,
+          "awesome_level": 1
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_127",
+            "class": "WillowAIPawn"
+          },
+          "game_stage": 10,
+          "exp_level": 11,
+          "inventory_spawn_stage": 9,
+          "awesome_level": 1
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_112",
+            "class": "WillowAIPawn"
+          },
+          "game_stage": 10,
+          "exp_level": 9,
+          "inventory_spawn_stage": 11,
+          "awesome_level": 1
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_118",
+            "class": "WillowAIPawn"
+          },
+          "game_stage": 10,
+          "exp_level": 11,
+          "inventory_spawn_stage": 8,
+          "awesome_level": 1
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_120",
+            "class": "WillowAIPawn"
+          },
+          "game_stage": 10,
+          "exp_level": 10,
+          "inventory_spawn_stage": 10,
+          "awesome_level": 1
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_128",
+            "class": "WillowAIPawn"
+          },
+          "game_stage": 10,
+          "exp_level": 10,
+          "inventory_spawn_stage": 10,
+          "awesome_level": 1
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_122",
+            "class": "WillowAIPawn"
+          },
+          "game_stage": 10,
+          "exp_level": 10,
+          "inventory_spawn_stage": 10,
+          "awesome_level": 1
+        }
+      ],
+      "vendors": [
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowVendingMachine_22",
+            "class": "WillowVendingMachine"
+          },
+          "game_stage": 10,
+          "type": {
+            "path": "GD_Balance_Shopping.VendingMachines.InteractiveObj_VendingMachine_HealthItems",
+            "class": "InteractiveObjectDefinition"
+          }
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowVendingMachine_23",
+            "class": "WillowVendingMachine"
+          },
+          "game_stage": 10,
+          "type": {
+            "path": "GD_Balance_Shopping.VendingMachines.InteractiveObj_VendingMachine_GrenadesAndAmmo",
+            "class": "InteractiveObjectDefinition"
+          }
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowVendingMachine_24",
+            "class": "WillowVendingMachine"
+          },
+          "game_stage": 10,
+          "type": {
+            "path": "GD_Balance_Shopping.VendingMachines.VendingMachine_Weapons_Definition",
+            "class": "WillowVendingMachineDefinition"
+          }
+        }
+      ],
+      "stock": [
+        {
+          "vendor": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowVendingMachine_22",
+            "class": "WillowVendingMachine"
+          },
+          "stock_count": 30,
+          "sample": [
+            {
+              "object": {
+                "path": "Loader.TheWorld:PersistentLevel.WillowClassMod_18",
+                "class": "WillowClassMod"
+              },
+              "game_stage": 10,
+              "exp_level": 10,
+              "definition_stage": 10,
+              "balance": {
+                "path": "GD_ItemGrades.ClassMods.BalDef_ClassMod_Soldier_01_Common",
+                "class": "ClassModBalanceDefinition"
+              }
+            },
+            {
+              "object": {
+                "path": "Loader.TheWorld:PersistentLevel.WillowShield_69",
+                "class": "WillowShield"
+              },
+              "game_stage": 10,
+              "exp_level": 10,
+              "definition_stage": 10,
+              "balance": {
+                "path": "GD_ItemGrades.Shields.ItemGrade_Gear_Shield_Spike_Explosive_01_Common",
+                "class": "InventoryBalanceDefinition"
+              }
+            },
+            {
+              "object": {
+                "path": "Loader.TheWorld:PersistentLevel.WillowShield_70",
+                "class": "WillowShield"
+              },
+              "game_stage": 9,
+              "exp_level": 9,
+              "definition_stage": 9,
+              "balance": {
+                "path": "GD_ItemGrades.Shields.ItemGrade_Gear_Shield_Juggernaut_01_Common",
+                "class": "InventoryBalanceDefinition"
+              }
+            },
+            {
+              "object": {
+                "path": "Loader.TheWorld:PersistentLevel.WillowShield_71",
+                "class": "WillowShield"
+              },
+              "game_stage": 9,
+              "exp_level": 9,
+              "definition_stage": 9,
+              "balance": {
+                "path": "GD_ItemGrades.Shields.ItemGrade_Gear_Shield_Standard_01_Common",
+                "class": "InventoryBalanceDefinition"
+              }
+            }
+          ]
+        },
+        {
+          "vendor": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowVendingMachine_23",
+            "class": "WillowVendingMachine"
+          },
+          "stock_count": 30,
+          "sample": [
+            {
+              "object": {
+                "path": "Loader.TheWorld:PersistentLevel.WillowGrenadeMod_45",
+                "class": "WillowGrenadeMod"
+              },
+              "game_stage": 10,
+              "exp_level": 10,
+              "definition_stage": 10,
+              "balance": {
+                "path": "GD_GrenadeMods.A_Item.GM_AreaEffect",
+                "class": "InventoryBalanceDefinition"
+              }
+            },
+            {
+              "object": {
+                "path": "Loader.TheWorld:PersistentLevel.WillowGrenadeMod_46",
+                "class": "WillowGrenadeMod"
+              },
+              "game_stage": 8,
+              "exp_level": 8,
+              "definition_stage": 8,
+              "balance": {
+                "path": "GD_GrenadeMods.A_Item.GM_Standard",
+                "class": "InventoryBalanceDefinition"
+              }
+            },
+            {
+              "object": {
+                "path": "Loader.TheWorld:PersistentLevel.WillowGrenadeMod_47",
+                "class": "WillowGrenadeMod"
+              },
+              "game_stage": 10,
+              "exp_level": 10,
+              "definition_stage": 10,
+              "balance": {
+                "path": "GD_GrenadeMods.A_Item.GM_AreaEffect",
+                "class": "InventoryBalanceDefinition"
+              }
+            },
+            {
+              "object": {
+                "path": "Loader.TheWorld:PersistentLevel.WillowGrenadeMod_48",
+                "class": "WillowGrenadeMod"
+              },
+              "game_stage": 10,
+              "exp_level": 10,
+              "definition_stage": 10,
+              "balance": {
+                "path": "GD_GrenadeMods.A_Item.GM_AreaEffect_2_Uncommon",
+                "class": "InventoryBalanceDefinition"
+              }
+            }
+          ]
+        },
+        {
+          "vendor": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowVendingMachine_24",
+            "class": "WillowVendingMachine"
+          },
+          "stock_count": 30,
+          "sample": [
+            {
+              "object": {
+                "path": "Loader.TheWorld:PersistentLevel.WillowWeapon_107",
+                "class": "WillowWeapon"
+              },
+              "game_stage": 10,
+              "exp_level": 10,
+              "definition_stage": 10,
+              "balance": {
+                "path": "GD_Weap_Launchers.A_Weapons.RL_Vladof",
+                "class": "WeaponBalanceDefinition"
+              }
+            },
+            {
+              "object": {
+                "path": "Loader.TheWorld:PersistentLevel.WillowWeapon_108",
+                "class": "WillowWeapon"
+              },
+              "game_stage": 10,
+              "exp_level": 10,
+              "definition_stage": 10,
+              "balance": {
+                "path": "GD_Weap_Launchers.A_Weapons.RL_Vladof",
+                "class": "WeaponBalanceDefinition"
+              }
+            },
+            {
+              "object": {
+                "path": "Loader.TheWorld:PersistentLevel.WillowWeapon_109",
+                "class": "WillowWeapon"
+              },
+              "game_stage": 10,
+              "exp_level": 10,
+              "definition_stage": 10,
+              "balance": {
+                "path": "GD_Weap_AssaultRifle.A_Weapons.AR_Jakobs",
+                "class": "WeaponBalanceDefinition"
+              }
+            },
+            {
+              "object": {
+                "path": "Loader.TheWorld:PersistentLevel.WillowWeapon_110",
+                "class": "WillowWeapon"
+              },
+              "game_stage": 10,
+              "exp_level": 10,
+              "definition_stage": 10,
+              "balance": {
+                "path": "GD_Weap_Shotgun.A_Weapons.SG_Hyperion",
+                "class": "WeaponBalanceDefinition"
+              }
+            }
+          ]
+        }
+      ],
+      "equipped": {
+        "Weapon": {
+          "object": {
+            "path": "Loader.TheWorld:PersistentLevel.WillowWeapon_115",
+            "class": "WillowWeapon"
+          },
+          "game_stage": 10,
+          "exp_level": 10,
+          "definition_stage": 10,
+          "balance": {
+            "path": "GD_Weap_Pistol.A_Weapons_Legendary.Pistol_Vladof_5_Infinity",
+            "class": "WeaponBalanceDefinition"
+          }
+        },
+        "OffHandWeapon": null
+      },
+      "drop_sample_count": 8,
+      "transaction_event_count": 0,
+      "resource_values": [
+        1260.0,
+        220.0,
+        10.0,
+        1620.0,
+        900.0,
+        33.0
+      ]
+    },
+    {
+      "file": "one-playthrough-0.1.7-20261105T175518.298869Z-4e705911.json",
+      "sha256": "52f7e1ff867c4ca307649c0f34ebf22e6256a1e04975655b762dd0e88f7a317b",
+      "export_complete": true,
+      "errors": [],
+      "player_level": 10,
+      "playthrough": 2,
+      "op": 0,
+      "controller": "Loader.TheWorld:PersistentLevel.WillowPlayerController_17",
+      "tuning_threshold": 1,
+      "tuning_errors": {},
+      "cash": 10020,
+      "accepted_mission": {
+        "status": 1,
+        "stored_stage": 10
+      },
+      "definition_stage": 10,
+      "definition_locked": true,
+      "pawns": [
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_130",
+            "class": "WillowAIPawn"
+          },
+          "game_stage": 10,
+          "exp_level": 12,
+          "inventory_spawn_stage": 10,
+          "awesome_level": 1
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_134",
+            "class": "WillowAIPawn"
+          },
+          "game_stage": 10,
+          "exp_level": 10,
+          "inventory_spawn_stage": 10,
+          "awesome_level": 1
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_129",
+            "class": "WillowAIPawn"
+          },
+          "game_stage": 10,
+          "exp_level": 10,
+          "inventory_spawn_stage": 10,
+          "awesome_level": 1
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_131",
+            "class": "WillowAIPawn"
+          },
+          "game_stage": 10,
+          "exp_level": 10,
+          "inventory_spawn_stage": 10,
+          "awesome_level": 1
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_133",
+            "class": "WillowAIPawn"
+          },
+          "game_stage": 10,
+          "exp_level": 12,
+          "inventory_spawn_stage": 11,
+          "awesome_level": 1
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_135",
+            "class": "WillowAIPawn"
+          },
+          "game_stage": 10,
+          "exp_level": 12,
+          "inventory_spawn_stage": 10,
+          "awesome_level": 1
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_136",
+            "class": "WillowAIPawn"
+          },
+          "game_stage": 10,
+          "exp_level": 10,
+          "inventory_spawn_stage": 9,
+          "awesome_level": 1
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowAIPawn_132",
+            "class": "WillowAIPawn"
+          },
+          "game_stage": 10,
+          "exp_level": 11,
+          "inventory_spawn_stage": 10,
+          "awesome_level": 1
+        },
+        {
+          "object": {
+            "path": "Ice_Dynamic.TheWorld:PersistentLevel.WillowAIPawn_1",
+            "class": "WillowAIPawn"
+          },
+          "game_stage": 0,
+          "exp_level": 0,
+          "inventory_spawn_stage": 0,
+          "awesome_level": 0
+        }
+      ],
+      "vendors": [
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowVendingMachine_27",
+            "class": "WillowVendingMachine"
+          },
+          "game_stage": 10,
+          "type": {
+            "path": "GD_Balance_Shopping.VendingMachines.VendingMachine_Weapons_Definition",
+            "class": "WillowVendingMachineDefinition"
+          }
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowVendingMachine_26",
+            "class": "WillowVendingMachine"
+          },
+          "game_stage": 10,
+          "type": {
+            "path": "GD_Balance_Shopping.VendingMachines.InteractiveObj_VendingMachine_GrenadesAndAmmo",
+            "class": "InteractiveObjectDefinition"
+          }
+        },
+        {
+          "object": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowVendingMachine_25",
+            "class": "WillowVendingMachine"
+          },
+          "game_stage": 10,
+          "type": {
+            "path": "GD_Balance_Shopping.VendingMachines.InteractiveObj_VendingMachine_HealthItems",
+            "class": "InteractiveObjectDefinition"
+          }
+        }
+      ],
+      "stock": [
+        {
+          "vendor": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowVendingMachine_27",
+            "class": "WillowVendingMachine"
+          },
+          "stock_count": 30,
+          "sample": [
+            {
+              "object": {
+                "path": "Loader.TheWorld:PersistentLevel.WillowWeapon_124",
+                "class": "WillowWeapon"
+              },
+              "game_stage": 8,
+              "exp_level": 8,
+              "definition_stage": 8,
+              "balance": {
+                "path": "GD_Weap_SniperRifles.A_Weapons.Sniper_Dahl",
+                "class": "WeaponBalanceDefinition"
+              }
+            },
+            {
+              "object": {
+                "path": "Loader.TheWorld:PersistentLevel.WillowWeapon_125",
+                "class": "WillowWeapon"
+              },
+              "game_stage": 8,
+              "exp_level": 8,
+              "definition_stage": 8,
+              "balance": {
+                "path": "GD_Weap_SMG.A_Weapons.SMG_Bandit",
+                "class": "WeaponBalanceDefinition"
+              }
+            },
+            {
+              "object": {
+                "path": "Loader.TheWorld:PersistentLevel.WillowWeapon_126",
+                "class": "WillowWeapon"
+              },
+              "game_stage": 10,
+              "exp_level": 10,
+              "definition_stage": 10,
+              "balance": {
+                "path": "GD_Weap_Launchers.A_Weapons.RL_Torgue",
+                "class": "WeaponBalanceDefinition"
+              }
+            },
+            {
+              "object": {
+                "path": "Loader.TheWorld:PersistentLevel.WillowWeapon_127",
+                "class": "WillowWeapon"
+              },
+              "game_stage": 8,
+              "exp_level": 8,
+              "definition_stage": 8,
+              "balance": {
+                "path": "GD_Weap_SMG.A_Weapons.SMG_Bandit",
+                "class": "WeaponBalanceDefinition"
+              }
+            }
+          ]
+        },
+        {
+          "vendor": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowVendingMachine_26",
+            "class": "WillowVendingMachine"
+          },
+          "stock_count": 30,
+          "sample": [
+            {
+              "object": {
+                "path": "Loader.TheWorld:PersistentLevel.WillowGrenadeMod_55",
+                "class": "WillowGrenadeMod"
+              },
+              "game_stage": 10,
+              "exp_level": 10,
+              "definition_stage": 10,
+              "balance": {
+                "path": "GD_GrenadeMods.A_Item.GM_AreaEffect_2_Uncommon",
+                "class": "InventoryBalanceDefinition"
+              }
+            },
+            {
+              "object": {
+                "path": "Loader.TheWorld:PersistentLevel.WillowGrenadeMod_56",
+                "class": "WillowGrenadeMod"
+              },
+              "game_stage": 10,
+              "exp_level": 10,
+              "definition_stage": 10,
+              "balance": {
+                "path": "GD_GrenadeMods.A_Item.GM_AreaEffect",
+                "class": "InventoryBalanceDefinition"
+              }
+            },
+            {
+              "object": {
+                "path": "Loader.TheWorld:PersistentLevel.WillowGrenadeMod_57",
+                "class": "WillowGrenadeMod"
+              },
+              "game_stage": 9,
+              "exp_level": 9,
+              "definition_stage": 9,
+              "balance": {
+                "path": "GD_GrenadeMods.A_Item.GM_Standard",
+                "class": "InventoryBalanceDefinition"
+              }
+            },
+            {
+              "object": {
+                "path": "Loader.TheWorld:PersistentLevel.WillowGrenadeMod_58",
+                "class": "WillowGrenadeMod"
+              },
+              "game_stage": 10,
+              "exp_level": 10,
+              "definition_stage": 10,
+              "balance": {
+                "path": "GD_GrenadeMods.A_Item.GM_Standard",
+                "class": "InventoryBalanceDefinition"
+              }
+            }
+          ]
+        },
+        {
+          "vendor": {
+            "path": "Ice_P.TheWorld:PersistentLevel.WillowVendingMachine_25",
+            "class": "WillowVendingMachine"
+          },
+          "stock_count": 30,
+          "sample": [
+            {
+              "object": {
+                "path": "Loader.TheWorld:PersistentLevel.WillowClassMod_23",
+                "class": "WillowClassMod"
+              },
+              "game_stage": 9,
+              "exp_level": 9,
+              "definition_stage": 9,
+              "balance": {
+                "path": "GD_ItemGrades.ClassMods.BalDef_ClassMod_Soldier_01_Common",
+                "class": "ClassModBalanceDefinition"
+              }
+            },
+            {
+              "object": {
+                "path": "Loader.TheWorld:PersistentLevel.WillowShield_79",
+                "class": "WillowShield"
+              },
+              "game_stage": 8,
+              "exp_level": 8,
+              "definition_stage": 8,
+              "balance": {
+                "path": "GD_ItemGrades.Shields.ItemGrade_Gear_Shield_Standard_01_Common",
+                "class": "InventoryBalanceDefinition"
+              }
+            },
+            {
+              "object": {
+                "path": "Loader.TheWorld:PersistentLevel.WillowShield_80",
+                "class": "WillowShield"
+              },
+              "game_stage": 10,
+              "exp_level": 10,
+              "definition_stage": 10,
+              "balance": {
+                "path": "GD_ItemGrades.Shields.ItemGrade_Gear_Shield_Standard_01_Common",
+                "class": "InventoryBalanceDefinition"
+              }
+            },
+            {
+              "object": {
+                "path": "Loader.TheWorld:PersistentLevel.WillowClassMod_24",
+                "class": "WillowClassMod"
+              },
+              "game_stage": 8,
+              "exp_level": 8,
+              "definition_stage": 8,
+              "balance": {
+                "path": "GD_ItemGrades.ClassMods.BalDef_ClassMod_Mercenary_01_Common",
+                "class": "ClassModBalanceDefinition"
+              }
+            }
+          ]
+        }
+      ],
+      "equipped": {
+        "Weapon": {
+          "object": {
+            "path": "Loader.TheWorld:PersistentLevel.WillowWeapon_120",
+            "class": "WillowWeapon"
+          },
+          "game_stage": 10,
+          "exp_level": 10,
+          "definition_stage": 10,
+          "balance": {
+            "path": "GD_Weap_Pistol.A_Weapons_Legendary.Pistol_Torgue_5_Calla",
+            "class": "WeaponBalanceDefinition"
+          }
+        },
+        "OffHandWeapon": null
+      },
+      "drop_sample_count": 6,
+      "transaction_event_count": 0,
+      "resource_values": [
+        1260.0,
+        220.0,
+        10.0,
+        1620.0,
+        900.0,
+        33.0
+      ]
+    }
+  ],
+  "checks": {
+    "stage10_ai_exp_levels": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "vendor_game_stages": [
+      10
+    ],
+    "sampled_stock_exp_levels": [
+      8,
+      9,
+      10
+    ],
+    "vendor_stock_stage_level_definition_agree": true,
+    "mission_stage10_persisted": true,
+    "cash_net_change": 20,
+    "cash_persisted_after_controller_reload": true,
+    "equipped_sample_stage10_preserved": true,
+    "unique_recorded_activity": [
+      {
+        "sequence": 245,
+        "utc": "2026-11-05T17:51:21.783+00:00",
+        "kind": "equipment:AddInventory",
+        "phase": "POST_UNCONDITIONAL",
+        "object": {
+          "path": "Loader.TheWorld:PersistentLevel.WillowInventoryManager_132",
+          "class": "WillowInventoryManager"
+        },
+        "new_item": {
+          "path": "Loader.TheWorld:PersistentLevel.WillowShield_67",
+          "class": "WillowShield"
+        }
+      },
+      {
+        "sequence": 251,
+        "utc": "2026-11-05T17:51:44.723+00:00",
+        "kind": "equipment:AddInventory",
+        "phase": "POST_UNCONDITIONAL",
+        "object": {
+          "path": "Loader.TheWorld:PersistentLevel.WillowInventoryManager_132",
+          "class": "WillowInventoryManager"
+        },
+        "new_item": {
+          "path": "Loader.TheWorld:PersistentLevel.WillowWeapon_115",
+          "class": "WillowWeapon"
+        }
+      },
+      {
+        "sequence": 252,
+        "utc": "2026-11-05T17:51:47.109+00:00",
+        "kind": "equipment:AddInventory",
+        "phase": "POST_UNCONDITIONAL",
+        "object": {
+          "path": "Loader.TheWorld:PersistentLevel.WillowInventoryManager_132",
+          "class": "WillowInventoryManager"
+        },
+        "new_item": {
+          "path": "Loader.TheWorld:PersistentLevel.WillowWeapon_116",
+          "class": "WillowWeapon"
+        }
+      },
+      {
+        "sequence": 253,
+        "utc": "2026-11-05T17:51:50.661+00:00",
+        "kind": "equipment:AddInventory",
+        "phase": "POST_UNCONDITIONAL",
+        "object": {
+          "path": "Loader.TheWorld:PersistentLevel.WillowInventoryManager_132",
+          "class": "WillowInventoryManager"
+        },
+        "new_item": {
+          "path": "Loader.TheWorld:PersistentLevel.WillowShield_75",
+          "class": "WillowShield"
+        }
+      },
+      {
+        "sequence": 255,
+        "utc": "2026-11-05T17:53:11.122+00:00",
+        "kind": "equipment:AddInventory",
+        "phase": "POST_UNCONDITIONAL",
+        "object": {
+          "path": "Loader.TheWorld:PersistentLevel.WillowInventoryManager_132",
+          "class": "WillowInventoryManager"
+        },
+        "new_item": {
+          "path": "Loader.TheWorld:PersistentLevel.WillowUsableItem_90",
+          "class": "WillowUsableItem"
+        }
+      },
+      {
+        "sequence": 256,
+        "utc": "2026-11-05T17:53:14.469+00:00",
+        "kind": "equipment:AddInventory",
+        "phase": "POST_UNCONDITIONAL",
+        "object": {
+          "path": "Loader.TheWorld:PersistentLevel.WillowInventoryManager_132",
+          "class": "WillowInventoryManager"
+        },
+        "new_item": {
+          "path": "Loader.TheWorld:PersistentLevel.WillowUsableItem_89",
+          "class": "WillowUsableItem"
+        }
+      },
+      {
+        "sequence": 257,
+        "utc": "2026-11-05T17:53:18.646+00:00",
+        "kind": "equipment:AddInventory",
+        "phase": "POST_UNCONDITIONAL",
+        "object": {
+          "path": "Loader.TheWorld:PersistentLevel.WillowInventoryManager_132",
+          "class": "WillowInventoryManager"
+        },
+        "new_item": {
+          "path": "Loader.TheWorld:PersistentLevel.WillowClassMod_20",
+          "class": "WillowClassMod"
+        }
+      },
+      {
+        "sequence": 258,
+        "utc": "2026-11-05T17:53:23.733+00:00",
+        "kind": "combat:TakeDamage",
+        "phase": "PRE",
+        "object": {
+          "path": "Loader.TheWorld:PersistentLevel.WillowPlayerPawn_4",
+          "class": "WillowPlayerPawn"
+        },
+        "new_item": null
+      },
+      {
+        "sequence": 259,
+        "utc": "2026-11-05T17:53:23.734+00:00",
+        "kind": "combat:TakeDamage",
+        "phase": "POST_UNCONDITIONAL",
+        "object": {
+          "path": "Loader.TheWorld:PersistentLevel.WillowPlayerPawn_4",
+          "class": "WillowPlayerPawn"
+        },
+        "new_item": null
+      },
+      {
+        "sequence": 260,
+        "utc": "2026-11-05T17:53:24.463+00:00",
+        "kind": "combat:TakeDamage",
+        "phase": "PRE",
+        "object": {
+          "path": "Loader.TheWorld:PersistentLevel.WillowPlayerPawn_4",
+          "class": "WillowPlayerPawn"
+        },
+        "new_item": null
+      },
+      {
+        "sequence": 261,
+        "utc": "2026-11-05T17:53:24.464+00:00",
+        "kind": "combat:TakeDamage",
+        "phase": "POST_UNCONDITIONAL",
+        "object": {
+          "path": "Loader.TheWorld:PersistentLevel.WillowPlayerPawn_4",
+          "class": "WillowPlayerPawn"
+        },
+        "new_item": null
+      },
+      {
+        "sequence": 262,
+        "utc": "2026-11-05T17:53:56.134+00:00",
+        "kind": "equipment:AddInventory",
+        "phase": "POST_UNCONDITIONAL",
+        "object": {
+          "path": "Loader.TheWorld:PersistentLevel.WillowInventoryManager_132",
+          "class": "WillowInventoryManager"
+        },
+        "new_item": {
+          "path": "Loader.TheWorld:PersistentLevel.WillowUsableItem_92",
+          "class": "WillowUsableItem"
+        }
+      },
+      {
+        "sequence": 263,
+        "utc": "2026-11-05T17:53:56.997+00:00",
+        "kind": "equipment:AddInventory",
+        "phase": "POST_UNCONDITIONAL",
+        "object": {
+          "path": "Loader.TheWorld:PersistentLevel.WillowInventoryManager_132",
+          "class": "WillowInventoryManager"
+        },
+        "new_item": {
+          "path": "Loader.TheWorld:PersistentLevel.WillowUsableItem_94",
+          "class": "WillowUsableItem"
+        }
+      },
+      {
+        "sequence": 264,
+        "utc": "2026-11-05T17:54:00.561+00:00",
+        "kind": "equipment:AddInventory",
+        "phase": "POST_UNCONDITIONAL",
+        "object": {
+          "path": "Loader.TheWorld:PersistentLevel.WillowInventoryManager_132",
+          "class": "WillowInventoryManager"
+        },
+        "new_item": {
+          "path": "Loader.TheWorld:PersistentLevel.WillowUsableItem_93",
+          "class": "WillowUsableItem"
+        }
+      },
+      {
+        "sequence": 265,
+        "utc": "2026-11-05T17:54:24.426+00:00",
+        "kind": "equipment:AddInventory",
+        "phase": "POST_UNCONDITIONAL",
+        "object": {
+          "path": "Loader.TheWorld:PersistentLevel.WillowInventoryManager_132",
+          "class": "WillowInventoryManager"
+        },
+        "new_item": {
+          "path": "Loader.TheWorld:PersistentLevel.WillowGrenadeMod_51",
+          "class": "WillowGrenadeMod"
+        }
+      },
+      {
+        "sequence": 275,
+        "utc": "2026-11-05T17:55:09.383+00:00",
+        "kind": "equipment:AddInventory",
+        "phase": "POST_UNCONDITIONAL",
+        "object": {
+          "path": "Loader.TheWorld:PersistentLevel.WillowInventoryManager_152",
+          "class": "WillowInventoryManager"
+        },
+        "new_item": {
+          "path": "Loader.TheWorld:PersistentLevel.WillowShield_78",
+          "class": "WillowShield"
+        }
+      }
+    ]
+  },
+  "user_report": "04 logs added and all seemed good in game",
+  "nested_diagnostic_errors": [
+    {
+      "path": "one-playthrough-0.1.7-20261105T175157.882772Z-1e7ae70d.json/sections/player_resources/resource_pools/errors",
+      "errors": [
+        "ResourcePoolMap: RuntimeError: Unknown object type MapProperty"
+      ]
+    },
+    {
+      "path": "one-playthrough-0.1.7-20261105T175300.074748Z-3aaad5df.json/sections/player_resources/resource_pools/errors",
+      "errors": [
+        "ResourcePoolMap: RuntimeError: Unknown object type MapProperty"
+      ]
+    },
+    {
+      "path": "one-playthrough-0.1.7-20261105T175323.002988Z-9a6d9f27.json/sections/player_resources/resource_pools/errors",
+      "errors": [
+        "ResourcePoolMap: RuntimeError: Unknown object type MapProperty"
+      ]
+    },
+    {
+      "path": "one-playthrough-0.1.7-20261105T175409.320916Z-dce99096.json/sections/player_resources/resource_pools/errors",
+      "errors": [
+        "ResourcePoolMap: RuntimeError: Unknown object type MapProperty"
+      ]
+    },
+    {
+      "path": "one-playthrough-0.1.7-20261105T175444.224140Z-46a000c9.json/sections/player_resources/resource_pools/errors",
+      "errors": [
+        "ResourcePoolMap: RuntimeError: Unknown object type MapProperty"
+      ]
+    },
+    {
+      "path": "one-playthrough-0.1.7-20261105T175451.088673Z-a0aaf658.json/sections/player_resources/resource_pools/errors",
+      "errors": [
+        "ResourcePoolMap: RuntimeError: Unknown object type MapProperty"
+      ]
+    },
+    {
+      "path": "one-playthrough-0.1.7-20261105T175518.298869Z-4e705911.json/sections/player_resources/resource_pools/errors",
+      "errors": [
+        "ResourcePoolMap: RuntimeError: Unknown object type MapProperty"
+      ]
+    }
+  ],
+  "limits": [
+    "Sampled AI records are not all positively identified hostiles. Stage0/level0 dynamic pawn excluded from stage10 distribution.",
+    "Vendor samples are bounded and do not include all stock or evaluated prices.",
+    "Ground pickup snapshots do not expose contained gear levels; no complete natural-drop level verification.",
+    "No direct pickup/XP/currency/ammo transaction events captured. Cash net20 persists, but individual pickup attribution/amounts are not established.",
+    "First six sampled resource values stay full; exact ammo pickup amounts are unverified.",
+    "No effective health-regeneration measurement or full combat-balance verification in this batch."
+  ],
+  "user_followup": {
+    "report": "Pickups seemed good; found a few items, all on or around player level.",
+    "evidence_type": "user visual observation",
+    "exact_levels_recorded": false
+  }
+}

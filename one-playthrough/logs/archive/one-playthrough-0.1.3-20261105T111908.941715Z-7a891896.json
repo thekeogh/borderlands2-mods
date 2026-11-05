@@ -1,0 +1,2201 @@
+{
+  "schema_version": 4,
+  "utc": "2026-11-05T11:19:08.941+00:00",
+  "mod_version": "0.1.3",
+  "author": "keogh",
+  "trigger": "F10",
+  "build_kind": "observational feasibility prototype",
+  "export_complete": false,
+  "partial": true,
+  "errors": [],
+  "limitations": [
+    "No gameplay corrections in 0.1.3.",
+    "Observed query returns may include other mods' overrides; no native bypass is claimed.",
+    "Gameplay, hook firing, UI routing and scaling require in-game validation.",
+    "The executable's patch status cannot be established by this report."
+  ],
+  "versions": {
+    "python": "3.14.6",
+    "mods_base": "1.12",
+    "unrealsdk": "unrealsdk v3.2.0 (b1852aa4)",
+    "game_build": {
+      "available": false,
+      "reason": "not exposed by a verified API"
+    }
+  },
+  "sections": {},
+  "implementation": {
+    "enabled": true,
+    "hooks": {
+      "WillowGame.WillowPlayerController:AcceptMission": {
+        "reflected": true,
+        "hits": 0,
+        "sampled": 0,
+        "phases": [
+          "PRE",
+          "POST_UNCONDITIONAL"
+        ],
+        "parameters": [
+          {
+            "name": "Mission",
+            "type": "ObjectProperty",
+            "flags": 128
+          },
+          {
+            "name": "MissionDirector",
+            "type": "InterfaceProperty",
+            "flags": 144
+          }
+        ],
+        "has_return": false,
+        "registered_now": {
+          "PRE": true,
+          "POST_UNCONDITIONAL": true
+        }
+      },
+      "WillowGame.WillowPlayerController:ClientReceiveMissionStatus": {
+        "reflected": true,
+        "hits": 0,
+        "sampled": 0,
+        "phases": [
+          "PRE",
+          "POST_UNCONDITIONAL"
+        ],
+        "parameters": [
+          {
+            "name": "MissionStatusData",
+            "type": "StructProperty",
+            "flags": 128
+          },
+          {
+            "name": "GameStage",
+            "type": "IntProperty",
+            "flags": 144
+          }
+        ],
+        "has_return": false,
+        "registered_now": {
+          "PRE": true,
+          "POST_UNCONDITIONAL": true
+        }
+      },
+      "WillowGame.WillowPlayerController:UpdateMissionStatus": {
+        "reflected": true,
+        "hits": 0,
+        "sampled": 0,
+        "phases": [
+          "PRE",
+          "POST_UNCONDITIONAL"
+        ],
+        "parameters": [
+          {
+            "name": "Mission",
+            "type": "ObjectProperty",
+            "flags": 128
+          },
+          {
+            "name": "NewMissionStatus",
+            "type": "ByteProperty",
+            "flags": 128
+          },
+          {
+            "name": "OldStatus",
+            "type": "ByteProperty",
+            "flags": 0
+          },
+          {
+            "name": "ObjectivesProgress",
+            "type": "ArrayProperty",
+            "flags": 4194304
+          }
+        ],
+        "has_return": false,
+        "registered_now": {
+          "PRE": true,
+          "POST_UNCONDITIONAL": true
+        }
+      },
+      "WillowGame.WillowPlayerController:ApplyMissionSaveGameData": {
+        "reflected": true,
+        "hits": 3,
+        "sampled": 3,
+        "phases": [
+          "POST_UNCONDITIONAL"
+        ],
+        "parameters": [
+          {
+            "name": "SaveGame",
+            "type": "ObjectProperty",
+            "flags": 128
+          },
+          {
+            "name": "bManageRewards",
+            "type": "BoolProperty",
+            "flags": 128
+          },
+          {
+            "name": "MStatus",
+            "type": "StructProperty",
+            "flags": 4194304
+          },
+          {
+            "name": "PlayThroughData",
+            "type": "StructProperty",
+            "flags": 4194304
+          },
+          {
+            "name": "UMStatus",
+            "type": "StructProperty",
+            "flags": 4194304
+          },
+          {
+            "name": "MissionRewards",
+            "type": "ArrayProperty",
+            "flags": 4194304
+          }
+        ],
+        "has_return": false,
+        "max_sample_ms": 0.765,
+        "registered_now": {
+          "POST_UNCONDITIONAL": true
+        }
+      },
+      "WillowGame.WillowPlayerController:PopulateGameMissionDataFromSavegame": {
+        "reflected": true,
+        "hits": 0,
+        "sampled": 0,
+        "phases": [
+          "POST_UNCONDITIONAL"
+        ],
+        "parameters": [
+          {
+            "name": "MissionPlaythroughIdx",
+            "type": "IntProperty",
+            "flags": 128
+          },
+          {
+            "name": "MissionDataIdx",
+            "type": "IntProperty",
+            "flags": 128
+          },
+          {
+            "name": "SavedMStatus",
+            "type": "StructProperty",
+            "flags": 4194432
+          }
+        ],
+        "has_return": false,
+        "registered_now": {
+          "POST_UNCONDITIONAL": true
+        }
+      },
+      "WillowGame.WillowPlayerController:GetCurrentPlaythrough": {
+        "reflected": true,
+        "hits": 14,
+        "sampled": 5,
+        "phases": [
+          "POST_UNCONDITIONAL"
+        ],
+        "parameters": [
+          {
+            "name": "ReturnValue",
+            "type": "IntProperty",
+            "flags": 1408
+          }
+        ],
+        "has_return": true,
+        "max_sample_ms": 0.384,
+        "throttled": 9,
+        "registered_now": {
+          "POST_UNCONDITIONAL": true
+        }
+      },
+      "WillowGame.WillowPlayerController:GetLevelForMission": {
+        "reflected": true,
+        "hits": 0,
+        "sampled": 0,
+        "phases": [
+          "PRE",
+          "POST_UNCONDITIONAL"
+        ],
+        "parameters": [
+          {
+            "name": "InMission",
+            "type": "ObjectProperty",
+            "flags": 128
+          },
+          {
+            "name": "ReturnValue",
+            "type": "NameProperty",
+            "flags": 1408
+          }
+        ],
+        "has_return": true,
+        "registered_now": {
+          "PRE": true,
+          "POST_UNCONDITIONAL": true
+        }
+      },
+      "WillowGame.WillowPlayerController:GetGameStageFromRegion": {
+        "reflected": true,
+        "hits": 0,
+        "sampled": 0,
+        "phases": [
+          "PRE",
+          "POST_UNCONDITIONAL"
+        ],
+        "parameters": [
+          {
+            "name": "Region",
+            "type": "ObjectProperty",
+            "flags": 128
+          },
+          {
+            "name": "ReturnValue",
+            "type": "IntProperty",
+            "flags": 1408
+          }
+        ],
+        "has_return": true,
+        "registered_now": {
+          "PRE": true,
+          "POST_UNCONDITIONAL": true
+        }
+      },
+      "WillowGame.WillowPlayerController:SetGameStageForRegion": {
+        "reflected": true,
+        "hits": 0,
+        "sampled": 0,
+        "phases": [
+          "POST_UNCONDITIONAL"
+        ],
+        "parameters": [
+          {
+            "name": "Region",
+            "type": "ObjectProperty",
+            "flags": 128
+          },
+          {
+            "name": "GameStage",
+            "type": "IntProperty",
+            "flags": 128
+          }
+        ],
+        "has_return": false,
+        "registered_now": {
+          "POST_UNCONDITIONAL": true
+        }
+      },
+      "WillowGame.WillowPlayerController:ServerCompleteMission": {
+        "reflected": true,
+        "hits": 0,
+        "sampled": 0,
+        "phases": [
+          "PRE",
+          "POST_UNCONDITIONAL"
+        ],
+        "parameters": [
+          {
+            "name": "Mission",
+            "type": "ObjectProperty",
+            "flags": 128
+          },
+          {
+            "name": "MissionDirector",
+            "type": "InterfaceProperty",
+            "flags": 144
+          }
+        ],
+        "has_return": false,
+        "registered_now": {
+          "PRE": true,
+          "POST_UNCONDITIONAL": true
+        }
+      },
+      "WillowGame.WillowPlayerController:ServerGrantMissionRewards": {
+        "reflected": true,
+        "hits": 0,
+        "sampled": 0,
+        "phases": [
+          "PRE",
+          "POST_UNCONDITIONAL"
+        ],
+        "parameters": [
+          {
+            "name": "Mission",
+            "type": "ObjectProperty",
+            "flags": 128
+          },
+          {
+            "name": "bGrantAltReward",
+            "type": "BoolProperty",
+            "flags": 128
+          },
+          {
+            "name": "CurrencyType",
+            "type": "ByteProperty",
+            "flags": 0
+          },
+          {
+            "name": "MissionReward",
+            "type": "StructProperty",
+            "flags": 0
+          }
+        ],
+        "has_return": false,
+        "registered_now": {
+          "PRE": true,
+          "POST_UNCONDITIONAL": true
+        }
+      },
+      "WillowGame.WillowPlayerController:ReceiveWeaponReward": {
+        "reflected": true,
+        "hits": 0,
+        "sampled": 0,
+        "phases": [
+          "PRE",
+          "POST_UNCONDITIONAL"
+        ],
+        "parameters": [
+          {
+            "name": "Mission",
+            "type": "ObjectProperty",
+            "flags": 128
+          },
+          {
+            "name": "DefinitionData",
+            "type": "StructProperty",
+            "flags": 384
+          }
+        ],
+        "has_return": false,
+        "registered_now": {
+          "PRE": true,
+          "POST_UNCONDITIONAL": true
+        }
+      },
+      "WillowGame.WillowPlayerController:ReceiveItemReward": {
+        "reflected": true,
+        "hits": 0,
+        "sampled": 0,
+        "phases": [
+          "PRE",
+          "POST_UNCONDITIONAL"
+        ],
+        "parameters": [
+          {
+            "name": "Mission",
+            "type": "ObjectProperty",
+            "flags": 128
+          },
+          {
+            "name": "DefinitionData",
+            "type": "StructProperty",
+            "flags": 384
+          }
+        ],
+        "has_return": false,
+        "registered_now": {
+          "PRE": true,
+          "POST_UNCONDITIONAL": true
+        }
+      },
+      "WillowGame.WillowPlayerController:ClientDoMissionStatusFanfare": {
+        "reflected": true,
+        "hits": 2,
+        "sampled": 2,
+        "phases": [
+          "POST_UNCONDITIONAL"
+        ],
+        "parameters": [
+          {
+            "name": "FanFareType",
+            "type": "ByteProperty",
+            "flags": 128
+          },
+          {
+            "name": "bNotReplicated",
+            "type": "BoolProperty",
+            "flags": 128
+          },
+          {
+            "name": "MissionDef",
+            "type": "ObjectProperty",
+            "flags": 128
+          },
+          {
+            "name": "MissionObjective",
+            "type": "ObjectProperty",
+            "flags": 144
+          }
+        ],
+        "has_return": false,
+        "max_sample_ms": 0.619,
+        "registered_now": {
+          "POST_UNCONDITIONAL": true
+        }
+      },
+      "WillowGame.WillowPlayerController:PopulateMissionDataFromStatus": {
+        "reflected": true,
+        "hits": 0,
+        "sampled": 0,
+        "phases": [
+          "POST_UNCONDITIONAL"
+        ],
+        "parameters": [
+          {
+            "name": "MStatus",
+            "type": "StructProperty",
+            "flags": 4194432
+          },
+          {
+            "name": "ReturnValue",
+            "type": "StrProperty",
+            "flags": 4195712
+          }
+        ],
+        "has_return": true,
+        "registered_now": {
+          "POST_UNCONDITIONAL": true
+        }
+      },
+      "WillowGame.WillowPlayerController:ShowStatusMenu": {
+        "reflected": true,
+        "hits": 0,
+        "sampled": 0,
+        "phases": [
+          "POST_UNCONDITIONAL"
+        ],
+        "parameters": [],
+        "has_return": false,
+        "registered_now": {
+          "POST_UNCONDITIONAL": true
+        }
+      },
+      "WillowGame.WillowPlayerController:HandlePickup": {
+        "reflected": true,
+        "hits": 0,
+        "sampled": 0,
+        "phases": [
+          "PRE",
+          "POST_UNCONDITIONAL"
+        ],
+        "parameters": [
+          {
+            "name": "Inv",
+            "type": "ObjectProperty",
+            "flags": 128
+          }
+        ],
+        "has_return": false,
+        "registered_now": {
+          "PRE": true,
+          "POST_UNCONDITIONAL": true
+        }
+      },
+      "WillowGame.WillowPlayerController:SpawningProcessComplete": {
+        "reflected": true,
+        "hits": 1,
+        "sampled": 1,
+        "phases": [
+          "POST_UNCONDITIONAL"
+        ],
+        "parameters": [
+          {
+            "name": "EmptyCurrencyArray",
+            "type": "IntProperty",
+            "flags": 0
+          }
+        ],
+        "has_return": false,
+        "max_sample_ms": 0.277,
+        "registered_now": {
+          "POST_UNCONDITIONAL": true
+        }
+      },
+      "WillowGame.WillowPlayerController:WillowClientDisableLoadingMovie": {
+        "reflected": true,
+        "hits": 1,
+        "sampled": 1,
+        "phases": [
+          "POST_UNCONDITIONAL"
+        ],
+        "parameters": [],
+        "has_return": false,
+        "max_sample_ms": 0.363,
+        "registered_now": {
+          "POST_UNCONDITIONAL": true
+        }
+      },
+      "WillowGame.WillowPlayerController:WillowClientShowLoadingMovie": {
+        "reflected": true,
+        "hits": 2,
+        "sampled": 2,
+        "phases": [
+          "POST_UNCONDITIONAL"
+        ],
+        "parameters": [
+          {
+            "name": "MovieName",
+            "type": "StrProperty",
+            "flags": 4194432
+          },
+          {
+            "name": "bShowMovie",
+            "type": "BoolProperty",
+            "flags": 128
+          },
+          {
+            "name": "bPauseAfterHide",
+            "type": "BoolProperty",
+            "flags": 144
+          },
+          {
+            "name": "PauseDuration",
+            "type": "FloatProperty",
+            "flags": 144
+          },
+          {
+            "name": "KeepPlayingDuration",
+            "type": "FloatProperty",
+            "flags": 144
+          },
+          {
+            "name": "OverridePreviousDelays",
+            "type": "BoolProperty",
+            "flags": 144
+          },
+          {
+            "name": "NoLooping",
+            "type": "BoolProperty",
+            "flags": 144
+          }
+        ],
+        "has_return": false,
+        "max_sample_ms": 0.598,
+        "registered_now": {
+          "POST_UNCONDITIONAL": true
+        }
+      },
+      "WillowGame.MissionDefinition:GetGameStage": {
+        "reflected": true,
+        "hits": 0,
+        "sampled": 0,
+        "phases": [
+          "POST_UNCONDITIONAL"
+        ],
+        "parameters": [
+          {
+            "name": "ReturnValue",
+            "type": "IntProperty",
+            "flags": 1408
+          }
+        ],
+        "has_return": true,
+        "registered_now": {
+          "POST_UNCONDITIONAL": true
+        }
+      },
+      "WillowGame.MissionDefinition:GetExpectedGameStage": {
+        "reflected": true,
+        "hits": 0,
+        "sampled": 0,
+        "phases": [
+          "PRE",
+          "POST_UNCONDITIONAL"
+        ],
+        "parameters": [
+          {
+            "name": "ReturnValue",
+            "type": "IntProperty",
+            "flags": 1408
+          }
+        ],
+        "has_return": true,
+        "registered_now": {
+          "PRE": true,
+          "POST_UNCONDITIONAL": true
+        }
+      },
+      "WillowGame.MissionDefinition:SetGameStage": {
+        "reflected": true,
+        "hits": 0,
+        "sampled": 0,
+        "phases": [
+          "PRE",
+          "POST_UNCONDITIONAL"
+        ],
+        "parameters": [
+          {
+            "name": "NewGameStage",
+            "type": "IntProperty",
+            "flags": 128
+          }
+        ],
+        "has_return": false,
+        "registered_now": {
+          "PRE": true,
+          "POST_UNCONDITIONAL": true
+        }
+      },
+      "WillowGame.MissionDefinition:GetExperienceReward": {
+        "reflected": true,
+        "hits": 0,
+        "sampled": 0,
+        "phases": [
+          "PRE",
+          "POST_UNCONDITIONAL"
+        ],
+        "parameters": [
+          {
+            "name": "InWPC",
+            "type": "ObjectProperty",
+            "flags": 128
+          },
+          {
+            "name": "bGetAltReward",
+            "type": "BoolProperty",
+            "flags": 128
+          },
+          {
+            "name": "ReturnValue",
+            "type": "IntProperty",
+            "flags": 1408
+          }
+        ],
+        "has_return": true,
+        "registered_now": {
+          "PRE": true,
+          "POST_UNCONDITIONAL": true
+        }
+      },
+      "WillowGame.MissionDefinition:GetCurrencyReward": {
+        "reflected": true,
+        "hits": 0,
+        "sampled": 0,
+        "phases": [
+          "PRE",
+          "POST_UNCONDITIONAL"
+        ],
+        "parameters": [
+          {
+            "name": "InWPC",
+            "type": "ObjectProperty",
+            "flags": 128
+          },
+          {
+            "name": "bGetAltReward",
+            "type": "BoolProperty",
+            "flags": 128
+          },
+          {
+            "name": "ReturnValue",
+            "type": "IntProperty",
+            "flags": 1408
+          }
+        ],
+        "has_return": true,
+        "registered_now": {
+          "PRE": true,
+          "POST_UNCONDITIONAL": true
+        }
+      },
+      "WillowGame.WillowRegionDefinition:GetRegionGameStage": {
+        "reflected": true,
+        "hits": 6,
+        "sampled": 1,
+        "phases": [
+          "POST_UNCONDITIONAL"
+        ],
+        "parameters": [
+          {
+            "name": "GameStage",
+            "type": "IntProperty",
+            "flags": 384
+          },
+          {
+            "name": "AwesomeLevel",
+            "type": "IntProperty",
+            "flags": 384
+          },
+          {
+            "name": "bDefaultGameStage",
+            "type": "BoolProperty",
+            "flags": 144
+          },
+          {
+            "name": "ReturnValue",
+            "type": "BoolProperty",
+            "flags": 1408
+          }
+        ],
+        "has_return": true,
+        "max_sample_ms": 0.378,
+        "throttled": 5,
+        "registered_now": {
+          "POST_UNCONDITIONAL": true
+        }
+      },
+      "WillowGame.WillowRegionDefinition:GetDefaultRegionGameStage": {
+        "reflected": true,
+        "hits": 0,
+        "sampled": 0,
+        "phases": [
+          "POST_UNCONDITIONAL"
+        ],
+        "parameters": [
+          {
+            "name": "MinGameStage",
+            "type": "IntProperty",
+            "flags": 384
+          },
+          {
+            "name": "MaxGameStage",
+            "type": "IntProperty",
+            "flags": 384
+          },
+          {
+            "name": "AwesomeLevel",
+            "type": "IntProperty",
+            "flags": 384
+          },
+          {
+            "name": "GameStageIncreaseOverPlayerLevel",
+            "type": "IntProperty",
+            "flags": 384
+          },
+          {
+            "name": "ReturnValue",
+            "type": "BoolProperty",
+            "flags": 1408
+          }
+        ],
+        "has_return": true,
+        "registered_now": {
+          "POST_UNCONDITIONAL": true
+        }
+      },
+      "WillowGame.WillowRegionDefinition:TestRegionGameStage": {
+        "reflected": true,
+        "hits": 0,
+        "sampled": 0,
+        "phases": [
+          "POST_UNCONDITIONAL"
+        ],
+        "parameters": [
+          {
+            "name": "GameStage",
+            "type": "IntProperty",
+            "flags": 384
+          },
+          {
+            "name": "AwesomeLevel",
+            "type": "IntProperty",
+            "flags": 384
+          },
+          {
+            "name": "bDefaultGameStage",
+            "type": "BoolProperty",
+            "flags": 144
+          },
+          {
+            "name": "ReturnValue",
+            "type": "BoolProperty",
+            "flags": 1408
+          }
+        ],
+        "has_return": true,
+        "registered_now": {
+          "POST_UNCONDITIONAL": true
+        }
+      },
+      "WillowGame.WillowPlayerReplicationInfo:AddCurrencyOnHand": {
+        "reflected": true,
+        "hits": 0,
+        "sampled": 0,
+        "phases": [
+          "PRE",
+          "POST_UNCONDITIONAL"
+        ],
+        "parameters": [
+          {
+            "name": "FormOfCurrency",
+            "type": "ByteProperty",
+            "flags": 128
+          },
+          {
+            "name": "AddValue",
+            "type": "IntProperty",
+            "flags": 128
+          }
+        ],
+        "has_return": false,
+        "registered_now": {
+          "PRE": true,
+          "POST_UNCONDITIONAL": true
+        }
+      },
+      "WillowGame.WillowPlayerReplicationInfo:SetCurrencyOnHand": {
+        "reflected": true,
+        "hits": 0,
+        "sampled": 0,
+        "phases": [
+          "PRE",
+          "POST_UNCONDITIONAL"
+        ],
+        "parameters": [
+          {
+            "name": "FormOfCurrency",
+            "type": "ByteProperty",
+            "flags": 128
+          },
+          {
+            "name": "NewValue",
+            "type": "IntProperty",
+            "flags": 128
+          }
+        ],
+        "has_return": false,
+        "registered_now": {
+          "PRE": true,
+          "POST_UNCONDITIONAL": true
+        }
+      },
+      "WillowGame.WillowPlayerPawn:TakeDamage": {
+        "reflected": true,
+        "hits": 0,
+        "sampled": 0,
+        "phases": [
+          "PRE",
+          "POST_UNCONDITIONAL"
+        ],
+        "parameters": [
+          {
+            "name": "Damage",
+            "type": "FloatProperty",
+            "flags": 128
+          },
+          {
+            "name": "InstigatedBy",
+            "type": "ObjectProperty",
+            "flags": 128
+          },
+          {
+            "name": "HitLocation",
+            "type": "StructProperty",
+            "flags": 128
+          },
+          {
+            "name": "Momentum",
+            "type": "StructProperty",
+            "flags": 128
+          },
+          {
+            "name": "DamageType",
+            "type": "ClassProperty",
+            "flags": 128
+          },
+          {
+            "name": "HitInfo",
+            "type": "StructProperty",
+            "flags": 144
+          },
+          {
+            "name": "DamageCauser",
+            "type": "InterfaceProperty",
+            "flags": 144
+          },
+          {
+            "name": "Pipeline",
+            "type": "ObjectProperty",
+            "flags": 144
+          },
+          {
+            "name": "HitDir",
+            "type": "StructProperty",
+            "flags": 0
+          }
+        ],
+        "has_return": false,
+        "registered_now": {
+          "PRE": true,
+          "POST_UNCONDITIONAL": true
+        }
+      },
+      "WillowGame.WillowPlayerPawn:Died": {
+        "reflected": true,
+        "hits": 0,
+        "sampled": 0,
+        "phases": [
+          "PRE",
+          "POST_UNCONDITIONAL"
+        ],
+        "parameters": [
+          {
+            "name": "Killer",
+            "type": "ObjectProperty",
+            "flags": 128
+          },
+          {
+            "name": "DamageType",
+            "type": "ClassProperty",
+            "flags": 128
+          },
+          {
+            "name": "HitLocation",
+            "type": "StructProperty",
+            "flags": 128
+          },
+          {
+            "name": "Pipeline",
+            "type": "ObjectProperty",
+            "flags": 144
+          },
+          {
+            "name": "ReturnValue",
+            "type": "BoolProperty",
+            "flags": 1408
+          }
+        ],
+        "has_return": true,
+        "registered_now": {
+          "PRE": true,
+          "POST_UNCONDITIONAL": true
+        }
+      },
+      "WillowGame.WillowPawn:SetGameStage": {
+        "reflected": true,
+        "hits": 2,
+        "sampled": 2,
+        "phases": [
+          "PRE",
+          "POST_UNCONDITIONAL"
+        ],
+        "parameters": [
+          {
+            "name": "NewGameStage",
+            "type": "IntProperty",
+            "flags": 128
+          }
+        ],
+        "has_return": false,
+        "max_sample_ms": 0.313,
+        "registered_now": {
+          "PRE": true,
+          "POST_UNCONDITIONAL": true
+        }
+      },
+      "WillowGame.WillowPawn:SetGameStageForSpawnedInventory": {
+        "reflected": true,
+        "hits": 0,
+        "sampled": 0,
+        "phases": [
+          "POST_UNCONDITIONAL"
+        ],
+        "parameters": [
+          {
+            "name": "NewInventoryGameStage",
+            "type": "IntProperty",
+            "flags": 128
+          }
+        ],
+        "has_return": false,
+        "registered_now": {
+          "POST_UNCONDITIONAL": true
+        }
+      },
+      "WillowGame.WillowAIPawn:SetExpLevel": {
+        "reflected": true,
+        "hits": 0,
+        "sampled": 0,
+        "phases": [
+          "POST_UNCONDITIONAL"
+        ],
+        "parameters": [
+          {
+            "name": "NewExpLevel",
+            "type": "IntProperty",
+            "flags": 128
+          }
+        ],
+        "has_return": false,
+        "registered_now": {
+          "POST_UNCONDITIONAL": true
+        }
+      },
+      "WillowGame.WillowAIPawn:SetGameStageForSpawnedInventory": {
+        "reflected": true,
+        "hits": 0,
+        "sampled": 0,
+        "phases": [
+          "POST_UNCONDITIONAL"
+        ],
+        "parameters": [
+          {
+            "name": "NewInventoryGameStage",
+            "type": "IntProperty",
+            "flags": 128
+          }
+        ],
+        "has_return": false,
+        "registered_now": {
+          "POST_UNCONDITIONAL": true
+        }
+      },
+      "WillowGame.WillowInventoryManager:AddInventory": {
+        "reflected": true,
+        "hits": 0,
+        "sampled": 0,
+        "phases": [
+          "POST_UNCONDITIONAL"
+        ],
+        "parameters": [
+          {
+            "name": "NewItem",
+            "type": "ObjectProperty",
+            "flags": 128
+          },
+          {
+            "name": "bReady",
+            "type": "BoolProperty",
+            "flags": 128
+          },
+          {
+            "name": "bDoNotActivate",
+            "type": "BoolProperty",
+            "flags": 144
+          },
+          {
+            "name": "bPlayPickupSound",
+            "type": "BoolProperty",
+            "flags": 144
+          },
+          {
+            "name": "ReturnValue",
+            "type": "BoolProperty",
+            "flags": 1408
+          },
+          {
+            "name": "EquippedInventoryStat",
+            "type": "NameProperty",
+            "flags": 0
+          }
+        ],
+        "has_return": true,
+        "registered_now": {
+          "POST_UNCONDITIONAL": true
+        }
+      },
+      "Engine.Inventory:GiveTo": {
+        "reflected": true,
+        "hits": 0,
+        "sampled": 0,
+        "phases": [
+          "PRE",
+          "POST_UNCONDITIONAL"
+        ],
+        "parameters": [
+          {
+            "name": "Other",
+            "type": "ObjectProperty",
+            "flags": 128
+          },
+          {
+            "name": "bReady",
+            "type": "BoolProperty",
+            "flags": 128
+          },
+          {
+            "name": "bPlayPickupSound",
+            "type": "BoolProperty",
+            "flags": 144
+          }
+        ],
+        "has_return": false,
+        "registered_now": {
+          "PRE": true,
+          "POST_UNCONDITIONAL": true
+        }
+      },
+      "Engine.WillowInventory:ClientInitializeInventoryFromDefinition": {
+        "reflected": true,
+        "hits": 26,
+        "sampled": 3,
+        "phases": [
+          "POST_UNCONDITIONAL"
+        ],
+        "parameters": [],
+        "has_return": false,
+        "max_sample_ms": 0.428,
+        "throttled": 23,
+        "registered_now": {
+          "POST_UNCONDITIONAL": true
+        }
+      },
+      "WillowGame.WillowPickup:PickedUpBy": {
+        "reflected": true,
+        "hits": 0,
+        "sampled": 0,
+        "phases": [
+          "PRE",
+          "POST_UNCONDITIONAL"
+        ],
+        "parameters": [
+          {
+            "name": "P",
+            "type": "ObjectProperty",
+            "flags": 128
+          }
+        ],
+        "has_return": false,
+        "registered_now": {
+          "PRE": true,
+          "POST_UNCONDITIONAL": true
+        }
+      },
+      "WillowGame.QuestAcceptGFxMovie:SetRewardCard": {
+        "reflected": true,
+        "hits": 0,
+        "sampled": 0,
+        "phases": [
+          "PRE",
+          "POST_UNCONDITIONAL"
+        ],
+        "parameters": [
+          {
+            "name": "MissionDef",
+            "type": "ObjectProperty",
+            "flags": 128
+          },
+          {
+            "name": "WPC",
+            "type": "ObjectProperty",
+            "flags": 128
+          },
+          {
+            "name": "RewardPresentations",
+            "type": "ArrayProperty",
+            "flags": 4194304
+          }
+        ],
+        "has_return": false,
+        "registered_now": {
+          "PRE": true,
+          "POST_UNCONDITIONAL": true
+        }
+      },
+      "WillowGame.QuestAcceptGFxMovie:SetRewardsXP": {
+        "reflected": true,
+        "hits": 0,
+        "sampled": 0,
+        "phases": [
+          "PRE",
+          "POST_UNCONDITIONAL"
+        ],
+        "parameters": [
+          {
+            "name": "XPText",
+            "type": "StrProperty",
+            "flags": 4194432
+          }
+        ],
+        "has_return": false,
+        "registered_now": {
+          "PRE": true,
+          "POST_UNCONDITIONAL": true
+        }
+      },
+      "WillowGame.QuestAcceptGFxMovie:SetRewardsTotalCredits": {
+        "reflected": true,
+        "hits": 0,
+        "sampled": 0,
+        "phases": [
+          "PRE",
+          "POST_UNCONDITIONAL"
+        ],
+        "parameters": [
+          {
+            "name": "Credits",
+            "type": "IntProperty",
+            "flags": 128
+          }
+        ],
+        "has_return": false,
+        "registered_now": {
+          "PRE": true,
+          "POST_UNCONDITIONAL": true
+        }
+      },
+      "WillowGame.QuestAcceptGFxMovie:extCompleteConfirmed": {
+        "reflected": true,
+        "hits": 0,
+        "sampled": 0,
+        "phases": [
+          "PRE",
+          "POST_UNCONDITIONAL"
+        ],
+        "parameters": [],
+        "has_return": false,
+        "registered_now": {
+          "PRE": true,
+          "POST_UNCONDITIONAL": true
+        }
+      },
+      "WillowGame.StatusMenuExGFxMovie:SetRewardCard": {
+        "reflected": true,
+        "hits": 0,
+        "sampled": 0,
+        "phases": [
+          "PRE",
+          "POST_UNCONDITIONAL"
+        ],
+        "parameters": [
+          {
+            "name": "MissionDef",
+            "type": "ObjectProperty",
+            "flags": 128
+          },
+          {
+            "name": "WPC",
+            "type": "ObjectProperty",
+            "flags": 128
+          },
+          {
+            "name": "RewardPresentations",
+            "type": "ArrayProperty",
+            "flags": 4194304
+          }
+        ],
+        "has_return": false,
+        "registered_now": {
+          "PRE": true,
+          "POST_UNCONDITIONAL": true
+        }
+      },
+      "WillowGame.StatusMenuExGFxMovie:SetRewardsXP": {
+        "reflected": true,
+        "hits": 0,
+        "sampled": 0,
+        "phases": [
+          "PRE",
+          "POST_UNCONDITIONAL"
+        ],
+        "parameters": [
+          {
+            "name": "XPText",
+            "type": "StrProperty",
+            "flags": 4194432
+          }
+        ],
+        "has_return": false,
+        "registered_now": {
+          "PRE": true,
+          "POST_UNCONDITIONAL": true
+        }
+      },
+      "WillowGame.StatusMenuExGFxMovie:SetRewardsTotalCredits": {
+        "reflected": true,
+        "hits": 0,
+        "sampled": 0,
+        "phases": [
+          "PRE",
+          "POST_UNCONDITIONAL"
+        ],
+        "parameters": [
+          {
+            "name": "Credits",
+            "type": "IntProperty",
+            "flags": 128
+          }
+        ],
+        "has_return": false,
+        "registered_now": {
+          "PRE": true,
+          "POST_UNCONDITIONAL": true
+        }
+      },
+      "WillowGame.StatusMenuExGFxMovie:SetActiveMission": {
+        "reflected": true,
+        "hits": 0,
+        "sampled": 0,
+        "phases": [
+          "POST_UNCONDITIONAL"
+        ],
+        "parameters": [
+          {
+            "name": "Index",
+            "type": "IntProperty",
+            "flags": 128
+          }
+        ],
+        "has_return": false,
+        "registered_now": {
+          "POST_UNCONDITIONAL": true
+        }
+      },
+      "WillowGame.StatusMenuExGFxMovie:UpdateMissionDetails": {
+        "reflected": true,
+        "hits": 0,
+        "sampled": 0,
+        "phases": [
+          "POST_UNCONDITIONAL"
+        ],
+        "parameters": [
+          {
+            "name": "FullMissionDescription",
+            "type": "StrProperty",
+            "flags": 4194304
+          },
+          {
+            "name": "XPRewardsText",
+            "type": "StrProperty",
+            "flags": 4194304
+          },
+          {
+            "name": "LevelText",
+            "type": "StrProperty",
+            "flags": 4194304
+          },
+          {
+            "name": "DifficultyFrame",
+            "type": "StrProperty",
+            "flags": 4194304
+          },
+          {
+            "name": "MissionStatus",
+            "type": "ByteProperty",
+            "flags": 0
+          },
+          {
+            "name": "CurrencyType",
+            "type": "ByteProperty",
+            "flags": 0
+          }
+        ],
+        "has_return": false,
+        "registered_now": {
+          "POST_UNCONDITIONAL": true
+        }
+      },
+      "WillowGame.MissionRewardGFxObject:SetPendingMissionRewardData": {
+        "reflected": true,
+        "hits": 0,
+        "sampled": 0,
+        "phases": [
+          "PRE",
+          "POST_UNCONDITIONAL"
+        ],
+        "parameters": [
+          {
+            "name": "MissionReward",
+            "type": "StructProperty",
+            "flags": 128
+          }
+        ],
+        "has_return": false,
+        "registered_now": {
+          "PRE": true,
+          "POST_UNCONDITIONAL": true
+        }
+      },
+      "WillowGame.PopulationFactoryBalancedAIPawn:CreatePopulationActor": {
+        "reflected": true,
+        "hits": 0,
+        "sampled": 0,
+        "phases": [
+          "POST_UNCONDITIONAL"
+        ],
+        "parameters": [
+          {
+            "name": "Master",
+            "type": "ObjectProperty",
+            "flags": 128
+          },
+          {
+            "name": "Opportunity",
+            "type": "ObjectProperty",
+            "flags": 128
+          },
+          {
+            "name": "SpawnLocationContextObject",
+            "type": "ObjectProperty",
+            "flags": 128
+          },
+          {
+            "name": "SpawnLocation",
+            "type": "StructProperty",
+            "flags": 128
+          },
+          {
+            "name": "SpawnRotation",
+            "type": "StructProperty",
+            "flags": 128
+          },
+          {
+            "name": "GameStage",
+            "type": "IntProperty",
+            "flags": 128
+          },
+          {
+            "name": "AwesomeLevel",
+            "type": "IntProperty",
+            "flags": 128
+          },
+          {
+            "name": "ReturnValue",
+            "type": "ObjectProperty",
+            "flags": 1408
+          }
+        ],
+        "has_return": true,
+        "registered_now": {
+          "POST_UNCONDITIONAL": true
+        }
+      },
+      "WillowGame.PopulationFactoryBalancedAIPawn:RestorePopulatedAIPawn": {
+        "reflected": true,
+        "hits": 0,
+        "sampled": 0,
+        "phases": [
+          "POST_UNCONDITIONAL"
+        ],
+        "parameters": [
+          {
+            "name": "Master",
+            "type": "ObjectProperty",
+            "flags": 128
+          },
+          {
+            "name": "SpawnLocationContextObject",
+            "type": "ObjectProperty",
+            "flags": 128
+          },
+          {
+            "name": "SpawnLocation",
+            "type": "StructProperty",
+            "flags": 128
+          },
+          {
+            "name": "SpawnRotation",
+            "type": "StructProperty",
+            "flags": 128
+          },
+          {
+            "name": "GameStage",
+            "type": "IntProperty",
+            "flags": 128
+          },
+          {
+            "name": "AwesomeLevel",
+            "type": "IntProperty",
+            "flags": 128
+          },
+          {
+            "name": "AIPawnMemento",
+            "type": "StructProperty",
+            "flags": 4194432
+          },
+          {
+            "name": "ReturnValue",
+            "type": "ObjectProperty",
+            "flags": 1408
+          }
+        ],
+        "has_return": true,
+        "registered_now": {
+          "POST_UNCONDITIONAL": true
+        }
+      },
+      "WillowGame.PopulationFactoryWillowVehicle:CreatePopulationActor": {
+        "reflected": true,
+        "hits": 0,
+        "sampled": 0,
+        "phases": [
+          "POST_UNCONDITIONAL"
+        ],
+        "parameters": [
+          {
+            "name": "Master",
+            "type": "ObjectProperty",
+            "flags": 128
+          },
+          {
+            "name": "Opportunity",
+            "type": "ObjectProperty",
+            "flags": 128
+          },
+          {
+            "name": "SpawnLocationContextObject",
+            "type": "ObjectProperty",
+            "flags": 128
+          },
+          {
+            "name": "SpawnLocation",
+            "type": "StructProperty",
+            "flags": 128
+          },
+          {
+            "name": "SpawnRotation",
+            "type": "StructProperty",
+            "flags": 128
+          },
+          {
+            "name": "GameStage",
+            "type": "IntProperty",
+            "flags": 128
+          },
+          {
+            "name": "AwesomeLevel",
+            "type": "IntProperty",
+            "flags": 128
+          },
+          {
+            "name": "ReturnValue",
+            "type": "ObjectProperty",
+            "flags": 1408
+          },
+          {
+            "name": "FinalLocation",
+            "type": "StructProperty",
+            "flags": 0
+          },
+          {
+            "name": "FullItemPoolList",
+            "type": "ArrayProperty",
+            "flags": 4194304
+          }
+        ],
+        "has_return": true,
+        "registered_now": {
+          "POST_UNCONDITIONAL": true
+        }
+      },
+      "WillowGame.WillowInteractiveObject:SetGameStage": {
+        "reflected": true,
+        "hits": 66,
+        "sampled": 2,
+        "phases": [
+          "PRE",
+          "POST_UNCONDITIONAL"
+        ],
+        "parameters": [
+          {
+            "name": "NewGameStage",
+            "type": "IntProperty",
+            "flags": 128
+          }
+        ],
+        "has_return": false,
+        "max_sample_ms": 0.384,
+        "throttled": 64,
+        "registered_now": {
+          "PRE": true,
+          "POST_UNCONDITIONAL": true
+        }
+      },
+      "WillowGame.WillowHUDGFxMovie:DoMissionStatusFanfare": {
+        "reflected": true,
+        "hits": 0,
+        "sampled": 0,
+        "phases": [
+          "POST_UNCONDITIONAL"
+        ],
+        "parameters": [
+          {
+            "name": "frame",
+            "type": "StrProperty",
+            "flags": 4194432
+          },
+          {
+            "name": "MissionDef",
+            "type": "ObjectProperty",
+            "flags": 128
+          },
+          {
+            "name": "bShowObjectiveFlourish",
+            "type": "BoolProperty",
+            "flags": 128
+          },
+          {
+            "name": "MissionObjective",
+            "type": "ObjectProperty",
+            "flags": 144
+          }
+        ],
+        "has_return": false,
+        "registered_now": {
+          "POST_UNCONDITIONAL": true
+        }
+      },
+      "WillowGame.HUDWidget_Missions:SetDisplayedMission": {
+        "reflected": true,
+        "hits": 0,
+        "sampled": 0,
+        "phases": [
+          "POST_UNCONDITIONAL"
+        ],
+        "parameters": [
+          {
+            "name": "MissionDef",
+            "type": "ObjectProperty",
+            "flags": 128
+          }
+        ],
+        "has_return": false,
+        "registered_now": {
+          "POST_UNCONDITIONAL": true
+        }
+      },
+      "WillowGame.FrontendGFxMovie:NotifyAtMainMenu": {
+        "reflected": true,
+        "hits": 1,
+        "sampled": 1,
+        "phases": [
+          "POST_UNCONDITIONAL"
+        ],
+        "parameters": [
+          {
+            "name": "GbxAccountActions",
+            "type": "ObjectProperty",
+            "flags": 0
+          },
+          {
+            "name": "OnClicked",
+            "type": "DelegateProperty",
+            "flags": 4194304
+          },
+          {
+            "name": "Spark",
+            "type": "InterfaceProperty",
+            "flags": 0
+          }
+        ],
+        "has_return": false,
+        "max_sample_ms": 0.256,
+        "registered_now": {
+          "POST_UNCONDITIONAL": true
+        }
+      }
+    },
+    "pending_or_unavailable": {
+      "WillowPlayerPawn:ServerMeleeAttack": "ValueError: Couldn't find field ServerMeleeAttack",
+      "WillowInventoryManager:RemoveInventory": "ValueError: Couldn't find field RemoveInventory"
+    },
+    "discovered_mission_classes": {
+      "QuestAcceptGFxMovie": "WillowGame.QuestAcceptGFxMovie",
+      "StatusMenuExGFxMovie": "WillowGame.StatusMenuExGFxMovie",
+      "MissionRewardGFxObject": "WillowGame.MissionRewardGFxObject",
+      "WillowHUDGFxMovie": "WillowGame.WillowHUDGFxMovie",
+      "HUDWidget_Missions": "WillowGame.HUDWidget_Missions",
+      "FrontendGFxMovie": "WillowGame.FrontendGFxMovie"
+    },
+    "discovered_ui_classes": {
+      "QuestAcceptGFxMovie": "WillowGame.QuestAcceptGFxMovie",
+      "StatusMenuExGFxMovie": "WillowGame.StatusMenuExGFxMovie",
+      "MissionRewardGFxObject": "WillowGame.MissionRewardGFxObject",
+      "WillowHUDGFxMovie": "WillowGame.WillowHUDGFxMovie",
+      "HUDWidget_Missions": "WillowGame.HUDWidget_Missions",
+      "FrontendGFxMovie": "WillowGame.FrontendGFxMovie"
+    },
+    "native_pipeline_hits": 124,
+    "hook_health": "events observed",
+    "active_corrections": [],
+    "original_current_differences": [],
+    "gameplay_writes": false,
+    "capture_next_ui_armed": false,
+    "capture_policy": "exact targets; no pickup polling/physics hooks; compact event snapshots"
+  },
+  "history": {
+    "events": [
+      {
+        "event_ref": 9
+      },
+      {
+        "event_ref": 10
+      },
+      {
+        "event_ref": 11
+      },
+      {
+        "event_ref": 12
+      },
+      {
+        "event_ref": 13
+      },
+      {
+        "event_ref": 14
+      },
+      {
+        "event_ref": 15
+      },
+      {
+        "event_ref": 16
+      },
+      {
+        "event_ref": 17
+      },
+      {
+        "event_ref": 18
+      },
+      {
+        "event_ref": 19
+      },
+      {
+        "event_ref": 20
+      },
+      {
+        "event_ref": 21
+      },
+      {
+        "event_ref": 22
+      },
+      {
+        "event_ref": 23
+      },
+      {
+        "event_ref": 24
+      }
+    ],
+    "mission_observations": {
+      "GD_Episode02.M_Ep2_Henchman": [
+        {
+          "event_ref": 14
+        }
+      ]
+    },
+    "mission_lifecycle": {
+      "GD_Episode02.M_Ep2_Henchman": [
+        {
+          "event_ref": 14
+        }
+      ]
+    },
+    "recent_ui": [
+      {
+        "event_ref": 14
+      }
+    ],
+    "recent_equipment": [
+      {
+        "event_ref": 12
+      },
+      {
+        "event_ref": 23
+      }
+    ],
+    "recent_economy": [],
+    "recent_combat": [],
+    "scaling_queries": [
+      {
+        "event_ref": 17
+      }
+    ],
+    "limits": {
+      "events": 192,
+      "missions": 32,
+      "events_per_mission": 8,
+      "ui": 24,
+      "equipment": 16,
+      "economy": 32,
+      "combat": 24,
+      "scaling": 32
+    },
+    "dropped_events": 0,
+    "dropped_mission_histories": 0
+  },
+  "event_table": {
+    "9": {
+      "sequence": 9,
+      "utc": "2026-11-05T11:18:55.703+00:00",
+      "kind": "engine:WillowClientShowLoadingMovie",
+      "data": {
+        "target": "WillowGame.WillowPlayerController:WillowClientShowLoadingMovie",
+        "phase": "POST_UNCONDITIONAL",
+        "object": {
+          "path": "menumap.TheWorld:PersistentLevel.WillowPlayerController_0",
+          "class": "WillowPlayerController"
+        },
+        "arguments": {
+          "MovieName": "Glacial_P",
+          "bShowMovie": true,
+          "bPauseAfterHide": false,
+          "PauseDuration": 0.0,
+          "KeepPlayingDuration": 0.0,
+          "OverridePreviousDelays": false,
+          "NoLooping": false
+        },
+        "observed_return": {
+          "kind": "void_or_unset"
+        },
+        "return_provenance": "observed SDK pipeline; other mods may override it",
+        "mission_state_at_event": [],
+        "player_xp_level_at_event": 10,
+        "errors": [],
+        "truncations": []
+      }
+    },
+    "10": {
+      "sequence": 10,
+      "utc": "2026-11-05T11:18:56.088+00:00",
+      "kind": "engine:SetGameStage",
+      "data": {
+        "target": "WillowGame.WillowPawn:SetGameStage",
+        "phase": "PRE",
+        "object": {
+          "path": "Loader.TheWorld:PersistentLevel.WillowPlayerPawn_0",
+          "class": "WillowPlayerPawn"
+        },
+        "arguments": {
+          "NewGameStage": 10
+        },
+        "observed_return": null,
+        "return_provenance": "observed SDK pipeline; other mods may override it",
+        "mission_state_at_event": [],
+        "player_xp_level_at_event": 10,
+        "errors": [],
+        "truncations": []
+      }
+    },
+    "11": {
+      "sequence": 11,
+      "utc": "2026-11-05T11:18:56.088+00:00",
+      "kind": "engine:SetGameStage",
+      "data": {
+        "target": "WillowGame.WillowPawn:SetGameStage",
+        "phase": "POST_UNCONDITIONAL",
+        "object": {
+          "path": "Loader.TheWorld:PersistentLevel.WillowPlayerPawn_0",
+          "class": "WillowPlayerPawn"
+        },
+        "arguments": {
+          "NewGameStage": 10
+        },
+        "observed_return": {
+          "kind": "void_or_unset"
+        },
+        "return_provenance": "observed SDK pipeline; other mods may override it",
+        "mission_state_at_event": [],
+        "player_xp_level_at_event": 10,
+        "errors": [],
+        "truncations": []
+      }
+    },
+    "12": {
+      "sequence": 12,
+      "utc": "2026-11-05T11:18:56.088+00:00",
+      "kind": "equipment:ClientInitializeInventoryFromDefinition",
+      "data": {
+        "target": "Engine.WillowInventory:ClientInitializeInventoryFromDefinition",
+        "phase": "POST_UNCONDITIONAL",
+        "object": {
+          "path": "Loader.TheWorld:PersistentLevel.WillowUsableItem_0",
+          "class": "WillowUsableItem"
+        },
+        "arguments": {},
+        "observed_return": {
+          "kind": "void_or_unset"
+        },
+        "return_provenance": "observed SDK pipeline; other mods may override it",
+        "mission_state_at_event": [],
+        "player_xp_level_at_event": 10,
+        "errors": [],
+        "truncations": []
+      }
+    },
+    "13": {
+      "sequence": 13,
+      "utc": "2026-11-05T11:18:56.090+00:00",
+      "kind": "engine:GetCurrentPlaythrough",
+      "data": {
+        "target": "WillowGame.WillowPlayerController:GetCurrentPlaythrough",
+        "phase": "POST_UNCONDITIONAL",
+        "object": {
+          "path": "Loader.TheWorld:PersistentLevel.WillowPlayerController_2",
+          "class": "WillowPlayerController"
+        },
+        "arguments": {},
+        "observed_return": 2,
+        "return_provenance": "observed SDK pipeline; other mods may override it",
+        "mission_state_at_event": [],
+        "player_xp_level_at_event": 10,
+        "errors": [],
+        "truncations": []
+      }
+    },
+    "14": {
+      "sequence": 14,
+      "utc": "2026-11-05T11:18:56.091+00:00",
+      "kind": "ui:ClientDoMissionStatusFanfare",
+      "data": {
+        "target": "WillowGame.WillowPlayerController:ClientDoMissionStatusFanfare",
+        "phase": "POST_UNCONDITIONAL",
+        "object": {
+          "path": "Loader.TheWorld:PersistentLevel.WillowPlayerController_2",
+          "class": "WillowPlayerController"
+        },
+        "arguments": {
+          "FanFareType": 1,
+          "bNotReplicated": true,
+          "MissionDef": {
+            "path": "GD_Episode02.M_Ep2_Henchman",
+            "class": "MissionDefinition"
+          },
+          "MissionObjective": null
+        },
+        "observed_return": {
+          "kind": "void_or_unset"
+        },
+        "return_provenance": "observed SDK pipeline; other mods may override it",
+        "mission_state_at_event": [
+          {
+            "mission_path": "GD_Episode02.M_Ep2_Henchman",
+            "definition_stage": 50,
+            "definition_locked": true,
+            "region": {
+              "path": "GD_GameStages.Zone1.StartOfGame",
+              "class": "WillowRegionDefinition"
+            }
+          }
+        ],
+        "player_xp_level_at_event": 10,
+        "errors": [],
+        "truncations": []
+      }
+    },
+    "15": {
+      "sequence": 15,
+      "utc": "2026-11-05T11:18:56.091+00:00",
+      "kind": "engine:ApplyMissionSaveGameData",
+      "data": {
+        "target": "WillowGame.WillowPlayerController:ApplyMissionSaveGameData",
+        "phase": "POST_UNCONDITIONAL",
+        "object": {
+          "path": "Loader.TheWorld:PersistentLevel.WillowPlayerController_2",
+          "class": "WillowPlayerController"
+        },
+        "arguments": {
+          "SaveGame": {
+            "path": "Transient.PlayerSaveGame_16",
+            "class": "PlayerSaveGame"
+          },
+          "bManageRewards": true
+        },
+        "observed_return": {
+          "kind": "void_or_unset"
+        },
+        "return_provenance": "observed SDK pipeline; other mods may override it",
+        "mission_state_at_event": [],
+        "player_xp_level_at_event": 10,
+        "errors": [],
+        "truncations": []
+      }
+    },
+    "16": {
+      "sequence": 16,
+      "utc": "2026-11-05T11:18:56.099+00:00",
+      "kind": "engine:SpawningProcessComplete",
+      "data": {
+        "target": "WillowGame.WillowPlayerController:SpawningProcessComplete",
+        "phase": "POST_UNCONDITIONAL",
+        "object": {
+          "path": "Loader.TheWorld:PersistentLevel.WillowPlayerController_2",
+          "class": "WillowPlayerController"
+        },
+        "arguments": {},
+        "observed_return": {
+          "kind": "void_or_unset"
+        },
+        "return_provenance": "observed SDK pipeline; other mods may override it",
+        "mission_state_at_event": [],
+        "player_xp_level_at_event": 10,
+        "errors": [],
+        "truncations": []
+      }
+    },
+    "17": {
+      "sequence": 17,
+      "utc": "2026-11-05T11:18:56.372+00:00",
+      "kind": "engine:GetRegionGameStage",
+      "data": {
+        "target": "WillowGame.WillowRegionDefinition:GetRegionGameStage",
+        "phase": "POST_UNCONDITIONAL",
+        "object": {
+          "path": "GD_GameStages.Zone1.StartOfGame",
+          "class": "WillowRegionDefinition"
+        },
+        "arguments": {
+          "GameStage": 0,
+          "AwesomeLevel": 0,
+          "bDefaultGameStage": false
+        },
+        "observed_return": true,
+        "return_provenance": "observed SDK pipeline; other mods may override it",
+        "mission_state_at_event": [],
+        "player_xp_level_at_event": 10,
+        "errors": [],
+        "truncations": []
+      }
+    },
+    "18": {
+      "sequence": 18,
+      "utc": "2026-11-05T11:18:56.509+00:00",
+      "kind": "engine:WillowClientDisableLoadingMovie",
+      "data": {
+        "target": "WillowGame.WillowPlayerController:WillowClientDisableLoadingMovie",
+        "phase": "POST_UNCONDITIONAL",
+        "object": {
+          "path": "Loader.TheWorld:PersistentLevel.WillowPlayerController_2",
+          "class": "WillowPlayerController"
+        },
+        "arguments": {},
+        "observed_return": {
+          "kind": "void_or_unset"
+        },
+        "return_provenance": "observed SDK pipeline; other mods may override it",
+        "mission_state_at_event": [],
+        "player_xp_level_at_event": 10,
+        "errors": [],
+        "truncations": []
+      }
+    },
+    "19": {
+      "sequence": 19,
+      "utc": "2026-11-05T11:18:56.621+00:00",
+      "kind": "engine:WillowClientShowLoadingMovie",
+      "data": {
+        "target": "WillowGame.WillowPlayerController:WillowClientShowLoadingMovie",
+        "phase": "POST_UNCONDITIONAL",
+        "object": {
+          "path": "Loader.TheWorld:PersistentLevel.WillowPlayerController_2",
+          "class": "WillowPlayerController"
+        },
+        "arguments": {
+          "MovieName": "",
+          "bShowMovie": false,
+          "bPauseAfterHide": false,
+          "PauseDuration": 0.0,
+          "KeepPlayingDuration": 0.0,
+          "OverridePreviousDelays": false,
+          "NoLooping": false
+        },
+        "observed_return": {
+          "kind": "void_or_unset"
+        },
+        "return_provenance": "observed SDK pipeline; other mods may override it",
+        "mission_state_at_event": [],
+        "player_xp_level_at_event": 10,
+        "errors": [],
+        "truncations": []
+      }
+    },
+    "20": {
+      "sequence": 20,
+      "utc": "2026-11-05T11:18:59.115+00:00",
+      "kind": "engine:GetCurrentPlaythrough",
+      "data": {
+        "target": "WillowGame.WillowPlayerController:GetCurrentPlaythrough",
+        "phase": "POST_UNCONDITIONAL",
+        "object": {
+          "path": "Loader.TheWorld:PersistentLevel.WillowPlayerController_2",
+          "class": "WillowPlayerController"
+        },
+        "arguments": {},
+        "observed_return": 2,
+        "return_provenance": "observed SDK pipeline; other mods may override it",
+        "mission_state_at_event": [],
+        "player_xp_level_at_event": 10,
+        "errors": [],
+        "truncations": []
+      }
+    },
+    "21": {
+      "sequence": 21,
+      "utc": "2026-11-05T11:18:59.193+00:00",
+      "kind": "engine:SetGameStage",
+      "data": {
+        "target": "WillowGame.WillowInteractiveObject:SetGameStage",
+        "phase": "PRE",
+        "object": {
+          "path": "Glacial_P.TheWorld:PersistentLevel.WillowInteractiveObject_1",
+          "class": "WillowInteractiveObject"
+        },
+        "arguments": {
+          "NewGameStage": 50
+        },
+        "observed_return": null,
+        "return_provenance": "observed SDK pipeline; other mods may override it",
+        "mission_state_at_event": [],
+        "player_xp_level_at_event": 10,
+        "errors": [],
+        "truncations": []
+      }
+    },
+    "22": {
+      "sequence": 22,
+      "utc": "2026-11-05T11:18:59.193+00:00",
+      "kind": "engine:SetGameStage",
+      "data": {
+        "target": "WillowGame.WillowInteractiveObject:SetGameStage",
+        "phase": "POST_UNCONDITIONAL",
+        "object": {
+          "path": "Glacial_P.TheWorld:PersistentLevel.WillowInteractiveObject_1",
+          "class": "WillowInteractiveObject"
+        },
+        "arguments": {
+          "NewGameStage": 50
+        },
+        "observed_return": {
+          "kind": "void_or_unset"
+        },
+        "return_provenance": "observed SDK pipeline; other mods may override it",
+        "mission_state_at_event": [],
+        "player_xp_level_at_event": 10,
+        "errors": [],
+        "truncations": []
+      }
+    },
+    "23": {
+      "sequence": 23,
+      "utc": "2026-11-05T11:18:59.368+00:00",
+      "kind": "equipment:ClientInitializeInventoryFromDefinition",
+      "data": {
+        "target": "Engine.WillowInventory:ClientInitializeInventoryFromDefinition",
+        "phase": "POST_UNCONDITIONAL",
+        "object": {
+          "path": "Loader.TheWorld:PersistentLevel.WillowUsableItem_1",
+          "class": "WillowUsableItem"
+        },
+        "arguments": {},
+        "observed_return": {
+          "kind": "void_or_unset"
+        },
+        "return_provenance": "observed SDK pipeline; other mods may override it",
+        "mission_state_at_event": [],
+        "player_xp_level_at_event": 10,
+        "errors": [],
+        "truncations": []
+      }
+    },
+    "24": {
+      "sequence": 24,
+      "utc": "2026-11-05T11:19:00.071+00:00",
+      "kind": "engine:GetCurrentPlaythrough",
+      "data": {
+        "target": "WillowGame.WillowPlayerController:GetCurrentPlaythrough",
+        "phase": "POST_UNCONDITIONAL",
+        "object": {
+          "path": "Loader.TheWorld:PersistentLevel.WillowPlayerController_2",
+          "class": "WillowPlayerController"
+        },
+        "arguments": {},
+        "observed_return": 2,
+        "return_provenance": "observed SDK pipeline; other mods may override it",
+        "mission_state_at_event": [],
+        "player_xp_level_at_event": 10,
+        "errors": [],
+        "truncations": []
+      }
+    }
+  },
+  "event_reference_format": "event_ref is a sequence key in event_table; each payload is stored once"
+}

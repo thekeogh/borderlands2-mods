@@ -1,0 +1,4613 @@
+{
+    "_raw": {
+        "5": [
+            [
+                0,
+                0
+            ]
+        ],
+        "31": [
+            [
+                0,
+                0
+            ]
+        ],
+        "42": [
+            [
+                0,
+                0
+            ]
+        ],
+        "48": [
+            [
+                0,
+                0
+            ]
+        ],
+        "50": [
+            [
+                0,
+                0
+            ]
+        ],
+        "51": [
+            [
+                0,
+                0
+            ]
+        ],
+        "58": [
+            [
+                0,
+                2
+            ]
+        ]
+    },
+    "active_mission": 0,
+    "active_playthrough": 1,
+    "appearance": {
+        "color1": {
+            "a": 255,
+            "b": 64,
+            "g": 77,
+            "r": 204
+        },
+        "color2": {
+            "a": 255,
+            "b": 89,
+            "g": 147,
+            "r": 153
+        },
+        "color3": {
+            "a": 255,
+            "b": 89,
+            "g": 107,
+            "r": 140
+        },
+        "name": "Axton"
+    },
+    "bank_size": 6,
+    "black_market": {
+        "grenade": 0,
+        "launcher": 0,
+        "pistol": 0,
+        "rifle": 0,
+        "shotgun": 0,
+        "smg": 0,
+        "sniper": 0
+    },
+    "challenges": [
+        {
+            "dlc_id": 0,
+            "is_from_dlc": 0,
+            "name": "GD_Challenges.Dueling.DuelsWon_HatersGonnaHate"
+        },
+        {
+            "dlc_id": 0,
+            "is_from_dlc": 0,
+            "name": "GD_Challenges.GeneralCombat.General_RoundsFired"
+        },
+        {
+            "dlc_id": 0,
+            "is_from_dlc": 0,
+            "name": "GD_Challenges.Weapons.AssaultRifle_Kills"
+        },
+        {
+            "dlc_id": 0,
+            "is_from_dlc": 0,
+            "name": "GD_Challenges.Weapons.AssaultRifle_CriticalHits"
+        },
+        {
+            "dlc_id": 0,
+            "is_from_dlc": 0,
+            "name": "GD_Challenges.Weapons.AssaultRifle_SecondWinds"
+        },
+        {
+            "dlc_id": 0,
+            "is_from_dlc": 0,
+            "name": "GD_Challenges.Weapons.Pistol_Kills"
+        },
+        {
+            "dlc_id": 0,
+            "is_from_dlc": 0,
+            "name": "GD_Challenges.Weapons.Pistol_CriticalHits"
+        },
+        {
+            "dlc_id": 0,
+            "is_from_dlc": 0,
+            "name": "GD_Challenges.Weapons.Pistol_SecondWinds"
+        },
+        {
+            "dlc_id": 0,
+            "is_from_dlc": 0,
+            "name": "GD_Challenges.Weapons.SMG_Kills"
+        },
+        {
+            "dlc_id": 0,
+            "is_from_dlc": 0,
+            "name": "GD_Challenges.Weapons.SMG_CriticalHits"
+        },
+        {
+            "dlc_id": 0,
+            "is_from_dlc": 0,
+            "name": "GD_Challenges.Weapons.SMG_SecondWinds"
+        },
+        {
+            "dlc_id": 0,
+            "is_from_dlc": 0,
+            "name": "GD_Challenges.Weapons.Shotgun_Kills"
+        },
+        {
+            "dlc_id": 0,
+            "is_from_dlc": 0,
+            "name": "GD_Challenges.Weapons.Shotgun_CriticalHits"
+        },
+        {
+            "dlc_id": 0,
+            "is_from_dlc": 0,
+            "name": "GD_Challenges.Weapons.Shotgun_SecondWinds"
+        },
+        {
+            "dlc_id": 0,
+            "is_from_dlc": 0,
+            "name": "GD_Challenges.Weapons.SniperRifle_Kills"
+        },
+        {
+            "dlc_id": 0,
+            "is_from_dlc": 0,
+            "name": "GD_Challenges.Weapons.Sniper_CriticalHits"
+        },
+        {
+            "dlc_id": 0,
+            "is_from_dlc": 0,
+            "name": "GD_Challenges.Weapons.Sniper_SecondWinds"
+        },
+        {
+            "dlc_id": 0,
+            "is_from_dlc": 0,
+            "name": "GD_Challenges.Weapons.SniperRifle_KillsUnaware"
+        },
+        {
+            "dlc_id": 0,
+            "is_from_dlc": 0,
+            "name": "GD_Challenges.Weapons.Launcher_Kills"
+        },
+        {
+            "dlc_id": 0,
+            "is_from_dlc": 0,
+            "name": "GD_Challenges.Weapons.Launcher_SecondWinds"
+        },
+        {
+            "dlc_id": 0,
+            "is_from_dlc": 0,
+            "name": "GD_Challenges.Melee.Melee_Kills"
+        },
+        {
+            "dlc_id": 0,
+            "is_from_dlc": 0,
+            "name": "GD_Challenges.Grenades.Grenade_Kills"
+        },
+        {
+            "dlc_id": 0,
+            "is_from_dlc": 0,
+            "name": "GD_Challenges.Grenades.Grenade_KillsSingularityType"
+        },
+        {
+            "dlc_id": 0,
+            "is_from_dlc": 0,
+            "name": "GD_Challenges.Grenades.Grenade_KillsMirvType"
+        },
+        {
+            "dlc_id": 0,
+            "is_from_dlc": 0,
+            "name": "GD_Challenges.Shields.Shields_KillsNova"
+        },
+        {
+            "dlc_id": 0,
+            "is_from_dlc": 0,
+            "name": "GD_Challenges.Shields.Shields_KillsRoid"
+        },
+        {
+            "dlc_id": 0,
+            "is_from_dlc": 0,
+            "name": "GD_Challenges.Shields.Shields_KillsSpikes"
+        },
+        {
+            "dlc_id": 0,
+            "is_from_dlc": 0,
+            "name": "GD_Challenges.Shields.Shields_KillsImpact"
+        },
+        {
+            "dlc_id": 0,
+            "is_from_dlc": 0,
+            "name": "GD_Challenges.Shields.Shields_AbsorbAmmo"
+        },
+        {
+            "dlc_id": 0,
+            "is_from_dlc": 0,
+            "name": "GD_Challenges.Grenades.Grenade_KillsAoEoTType"
+        },
+        {
+            "dlc_id": 0,
+            "is_from_dlc": 0,
+            "name": "GD_Challenges.Grenades.Grenade_KillsBouncing"
+        },
+        {
+            "dlc_id": 0,
+            "is_from_dlc": 0,
+            "name": "GD_Challenges.Player.Player_PointsHealed"
+        },
+        {
+            "dlc_id": 0,
+            "is_from_dlc": 0,
+            "name": "GD_Challenges.Player.Player_SecondWind"
+        },
+        {
+            "dlc_id": 0,
+            "is_from_dlc": 0,
+            "name": "GD_Challenges.Grenades.Grenade_KillsTransfusionType"
+        },
+        {
+            "dlc_id": 0,
+            "is_from_dlc": 0,
+            "name": "GD_Challenges.Economy.Economy_MoneySaved"
+        },
+        {
+            "dlc_id": 0,
+            "is_from_dlc": 0,
+            "name": "GD_Challenges.Economy.General_MoneyFromCashDrops"
+        },
+        {
+            "dlc_id": 0,
+            "is_from_dlc": 0,
+            "name": "GD_Challenges.Economy.Economy_SellItems"
+        },
+        {
+            "dlc_id": 0,
+            "is_from_dlc": 0,
+            "name": "GD_Challenges.Economy.Economy_PurchaseItemsOfTheDay"
+        },
+        {
+            "dlc_id": 0,
+            "is_from_dlc": 0,
+            "name": "GD_Challenges.enemies.Enemies_KillConstructors"
+        },
+        {
+            "dlc_id": 0,
+            "is_from_dlc": 0,
+            "name": "GD_Challenges.enemies.Enemies_KillLoaders"
+        },
+        {
+            "dlc_id": 0,
+            "is_from_dlc": 0,
+            "name": "GD_Challenges.enemies.Enemies_KillBullymongs"
+        },
+        {
+            "dlc_id": 0,
+            "is_from_dlc": 0,
+            "name": "GD_Challenges.enemies.Enemies_KillGoliaths"
+        },
+        {
+            "dlc_id": 0,
+            "is_from_dlc": 0,
+            "name": "GD_Challenges.enemies.Enemies_KillEngineers"
+        },
+        {
+            "dlc_id": 0,
+            "is_from_dlc": 0,
+            "name": "GD_Challenges.enemies.Enemies_KillSurveyors"
+        },
+        {
+            "dlc_id": 0,
+            "is_from_dlc": 0,
+            "name": "GD_Challenges.enemies.Enemies_KillNomads"
+        },
+        {
+            "dlc_id": 0,
+            "is_from_dlc": 0,
+            "name": "GD_Challenges.enemies.Enemies_KillPsychos"
+        },
+        {
+            "dlc_id": 0,
+            "is_from_dlc": 0,
+            "name": "GD_Challenges.enemies.Enemies_KillRats"
+        },
+        {
+            "dlc_id": 0,
+            "is_from_dlc": 0,
+            "name": "GD_Challenges.enemies.Enemies_KillMarauders"
+        },
+        {
+            "dlc_id": 0,
+            "is_from_dlc": 0,
+            "name": "GD_Challenges.enemies.Enemies_KillMidgets"
+        },
+        {
+            "dlc_id": 0,
+            "is_from_dlc": 0,
+            "name": "GD_Challenges.Player.Player_SecondWindFromBadass"
+        },
+        {
+            "dlc_id": 0,
+            "is_from_dlc": 0,
+            "name": "GD_Challenges.Player.Player_CoopRevivesOfFriends"
+        },
+        {
+            "dlc_id": 0,
+            "is_from_dlc": 0,
+            "name": "GD_Challenges.GeneralCombat.Player_KillsWithActionSkill"
+        },
+        {
+            "dlc_id": 0,
+            "is_from_dlc": 0,
+            "name": "GD_Challenges.Pickups.Inventory_PickupWhiteItems"
+        },
+        {
+            "dlc_id": 0,
+            "is_from_dlc": 0,
+            "name": "GD_Challenges.Pickups.Inventory_PickupGreenItems"
+        },
+        {
+            "dlc_id": 0,
+            "is_from_dlc": 0,
+            "name": "GD_Challenges.Pickups.Inventory_PickupBlueItems"
+        },
+        {
+            "dlc_id": 0,
+            "is_from_dlc": 0,
+            "name": "GD_Challenges.Pickups.Inventory_PickupPurpleItems"
+        },
+        {
+            "dlc_id": 0,
+            "is_from_dlc": 0,
+            "name": "GD_Challenges.Pickups.Inventory_PickupOrangeItems"
+        },
+        {
+            "dlc_id": 0,
+            "is_from_dlc": 0,
+            "name": "GD_Challenges.elemental.Elemental_SetEnemiesOnFire"
+        },
+        {
+            "dlc_id": 0,
+            "is_from_dlc": 0,
+            "name": "GD_Challenges.elemental.Elemental_KillEnemiesCorrosive"
+        },
+        {
+            "dlc_id": 0,
+            "is_from_dlc": 0,
+            "name": "GD_Challenges.elemental.Elemental_KillEnemiesExplosive"
+        },
+        {
+            "dlc_id": 0,
+            "is_from_dlc": 0,
+            "name": "GD_Challenges.elemental.Elemental_DealFireDOTDamage"
+        },
+        {
+            "dlc_id": 0,
+            "is_from_dlc": 0,
+            "name": "GD_Challenges.elemental.Elemental_DealCorrosiveDOTDamage"
+        },
+        {
+            "dlc_id": 0,
+            "is_from_dlc": 0,
+            "name": "GD_Challenges.elemental.Elemental_DealShockDOTDamage"
+        },
+        {
+            "dlc_id": 0,
+            "is_from_dlc": 0,
+            "name": "GD_Challenges.elemental.Elemental_DealBonusSlagDamage"
+        },
+        {
+            "dlc_id": 0,
+            "is_from_dlc": 0,
+            "name": "GD_Challenges.Economy.Economy_BuyItemsWithEridium"
+        },
+        {
+            "dlc_id": 0,
+            "is_from_dlc": 0,
+            "name": "GD_Challenges.GeneralCombat.Kills_AtNight"
+        },
+        {
+            "dlc_id": 0,
+            "is_from_dlc": 0,
+            "name": "GD_Challenges.GeneralCombat.Kills_AtDay"
+        },
+        {
+            "dlc_id": 0,
+            "is_from_dlc": 0,
+            "name": "GD_Challenges.enemies.Enemies_ShootBullymongProjectiles"
+        },
+        {
+            "dlc_id": 0,
+            "is_from_dlc": 0,
+            "name": "GD_Challenges.enemies.Enemies_ReleaseChainedMidgets"
+        },
+        {
+            "dlc_id": 0,
+            "is_from_dlc": 0,
+            "name": "GD_Challenges.Loot.Loot_OpenChests"
+        },
+        {
+            "dlc_id": 0,
+            "is_from_dlc": 0,
+            "name": "GD_Challenges.Loot.Loot_OpenLootables"
+        },
+        {
+            "dlc_id": 0,
+            "is_from_dlc": 0,
+            "name": "GD_Challenges.GeneralCombat.Tediore_KillWithReload"
+        },
+        {
+            "dlc_id": 0,
+            "is_from_dlc": 0,
+            "name": "GD_Challenges.GeneralCombat.Tediore_DamageFromReloads"
+        },
+        {
+            "dlc_id": 0,
+            "is_from_dlc": 0,
+            "name": "GD_Challenges.GeneralCombat.Barrels_KillEnemies"
+        },
+        {
+            "dlc_id": 0,
+            "is_from_dlc": 0,
+            "name": "GD_Challenges.Economy.Trade_ItemsWithPlayers"
+        },
+        {
+            "dlc_id": 0,
+            "is_from_dlc": 0,
+            "name": "GD_Challenges.Miscellaneous.Missions_SideMissionsCompleted"
+        },
+        {
+            "dlc_id": 0,
+            "is_from_dlc": 0,
+            "name": "GD_Challenges.Miscellaneous.Missions_OptionalObjectivesCompleted"
+        },
+        {
+            "dlc_id": 0,
+            "is_from_dlc": 0,
+            "name": "GD_Challenges.Loot.Loot_PickUpWeapons"
+        },
+        {
+            "dlc_id": 0,
+            "is_from_dlc": 0,
+            "name": "GD_Challenges.GeneralCombat.Kills_FromCrits"
+        },
+        {
+            "dlc_id": 0,
+            "is_from_dlc": 0,
+            "name": "GD_Challenges.LevelChallenges.Glacial_VaultRoy"
+        },
+        {
+            "dlc_id": 0,
+            "is_from_dlc": 0,
+            "name": "GD_Challenges.enemies.Enemies_KillBruisers"
+        },
+        {
+            "dlc_id": 0,
+            "is_from_dlc": 0,
+            "name": "GD_Challenges.Miscellaneous.Misc_CompleteChallenges"
+        },
+        {
+            "dlc_id": 0,
+            "is_from_dlc": 0,
+            "name": "GD_Challenges.Miscellaneous.Misc_JimmyJenkins"
+        },
+        {
+            "dlc_id": 22,
+            "is_from_dlc": 1,
+            "name": "GD_Anemone_Challenges.Challenges.Challenge_Kill_HaderaxTheInvincible"
+        },
+        {
+            "dlc_id": 22,
+            "is_from_dlc": 1,
+            "name": "GD_Anemone_Challenges.Challenges.Challenge_Kill_LetItGo"
+        },
+        {
+            "dlc_id": 22,
+            "is_from_dlc": 1,
+            "name": "GD_Anemone_Challenges.Challenges.Challenge_Kill_EveryCorner"
+        },
+        {
+            "dlc_id": 22,
+            "is_from_dlc": 1,
+            "name": "GD_Anemone_Challenges.LevelChallenges.Backburner_Slagenstein"
+        },
+        {
+            "dlc_id": 22,
+            "is_from_dlc": 1,
+            "name": "GD_Anemone_Challenges.Challenges.Challenge_Kill_Tanksbutnotanks"
+        },
+        {
+            "dlc_id": 22,
+            "is_from_dlc": 1,
+            "name": "GD_Anemone_Challenges.Challenges.Challenge_Kill_YouStartedIt"
+        },
+        {
+            "dlc_id": 22,
+            "is_from_dlc": 1,
+            "name": "GD_Anemone_Challenges.Challenges.Challenge_Kill_FlowerPower"
+        },
+        {
+            "dlc_id": 22,
+            "is_from_dlc": 1,
+            "name": "GD_Anemone_Challenges.Challenges.Challenge_Kill_DoItForTheVine"
+        },
+        {
+            "dlc_id": 9,
+            "is_from_dlc": 1,
+            "name": "GD_Aster_Challenges.Challenges.Challenge_Aster_KillDwarves"
+        },
+        {
+            "dlc_id": 9,
+            "is_from_dlc": 1,
+            "name": "GD_Aster_Challenges.Challenges.Challenge_Aster_KillGolems"
+        },
+        {
+            "dlc_id": 9,
+            "is_from_dlc": 1,
+            "name": "GD_Aster_Challenges.Challenges.Challenge_Aster_KillKnights"
+        },
+        {
+            "dlc_id": 9,
+            "is_from_dlc": 1,
+            "name": "GD_Aster_Challenges.Challenges.Challenge_Aster_KillOrcs"
+        },
+        {
+            "dlc_id": 9,
+            "is_from_dlc": 1,
+            "name": "GD_Aster_Challenges.Challenges.Challenge_Aster_KillSkeletons"
+        },
+        {
+            "dlc_id": 9,
+            "is_from_dlc": 1,
+            "name": "GD_Aster_Challenges.Challenges.Challenge_Aster_KillSpiders"
+        },
+        {
+            "dlc_id": 9,
+            "is_from_dlc": 1,
+            "name": "GD_Aster_Challenges.Challenges.Challenge_Aster_KillTreants"
+        },
+        {
+            "dlc_id": 9,
+            "is_from_dlc": 1,
+            "name": "GD_Aster_Challenges.Challenges.Challenge_Aster_KillWizards"
+        },
+        {
+            "dlc_id": 9,
+            "is_from_dlc": 1,
+            "name": "GD_Aster_Challenges.Challenges.Challenge_Aster_KillDragons"
+        },
+        {
+            "dlc_id": 9,
+            "is_from_dlc": 1,
+            "name": "GD_Aster_Challenges.Challenges.Challenge_Aster_KillMimics"
+        },
+        {
+            "dlc_id": 3,
+            "is_from_dlc": 1,
+            "name": "GD_Iris_Challenges.Challenges.Challenge_Iris_KillMotorcycles"
+        },
+        {
+            "dlc_id": 3,
+            "is_from_dlc": 1,
+            "name": "GD_Iris_Challenges.Challenges.Challenge_Iris_KillBikers"
+        },
+        {
+            "dlc_id": 3,
+            "is_from_dlc": 1,
+            "name": "GD_Iris_Challenges.Challenges.Challenge_Iris_TorgueTokens"
+        },
+        {
+            "dlc_id": 3,
+            "is_from_dlc": 1,
+            "name": "GD_Iris_Challenges.Challenges.Challenge_Iris_BuyTorgueItems"
+        },
+        {
+            "dlc_id": 3,
+            "is_from_dlc": 1,
+            "name": "GD_Iris_Challenges.Challenges.Challenge_Iris_CompleteBattles"
+        },
+        {
+            "dlc_id": 3,
+            "is_from_dlc": 1,
+            "name": "GD_Iris_Challenges.Challenges.Challenge_Iris_Raid1"
+        },
+        {
+            "dlc_id": 1,
+            "is_from_dlc": 1,
+            "name": "GD_Orchid_Challenges.Challenges.Challenge_Orchid_Crystals"
+        },
+        {
+            "dlc_id": 1,
+            "is_from_dlc": 1,
+            "name": "GD_Orchid_Challenges.Challenges.Challenge_Orchid_Purchase"
+        },
+        {
+            "dlc_id": 1,
+            "is_from_dlc": 1,
+            "name": "GD_Orchid_Challenges.Challenges.Challenge_Orchid_KillWorms"
+        },
+        {
+            "dlc_id": 1,
+            "is_from_dlc": 1,
+            "name": "GD_Orchid_Challenges.Challenges.Challenge_Orchid_KillBandits"
+        },
+        {
+            "dlc_id": 1,
+            "is_from_dlc": 1,
+            "name": "GD_Orchid_Challenges.Challenges.Challenge_Orchid_KillHovercrafts"
+        },
+        {
+            "dlc_id": 1,
+            "is_from_dlc": 1,
+            "name": "GD_Orchid_Challenges.Challenges.Challenge_Orchid_PirateChests"
+        },
+        {
+            "dlc_id": 1,
+            "is_from_dlc": 1,
+            "name": "GD_Orchid_Challenges.Challenges.Challenge_Orchid_Raid1"
+        },
+        {
+            "dlc_id": 1,
+            "is_from_dlc": 1,
+            "name": "GD_Orchid_Challenges.Challenges.Challenge_Orchid_Raid3"
+        },
+        {
+            "dlc_id": 4,
+            "is_from_dlc": 1,
+            "name": "GD_Sage_Challenges.Challenges.Challenge_Sage_KillSavages"
+        },
+        {
+            "dlc_id": 4,
+            "is_from_dlc": 1,
+            "name": "GD_Sage_Challenges.Challenges.Challenge_Sage_KillDrifters"
+        },
+        {
+            "dlc_id": 4,
+            "is_from_dlc": 1,
+            "name": "GD_Sage_Challenges.Challenges.Challenge_Sage_KillFanBoats"
+        },
+        {
+            "dlc_id": 4,
+            "is_from_dlc": 1,
+            "name": "GD_Sage_Challenges.Challenges.Challenge_Sage_RaidBossA"
+        },
+        {
+            "dlc_id": 4,
+            "is_from_dlc": 1,
+            "name": "GD_Sage_Challenges.Challenges.Challenge_Sage_KillBoroks"
+        },
+        {
+            "dlc_id": 4,
+            "is_from_dlc": 1,
+            "name": "GD_Sage_Challenges.Challenges.Challenge_Sage_KillScaylions"
+        }
+    ],
+    "class": "GD_Soldier.Character.CharClass_Soldier",
+    "currency": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+    ],
+    "experience": 0,
+    "game_stages": [
+        {
+            "dlc_id": 0,
+            "is_from_dlc": 0,
+            "level": 1,
+            "name": "GD_GameStages.Zone1.StartOfGame",
+            "playthrough": 0
+        }
+    ],
+    "id": {
+        "a": 809268352,
+        "b": 1183669631,
+        "c": 2014709145,
+        "d": 2019958982
+    },
+    "items": [
+        {
+            "data": {
+                "_base64": "B0hzwQhwQ3yfEZe41cAp7A==",
+                "balance": {
+                    "asset": 0,
+                    "lib": 114
+                },
+                "is_weapon": 0,
+                "key": 1215545608,
+                "level": [
+                    0,
+                    0
+                ],
+                "manufacturer": {
+                    "asset": 127,
+                    "lib": 15
+                },
+                "parts": [
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null
+                ],
+                "set": 0,
+                "type": {
+                    "asset": 0,
+                    "lib": 98
+                }
+            },
+            "is_equipped": 0,
+            "star": 1,
+            "unknown2": 1
+        },
+        {
+            "data": {
+                "_base64": "B1o5GAuxwIBPQ4McebvLyA==",
+                "balance": {
+                    "asset": 101,
+                    "lib": 5
+                },
+                "is_weapon": 0,
+                "key": 1513691147,
+                "level": [
+                    1,
+                    1
+                ],
+                "manufacturer": {
+                    "asset": 127,
+                    "lib": 15
+                },
+                "parts": [
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null
+                ],
+                "set": 0,
+                "type": {
+                    "asset": 101,
+                    "lib": 5
+                }
+            },
+            "is_equipped": 0,
+            "star": 1,
+            "unknown2": 1
+        },
+        {
+            "data": {
+                "_base64": "B4gl6CZ79mQwBlOoAOJ0OQ==",
+                "balance": {
+                    "asset": 86,
+                    "lib": 4
+                },
+                "is_weapon": 0,
+                "key": -2010781658,
+                "level": [
+                    1,
+                    1
+                ],
+                "manufacturer": {
+                    "asset": 127,
+                    "lib": 15
+                },
+                "parts": [
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null
+                ],
+                "set": 0,
+                "type": {
+                    "asset": 86,
+                    "lib": 4
+                }
+            },
+            "is_equipped": 0,
+            "star": 1,
+            "unknown2": 1
+        },
+        {
+            "data": {
+                "_base64": "BwAAAAA5Kv8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+                "balance": {
+                    "asset": 0,
+                    "lib": 0
+                },
+                "is_weapon": 0,
+                "key": 0,
+                "level": [
+                    0,
+                    0
+                ],
+                "manufacturer": {
+                    "asset": 0,
+                    "lib": 0
+                },
+                "parts": [
+                    {
+                        "asset": 0,
+                        "lib": 0
+                    },
+                    {
+                        "asset": 0,
+                        "lib": 0
+                    },
+                    {
+                        "asset": 0,
+                        "lib": 0
+                    },
+                    {
+                        "asset": 0,
+                        "lib": 0
+                    },
+                    {
+                        "asset": 0,
+                        "lib": 0
+                    },
+                    {
+                        "asset": 0,
+                        "lib": 0
+                    },
+                    {
+                        "asset": 0,
+                        "lib": 0
+                    },
+                    {
+                        "asset": 0,
+                        "lib": 0
+                    },
+                    {
+                        "asset": 0,
+                        "lib": 0
+                    },
+                    {
+                        "asset": 0,
+                        "lib": 0
+                    },
+                    {
+                        "asset": 0,
+                        "lib": 0
+                    }
+                ],
+                "set": 255,
+                "type": {
+                    "asset": 0,
+                    "lib": 0
+                }
+            },
+            "is_equipped": 0,
+            "star": 1,
+            "unknown2": 18446744073709551358
+        },
+        {
+            "data": {
+                "_base64": "BwAAAAA5Kv8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+                "balance": {
+                    "asset": 0,
+                    "lib": 0
+                },
+                "is_weapon": 0,
+                "key": 0,
+                "level": [
+                    0,
+                    0
+                ],
+                "manufacturer": {
+                    "asset": 0,
+                    "lib": 0
+                },
+                "parts": [
+                    {
+                        "asset": 0,
+                        "lib": 0
+                    },
+                    {
+                        "asset": 0,
+                        "lib": 0
+                    },
+                    {
+                        "asset": 0,
+                        "lib": 0
+                    },
+                    {
+                        "asset": 0,
+                        "lib": 0
+                    },
+                    {
+                        "asset": 0,
+                        "lib": 0
+                    },
+                    {
+                        "asset": 0,
+                        "lib": 0
+                    },
+                    {
+                        "asset": 0,
+                        "lib": 0
+                    },
+                    {
+                        "asset": 0,
+                        "lib": 0
+                    },
+                    {
+                        "asset": 0,
+                        "lib": 0
+                    },
+                    {
+                        "asset": 0,
+                        "lib": 0
+                    },
+                    {
+                        "asset": 0,
+                        "lib": 0
+                    }
+                ],
+                "set": 255,
+                "type": {
+                    "asset": 0,
+                    "lib": 0
+                }
+            },
+            "is_equipped": 0,
+            "star": 0,
+            "unknown2": 18446744073709551357
+        },
+        {
+            "data": {
+                "_base64": "BwAAAAA5Kv8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+                "balance": {
+                    "asset": 0,
+                    "lib": 0
+                },
+                "is_weapon": 0,
+                "key": 0,
+                "level": [
+                    0,
+                    0
+                ],
+                "manufacturer": {
+                    "asset": 0,
+                    "lib": 0
+                },
+                "parts": [
+                    {
+                        "asset": 0,
+                        "lib": 0
+                    },
+                    {
+                        "asset": 0,
+                        "lib": 0
+                    },
+                    {
+                        "asset": 0,
+                        "lib": 0
+                    },
+                    {
+                        "asset": 0,
+                        "lib": 0
+                    },
+                    {
+                        "asset": 0,
+                        "lib": 0
+                    },
+                    {
+                        "asset": 0,
+                        "lib": 0
+                    },
+                    {
+                        "asset": 0,
+                        "lib": 0
+                    },
+                    {
+                        "asset": 0,
+                        "lib": 0
+                    },
+                    {
+                        "asset": 0,
+                        "lib": 0
+                    },
+                    {
+                        "asset": 0,
+                        "lib": 0
+                    },
+                    {
+                        "asset": 0,
+                        "lib": 0
+                    }
+                ],
+                "set": 255,
+                "type": {
+                    "asset": 0,
+                    "lib": 0
+                }
+            },
+            "is_equipped": 0,
+            "star": 0,
+            "unknown2": 18446744073709551611
+        }
+    ],
+    "last_fast_travel": "None",
+    "level": 1,
+    "lockouts": [
+        {
+            "dlc_id": 99,
+            "is_from_dlc": 1,
+            "name": "{}",
+            "time": 0
+        }
+    ],
+    "mission_number": 0,
+    "missions": [
+        {
+            "active": ""
+        },
+        {
+            "active": ""
+        },
+        {
+            "active": ""
+        }
+    ],
+    "playthroughs_completed": 1,
+    "resources": [
+        {
+            "amount": 0.0,
+            "level": 0,
+            "pool": "D_Resourcepools.AmmoPools.Ammo_Combat_Rifle_Pool",
+            "resource": "D_Resources.AmmoResources.Ammo_Combat_Rifle"
+        },
+        {
+            "amount": 0.0,
+            "level": 0,
+            "pool": "D_Resourcepools.AmmoPools.Ammo_Patrol_SMG_Pool",
+            "resource": "D_Resources.AmmoResources.Ammo_Patrol_SMG"
+        },
+        {
+            "amount": 0.0,
+            "level": 0,
+            "pool": "D_Resourcepools.AmmoPools.Ammo_Repeater_Pistol_Pool",
+            "resource": "D_Resources.AmmoResources.Ammo_Repeater_Pistol"
+        },
+        {
+            "amount": 0.0,
+            "level": 0,
+            "pool": "D_Resourcepools.AmmoPools.Ammo_Sniper_Rifle_Pool",
+            "resource": "D_Resources.AmmoResources.Ammo_Sniper_Rifle"
+        }
+    ],
+    "save_game_id": 1,
+    "save_timestamp": "20250626134126",
+    "sizes": {
+        "inventory": 12,
+        "weapon_slots": 2,
+        "weapon_slots_shown": 0
+    },
+    "skill_points": 0,
+    "skills": [
+        {
+            "level": 0,
+            "name": "GD_Siren_Skills.Phaselock.Skill_Phaselock",
+            "unknown3": 0,
+            "unknown4": 0
+        },
+        {
+            "level": 0,
+            "name": "GD_Siren_Skills.Motion.Ward",
+            "unknown3": 0,
+            "unknown4": 0
+        },
+        {
+            "level": 0,
+            "name": "GD_Siren_Skills.Motion.Accelerate",
+            "unknown3": 0,
+            "unknown4": 0
+        },
+        {
+            "level": 0,
+            "name": "GD_Siren_Skills.Motion.Suspension",
+            "unknown3": 0,
+            "unknown4": 0
+        },
+        {
+            "level": 0,
+            "name": "GD_Siren_Skills.Motion.KineticReflection",
+            "unknown3": 0,
+            "unknown4": 0
+        },
+        {
+            "level": 0,
+            "name": "GD_Siren_Skills.Motion.Fleet",
+            "unknown3": 0,
+            "unknown4": 0
+        },
+        {
+            "level": 0,
+            "name": "GD_Siren_Skills.Motion.Converge",
+            "unknown3": 0,
+            "unknown4": 0
+        },
+        {
+            "level": 0,
+            "name": "GD_Siren_Skills.Motion.Inertia",
+            "unknown3": 0,
+            "unknown4": 0
+        },
+        {
+            "level": 0,
+            "name": "GD_Siren_Skills.Motion.Quicken",
+            "unknown3": 0,
+            "unknown4": 0
+        },
+        {
+            "level": 0,
+            "name": "GD_Siren_Skills.Motion.SubSequence",
+            "unknown3": 0,
+            "unknown4": 0
+        },
+        {
+            "level": 0,
+            "name": "GD_Siren_Skills.Motion.ThoughtLock",
+            "unknown3": 0,
+            "unknown4": 0
+        },
+        {
+            "level": 0,
+            "name": "GD_Siren_Skills.Harmony.MindsEye",
+            "unknown3": 0,
+            "unknown4": 0
+        },
+        {
+            "level": 0,
+            "name": "GD_Siren_Skills.Harmony.SweetRelease",
+            "unknown3": 0,
+            "unknown4": 0
+        },
+        {
+            "level": 0,
+            "name": "GD_Siren_Skills.Harmony.Restoration",
+            "unknown3": 0,
+            "unknown4": 0
+        },
+        {
+            "level": 0,
+            "name": "GD_Siren_Skills.Harmony.Wreck",
+            "unknown3": 0,
+            "unknown4": 0
+        },
+        {
+            "level": 0,
+            "name": "GD_Siren_Skills.Harmony.Elated",
+            "unknown3": 0,
+            "unknown4": 0
+        },
+        {
+            "level": 0,
+            "name": "GD_Siren_Skills.Harmony.Res",
+            "unknown3": 0,
+            "unknown4": 0
+        },
+        {
+            "level": 0,
+            "name": "GD_Siren_Skills.Harmony.Recompense",
+            "unknown3": 0,
+            "unknown4": 0
+        },
+        {
+            "level": 0,
+            "name": "GD_Siren_Skills.Harmony.Sustenance",
+            "unknown3": 0,
+            "unknown4": 0
+        },
+        {
+            "level": 0,
+            "name": "GD_Siren_Skills.Harmony.LifeTap",
+            "unknown3": 0,
+            "unknown4": 0
+        },
+        {
+            "level": 0,
+            "name": "GD_Siren_Skills.Harmony.Scorn",
+            "unknown3": 0,
+            "unknown4": 0
+        },
+        {
+            "level": 0,
+            "name": "GD_Siren_Skills.Cataclysm.Flicker",
+            "unknown3": 0,
+            "unknown4": 0
+        },
+        {
+            "level": 0,
+            "name": "GD_Siren_Skills.Cataclysm.Foresight",
+            "unknown3": 0,
+            "unknown4": 0
+        },
+        {
+            "level": 0,
+            "name": "GD_Siren_Skills.Cataclysm.Immolate",
+            "unknown3": 0,
+            "unknown4": 0
+        },
+        {
+            "level": 0,
+            "name": "GD_Siren_Skills.Cataclysm.Helios",
+            "unknown3": 0,
+            "unknown4": 0
+        },
+        {
+            "level": 0,
+            "name": "GD_Siren_Skills.Cataclysm.ChainReaction",
+            "unknown3": 0,
+            "unknown4": 0
+        },
+        {
+            "level": 0,
+            "name": "GD_Siren_Skills.Cataclysm.CloudKill",
+            "unknown3": 0,
+            "unknown4": 0
+        },
+        {
+            "level": 0,
+            "name": "GD_Siren_Skills.Cataclysm.Backdraft",
+            "unknown3": 0,
+            "unknown4": 0
+        },
+        {
+            "level": 0,
+            "name": "GD_Siren_Skills.Cataclysm.Reaper",
+            "unknown3": 0,
+            "unknown4": 0
+        },
+        {
+            "level": 0,
+            "name": "GD_Siren_Skills.Cataclysm.BlightPhoenix",
+            "unknown3": 0,
+            "unknown4": 0
+        },
+        {
+            "level": 0,
+            "name": "GD_Siren_Skills.Cataclysm.Ruin",
+            "unknown3": 0,
+            "unknown4": 0
+        }
+    ],
+    "stats": {
+        "challenges": [
+            {
+                "_category": "General Combat",
+                "_description": "Fire a lot of rounds",
+                "_id_text": "GD_Challenges.GeneralCombat.General_RoundsFired",
+                "_name": "Knee-Deep in Brass",
+                "first_one": 1,
+                "id": 1621,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1622,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1623,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1624,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1625,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1626,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1627,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1629,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Loot",
+                "_description": "Pick up or purchase weapons",
+                "_id_text": "GD_Challenges.Loot.Loot_PickUpWeapons",
+                "_name": "Gun Runner",
+                "first_one": 1,
+                "id": 1630,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1679,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1680,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1681,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1682,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1683,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1684,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1686,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1687,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1688,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1690,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1692,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1685,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1689,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1691,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1631,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Enemies",
+                "_description": "Kill skags",
+                "_id_text": "GD_Challenges.enemies.Enemies_KillSkags",
+                "_name": "Skags to Riches",
+                "first_one": 1,
+                "id": 1632,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Pistol",
+                "_description": "Kill enemies with pistols",
+                "_id_text": "GD_Challenges.Weapons.Pistol_Kills",
+                "_name": "The Killer",
+                "first_one": 1,
+                "id": 1633,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Shotgun",
+                "_description": "Kill enemies with shotguns",
+                "_id_text": "GD_Challenges.Weapons.Shotgun_Kills",
+                "_name": "Shotgun!",
+                "first_one": 1,
+                "id": 1634,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "SMG",
+                "_description": "Kill enemies with SMGs",
+                "_id_text": "GD_Challenges.Weapons.SMG_Kills",
+                "_name": "Hail of Bullets",
+                "first_one": 1,
+                "id": 1635,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Sniper Rifle",
+                "_description": "Kill enemies with sniper rifles",
+                "_id_text": "GD_Challenges.Weapons.SniperRifle_Kills",
+                "_name": "Longshot",
+                "first_one": 1,
+                "id": 1636,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Assault Rifle",
+                "_description": "Kill enemies with assault rifles",
+                "_id_text": "GD_Challenges.Weapons.AssaultRifle_Kills",
+                "_name": "Aggravated Assault",
+                "first_one": 1,
+                "id": 1637,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1638,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Grenades",
+                "_description": "Kill enemies with grenades",
+                "_id_text": "GD_Challenges.Grenades.Grenade_Kills",
+                "_name": "Pull the Pin",
+                "first_one": 1,
+                "id": 1639,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Rocket Launcher",
+                "_description": "Kill enemies with rocket launchers",
+                "_id_text": "GD_Challenges.Weapons.Launcher_Kills",
+                "_name": "Rocket and Roll",
+                "first_one": 1,
+                "id": 1762,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1763,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1764,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1765,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1766,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Vehicle",
+                "_description": "Kill enemies by ramming them with a vehicle",
+                "_id_text": "GD_Challenges.Vehicles.Vehicles_KillByRamming",
+                "_name": "Hit-and-Fun",
+                "first_one": 1,
+                "id": 1640,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Vehicle",
+                "_description": "Kill enemies using a turret or vehicle-mounted weapon",
+                "_id_text": "GD_Challenges.Vehicles.Vehicles_KillsWithVehicleWeapon",
+                "_name": "Turret Syndrome",
+                "first_one": 1,
+                "id": 1641,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1740,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Elemental",
+                "_description": "Kill enemies with corrode damage",
+                "_id_text": "GD_Challenges.elemental.Elemental_KillEnemiesCorrosive",
+                "_name": "Acid Trip",
+                "first_one": 1,
+                "id": 1642,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1643,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1644,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Elemental",
+                "_description": "Kill enemies with explosive damage",
+                "_id_text": "GD_Challenges.elemental.Elemental_KillEnemiesExplosive",
+                "_name": "Boom.",
+                "first_one": 1,
+                "id": 1645,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "General Combat",
+                "_description": "Kill enemies with critical hits. And rainbows.",
+                "_id_text": "GD_Challenges.GeneralCombat.Kills_FromCrits",
+                "_name": "Critical Acclaim",
+                "first_one": 1,
+                "id": 1646,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1714,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Assault Rifle",
+                "_description": "Kill enemies with assault rifles while crouched",
+                "_id_text": "GD_Challenges.Weapons.AssaultRifle_KillsCrouched",
+                "_name": "Crouching Tiger, Hidden Assault Rifle",
+                "first_one": 1,
+                "id": 1797,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Sniper Rifle",
+                "_description": "Kill enemies with sniper rifles without using ironsights",
+                "_id_text": "GD_Challenges.Weapons.SniperRifle_KillsFromHip",
+                "_name": "No Scope, No Problem",
+                "first_one": 1,
+                "id": 1798,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1799,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Pistol",
+                "_description": "Kill enemies shortly after entering ironsights with a pistol",
+                "_id_text": "GD_Challenges.Weapons.Pistol_KillsQuickshot",
+                "_name": "Quickdraw",
+                "first_one": 1,
+                "id": 1800,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Shotgun",
+                "_description": "Kill enemies from point-blank range with shotguns",
+                "_id_text": "GD_Challenges.Weapons.Shotgun_KillsPointBlank",
+                "_name": "Open Wide!",
+                "first_one": 1,
+                "id": 1806,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Shotgun",
+                "_description": "Kill enemies from long range with shotguns",
+                "_id_text": "GD_Challenges.Weapons.Shotgun_KillsLongRange",
+                "_name": "Shotgun Sniper",
+                "first_one": 1,
+                "id": 1807,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Rocket Launcher",
+                "_description": "Kill enemies from long range with rocket launchers",
+                "_id_text": "GD_Challenges.Weapons.Launcher_KillsLongRange",
+                "_name": "Sky Rockets in Flight...",
+                "first_one": 1,
+                "id": 1808,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1935,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Rocket Launcher",
+                "_description": "Kill shielded enemies with one rocket each",
+                "_id_text": "GD_Challenges.Weapons.Launcher_KillsFullShieldEnemy",
+                "_name": "Shield Basher",
+                "first_one": 1,
+                "id": 1871,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Sniper Rifle",
+                "_description": "Kill shielded enemies with one shot using sniper rifles",
+                "_id_text": "GD_Challenges.Weapons.SniperRifle_KillsFullShieldEnemy",
+                "_name": "Eviscerated",
+                "first_one": 1,
+                "id": 1872,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Pistol",
+                "_description": "Kill enemies with critical hits using pistols",
+                "_id_text": "GD_Challenges.Weapons.Pistol_CriticalHitKills",
+                "_name": "Pistolero",
+                "first_one": 1,
+                "id": 1841,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Shotgun",
+                "_description": "Kill enemies with critical hits using shotguns",
+                "_id_text": "GD_Challenges.Weapons.Shotgun_CriticalHitKills",
+                "_name": "Shotgun Surgeon",
+                "first_one": 1,
+                "id": 1842,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "SMG",
+                "_description": "Kill enemies with critical hits using SMGs",
+                "_id_text": "GD_Challenges.Weapons.SMG_CriticalHitKills",
+                "_name": "High Rate of Ire",
+                "first_one": 1,
+                "id": 1843,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Sniper Rifle",
+                "_description": "Kill enemies with critical hits using sniper rifles",
+                "_id_text": "GD_Challenges.Weapons.Sniper_CriticalHitKills",
+                "_name": "Snipe Hunting",
+                "first_one": 1,
+                "id": 1844,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Assault Rifle",
+                "_description": "Kill enemies with critical hits using assault rifles",
+                "_id_text": "GD_Challenges.Weapons.AssaultRifle_CriticalHitKills",
+                "_name": "...This Is My Gun",
+                "first_one": 1,
+                "id": 1845,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1846,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1847,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1848,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1849,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1850,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1851,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1852,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1853,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1854,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1855,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1856,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1647,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1648,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1649,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Melee",
+                "_description": "Kill enemies with melee attacks",
+                "_id_text": "GD_Challenges.Melee.Melee_Kills",
+                "_name": "Fisticuffs!",
+                "first_one": 1,
+                "id": 1650,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Enemies",
+                "_description": "Kill bullymongs",
+                "_id_text": "GD_Challenges.enemies.Enemies_KillBullymongs",
+                "_name": "Bully the Bullies",
+                "first_one": 1,
+                "id": 1651,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Enemies",
+                "_description": "Kill crystalisks",
+                "_id_text": "GD_Challenges.enemies.Enemies_KillCrystalisks",
+                "_name": "Crystals are a Girl's Best Friend",
+                "first_one": 1,
+                "id": 1652,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Enemies",
+                "_description": "Kill goliaths",
+                "_id_text": "GD_Challenges.enemies.Enemies_KillGoliaths",
+                "_name": "WHY SO MUCH HURT?!",
+                "first_one": 1,
+                "id": 1653,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Enemies",
+                "_description": "Kill Hyperion personnel",
+                "_id_text": "GD_Challenges.enemies.Enemies_KillEngineers",
+                "_name": "Paingineering",
+                "first_one": 1,
+                "id": 1654,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Enemies",
+                "_description": "Kill loaders",
+                "_id_text": "GD_Challenges.enemies.Enemies_KillLoaders",
+                "_name": "Load and Lock",
+                "first_one": 1,
+                "id": 1655,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1656,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1657,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Enemies",
+                "_description": "Kill surveyors",
+                "_id_text": "GD_Challenges.enemies.Enemies_KillSurveyors",
+                "_name": "Just a Moment of Your Time...",
+                "first_one": 1,
+                "id": 1658,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Enemies",
+                "_description": "Kill constructors",
+                "_id_text": "GD_Challenges.enemies.Enemies_KillConstructors",
+                "_name": "Constructor Destructor",
+                "first_one": 1,
+                "id": 1675,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1676,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Enemies",
+                "_description": "Kill marauders",
+                "_id_text": "GD_Challenges.enemies.Enemies_KillMarauders",
+                "_name": "Marauder? I Hardly Know 'Er!",
+                "first_one": 1,
+                "id": 1693,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Enemies",
+                "_description": "Kill nomads",
+                "_id_text": "GD_Challenges.enemies.Enemies_KillNomads",
+                "_name": "You (No)Mad, Bro?",
+                "first_one": 1,
+                "id": 1694,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Enemies",
+                "_description": "Kill psychos",
+                "_id_text": "GD_Challenges.enemies.Enemies_KillPsychos",
+                "_name": "Mama's Boys",
+                "first_one": 1,
+                "id": 1695,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Enemies",
+                "_description": "Kill rats.  Yes, really.",
+                "_id_text": "GD_Challenges.enemies.Enemies_KillRats",
+                "_name": "You Dirty Rat",
+                "first_one": 1,
+                "id": 1696,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "General Combat",
+                "_description": "Kill enemies while using your Action Skill",
+                "_id_text": "GD_Challenges.GeneralCombat.Player_KillsWithActionSkill",
+                "_name": "...To Pay the Bills",
+                "first_one": 1,
+                "id": 1702,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Enemies",
+                "_description": "Kill varkid pods before they hatch",
+                "_id_text": "GD_Challenges.enemies.Enemies_KillVarkidPods",
+                "_name": "Pod Pew Pew",
+                "first_one": 1,
+                "id": 1732,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1733,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Enemies",
+                "_description": "Kill spiderants",
+                "_id_text": "GD_Challenges.enemies.Enemies_KillSpiderants",
+                "_name": "Pest Control",
+                "first_one": 1,
+                "id": 1791,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Enemies",
+                "_description": "Kill stalkers",
+                "_id_text": "GD_Challenges.enemies.Enemies_KillStalkers",
+                "_name": "You're One Ugly Mother...",
+                "first_one": 1,
+                "id": 1792,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Enemies",
+                "_description": "Kill threshers",
+                "_id_text": "GD_Challenges.enemies.Enemies_KillThreshers",
+                "_name": "Tentacle Obsession",
+                "first_one": 1,
+                "id": 1793,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Enemies",
+                "_description": "Kill varkids",
+                "_id_text": "GD_Challenges.enemies.Enemies_KillVarkid",
+                "_name": "Another Bug Hunt",
+                "first_one": 1,
+                "id": 1794,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Enemies",
+                "_description": "Kill buzzards",
+                "_id_text": "GD_Challenges.enemies.Enemies_KillGyros",
+                "_name": "Die in the Friendly Skies",
+                "first_one": 1,
+                "id": 1795,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Enemies",
+                "_description": "Kill midgets",
+                "_id_text": "GD_Challenges.enemies.Enemies_KillMidgets",
+                "_name": "Little Person, Big Pain",
+                "first_one": 1,
+                "id": 1796,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Enemies",
+                "_description": "Kill bruisers",
+                "_id_text": "GD_Challenges.enemies.Enemies_KillBruisers",
+                "_name": "Cruising for a Bruising",
+                "first_one": 1,
+                "id": 1934,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Miscellaneous",
+                "_description": "Find and eliminate Jimmy Jenkins",
+                "_id_text": "GD_Challenges.Miscellaneous.Misc_JimmyJenkins",
+                "_name": "JEEEEENKINSSSSSS!!!",
+                "first_one": 1,
+                "id": 1940,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1862,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1700,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1699,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Miscellaneous",
+                "_description": "Win duels",
+                "_id_text": "GD_Challenges.Dueling.DuelsWon_HatersGonnaHate",
+                "_name": "Haters Gonna Hate",
+                "first_one": 1,
+                "id": 1659,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1660,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1661,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1929,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Loot",
+                "_description": "Open treasure chests",
+                "_id_text": "GD_Challenges.Loot.Loot_OpenChests",
+                "_name": "The Call of Booty",
+                "first_one": 1,
+                "id": 1669,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Loot",
+                "_description": "Open lootable chests, lockers, and other objects",
+                "_id_text": "GD_Challenges.Loot.Loot_OpenLootables",
+                "_name": "Open Pandora's Boxes",
+                "first_one": 1,
+                "id": 1670,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1677,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Money and Trading",
+                "_description": "Purchase items with Eridium",
+                "_id_text": "GD_Challenges.Economy.Economy_BuyItemsWithEridium",
+                "_name": "Whaddaya Buyin'?",
+                "first_one": 1,
+                "id": 1810,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Money and Trading",
+                "_description": "Sell items to vending machines",
+                "_id_text": "GD_Challenges.Economy.Economy_SellItems",
+                "_name": "Wholesale",
+                "first_one": 1,
+                "id": 1678,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Money and Trading",
+                "_description": "Buy Items of the Day",
+                "_id_text": "GD_Challenges.Economy.Economy_PurchaseItemsOfTheDay",
+                "_name": "Limited-Time Offer",
+                "first_one": 1,
+                "id": 1860,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1861,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1697,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1761,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1857,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Money and Trading",
+                "_description": "Save a lot of money",
+                "_id_text": "GD_Challenges.Economy.Economy_MoneySaved",
+                "_name": "For the Hoard!",
+                "first_one": 1,
+                "id": 1858,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Money and Trading",
+                "_description": "Collect dollars from cash drops",
+                "_id_text": "GD_Challenges.Economy.General_MoneyFromCashDrops",
+                "_name": "Dolla Dolla Bills, Y'all",
+                "first_one": 1,
+                "id": 1859,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1704,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1705,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1706,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1707,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1708,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1709,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1710,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1711,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1712,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1713,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1719,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1864,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1715,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1716,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1717,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1720,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1721,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 1
+            },
+            {
+                "first_one": 1,
+                "id": 1722,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1723,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1724,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1970,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1971,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1972,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1973,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1974,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1975,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1976,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1977,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1939,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1725,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1726,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1727,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1728,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1729,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1730,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1731,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1811,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1812,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1813,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1814,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1815,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1816,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1817,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1818,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1819,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1820,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1739,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1734,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1735,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 2
+            },
+            {
+                "first_one": 1,
+                "id": 1736,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1737,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 1
+            },
+            {
+                "first_one": 1,
+                "id": 1738,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1662,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 1
+            },
+            {
+                "_category": "Miscellaneous",
+                "_description": "Complete many, many challenges",
+                "_id_text": "GD_Challenges.Miscellaneous.Misc_CompleteChallenges",
+                "_name": "Yo Dawg I Herd You Like Challenges",
+                "first_one": 1,
+                "id": 1698,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1718,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Pistol",
+                "_description": "Get critical hits with pistols",
+                "_id_text": "GD_Challenges.Weapons.Pistol_CriticalHits",
+                "_name": "Deadeye",
+                "first_one": 1,
+                "id": 1663,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Shotgun",
+                "_description": "Get critical hits with shotguns",
+                "_id_text": "GD_Challenges.Weapons.Shotgun_CriticalHits",
+                "_name": "Faceful of Buckshot",
+                "first_one": 1,
+                "id": 1664,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "SMG",
+                "_description": "Get critical hits with SMGs",
+                "_id_text": "GD_Challenges.Weapons.SMG_CriticalHits",
+                "_name": "Constructive Criticism",
+                "first_one": 1,
+                "id": 1665,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Sniper Rifle",
+                "_description": "Get critical hits with sniper rifles",
+                "_id_text": "GD_Challenges.Weapons.Sniper_CriticalHits",
+                "_name": "Longshot Headshot",
+                "first_one": 1,
+                "id": 1666,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Assault Rifle",
+                "_description": "Get critical hits with assault rifles",
+                "_id_text": "GD_Challenges.Weapons.AssaultRifle_CriticalHits",
+                "_name": "This Is My Rifle...",
+                "first_one": 1,
+                "id": 1667,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1668,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1671,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1672,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1673,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1674,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Pistol",
+                "_description": "Get Second Winds with pistols",
+                "_id_text": "GD_Challenges.Weapons.Pistol_SecondWinds",
+                "_name": "Hard Boiled",
+                "first_one": 1,
+                "id": 1821,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Shotgun",
+                "_description": "Get Second Winds with shotguns",
+                "_id_text": "GD_Challenges.Weapons.Shotgun_SecondWinds",
+                "_name": "Lock, Stock, and...",
+                "first_one": 1,
+                "id": 1822,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "SMG",
+                "_description": "Get Second Winds with SMGs",
+                "_id_text": "GD_Challenges.Weapons.SMG_SecondWinds",
+                "_name": "More Like Submachine FUN",
+                "first_one": 1,
+                "id": 1823,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Sniper Rifle",
+                "_description": "Get Second Winds with sniper rifles",
+                "_id_text": "GD_Challenges.Weapons.Sniper_SecondWinds",
+                "_name": "Leaf on the Second Wind",
+                "first_one": 1,
+                "id": 1824,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Assault Rifle",
+                "_description": "Get Second Winds with assault rifles",
+                "_id_text": "GD_Challenges.Weapons.AssaultRifle_SecondWinds",
+                "_name": "From My Cold, Dead Hands",
+                "first_one": 1,
+                "id": 1825,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1826,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1827,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Rocket Launcher",
+                "_description": "Get Second Winds with rocket launchers",
+                "_id_text": "GD_Challenges.Weapons.Launcher_SecondWinds",
+                "_name": "Gone with the Second Wind",
+                "first_one": 1,
+                "id": 1828,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1829,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1830,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1831,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1832,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Health and Recovery",
+                "_description": "Get Second Winds by killing enemies with a corrosive DoT (damage over time)",
+                "_id_text": "GD_Challenges.Player.Player_SecondWindFromCorrosive",
+                "_name": "Green Meanie",
+                "first_one": 1,
+                "id": 1833,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Health and Recovery",
+                "_description": "Get Second Winds by killing enemies with a burn DoT (damage over time)",
+                "_id_text": "GD_Challenges.Player.Player_SecondWindFromFire",
+                "_name": "Death, Wind, and Fire",
+                "first_one": 1,
+                "id": 1834,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Health and Recovery",
+                "_description": "Get Second Winds by killing enemies with an electrocute DoT (damage over time)",
+                "_id_text": "GD_Challenges.Player.Player_SecondWindFromShock",
+                "_name": "I'm Back! Shocked?",
+                "first_one": 1,
+                "id": 1835,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Health and Recovery",
+                "_description": "Get Second Winds by killing an enemy",
+                "_id_text": "GD_Challenges.Player.Player_SecondWind",
+                "_name": "I'll Just Help Myself",
+                "first_one": 1,
+                "id": 1865,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Health and Recovery",
+                "_description": "Get Second Winds by killing a badass enemy",
+                "_id_text": "GD_Challenges.Player.Player_SecondWindFromBadass",
+                "_name": "Badass Bingo",
+                "first_one": 1,
+                "id": 1866,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1897,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1867,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Health and Recovery",
+                "_description": "Revive a co-op partner",
+                "_id_text": "GD_Challenges.Player.Player_CoopRevivesOfFriends",
+                "_name": "This Is No Time for Lazy!",
+                "first_one": 1,
+                "id": 1868,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1926,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1927,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1801,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1802,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1936,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Miscellaneous",
+                "_description": "Complete optional mission objectives",
+                "_id_text": "GD_Challenges.Miscellaneous.Missions_OptionalObjectivesCompleted",
+                "_name": "Compl33tionist",
+                "first_one": 1,
+                "id": 1803,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Miscellaneous",
+                "_description": "Complete side missions",
+                "_id_text": "GD_Challenges.Miscellaneous.Missions_SideMissionsCompleted",
+                "_name": "Sidejacked",
+                "first_one": 1,
+                "id": 1804,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1941,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1937,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Money and Trading",
+                "_description": "Trade with other players",
+                "_id_text": "GD_Challenges.Economy.Trade_ItemsWithPlayers",
+                "_name": "Psst, Hey Buddy...",
+                "first_one": 1,
+                "id": 1805,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1836,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1837,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1838,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1839,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1840,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1809,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1863,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Shields",
+                "_description": "Absorb enemy ammo with an Absorption shield",
+                "_id_text": "GD_Challenges.Shields.Shields_AbsorbAmmo",
+                "_name": "Ammo Eater",
+                "first_one": 1,
+                "id": 1930,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Rocket Launcher",
+                "_description": "Kill enemies with direct hits from rocket launchers",
+                "_id_text": "GD_Challenges.Weapons.Launcher_KillsDirectHit",
+                "_name": "Catch-a-Rocket!",
+                "first_one": 1,
+                "id": 1869,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Rocket Launcher",
+                "_description": "Kill enemies with rocket launcher splash damage",
+                "_id_text": "GD_Challenges.Weapons.Launcher_KillsSplashDamage",
+                "_name": "Splish Splash",
+                "first_one": 1,
+                "id": 1870,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Elemental",
+                "_description": "Ignite enemies",
+                "_id_text": "GD_Challenges.elemental.Elemental_SetEnemiesOnFire",
+                "_name": "Cowering Inferno",
+                "first_one": 1,
+                "id": 1873,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1874,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1875,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1876,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Elemental",
+                "_description": "Deal burn damage",
+                "_id_text": "GD_Challenges.elemental.Elemental_DealFireDOTDamage",
+                "_name": "I Just Want to Set the World on Fire",
+                "first_one": 1,
+                "id": 1877,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Elemental",
+                "_description": "Deal corrode damage",
+                "_id_text": "GD_Challenges.elemental.Elemental_DealCorrosiveDOTDamage",
+                "_name": "Corroderate",
+                "first_one": 1,
+                "id": 1878,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Elemental",
+                "_description": "Deal electrocute damage",
+                "_id_text": "GD_Challenges.elemental.Elemental_DealShockDOTDamage",
+                "_name": "Say \"Watt\" Again",
+                "first_one": 1,
+                "id": 1879,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Elemental",
+                "_description": "Deal bonus damage to Slagged enemies",
+                "_id_text": "GD_Challenges.elemental.Elemental_DealBonusSlagDamage",
+                "_name": "Slag-Licked",
+                "first_one": 1,
+                "id": 1880,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Sniper Rifle",
+                "_description": "Kill unaware enemies with sniper rifles",
+                "_id_text": "GD_Challenges.Weapons.SniperRifle_KillsUnaware",
+                "_name": "Surprise!",
+                "first_one": 1,
+                "id": 1881,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1882,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Grenades",
+                "_description": "Kill enemies with Area-of-Effect grenades",
+                "_id_text": "GD_Challenges.Grenades.Grenade_KillsAoEoTType",
+                "_name": "Chemical Sprayer",
+                "first_one": 1,
+                "id": 1883,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Grenades",
+                "_description": "Kill enemies with Bouncing Betty grenades",
+                "_id_text": "GD_Challenges.Grenades.Grenade_KillsBouncing",
+                "_name": "Whoa, Black Betty",
+                "first_one": 1,
+                "id": 1884,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Grenades",
+                "_description": "Kill enemies with Mirv grenades",
+                "_id_text": "GD_Challenges.Grenades.Grenade_KillsMirvType",
+                "_name": "EXPLOOOOOSIONS!",
+                "first_one": 1,
+                "id": 1885,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Grenades",
+                "_description": "Kill enemies with Singularity grenades",
+                "_id_text": "GD_Challenges.Grenades.Grenade_KillsSingularityType",
+                "_name": "Singled Out",
+                "first_one": 1,
+                "id": 1886,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Grenades",
+                "_description": "Kill enemies with Transfusion grenades",
+                "_id_text": "GD_Challenges.Grenades.Grenade_KillsTransfusionType",
+                "_name": "Health Vampire",
+                "first_one": 1,
+                "id": 1918,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1887,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1888,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1928,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Shields",
+                "_description": "Kill enemies with a Nova shield burst",
+                "_id_text": "GD_Challenges.Shields.Shields_KillsNova",
+                "_name": "Super Novas",
+                "first_one": 1,
+                "id": 1889,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Shields",
+                "_description": "Kill enemies while buffed by a \"Maylay\" shield",
+                "_id_text": "GD_Challenges.Shields.Shields_KillsRoid",
+                "_name": "Roid Rage",
+                "first_one": 1,
+                "id": 1890,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Shields",
+                "_description": "Kill enemies with reflected damage from a Spike shield",
+                "_id_text": "GD_Challenges.Shields.Shields_KillsSpikes",
+                "_name": "Game of Thorns",
+                "first_one": 1,
+                "id": 1891,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Shields",
+                "_description": "Kill enemies while buffed by an Amplify shield",
+                "_id_text": "GD_Challenges.Shields.Shields_KillsImpact",
+                "_name": "Amp It Up",
+                "first_one": 1,
+                "id": 1892,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Melee",
+                "_description": "Kill enemies with melee attacks using bladed guns",
+                "_id_text": "GD_Challenges.Melee.Melee_KillsBladed",
+                "_name": "A Squall of Violence",
+                "first_one": 1,
+                "id": 1893,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1894,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Enemies",
+                "_description": "Shoot bullymong-tossed projectiles out of midair",
+                "_id_text": "GD_Challenges.enemies.Enemies_ShootBullymongProjectiles",
+                "_name": "Hurly Burly",
+                "first_one": 1,
+                "id": 1895,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Enemies",
+                "_description": "Shoot chains to release midgets from shields",
+                "_id_text": "GD_Challenges.enemies.Enemies_ReleaseChainedMidgets",
+                "_name": "Short-Chained",
+                "first_one": 1,
+                "id": 1896,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Loot",
+                "_description": "Loot or purchase white items",
+                "_id_text": "GD_Challenges.Pickups.Inventory_PickupWhiteItems",
+                "_name": "Another Man's Treasure",
+                "first_one": 1,
+                "id": 1898,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Loot",
+                "_description": "Loot or purchase green items",
+                "_id_text": "GD_Challenges.Pickups.Inventory_PickupGreenItems",
+                "_name": "It's Not Easy Looting Green",
+                "first_one": 1,
+                "id": 1899,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Loot",
+                "_description": "Loot or purchase blue items",
+                "_id_text": "GD_Challenges.Pickups.Inventory_PickupBlueItems",
+                "_name": "I Like My Treasure Rare",
+                "first_one": 1,
+                "id": 1900,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Loot",
+                "_description": "Loot or purchase purple items",
+                "_id_text": "GD_Challenges.Pickups.Inventory_PickupPurpleItems",
+                "_name": "Purple Reign",
+                "first_one": 1,
+                "id": 1901,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Loot",
+                "_description": "Loot or purchase orange items",
+                "_id_text": "GD_Challenges.Pickups.Inventory_PickupOrangeItems",
+                "_name": "Nothing Rhymes with Orange",
+                "first_one": 1,
+                "id": 1902,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1903,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1904,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1905,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1906,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1907,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "General Combat",
+                "_description": "Kill enemies with Tediore reloads",
+                "_id_text": "GD_Challenges.GeneralCombat.Tediore_KillWithReload",
+                "_name": "Boomerbang",
+                "first_one": 1,
+                "id": 1908,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "General Combat",
+                "_description": "Deal damage with Tediore reloads",
+                "_id_text": "GD_Challenges.GeneralCombat.Tediore_DamageFromReloads",
+                "_name": "Gun Slinger",
+                "first_one": 1,
+                "id": 1909,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1910,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1911,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "General Combat",
+                "_description": "Kill enemies with stationary barrels",
+                "_id_text": "GD_Challenges.GeneralCombat.Barrels_KillEnemies",
+                "_name": "Not Full of Monkeys",
+                "first_one": 1,
+                "id": 1912,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1913,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1914,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "General Combat",
+                "_description": "Kill enemies during the day",
+                "_id_text": "GD_Challenges.GeneralCombat.Kills_AtDay",
+                "_name": "Afternoon Delight",
+                "first_one": 1,
+                "id": 1915,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "General Combat",
+                "_description": "Kill enemies at night",
+                "_id_text": "GD_Challenges.GeneralCombat.Kills_AtNight",
+                "_name": "...I Got to Boogie",
+                "first_one": 1,
+                "id": 1916,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Health and Recovery",
+                "_description": "Recover health",
+                "_id_text": "GD_Challenges.Player.Player_PointsHealed",
+                "_name": "Heal Plz",
+                "first_one": 1,
+                "id": 1917,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1931,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1932,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1933,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Vehicle",
+                "_description": "Kill enemies while riding as a passenger (not a gunner) in a vehicle",
+                "_id_text": "GD_Challenges.Vehicles.Vehicles_KillsWhilePassenger",
+                "_name": "Passive Aggressive",
+                "first_one": 1,
+                "id": 1919,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Vehicle",
+                "_description": "Kill enemies by power-sliding over them in a vehicle",
+                "_id_text": "GD_Challenges.Vehicles.Vehicles_KillByPowerSlide",
+                "_name": "Blue Sparks",
+                "first_one": 1,
+                "id": 1920,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1921,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Vehicle",
+                "_description": "Kill vehicles while in a vehicle",
+                "_id_text": "GD_Challenges.Vehicles.Vehicles_VehicleKillsVehicle",
+                "_name": "...One Van Leaves",
+                "first_one": 1,
+                "id": 1922,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1923,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1924,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1925,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1938,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1942,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1943,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1944,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1945,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1947,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1946,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1948,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1701,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1969,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1741,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Pirate's Booty",
+                "_description": "Divide Hyperius by zero",
+                "_id_text": "GD_Orchid_Challenges.Challenges.Challenge_Orchid_Raid1",
+                "_name": "Hyperius the Not-So-Invincible",
+                "first_one": 1,
+                "id": 1742,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Pirate's Booty",
+                "_description": "Feed Master Gee to his worms",
+                "_id_text": "GD_Orchid_Challenges.Challenges.Challenge_Orchid_Raid3",
+                "_name": "Master Worm Food",
+                "first_one": 1,
+                "id": 1744,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Pirate's Booty",
+                "_description": "Kill Sand Worms",
+                "_id_text": "GD_Orchid_Challenges.Challenges.Challenge_Orchid_KillWorms",
+                "_name": "Worm Killer",
+                "first_one": 1,
+                "id": 1745,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Pirate's Booty",
+                "_description": "Kill Pirates",
+                "_id_text": "GD_Orchid_Challenges.Challenges.Challenge_Orchid_KillBandits",
+                "_name": "Land Lubber",
+                "first_one": 1,
+                "id": 1746,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Pirate's Booty",
+                "_description": "Destroy Pirate Hovercrafts",
+                "_id_text": "GD_Orchid_Challenges.Challenges.Challenge_Orchid_KillHovercrafts",
+                "_name": "Hovernator",
+                "first_one": 1,
+                "id": 1747,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Pirate's Booty",
+                "_description": "Open Pirate Chests",
+                "_id_text": "GD_Orchid_Challenges.Challenges.Challenge_Orchid_PirateChests",
+                "_name": "Pirate Booty",
+                "first_one": 1,
+                "id": 1748,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Pirate's Booty",
+                "_description": "Collect Seraph Crystals",
+                "_id_text": "GD_Orchid_Challenges.Challenges.Challenge_Orchid_Crystals",
+                "_name": "In The Pink",
+                "first_one": 1,
+                "id": 1743,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Pirate's Booty",
+                "_description": "Purchase Items With Seraph Crystals",
+                "_id_text": "GD_Orchid_Challenges.Challenges.Challenge_Orchid_Purchase",
+                "_name": "Shady Dealings",
+                "first_one": 1,
+                "id": 1755,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1703,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1978,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1749,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Hammerlock's Hunt",
+                "_description": "Kill drifters",
+                "_id_text": "GD_Sage_Challenges.Challenges.Challenge_Sage_KillDrifters",
+                "_name": "Harder They Fall",
+                "first_one": 1,
+                "id": 1750,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Hammerlock's Hunt",
+                "_description": "Kill Fan Boats",
+                "_id_text": "GD_Sage_Challenges.Challenges.Challenge_Sage_KillFanBoats",
+                "_name": "Fan Boy",
+                "first_one": 1,
+                "id": 1751,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Hammerlock's Hunt",
+                "_description": "Kill savages",
+                "_id_text": "GD_Sage_Challenges.Challenges.Challenge_Sage_KillSavages",
+                "_name": "Savage Bloody Savage",
+                "first_one": 1,
+                "id": 1752,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Hammerlock's Hunt",
+                "_description": "Defeat Voracidous the Invincible",
+                "_id_text": "GD_Sage_Challenges.Challenges.Challenge_Sage_RaidBossA",
+                "_name": "Voracidous the Invincible",
+                "first_one": 1,
+                "id": 1753,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Hammerlock's Hunt",
+                "_description": "Kill boroks",
+                "_id_text": "GD_Sage_Challenges.Challenges.Challenge_Sage_KillBoroks",
+                "_name": "Boroking Around",
+                "first_one": 1,
+                "id": 1952,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Hammerlock's Hunt",
+                "_description": "Kill scaylions",
+                "_id_text": "GD_Sage_Challenges.Challenges.Challenge_Sage_KillScaylions",
+                "_name": "Stinging Sensation",
+                "first_one": 1,
+                "id": 1953,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1951,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Campaign of Carnage",
+                "_description": "Destroy Bikes",
+                "_id_text": "GD_Iris_Challenges.Challenges.Challenge_Iris_KillMotorcycles",
+                "_name": "Bikes Destroyed",
+                "first_one": 1,
+                "id": 1756,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Campaign of Carnage",
+                "_description": "Bikers Killed",
+                "_id_text": "GD_Iris_Challenges.Challenges.Challenge_Iris_KillBikers",
+                "_name": "Bikers Killed",
+                "first_one": 1,
+                "id": 1757,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Campaign of Carnage",
+                "_description": "Complete All Battles",
+                "_id_text": "GD_Iris_Challenges.Challenges.Challenge_Iris_CompleteBattles",
+                "_name": "Battles Completed",
+                "first_one": 1,
+                "id": 1758,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Campaign of Carnage",
+                "_description": "Defeat Pete the Invincible",
+                "_id_text": "GD_Iris_Challenges.Challenges.Challenge_Iris_Raid1",
+                "_name": "Pete The Invincible Defeated",
+                "first_one": 1,
+                "id": 1759,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1760,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Campaign of Carnage",
+                "_description": "Purchase Torgue Items with Tokens",
+                "_id_text": "GD_Iris_Challenges.Challenges.Challenge_Iris_BuyTorgueItems",
+                "_name": "Torgue Items Purchased",
+                "first_one": 1,
+                "id": 1949,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Campaign of Carnage",
+                "_description": "Acquire Torgue Tokens",
+                "_id_text": "GD_Iris_Challenges.Challenges.Challenge_Iris_TorgueTokens",
+                "_name": "Torgue Tokens Acquired",
+                "first_one": 1,
+                "id": 1950,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Dragon Keep",
+                "_description": "Kill dragons",
+                "_id_text": "GD_Aster_Challenges.Challenges.Challenge_Aster_KillDragons",
+                "_name": "Fus Roh Die",
+                "first_one": 1,
+                "id": 1754,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Dragon Keep",
+                "_description": "Kill dwarves",
+                "_id_text": "GD_Aster_Challenges.Challenges.Challenge_Aster_KillDwarves",
+                "_name": "Scot-Free",
+                "first_one": 1,
+                "id": 1954,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1767,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Dragon Keep",
+                "_description": "Kill golems",
+                "_id_text": "GD_Aster_Challenges.Challenges.Challenge_Aster_KillGolems",
+                "_name": "Rock Out With Your Rock Out",
+                "first_one": 1,
+                "id": 1768,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Dragon Keep",
+                "_description": "Kill knights",
+                "_id_text": "GD_Aster_Challenges.Challenges.Challenge_Aster_KillKnights",
+                "_name": "Knighty Knight",
+                "first_one": 1,
+                "id": 1769,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Dragon Keep",
+                "_description": "Kill mimics",
+                "_id_text": "GD_Aster_Challenges.Challenges.Challenge_Aster_KillMimics",
+                "_name": "Can't Fool Me",
+                "first_one": 1,
+                "id": 1770,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Dragon Keep",
+                "_description": "Kill orcs",
+                "_id_text": "GD_Aster_Challenges.Challenges.Challenge_Aster_KillOrcs",
+                "_name": "Orcs Should Perish",
+                "first_one": 1,
+                "id": 1771,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Dragon Keep",
+                "_description": "Kill skeletons",
+                "_id_text": "GD_Aster_Challenges.Challenges.Challenge_Aster_KillSkeletons",
+                "_name": "Bone Breaker",
+                "first_one": 1,
+                "id": 1772,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Dragon Keep",
+                "_description": "Kill spiders",
+                "_id_text": "GD_Aster_Challenges.Challenges.Challenge_Aster_KillSpiders",
+                "_name": "Ew Ew Ew Ew",
+                "first_one": 1,
+                "id": 1773,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Dragon Keep",
+                "_description": "Kill treants",
+                "_id_text": "GD_Aster_Challenges.Challenges.Challenge_Aster_KillTreants",
+                "_name": "Cheerful Green Giants",
+                "first_one": 1,
+                "id": 1774,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "_category": "Dragon Keep",
+                "_description": "Kill wizards",
+                "_id_text": "GD_Aster_Challenges.Challenges.Challenge_Aster_KillWizards",
+                "_name": "Magical Massacre",
+                "first_one": 1,
+                "id": 1775,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1776,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1777,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1778,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1779,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1780,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1781,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1782,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1783,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1784,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1785,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1786,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1787,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1788,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1789,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1790,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1955,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1956,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1957,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1958,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1959,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1960,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1961,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1962,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1963,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1964,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1965,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1966,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1967,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1968,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1979,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1571,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1572,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1573,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1574,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1575,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1576,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1577,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1578,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1579,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1580,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1581,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1582,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1583,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1584,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1585,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1586,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1587,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1588,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1589,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1590,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1591,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1592,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1593,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1594,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1595,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1596,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1597,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1598,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            },
+            {
+                "first_one": 1,
+                "id": 1599,
+                "previous_value": 0,
+                "second_one": 1,
+                "total_value": 0
+            }
+        ],
+        "unknown": 4
+    },
+    "stats_bonuses_disabled": 0,
+    "time_played": 5,
+    "unlock_notifications": [
+        1,
+        2,
+        3
+    ],
+    "unlocks": [
+        1,
+        2,
+        3
+    ],
+    "wearing": [
+        "GD_DefaultCustoms_MainGame.Soldier.Head_Default",
+        "0",
+        "0",
+        "0",
+        "GD_DefaultCustoms_MainGame.Soldier.Skin_Default"
+    ]
+}

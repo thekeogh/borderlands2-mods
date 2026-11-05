@@ -1,0 +1,8 @@
+{
+  "scenario": "05 / 49\u219250",
+  "test_pack_version": "0.2.0",
+  "result": "Fixture failed: arrival discovery XP caused immediate level50",
+  "evidence": "user report; no JSON supplied yet",
+  "resolution": "Pack0.2.1 sets05/06/07 to5,000XP below target; only XP changed",
+  "game_validation_of_revision": "49 baseline preserved on arrival; subsequent level50 captured. Reload still outstanding; see test_05_0.2.1.json"
+}

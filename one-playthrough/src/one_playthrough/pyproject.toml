@@ -1,0 +1,10 @@
+[project]
+name = "one_playthrough"
+version = "0.1.7"
+authors = [{ name = "keogh" }]
+description = "Native UVHM tuning from level 1. Requires external EXE patch and genuine UVHM save. F10 exports JSON. Enable before loading; restart after disabling. Solo early access."
+
+[tool.sdkmod]
+name = "One Playthrough"
+supported_games = ["BL2"]
+coop_support = "Incompatible"

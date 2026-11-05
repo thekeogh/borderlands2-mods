@@ -1,0 +1,49 @@
+ONE PLAYTHROUGH - TEST SAVE 01 (candidate 0.1.1)
+
+One test only: Plan B's reward / third weapon slot in level-1 UVHM.
+Character: OP Test 01 Plan B. File: Save7F01.sav. Two weapon slots initially.
+
+INSTALL
+Fully close the game. Copy ONLY Save7F01.sav into the same Windows character-save
+folder that contains your ordinary Save0001.sav. Do not replace Save0001.sav.
+If you installed our previous 0.1.0 test save, replace ONLY that Save7F01.sav.
+If this filename belongs to another character, keep it and report the collision.
+Keep the patched EXE and One Playthrough 0.1.7. Select OP Test 01 Plan B from
+Select Character; choose Ultimate Vault Hunter Mode if the game asks.
+
+TEST
+1. Continue. Intended result: level-1 Axton in Sanctuary; Plan B ready to turn in.
+   Wait for the HUD, press F10. Check that only two weapon slots are open.
+2. Arm Capture next mission screen. Follow Plan B's turn-in marker to Roland's
+   headquarters and open the reward screen. Note whether the reward is a weapon-slot
+   SDU, a class mod, or something else. Tell us the displayed mission level too.
+3. Collect the reward; press F10. Check whether the third weapon slot opened.
+4. Save-quit/reload; press F10 and check whether the slot stayed unlocked.
+5. Move these JSONs into the project's logs folder, after archiving older logs.
+   Report where you spawned, mission state, offered reward and slot count before/after.
+
+If it loads elsewhere, the mission is missing, or HQ is inaccessible: press F10,
+stop this test and report what happened. No need to replay the story or force it.
+If the game rejects the save, report its message. No console commands are needed.
+
+WHAT WAS EDITED
+Only this separate test copy. Synthetic UVHM story progression: the five preceding
+main missions completed; Plan B objectives completed, reward not collected.
+All six mission stages are 1, derived from the supplied level-1 test character.
+Sanctuary fast-travel destination, active plot mission, distinct name/slot/save GUID.
+The character remains level 1 with the original XP, money, skills, items and two
+weapon slots. Native Plan B reward pools were not changed and no SDU was inserted.
+Original saves/Save0001.sav and the mod/EXE were not modified.
+
+VALIDATION / LIMIT
+0.1.1 corrects only the two saved travel identifiers from the full definition path
+to the verified ResourceName "Sanctuary". The previous candidate's invalid identifier
+caused a missing-DLC message and fallback to Windshear Waste. No DLC was intended.
+File checksums, compression and decoded raw-protobuf roundtrip were checked.
+Packed items, including Gearbox's hidden UVHM expansion records, were preserved
+byte-for-byte. Those records confirm the original is already UVHM/OP0; its raw
+base fields looking like TVHM are only backward-compatibility storage.
+This candidate has not been loaded in-game here. Story/world reconstruction is
+the first thing your test validates. It is an isolated test save, not a campaign save.
+
+See manifest.json for exact fields, source hashes, objective counts and provenance.

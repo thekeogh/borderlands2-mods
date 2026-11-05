@@ -1,0 +1,12 @@
+Test,Character,Save,Player level,Mission stage,Goal,Result / notes
+2,OP 02 Shield Lock,Save7F02.sav,10,5,"Locked equipment reward: mission accepted at 5, player now 10",
+3,OP 03 Fourth Slot,Save7F03.sav,20,16,Fourth weapon-slot reward in low-level UVHM,
+4,OP 04 World L10,Save7F04.sav,10,10,"Native enemy variation, dropped gear, vendors, ammo and money",
+5,OP 05 Level 49-50,Save7F05.sav,49,49,Cross the former level-50 floor,
+6,OP 06 Level 60-61,Save7F06.sav,60,60,Native tuning boundary at level 61,
+7,OP 07 Level 72-73,Save7F07.sav,72,72,"Native tuning boundary at level 73, OP selection remains zero",
+8,OP 08 Oasis L10,Save7F08.sav,10,10,"Scarlett DLC arrival, automatic mission acceptance and enemy/loot scaling below 50",
+9,OP 09 Tina L10,Save7F09.sav,10,10,Tina DLC arrival and scaling below its normal starting range,
+10,OP 10 Snowflake L20,Save7F0A.sav,20,20,Short DLC boss encounter and native boss offsets,
+11,OP 11 Level 80 Cap,Save7F0B.sav,80,80,Installed maximum-level baseline with OP zero,
+12,OP 12 Alt Reward,Save7F0C.sav,25,20,Alternative weapon reward and accepted stage lower than the player,

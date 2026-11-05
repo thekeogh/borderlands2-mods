@@ -1,0 +1,66 @@
+// CC0, freely redistribute without requirements or restrictions
+
+Game=BL2
+Name=UVHM1 Level Cap
+PatchSignature=00 00 00 3F ?? 00 00 00 ?? 00 00 00 ?? 00 00 00 ?? 00 00 00 ?? 00 00 00 00 00 80 BF 00 00 80 BF 00 00 80 BF 00 00 80 BF 1F 00 00 00 1C 00 00 00
+Offset=4
+// Address=015AEF30
+ValueName=Level Cap
+MinValue=0
+MaxValue=40
+ValueRange=1
+UiElement=2
+TooltipText=The sum of the level caps + the vanilla level cap (50) + the OP caps must equal less than or equal to 100 or various things break
+DONE!
+
+Game=BL2
+Name=UVHM2 Level Cap
+PatchSignature=00 00 00 3F ?? 00 00 00 ?? 00 00 00 ?? 00 00 00 ?? 00 00 00 ?? 00 00 00 00 00 80 BF 00 00 80 BF 00 00 80 BF 00 00 80 BF 1F 00 00 00 1C 00 00 00
+Offset=8
+// Address=015AEF34
+ValueName=Level Cap
+MinValue=0
+MaxValue=40
+ValueRange=1
+UiElement=2
+TooltipText=The sum of the level caps + the vanilla level cap (50) + the OP caps must equal less than or equal to 100 or various things break
+DONE!
+
+Game=BL2
+Name=Sanctuary DLC Level Cap
+PatchSignature=00 00 00 3F ?? 00 00 00 ?? 00 00 00 ?? 00 00 00 ?? 00 00 00 ?? 00 00 00 00 00 80 BF 00 00 80 BF 00 00 80 BF 00 00 80 BF 1F 00 00 00 1C 00 00 00
+Offset=12
+// Address=015AEF38
+ValueName=Level Cap
+MinValue=0
+MaxValue=40
+ValueRange=1
+UiElement=2
+TooltipText=The sum of the level caps + the vanilla level cap (50) + the OP caps must equal less than or equal to 100 or various things break
+DONE!
+
+Game=BL2
+Name=UVHM2 OP Level Cap
+PatchSignature=00 00 00 3F ?? 00 00 00 ?? 00 00 00 ?? 00 00 00 ?? 00 00 00 ?? 00 00 00 00 00 80 BF 00 00 80 BF 00 00 80 BF 00 00 80 BF 1F 00 00 00 1C 00 00 00
+Offset=16
+// Address=015AEF3C
+ValueName=OP Level Cap
+MinValue=0
+MaxValue=40
+ValueRange=1
+UiElement=2
+TooltipText=The sum of the level caps + the vanilla level cap (50) + the OP caps must equal less than or equal to 100 or various things break
+DONE!
+
+Game=BL2
+Name=Sanctuary DLC OP Level Cap
+PatchSignature=00 00 00 3F ?? 00 00 00 ?? 00 00 00 ?? 00 00 00 ?? 00 00 00 ?? 00 00 00 00 00 80 BF 00 00 80 BF 00 00 80 BF 00 00 80 BF 1F 00 00 00 1C 00 00 00
+Offset=20
+// Address=015AEF40
+ValueName=OP Level Cap
+MinValue=0
+MaxValue=40
+ValueRange=1
+UiElement=2
+TooltipText=The sum of the level caps + the vanilla level cap (50) + the OP caps must equal less than or equal to 100 or various things break
+DONE!

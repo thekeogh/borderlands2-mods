@@ -1,0 +1,412 @@
+*** Property dump for object 'MissionObjectiveSetBranchingDefinition WillowGame.Default__MissionObjectiveSetBranchingDefinition' ***
+=== MissionObjectiveSetBranchingDefinition properties ===
+=== MissionObjectiveSetDefinition properties ===
+NextSet=None
+bCanCompleteMission=True
+bAutoEnableNextSet=False
+StationOverride=None
+MissionSummaryOverride=
+MissionDescriptionOverride=
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=4137
+NetIndex=28292
+Outer=Package'WillowGame'
+Name=Default__MissionObjectiveSetBranchingDefinition
+Class=Class'WillowGame.MissionObjectiveSetBranchingDefinition'
+ObjectArchetype=MissionObjectiveSetDefinition'WillowGame.Default__MissionObjectiveSetDefinition'
+
+*** Property dump for object 'MissionObjectiveSetBranchingDefinition GD_Anemone_Plot_Mission025.M_Anemone_PlotMission025:Set_HeadToTheMine' ***
+=== MissionObjectiveSetBranchingDefinition properties ===
+=== MissionObjectiveSetDefinition properties ===
+NextSet=None
+bCanCompleteMission=True
+bAutoEnableNextSet=False
+StationOverride=None
+MissionSummaryOverride=
+MissionDescriptionOverride=
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=176603
+NetIndex=256
+Outer=MissionDefinition'GD_Anemone_Plot_Mission025.M_Anemone_PlotMission025'
+Name=Set_HeadToTheMine
+Class=Class'WillowGame.MissionObjectiveSetBranchingDefinition'
+ObjectArchetype=MissionObjectiveSetBranchingDefinition'WillowGame.Default__MissionObjectiveSetBranchingDefinition'
+
+*** Property dump for object 'MissionObjectiveSetBranchingDefinition GD_Anemone_Plot_Mission040.M_Anemone_PlotMission040:Set_FireCannonChoice' ***
+=== MissionObjectiveSetBranchingDefinition properties ===
+BranchedObjectiveDefinitions(0)=MissionObjectiveDefinition'GD_Anemone_Plot_Mission040.M_Anemone_PlotMission040:FireCannonTina'
+=== MissionObjectiveSetDefinition properties ===
+ObjectiveDefinitions(0)=MissionObjectiveDefinition'GD_Anemone_Plot_Mission040.M_Anemone_PlotMission040:FireCannon'
+NextSet=None
+bCanCompleteMission=True
+bAutoEnableNextSet=False
+StationOverride=None
+MissionSummaryOverride=
+MissionDescriptionOverride=
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=176604
+NetIndex=448
+Outer=MissionDefinition'GD_Anemone_Plot_Mission040.M_Anemone_PlotMission040'
+Name=Set_FireCannonChoice
+Class=Class'WillowGame.MissionObjectiveSetBranchingDefinition'
+ObjectArchetype=MissionObjectiveSetBranchingDefinition'WillowGame.Default__MissionObjectiveSetBranchingDefinition'
+
+*** Property dump for object 'MissionObjectiveSetBranchingDefinition GD_Aster_AmuletDoNothing.M_AmuletDoNothing:AmuletDoesNothing_OS_BuyAmulet' ***
+=== MissionObjectiveSetBranchingDefinition properties ===
+BranchedObjectiveDefinitions(0)=MissionObjectiveDefinition'GD_Aster_AmuletDoNothing.M_AmuletDoNothing:PunchMiz'
+=== MissionObjectiveSetDefinition properties ===
+ObjectiveDefinitions(0)=MissionObjectiveDefinition'GD_Aster_AmuletDoNothing.M_AmuletDoNothing:AquireAmulet'
+NextSet=None
+bCanCompleteMission=True
+bAutoEnableNextSet=False
+StationOverride=None
+MissionSummaryOverride=
+MissionDescriptionOverride=
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=180541
+NetIndex=25
+Outer=MissionDefinition'GD_Aster_AmuletDoNothing.M_AmuletDoNothing'
+Name=AmuletDoesNothing_OS_BuyAmulet
+Class=Class'WillowGame.MissionObjectiveSetBranchingDefinition'
+ObjectArchetype=MissionObjectiveSetBranchingDefinition'WillowGame.Default__MissionObjectiveSetBranchingDefinition'
+
+*** Property dump for object 'MissionObjectiveSetBranchingDefinition GD_Aster_DeadBrother.M_MyDeadBrother:ObjSet_ChooseSide' ***
+=== MissionObjectiveSetBranchingDefinition properties ===
+BranchedObjectiveDefinitions(0)=MissionObjectiveDefinition'GD_Aster_DeadBrother.M_MyDeadBrother:KillSimon'
+=== MissionObjectiveSetDefinition properties ===
+ObjectiveDefinitions(0)=MissionObjectiveDefinition'GD_Aster_DeadBrother.M_MyDeadBrother:KillEdgar'
+NextSet=None
+bCanCompleteMission=True
+bAutoEnableNextSet=False
+StationOverride=FastTravelStationDefinition'GD_Aster_FastTravel.Dungeons'
+MissionSummaryOverride=Kill either Simon or Edgar.
+MissionDescriptionOverride=A fast-talking wizard named Simon just cursed you. Thanks to Simon, you now have the ability to revive the dead (a benefit he gladly mentioned to you), and will die in a week if the curse isn't removed (which he didn't mention). Simon has agreed to remove the curse if you can find and revive Simon's dead brother, Edgar. You revived Edgar, who asked you to kill his brother instead of him. Simon, of course, has asked that you kill Edgar. The choice, as always, is yours.
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=180589
+NetIndex=121
+Outer=MissionDefinition'GD_Aster_DeadBrother.M_MyDeadBrother'
+Name=ObjSet_ChooseSide
+Class=Class'WillowGame.MissionObjectiveSetBranchingDefinition'
+ObjectArchetype=MissionObjectiveSetBranchingDefinition'WillowGame.Default__MissionObjectiveSetBranchingDefinition'
+
+*** Property dump for object 'MissionObjectiveSetBranchingDefinition GD_Aster_EllieDress.M_EllieDress:EllieDress_OS_TurnInChoice' ***
+=== MissionObjectiveSetBranchingDefinition properties ===
+BranchedObjectiveDefinitions(0)=MissionObjectiveDefinition'GD_Aster_EllieDress.M_EllieDress:EllieDress_TurnInNotSexy'
+=== MissionObjectiveSetDefinition properties ===
+ObjectiveDefinitions(0)=MissionObjectiveDefinition'GD_Aster_EllieDress.M_EllieDress:EllieDress_TurnInSexy'
+NextSet=None
+bCanCompleteMission=True
+bAutoEnableNextSet=False
+StationOverride=None
+MissionSummaryOverride=Give Ellie either the skimpy armor or the bulky armor.
+MissionDescriptionOverride=Ellie the swordswoman is in charge of protecting the town of [place]Flamerock Refuge[-place]. Unfortunately, she lacks one of the most basic swordswoman's necessities: a set of armor. She's asked you to head to [place]The Dark Forest[-place] and grab something that will protect her. As it turns out, you found two different sets of armor -- one skimpy, one bulky. You get to choose which set to give to Ellie.
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=180609
+NetIndex=55
+Outer=MissionDefinition'GD_Aster_EllieDress.M_EllieDress'
+Name=EllieDress_OS_TurnInChoice
+Class=Class'WillowGame.MissionObjectiveSetBranchingDefinition'
+ObjectArchetype=MissionObjectiveSetBranchingDefinition'WillowGame.Default__MissionObjectiveSetBranchingDefinition'
+
+*** Property dump for object 'MissionObjectiveSetBranchingDefinition GD_IrisDL2_DontTalkAbtMama.M_IrisDL2_DontTalkAbtMama:MissionObjectiveSetBranchingDefinition_0' ***
+=== MissionObjectiveSetBranchingDefinition properties ===
+BranchedObjectiveDefinitions(0)=MissionObjectiveDefinition'GD_IrisDL2_DontTalkAbtMama.M_IrisDL2_DontTalkAbtMama:KillScooterMen'
+=== MissionObjectiveSetDefinition properties ===
+ObjectiveDefinitions(0)=MissionObjectiveDefinition'GD_IrisDL2_DontTalkAbtMama.M_IrisDL2_DontTalkAbtMama:KillHamhock'
+NextSet=None
+bCanCompleteMission=True
+bAutoEnableNextSet=False
+StationOverride=None
+MissionSummaryOverride=Kill Hamhock or Scooter's hit men.
+MissionDescriptionOverride=A biker named Hamhock attempted to cop a feel on Scooter's mom, Moxxi. Scooter has ordered you to find Hamhock and take him out.<br><br>Upon finding Hamhock, however, Moxxi contacted you. After pointing out that her relations with Hamhock had been consensual, she proposed a counter-offer: if you spare Hamhock and kill Scooter's other hitmen, she'll make it worth your while.<br><br>Scooter, meanwhile, has pointed out that Hamhock is a murderous bastard and that if you kill him, he'll also make it worth your while.<br><br>It appears you have a decision to make.
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=185962
+NetIndex=43
+Outer=MissionDefinition'GD_IrisDL2_DontTalkAbtMama.M_IrisDL2_DontTalkAbtMama'
+Name=MissionObjectiveSetBranchingDefinition_0
+Class=Class'WillowGame.MissionObjectiveSetBranchingDefinition'
+ObjectArchetype=MissionObjectiveSetBranchingDefinition'WillowGame.Default__MissionObjectiveSetBranchingDefinition'
+
+*** Property dump for object 'MissionObjectiveSetBranchingDefinition GD_IrisDL3_MySkag.M_IrisDL3_MySkag:MissionObjectiveSetBranchingDefinition_0' ***
+=== MissionObjectiveSetBranchingDefinition properties ===
+BranchedObjectiveDefinitions(0)=MissionObjectiveDefinition'GD_IrisDL3_MySkag.M_IrisDL3_MySkag:TrickWife'
+=== MissionObjectiveSetDefinition properties ===
+ObjectiveDefinitions(0)=MissionObjectiveDefinition'GD_IrisDL3_MySkag.M_IrisDL3_MySkag:KillHusband'
+NextSet=None
+bCanCompleteMission=True
+bAutoEnableNextSet=False
+StationOverride=None
+MissionSummaryOverride=
+MissionDescriptionOverride=A man named Jerek has hired you to find his husband, whom he believes has turned into a skag.<br><br>As it turns out, Jerek's cheating husband, Uriah, was not a skag, and simply fled in order to avoid his comeuppance. Uriah has offered you a proposition: you can either fake his death by taking his scarf to Jerek, or you can kill Uriah and get paid anyway.<br><br>Uriah would obviously prefer you chose the former, but the choice is yours.
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=185990
+NetIndex=73
+Outer=MissionDefinition'GD_IrisDL3_MySkag.M_IrisDL3_MySkag'
+Name=MissionObjectiveSetBranchingDefinition_0
+Class=Class'WillowGame.MissionObjectiveSetBranchingDefinition'
+ObjectArchetype=MissionObjectiveSetBranchingDefinition'WillowGame.Default__MissionObjectiveSetBranchingDefinition'
+
+*** Property dump for object 'MissionObjectiveSetBranchingDefinition GD_IrisHUB_GasGuzzlers.M_IrisHUB_GasGuzzlers:MissionObjectiveSetBranchingDefinition_0' ***
+=== MissionObjectiveSetBranchingDefinition properties ===
+BranchedObjectiveDefinitions(0)=MissionObjectiveDefinition'GD_IrisHUB_GasGuzzlers.M_IrisHUB_GasGuzzlers:TurnInScooter'
+=== MissionObjectiveSetDefinition properties ===
+ObjectiveDefinitions(0)=MissionObjectiveDefinition'GD_IrisHUB_GasGuzzlers.M_IrisHUB_GasGuzzlers:TurnInHammerlock'
+NextSet=None
+bCanCompleteMission=True
+bAutoEnableNextSet=False
+StationOverride=LevelTravelStationDefinition'GD_Iris_LevelTravelStations.Hub.MoxxiToCrater'
+MissionSummaryOverride=
+MissionDescriptionOverride=Sir Hammerlock has heard about a group of mutated rakk out in [place]Southern Raceway[-place]. He's asked you to find them so that he may study them.<br><br>You've collected enough oil sacs, but now you have a decision to make: will you give the Gas Sacs to Scooter, or Hammerlock?
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=186305
+NetIndex=49
+Outer=MissionDefinition'GD_IrisHUB_GasGuzzlers.M_IrisHUB_GasGuzzlers'
+Name=MissionObjectiveSetBranchingDefinition_0
+Class=Class'WillowGame.MissionObjectiveSetBranchingDefinition'
+ObjectArchetype=MissionObjectiveSetBranchingDefinition'WillowGame.Default__MissionObjectiveSetBranchingDefinition'
+
+*** Property dump for object 'MissionObjectiveSetBranchingDefinition GD_Z1_BadHairDay.M_BadHairDay:ReturnFurSet' ***
+=== MissionObjectiveSetBranchingDefinition properties ===
+BranchedObjectiveDefinitions(0)=MissionObjectiveDefinition'GD_Z1_BadHairDay.M_BadHairDay:ReturntoClaptrap'
+=== MissionObjectiveSetDefinition properties ===
+ObjectiveDefinitions(0)=MissionObjectiveDefinition'GD_Z1_BadHairDay.M_BadHairDay:ReturnToHammerlock'
+NextSet=None
+bCanCompleteMission=True
+bAutoEnableNextSet=False
+StationOverride=None
+MissionSummaryOverride=
+MissionDescriptionOverride=
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=113243
+NetIndex=63
+Outer=MissionDefinition'GD_Z1_BadHairDay.M_BadHairDay'
+Name=ReturnFurSet
+Class=Class'WillowGame.MissionObjectiveSetBranchingDefinition'
+ObjectArchetype=MissionObjectiveSetBranchingDefinition'WillowGame.Default__MissionObjectiveSetBranchingDefinition'
+
+*** Property dump for object 'MissionObjectiveSetBranchingDefinition GD_Z2_DuelingBanjos.M_DuelingBanjos:PickASideSet' ***
+=== MissionObjectiveSetBranchingDefinition properties ===
+BranchedObjectiveDefinitions(0)=MissionObjectiveDefinition'GD_Z2_DuelingBanjos.M_DuelingBanjos:ShootZafords'
+=== MissionObjectiveSetDefinition properties ===
+ObjectiveDefinitions(0)=MissionObjectiveDefinition'GD_Z2_DuelingBanjos.M_DuelingBanjos:ShootTheHodunks'
+NextSet=None
+bCanCompleteMission=True
+bAutoEnableNextSet=False
+StationOverride=None
+MissionSummaryOverride=
+MissionDescriptionOverride=
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=113470
+NetIndex=83
+Outer=MissionDefinition'GD_Z2_DuelingBanjos.M_DuelingBanjos'
+Name=PickASideSet
+Class=Class'WillowGame.MissionObjectiveSetBranchingDefinition'
+ObjectArchetype=MissionObjectiveSetBranchingDefinition'WillowGame.Default__MissionObjectiveSetBranchingDefinition'
+
+*** Property dump for object 'MissionObjectiveSetBranchingDefinition GD_Z2_Rakkaholics.M_Rakkaholics:MissionObjectiveSetBranchingDefinition_1' ***
+=== MissionObjectiveSetBranchingDefinition properties ===
+BranchedObjectiveDefinitions(0)=MissionObjectiveDefinition'GD_Z2_Rakkaholics.M_Rakkaholics:Rakkaholics_TurnInMoxxie'
+=== MissionObjectiveSetDefinition properties ===
+ObjectiveDefinitions(0)=MissionObjectiveDefinition'GD_Z2_Rakkaholics.M_Rakkaholics:Rakkaholics_TurnInMordecai'
+NextSet=None
+bCanCompleteMission=True
+bAutoEnableNextSet=False
+StationOverride=FastTravelStationDefinition'GD_FastTravelStations.Sanctuary.Sanctuary'
+MissionSummaryOverride=
+MissionDescriptionOverride=
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=136891
+NetIndex=35
+Outer=MissionDefinition'GD_Z2_Rakkaholics.M_Rakkaholics'
+Name=MissionObjectiveSetBranchingDefinition_1
+Class=Class'WillowGame.MissionObjectiveSetBranchingDefinition'
+ObjectArchetype=MissionObjectiveSetBranchingDefinition'WillowGame.Default__MissionObjectiveSetBranchingDefinition'
+
+*** Property dump for object 'MissionObjectiveSetBranchingDefinition GD_Z2_SafeAndSound.M_SafeAndSound:MissionObjectiveSetBranchingDefinition_1' ***
+=== MissionObjectiveSetBranchingDefinition properties ===
+BranchedObjectiveDefinitions(0)=MissionObjectiveDefinition'GD_Z2_SafeAndSound.M_SafeAndSound:TurnInMoxxie'
+=== MissionObjectiveSetDefinition properties ===
+ObjectiveDefinitions(0)=MissionObjectiveDefinition'GD_Z2_SafeAndSound.M_SafeAndSound:TurnInMarcus'
+NextSet=None
+bCanCompleteMission=True
+bAutoEnableNextSet=False
+StationOverride=FastTravelStationDefinition'GD_FastTravelStations.Sanctuary.Sanctuary'
+MissionSummaryOverride=
+MissionDescriptionOverride=
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=136918
+NetIndex=45
+Outer=MissionDefinition'GD_Z2_SafeAndSound.M_SafeAndSound'
+Name=MissionObjectiveSetBranchingDefinition_1
+Class=Class'WillowGame.MissionObjectiveSetBranchingDefinition'
+ObjectArchetype=MissionObjectiveSetBranchingDefinition'WillowGame.Default__MissionObjectiveSetBranchingDefinition'
+
+*** Property dump for object 'MissionObjectiveSetBranchingDefinition GD_Z3_KillYourself.M_KillYourself:MissionObjectiveSetBranchingDefinition_1' ***
+=== MissionObjectiveSetBranchingDefinition properties ===
+BranchedObjectiveDefinitions(0)=MissionObjectiveDefinition'GD_Z3_KillYourself.M_KillYourself:KillYourself_DoNotDoIt'
+=== MissionObjectiveSetDefinition properties ===
+ObjectiveDefinitions(0)=MissionObjectiveDefinition'GD_Z3_KillYourself.M_KillYourself:KillYourself_DoIt'
+NextSet=None
+bCanCompleteMission=True
+bAutoEnableNextSet=False
+StationOverride=None
+MissionSummaryOverride=
+MissionDescriptionOverride=
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=137073
+NetIndex=27
+Outer=MissionDefinition'GD_Z3_KillYourself.M_KillYourself'
+Name=MissionObjectiveSetBranchingDefinition_1
+Class=Class'WillowGame.MissionObjectiveSetBranchingDefinition'
+ObjectArchetype=MissionObjectiveSetBranchingDefinition'WillowGame.Default__MissionObjectiveSetBranchingDefinition'
+
+*** Property dump for object 'MissionObjectiveSetBranchingDefinition GD_Z3_OutOfBody.M_OutOfBody:MissionObjectiveSetBranchingDefinition_0' ***
+=== MissionObjectiveSetBranchingDefinition properties ===
+BranchedObjectiveDefinitions(0)=MissionObjectiveDefinition'GD_Z3_OutOfBody.M_OutOfBody:TurnInZed'
+=== MissionObjectiveSetDefinition properties ===
+ObjectiveDefinitions(0)=MissionObjectiveDefinition'GD_Z3_OutOfBody.M_OutOfBody:TurnInMarcus'
+NextSet=None
+bCanCompleteMission=True
+bAutoEnableNextSet=False
+StationOverride=None
+MissionSummaryOverride=
+MissionDescriptionOverride=
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=137120
+NetIndex=69
+Outer=MissionDefinition'GD_Z3_OutOfBody.M_OutOfBody'
+Name=MissionObjectiveSetBranchingDefinition_0
+Class=Class'WillowGame.MissionObjectiveSetBranchingDefinition'
+ObjectArchetype=MissionObjectiveSetBranchingDefinition'WillowGame.Default__MissionObjectiveSetBranchingDefinition'
+
+*** Property dump for object 'MissionObjectiveSetBranchingDefinition GD_Z3_UncleTeddy.M_UncleTeddy:FinalObjSet' ***
+=== MissionObjectiveSetBranchingDefinition properties ===
+BranchedObjectiveDefinitions(0)=MissionObjectiveDefinition'GD_Z3_UncleTeddy.M_UncleTeddy:TurnInHyperion'
+=== MissionObjectiveSetDefinition properties ===
+ObjectiveDefinitions(0)=MissionObjectiveDefinition'GD_Z3_UncleTeddy.M_UncleTeddy:TurnInUna'
+NextSet=None
+bCanCompleteMission=True
+bAutoEnableNextSet=False
+StationOverride=None
+MissionSummaryOverride=Mail the blueprints to either Una or Hyperion.
+MissionDescriptionOverride=A woman named Una has asked you to help her avenge her uncle, Teddy, who lived in [place]Fyrestone[-place]. Teddy, a weapons inventor, was exiled to Pandora after Hyperion stole his weapon designs. Hyperion has given you a counteroffer, however, and you now get to choose whom to give the weapon designs to. If you wish for Una to have them, put them in the mailbox in [place]Fyrestone[-place]. If you want to give them to Hyperion, use the mailbox at the nearby Hyperion outpost.
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=113721
+NetIndex=55
+Outer=MissionDefinition'GD_Z3_UncleTeddy.M_UncleTeddy'
+Name=FinalObjSet
+Class=Class'WillowGame.MissionObjectiveSetBranchingDefinition'
+ObjectArchetype=MissionObjectiveSetBranchingDefinition'WillowGame.Default__MissionObjectiveSetBranchingDefinition'
+

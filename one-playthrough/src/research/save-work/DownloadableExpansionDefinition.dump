@@ -1,0 +1,572 @@
+*** Property dump for object 'DownloadableExpansionDefinition WillowGame.Default__DownloadableExpansionDefinition' ***
+=== DownloadableExpansionDefinition properties ===
+LevelDependencyList=None
+ChallengeList=None
+FastTravelMapMovie=None
+AllSideMissionsCompleteAchievement=WA_Invalid
+GatewayStationDefinition=None
+Currencies=None
+MissionNumberBase=-1
+TrainingMessageListDef=None
+AlwaysLoadedMapSoundBankName=
+AlwaysLoadedSFXBank=None
+AlwaysLoadedVoiceBank=None
+=== DownloadableContentDefinition properties ===
+VfTable_IIDlcLicenseObject=
+PackageDef=None
+ContentId=0
+LicenseMask=0
+ContentDisplayName=
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=3849
+NetIndex=20756
+Outer=Package'WillowGame'
+Name=Default__DownloadableExpansionDefinition
+Class=Class'WillowGame.DownloadableExpansionDefinition'
+ObjectArchetype=DownloadableContentDefinition'WillowGame.Default__DownloadableContentDefinition'
+
+*** Property dump for object 'DownloadableExpansionDefinition GD_AlliumPackageDef.ExpansionDef_Allium_TG' ***
+=== DownloadableExpansionDefinition properties ===
+LevelDependencyList=LevelDependencyList'GD_AlliumPackageDef.AlliumTG_LevelList'
+ChallengeList=None
+FastTravelMapMovie=SwfMovie'Allium_UI_FastTravelStation.AlliumFastTravelStation_Hunger'
+AllSideMissionsCompleteAchievement=WA_Invalid
+GatewayStationDefinition=FastTravelStationDefinition'GD_Allium_FastTravel.Hunger'
+RegionBalanceData(0)=(PlayThroughNumber=1,BalanceDefinitions=(GameBalanceDefinition'GD_Allium_GameStages.Balance.Allium_P1_GameBalance'))
+RegionBalanceData(1)=(PlayThroughNumber=2,BalanceDefinitions=(GameBalanceDefinition'GD_Allium_GameStages.Balance.Allium_P2_GameBalance'))
+Currencies=None
+MissionNumberBase=800
+TrainingMessageListDef=None
+AlwaysLoadedMapSoundBankName=
+AlwaysLoadedSFXBank=None
+AlwaysLoadedVoiceBank=None
+=== DownloadableContentDefinition properties ===
+VfTable_IIDlcLicenseObject=
+PackageDef=DownloadablePackageDefinition'GD_AlliumPackageDef.PackageDef_Allium'
+ContentId=1
+LicenseMask=1
+ContentDisplayName=Wattle Gobbler
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=164070
+NetIndex=8
+Outer=Package'GD_AlliumPackageDef'
+Name=ExpansionDef_Allium_TG
+Class=Class'WillowGame.DownloadableExpansionDefinition'
+ObjectArchetype=DownloadableExpansionDefinition'WillowGame.Default__DownloadableExpansionDefinition'
+
+*** Property dump for object 'DownloadableExpansionDefinition GD_AlliumPackageDef.ExpansionDef_Allium_Xmas' ***
+=== DownloadableExpansionDefinition properties ===
+LevelDependencyList=LevelDependencyList'GD_AlliumPackageDef.AlliumXmas_LevelList'
+ChallengeList=None
+FastTravelMapMovie=SwfMovie'Allium_UI_FastTravelStation.AlliumFastTravelStation_Xmas'
+AllSideMissionsCompleteAchievement=WA_Invalid
+GatewayStationDefinition=FastTravelStationDefinition'GD_Allium_FastTravel.Xmas'
+RegionBalanceData(0)=(PlayThroughNumber=1,BalanceDefinitions=(GameBalanceDefinition'GD_Allium_GameStages.Balance.Allium_P1_GameBalance'))
+RegionBalanceData(1)=(PlayThroughNumber=2,BalanceDefinitions=(GameBalanceDefinition'GD_Allium_GameStages.Balance.Allium_P2_GameBalance'))
+Currencies=None
+MissionNumberBase=850
+TrainingMessageListDef=None
+AlwaysLoadedMapSoundBankName=
+AlwaysLoadedSFXBank=None
+AlwaysLoadedVoiceBank=None
+=== DownloadableContentDefinition properties ===
+VfTable_IIDlcLicenseObject=
+PackageDef=DownloadablePackageDefinition'GD_AlliumPackageDef.PackageDef_Allium'
+ContentId=4
+LicenseMask=4
+ContentDisplayName=Mercenary Day
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=164080
+NetIndex=9
+Outer=Package'GD_AlliumPackageDef'
+Name=ExpansionDef_Allium_Xmas
+Class=Class'WillowGame.DownloadableExpansionDefinition'
+ObjectArchetype=DownloadableExpansionDefinition'WillowGame.Default__DownloadableExpansionDefinition'
+
+*** Property dump for object 'DownloadableExpansionDefinition GD_AnemonePackageDef.ExpansionDef_Anemone' ***
+=== DownloadableExpansionDefinition properties ===
+LevelDependencyList=LevelDependencyList'GD_AnemonePackageDef.Anemone_LevelList'
+ChallengeList=PlayerChallengeListDefinition'GD_Anemone_Challenges.List.PlayerChallengeList_Anemone'
+NPCDialogGroups(0)=GearboxDialogGroup'GD_Anemone_VOSQ.A_Most_Cacophonous_Lure.Groups.DialogGroup_A_Most_Cacophonous_Lure'
+NPCDialogGroups(1)=GearboxDialogGroup'GD_Anemone_VOCT.Groups.DialogGroup_Anemone_Brick_VOCT'
+NPCDialogGroups(2)=GearboxDialogGroup'GD_Anemone_VOCT.Groups.DialogGroup_Anemone_Claptrap_VOCT'
+NPCDialogGroups(3)=GearboxDialogGroup'GD_Anemone_VOCT.Groups.DialogGroup_Anemone_Crazy_Earl_VOCT'
+NPCDialogGroups(4)=GearboxDialogGroup'GD_Anemone_VOCT.Groups.DialogGroup_Anemone_Ellie_VOCT'
+NPCDialogGroups(5)=GearboxDialogGroup'GD_Anemone_VOCT.Groups.DialogGroup_Anemone_Hammerlock_VOCT'
+NPCDialogGroups(6)=GearboxDialogGroup'GD_Anemone_VOCT.Groups.DialogGroup_Anemone_Lilith_VOCT'
+NPCDialogGroups(7)=GearboxDialogGroup'GD_Anemone_VOCT.Groups.DialogGroup_Anemone_Marcus_VOCT'
+NPCDialogGroups(8)=GearboxDialogGroup'GD_Anemone_VOCT.Groups.DialogGroup_Anemone_Mordecai_VOCT'
+NPCDialogGroups(9)=GearboxDialogGroup'GD_Anemone_VOCT.Groups.DialogGroup_Anemone_Moxxi_VOCT'
+NPCDialogGroups(10)=GearboxDialogGroup'GD_Anemone_VOCT.Groups.DialogGroup_Anemone_Tiny_Tina_VOCT'
+NPCDialogGroups(11)=GearboxDialogGroup'GD_Anemone_VOCT.Groups.DialogGroup_Anemone_Vaughni_VOCT'
+NPCDialogGroups(12)=GearboxDialogGroup'GD_Anemone_VOCT.Groups.DialogGroup_Anemone_Zed_VOCT'
+NPCDialogGroups(13)=GearboxDialogGroup'GD_Anemone_VOSQ.BFFFs.Groups.DialogGroup_BFFFs'
+NPCDialogGroups(14)=GearboxDialogGroup'GD_Dialog_Enemy_Infected.VOBD_Infected_Bruiser.DialogGroup_BT_Infected_Bruiser'
+NPCDialogGroups(15)=GearboxDialogGroup'GD_Anemone_VOCT.Groups.DialogGroup_Anemone_Marcus_VOCT'
+NPCDialogGroups(16)=GearboxDialogGroup'GD_Dialog_Enemy_Infected.VOBD_Infected_Goliath.DialogGroup_BT_Infected_Goliath'
+NPCDialogGroups(17)=GearboxDialogGroup'GD_Dialog_Enemy_Infected.VOBD_Infected_Midget.DialogGroup_BT_Infected_Midget'
+NPCDialogGroups(18)=GearboxDialogGroup'GD_Dialog_Enemy_Infected.VOBD_Infected_Psycho.DialogGroup_BT_Infected_Psycho'
+NPCDialogGroups(19)=GearboxDialogGroup'GD_Anemone_VOSQ.Claptocurrency.Groups.DialogGroup_Claptocurrency'
+NPCDialogGroups(20)=GearboxDialogGroup'GD_Anemone_ECHO.ECHO_Assault.Groups.DialogGroup_ECHO_Assault'
+NPCDialogGroups(21)=GearboxDialogGroup'GD_Anemone_ECHO.ECHO_Bunkers.Groups.DialogGroup_ECHO_Bunkers'
+NPCDialogGroups(22)=GearboxDialogGroup'GD_Anemone_ECHO.ECHO_Diary.Groups.DialogGroup_ECHO_Diary'
+NPCDialogGroups(23)=GearboxDialogGroup'GD_Anemone_ECHO.ECHO_Gardening.Groups.DialogGroup_ECHO_Gardening'
+NPCDialogGroups(24)=GearboxDialogGroup'GD_Anemone_ECHO.ECHO_Helios.Groups.DialogGroup_ECHO_Helios'
+NPCDialogGroups(25)=GearboxDialogGroup'GD_Anemone_ECHO.ECHO_InevitablBetrayal.Groups.DialogGroup_ECHO_InevitablBetrayal'
+NPCDialogGroups(26)=GearboxDialogGroup'GD_Anemone_ECHO.ECHO_MoonshotComplaint.Groups.DialogGroup_ECHO_MoonshotComplaint'
+NPCDialogGroups(27)=GearboxDialogGroup'GD_Anemone_ECHO.ECHO_RealTalk.Groups.DialogGroup_ECHO_RealTalk'
+NPCDialogGroups(28)=GearboxDialogGroup'GD_Anemone_ECHO.ECHO_SandwormSpeakers.Groups.DialogGroup_ECHO_SandwormSpeakers'
+NPCDialogGroups(29)=GearboxDialogGroup'GD_Anemone_ECHO.ECHO_Science.Groups.DialogGroup_ECHO_Science'
+NPCDialogGroups(30)=GearboxDialogGroup'GD_Anemone_ECHO.ECHO_TalonsRescue.Groups.DialogGroup_ECHO_TalonsRescue'
+NPCDialogGroups(31)=GearboxDialogGroup'GD_Anemone_ECHO.ECHO_TigerOfPartali.Groups.DialogGroup_ECHO_TigerOfPartali'
+NPCDialogGroups(32)=GearboxDialogGroup'GD_Anemone_ECHO.ECHO_URSAcorps.Groups.DialogGroup_ECHO_URSAcorps'
+NPCDialogGroups(33)=GearboxDialogGroup'GD_Anemone_ECHO.ECHO_WormWalker.Groups.DialogGroup_ECHO_WormWalker'
+NPCDialogGroups(34)=GearboxDialogGroup'GD_Dialog_Enemy_Tentacle.Groups.DialogGroup_Enemy_Infected_Tentacle'
+NPCDialogGroups(35)=GearboxDialogGroup'GD_Dialog_Enemy_HackRobots.VOBD_HackRobots.DialogGroup_HackRobots'
+NPCDialogGroups(36)=GearboxDialogGroup'GD_Anemone_VOSQ.Hypocritical_Oath_1.Groups.DialogGroup_Hypocritical_Oath_1'
+NPCDialogGroups(37)=GearboxDialogGroup'GD_Anemone_VOSQ.Hypocritical_Oath_2.Groups.DialogGroup_Hypocritical_Oath_2'
+NPCDialogGroups(38)=GearboxDialogGroup'GD_Anemone_VO_Episodes.M000.Groups.DialogGroup_M000'
+NPCDialogGroups(39)=GearboxDialogGroup'GD_Anemone_VO_Episodes.M010.Groups.DialogGroup_M010'
+NPCDialogGroups(40)=GearboxDialogGroup'GD_Anemone_VO_Episodes.M020.Groups.DialogGroup_M020'
+NPCDialogGroups(41)=GearboxDialogGroup'GD_Anemone_VO_Episodes.M030.Groups.DialogGroup_M030'
+NPCDialogGroups(42)=GearboxDialogGroup'GD_Anemone_VO_Episodes.M040.Groups.DialogGroup_M040'
+NPCDialogGroups(43)=GearboxDialogGroup'GD_Anemone_VO_Episodes.M050.Groups.DialogGroup_M050'
+NPCDialogGroups(44)=GearboxDialogGroup'GD_Anemone_VO_Episodes.M060.Groups.DialogGroup_M060'
+NPCDialogGroups(45)=GearboxDialogGroup'GD_Anemone_VOSQ.My_Brittle_Pony.Groups.DialogGroup_My_Brittle_Pony'
+NPCDialogGroups(46)=GearboxDialogGroup'GD_Dialog_Enemy_NewPandoran.VOBD_NewPandoran_Commander.DialogGroup_NewPandoran_Commander'
+NPCDialogGroups(47)=GearboxDialogGroup'GD_Dialog_Enemy_NewPandoran.VOBD_NewPandoran_Marksman.DialogGroup_NewPandoran_Marksman'
+NPCDialogGroups(48)=GearboxDialogGroup'GD_Dialog_Enemy_NewPandoran.VOBD_NewPandoran_Medic.DialogGroup_NewPandoran_Medic'
+NPCDialogGroups(49)=GearboxDialogGroup'GD_Dialog_Enemy_NewPandoran.VOBD_NewPandoran_Scout.DialogGroup_NewPandoran_Scout'
+NPCDialogGroups(50)=GearboxDialogGroup'GD_Anemone_VOSQ.Oddest_Couple.Groups.DialogGroup_Oddest_Couple'
+NPCDialogGroups(51)=GearboxDialogGroup'GD_Anemone_VOSQ.Sirentology.Groups.DialogGroup_Sirentology'
+NPCDialogGroups(52)=GearboxDialogGroup'GD_Anemone_VOSQ.Space_Cowboy.Groups.DialogGroup_Space_Cowboy'
+NPCDialogGroups(53)=GearboxDialogGroup'GD_Anemone_VOSQ.The_Vaughnguard_1.Groups.DialogGroup_The_Vaughnguard_1'
+NPCDialogGroups(54)=GearboxDialogGroup'GD_Anemone_VOSQ.The_Vaughnguard_2.Groups.DialogGroup_The_Vaughnguard_2'
+NPCDialogGroups(55)=GearboxDialogGroup'GD_Anemone_VOSQ.The_Vaughnguard_3.Groups.DialogGroup_The_Vaughnguard_3'
+NPCDialogGroups(56)=GearboxDialogGroup'GD_Dialog_Hector.VOBD_Hector.Group.DialogGroup_VOBD_Hector'
+NPCDialogGroups(57)=GearboxDialogGroup'GD_Anemone_VOSQ.Hypocritical_Oath_3.Groups.DialogGroup_Hypocritical_Oath_3'
+NPCDialogGroups(58)=GearboxDialogGroup'GD_Dialog_Cassius.VOBD_Cassius.Group.DialogGroup_VOBD_Cassius'
+NPCDialogGroups(59)=GearboxDialogGroup'GD_Anemone_VOSQ.Claptocurrency.Groups.DialogGroup_Claptocurrency'
+NPCDialogGroups(60)=GearboxDialogGroup'GD_Anemone_ECHO.ECHO_Gardening.Groups.DialogGroup_ECHO_Gardening'
+NPCDialogGroups(61)=GearboxDialogGroup'GD_Anemone_ECHO.ECHO_RealTalk.Groups.DialogGroup_ECHO_RealTalk'
+NPCDialogGroups(62)=GearboxDialogGroup'GD_Anemone_ECHO.ECHO_TigerOfPartali.Groups.DialogGroup_ECHO_TigerOfPartali'
+NPCDialogGroups(63)=GearboxDialogGroup'GD_Dialog_Enemy_HackRobots.VOBD_HackRobots.DialogGroup_HackRobots'
+NPCDialogGroups(64)=GearboxDialogGroup'GD_Anemone_VO_Episodes.M010.Groups.DialogGroup_M010'
+NPCDialogGroups(65)=GearboxDialogGroup'GD_Anemone_VO_Episodes.M050.Groups.DialogGroup_M050'
+NPCDialogGroups(66)=GearboxDialogGroup'GD_Dialog_Enemy_NewPandoran.VOBD_NewPandoran_Marksman.DialogGroup_NewPandoran_Marksman'
+NPCDialogGroups(67)=GearboxDialogGroup'GD_Anemone_VOSQ.Sirentology.Groups.DialogGroup_Sirentology'
+NPCDialogGroups(68)=GearboxDialogGroup'GD_Anemone_VOSQ.The_Vaughnguard_3.Groups.DialogGroup_The_Vaughnguard_3'
+NPCDialogGroups(69)=GearboxDialogGroup'GD_Dialog_Infected_Spore.Group.Mon_Anemone_Infected_Spore_Dialog_Group'
+NPCDialogGroups(70)=GearboxDialogGroup'GD_Anemone_VOSQ.Old_A_Most_Cacophonous_Lure.Groups.Old_DialogGroup_A_Most_Cacophonous_Lure'
+NPCDialogGroups(71)=GearboxDialogGroup'GD_Anemone_VOSQ.Old_Claptocurrency.Groups.Old_DialogGroup_Claptocurrency'
+NPCDialogGroups(72)=GearboxDialogGroup'GD_Anemone_VOSQ.Old_Eye_of_the_Snipers.Groups.Old_DialogGroup_Eye_Of_The_Snipers'
+NPCDialogGroups(73)=GearboxDialogGroup'GD_Anemone_VOSQ.Old_Hypocritical_Oath_1.Groups.Old_DialogGroup_Hypocritical_Oath_1'
+NPCDialogGroups(74)=GearboxDialogGroup'GD_Anemone_VOSQ.Old_Hypocritical_Oath_2.Groups.Old_DialogGroup_Hypocritical_Oath_2'
+NPCDialogGroups(75)=GearboxDialogGroup'GD_Anemone_VOSQ.Old_Hypocritical_Oath_3.Groups.Old_DialogGroup_Hypocritical_Oath_3'
+NPCDialogGroups(76)=GearboxDialogGroup'GD_Anemone_VOSQ.Old_My_Brittle_Pony.Groups.Old_DialogGroup_My_Brittle_Pony'
+NPCDialogGroups(77)=GearboxDialogGroup'GD_Anemone_VOSQ.Old_Oddest_Couple.Groups.Old_DialogGroup_Oddest_Couple'
+NPCDialogGroups(78)=GearboxDialogGroup'GD_Anemone_VOSQ.Old_Sirentology.Groups.Old_DialogGroup_Sirentology'
+NPCDialogGroups(79)=GearboxDialogGroup'GD_Anemone_VOSQ.Old_Space_Cowboy.Groups.Old_DialogGroup_Space_Cowboy'
+NPCDialogGroups(80)=GearboxDialogGroup'GD_Anemone_VOSQ.Old_The_Vaughnguard_1.Groups.Old_DialogGroup_The_Vaughnguard_1'
+NPCDialogGroups(81)=GearboxDialogGroup'GD_Anemone_VOSQ.Old_The_Vaughnguard_2.Groups.Old_DialogGroup_The_Vaughnguard_2'
+NPCDialogGroups(82)=GearboxDialogGroup'GD_Anemone_VOSQ.Old_The_Vaughnguard_3.Groups.Old_DialogGroup_The_Vaughnguard_3'
+FastTravelMapMovie=SwfMovie'Anemone_UI_FastTravelStation.AnemoneFastTravelStation'
+AllSideMissionsCompleteAchievement=WA_Invalid
+GatewayStationDefinition=FastTravelStationDefinition'GD_Anemone_FastTravel.SanctuaryIntro'
+RegionBalanceData(0)=(PlayThroughNumber=1,BalanceDefinitions=(GameBalanceDefinition'GD_Anemone_GameStages.Balance.Anemone_P1_GameBalance'))
+RegionBalanceData(1)=(PlayThroughNumber=2,BalanceDefinitions=(GameBalanceDefinition'GD_Anemone_GameStages.Balance.Anemone_P2_GameBalance'))
+Currencies=None
+MissionNumberBase=1000
+TrainingMessageListDef=PlayerTrainingMessageListDefinition'Anemone_GD_Training.Anemone_TrainingList'
+AlwaysLoadedMapSoundBankName=AnemoneGlobals
+AlwaysLoadedSFXBank=AkBank'Transient.AnemoneGlobals_SFX'
+AlwaysLoadedVoiceBank=AkBank'Transient.AnemoneGlobals_Voice'
+=== DownloadableContentDefinition properties ===
+VfTable_IIDlcLicenseObject=
+PackageDef=DownloadablePackageDefinition'GD_AnemonePackageDef.PackageDef_Anemone'
+ContentId=1
+LicenseMask=1
+ContentDisplayName=Fight for Sanctuary
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=171221
+NetIndex=10
+Outer=Package'GD_AnemonePackageDef'
+Name=ExpansionDef_Anemone
+Class=Class'WillowGame.DownloadableExpansionDefinition'
+ObjectArchetype=DownloadableExpansionDefinition'WillowGame.Default__DownloadableExpansionDefinition'
+
+*** Property dump for object 'DownloadableExpansionDefinition GD_AsterPackageDef.ExpansionDef_Aster' ***
+=== DownloadableExpansionDefinition properties ===
+LevelDependencyList=LevelDependencyList'GD_AsterPackageDef.Aster_LevelList'
+ChallengeList=PlayerChallengeListDefinition'GD_Aster_Challenges.List.Aster_ChallengeList'
+FastTravelMapMovie=SwfMovie'Aster_UI_FastTravelStation.AsterFastTravelStation'
+AllSideMissionsCompleteAchievement=WA_Invalid
+GatewayStationDefinition=FastTravelStationDefinition'GD_Aster_FastTravel.Docks'
+RegionBalanceData(0)=(PlayThroughNumber=1,BalanceDefinitions=(GameBalanceDefinition'GD_Aster_GameStages.Balance.Aster_P1_GameBalance'))
+RegionBalanceData(1)=(PlayThroughNumber=2,BalanceDefinitions=(GameBalanceDefinition'GD_Aster_GameStages.Balance.Aster_P2_GameBalance'))
+Currencies=CurrencyListDefinition'GD_AsterPackageDef.Currency.Aster_CurrencyList'
+MissionNumberBase=600
+TrainingMessageListDef=None
+AlwaysLoadedMapSoundBankName=
+AlwaysLoadedSFXBank=None
+AlwaysLoadedVoiceBank=None
+=== DownloadableContentDefinition properties ===
+VfTable_IIDlcLicenseObject=
+PackageDef=DownloadablePackageDefinition'GD_AsterPackageDef.PackageDef_Aster'
+ContentId=1
+LicenseMask=1
+ContentDisplayName=Dragon Keep
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=182174
+NetIndex=8
+Outer=Package'GD_AsterPackageDef'
+Name=ExpansionDef_Aster
+Class=Class'WillowGame.DownloadableExpansionDefinition'
+ObjectArchetype=DownloadableExpansionDefinition'WillowGame.Default__DownloadableExpansionDefinition'
+
+*** Property dump for object 'DownloadableExpansionDefinition GD_FlaxPackageDef.ExpansionDef_Flax' ***
+=== DownloadableExpansionDefinition properties ===
+LevelDependencyList=LevelDependencyList'GD_FlaxPackageDef.Flax_LevelList'
+ChallengeList=None
+FastTravelMapMovie=SwfMovie'Flax_UI_FastTravelStation.FlaxFastTravelStation'
+AllSideMissionsCompleteAchievement=WA_Invalid
+GatewayStationDefinition=FastTravelStationDefinition'GD_Flax_FastTravel.PumpkinPatch'
+RegionBalanceData(0)=(PlayThroughNumber=1,BalanceDefinitions=(GameBalanceDefinition'GD_Flax_GameStages.Balance.Flax_P1_GameBalance'))
+RegionBalanceData(1)=(PlayThroughNumber=2,BalanceDefinitions=(GameBalanceDefinition'GD_Flax_GameStages.Balance.Flax_P2_GameBalance'))
+Currencies=None
+MissionNumberBase=500
+TrainingMessageListDef=None
+AlwaysLoadedMapSoundBankName=
+AlwaysLoadedSFXBank=None
+AlwaysLoadedVoiceBank=None
+=== DownloadableContentDefinition properties ===
+VfTable_IIDlcLicenseObject=
+PackageDef=DownloadablePackageDefinition'GD_FlaxPackageDef.PackageDef_Flax'
+ContentId=1
+LicenseMask=1
+ContentDisplayName=Bloody Harvest
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=184021
+NetIndex=7
+Outer=Package'GD_FlaxPackageDef'
+Name=ExpansionDef_Flax
+Class=Class'WillowGame.DownloadableExpansionDefinition'
+ObjectArchetype=DownloadableExpansionDefinition'WillowGame.Default__DownloadableExpansionDefinition'
+
+*** Property dump for object 'DownloadableExpansionDefinition GD_IrisPackageDef.Expansions.ExpansionDef_Iris' ***
+=== DownloadableExpansionDefinition properties ===
+LevelDependencyList=LevelDependencyList'GD_IrisPackageDef.LevelList.Iris_LevelList'
+ChallengeList=PlayerChallengeListDefinition'GD_Iris_Challenges.ChallengeList.Iris_ChallengeList'
+NPCDialogGroups(0)=GearboxDialogGroup'GD_Iris_VO_Episode_01.Groups.Dlc_Iris_DialogGroups_Episode1'
+NPCDialogGroups(1)=GearboxDialogGroup'GD_Iris_VO_Episode_02.Groups.Dlc_Iris_DialogGroups_Episode2'
+NPCDialogGroups(2)=GearboxDialogGroup'GD_Iris_VO_Episode_03.Groups.Dlc_Iris_DialogGroups_Episode3'
+NPCDialogGroups(3)=GearboxDialogGroup'GD_Iris_VO_Episode_04.Groups.Dlc_Iris_DialogGroups_Episode4'
+NPCDialogGroups(4)=GearboxDialogGroup'GD_Iris_VO_Episode_05.Groups.Dlc_Iris_DialogGroups_Episode5'
+NPCDialogGroups(5)=GearboxDialogGroup'GD_Iris_VO_Episode_06.Groups.Dlc_Iris_DialogGroups_Episode6'
+NPCDialogGroups(6)=GearboxDialogGroup'GD_Iris_VO_Episode_07.Groups.Dlc_Iris_DialogGroups_Episode7'
+NPCDialogGroups(7)=GearboxDialogGroup'GD_Iris_VOSQ_Fan.Groups.Dlc_Iris_DialogGroups_VOSQ_Fan'
+NPCDialogGroups(8)=GearboxDialogGroup'GD_Iris_VOSQ_GasGuzzlers.Groups.Dlc_Iris_DialogGroups_VOSQ_GasGuzzlers'
+NPCDialogGroups(9)=GearboxDialogGroup'GD_Iris_VOSQ_Interview.Groups.Dlc_Iris_DialogGroups_VOSQ_Interview'
+NPCDialogGroups(10)=GearboxDialogGroup'GD_Iris_VOSQ_MatterTaste.Groups.Dlc_Iris_DialogGroups_VOSQ_MatterTaste'
+NPCDialogGroups(11)=GearboxDialogGroup'GD_Iris_VOSQ_Monster.Groups.Dlc_Iris_DialogGroups_VOSQ_Monster'
+NPCDialogGroups(12)=GearboxDialogGroup'GD_Iris_VOSQ_MotherLover.Groups.Dlc_Iris_DialogGroups_VOSQ_MotherLover'
+NPCDialogGroups(13)=GearboxDialogGroup'GD_Iris_VOSQ_MyHusband.Groups.Dlc_Iris_DialogGroups_VOSQ_MyHusband'
+NPCDialogGroups(14)=GearboxDialogGroup'GD_Iris_VOSQ_Recall.Groups.Dlc_Iris_DialogGroups_VOSQ_Recall'
+NPCDialogGroups(15)=GearboxDialogGroup'GD_Iris_VOSQ_SayThatToFace.Groups.Dlc_Iris_DialogGroups_VOSQ_SayThatToFace'
+NPCDialogGroups(16)=GearboxDialogGroup'GD_Iris_VOSQ_WalkingDog.Groups.Dlc_Iris_DialogGroups_VOSQ_WalkingDog'
+NPCDialogGroups(17)=GearboxDialogGroup'GD_Iris_VOSQ_Wanted.Groups.Dlc_Iris_DialogGroups_VOSQ_Wanted'
+FastTravelMapMovie=SwfMovie'Iris_UI_FastTravelStation.IrisFastTravelStation'
+AllSideMissionsCompleteAchievement=WA_Iris_CompleteSideMissions
+GatewayStationDefinition=FastTravelStationDefinition'GD_Iris_FastTravelStations.Hub.IrisCrater'
+RegionBalanceData(0)=(PlayThroughNumber=1,BalanceDefinitions=(GameBalanceDefinition'GD_Iris_GameStages.Balance.Iris_P1_GameBalance'))
+RegionBalanceData(1)=(PlayThroughNumber=2,BalanceDefinitions=(GameBalanceDefinition'GD_Iris_GameStages.Balance.Iris_P2_GameBalance'))
+Currencies=CurrencyListDefinition'GD_IrisPackageDef.Currency.Iris_CurrencyList'
+MissionNumberBase=300
+TrainingMessageListDef=PlayerTrainingMessageListDefinition'GD_Iris_TrainingMsg.Common.Iris_PlayerTrainingMessages'
+AlwaysLoadedMapSoundBankName=
+AlwaysLoadedSFXBank=None
+AlwaysLoadedVoiceBank=None
+=== DownloadableContentDefinition properties ===
+VfTable_IIDlcLicenseObject=
+PackageDef=DownloadablePackageDefinition'GD_IrisPackageDef.PackageDef_Iris'
+ContentId=1
+LicenseMask=1
+ContentDisplayName=Campaign of Carnage
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=187897
+NetIndex=7
+Outer=Package'GD_IrisPackageDef.Expansions'
+Name=ExpansionDef_Iris
+Class=Class'WillowGame.DownloadableExpansionDefinition'
+ObjectArchetype=DownloadableExpansionDefinition'WillowGame.Default__DownloadableExpansionDefinition'
+
+*** Property dump for object 'DownloadableExpansionDefinition GD_LobeliaPackageDef.ExpansionDef_Lobelia' ***
+=== DownloadableExpansionDefinition properties ===
+LevelDependencyList=LevelDependencyList'GD_LobeliaPackageDef.LevelList'
+ChallengeList=None
+FastTravelMapMovie=SwfMovie'Lobelia_UI_FastTravelStation.LobeliaFastTravelStation'
+AllSideMissionsCompleteAchievement=WA_Invalid
+GatewayStationDefinition=FastTravelStationDefinition'GD_Lobelia_FastTravel.TestingZone'
+RegionBalanceData(0)=(PlayThroughNumber=1,BalanceDefinitions=(GameBalanceDefinition'GD_Lobelia_GameStages.Balance.Lobelia_P1_GameBalance'))
+RegionBalanceData(1)=(PlayThroughNumber=2,BalanceDefinitions=(GameBalanceDefinition'GD_Lobelia_GameStages.Balance.Lobelia_P2_GameBalance'))
+Currencies=None
+MissionNumberBase=700
+TrainingMessageListDef=None
+AlwaysLoadedMapSoundBankName=
+AlwaysLoadedSFXBank=None
+AlwaysLoadedVoiceBank=None
+=== DownloadableContentDefinition properties ===
+VfTable_IIDlcLicenseObject=
+PackageDef=DownloadablePackageDefinition'GD_LobeliaPackageDef.PackageDef_Lobelia'
+ContentId=1
+LicenseMask=2
+ContentDisplayName=Ultimate Vault Hunter Upgrade Pack 2
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=188970
+NetIndex=8
+Outer=Package'GD_LobeliaPackageDef'
+Name=ExpansionDef_Lobelia
+Class=Class'WillowGame.DownloadableExpansionDefinition'
+ObjectArchetype=DownloadableExpansionDefinition'WillowGame.Default__DownloadableExpansionDefinition'
+
+*** Property dump for object 'DownloadableExpansionDefinition GD_NasturtiumPackageDef.ExpansionDef_NasturtiumEaster' ***
+=== DownloadableExpansionDefinition properties ===
+LevelDependencyList=LevelDependencyList'GD_NasturtiumPackageDef.NasturtiumEaster_LevelList'
+ChallengeList=None
+FastTravelMapMovie=SwfMovie'Nast_UI_FastTravelStation.EasterTravel'
+AllSideMissionsCompleteAchievement=WA_Invalid
+GatewayStationDefinition=FastTravelStationDefinition'GD_Nasturtium_FastTravel.EasterTravel'
+RegionBalanceData(0)=(PlayThroughNumber=1,BalanceDefinitions=(GameBalanceDefinition'GD_Nasturtium_GameStages.Balance.Nasturtium_P1_GameBalance'))
+RegionBalanceData(1)=(PlayThroughNumber=2,BalanceDefinitions=(GameBalanceDefinition'GD_Nasturtium_GameStages.Balance.Nasturtium_P2_GameBalance'))
+Currencies=None
+MissionNumberBase=950
+TrainingMessageListDef=None
+AlwaysLoadedMapSoundBankName=
+AlwaysLoadedSFXBank=None
+AlwaysLoadedVoiceBank=None
+=== DownloadableContentDefinition properties ===
+VfTable_IIDlcLicenseObject=
+PackageDef=DownloadablePackageDefinition'GD_NasturtiumPackageDef.PackageDef_Nasturtium'
+ContentId=4
+LicenseMask=4
+ContentDisplayName=Son of Crawmerax
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=189996
+NetIndex=8
+Outer=Package'GD_NasturtiumPackageDef'
+Name=ExpansionDef_NasturtiumEaster
+Class=Class'WillowGame.DownloadableExpansionDefinition'
+ObjectArchetype=DownloadableExpansionDefinition'WillowGame.Default__DownloadableExpansionDefinition'
+
+*** Property dump for object 'DownloadableExpansionDefinition GD_NasturtiumPackageDef.ExpansionDef_NasturtiumVday' ***
+=== DownloadableExpansionDefinition properties ===
+LevelDependencyList=LevelDependencyList'GD_NasturtiumPackageDef.NasturtiumVday_LevelList'
+ChallengeList=None
+FastTravelMapMovie=SwfMovie'Nast_UI_FastTravelStation.Vday'
+AllSideMissionsCompleteAchievement=WA_Invalid
+GatewayStationDefinition=FastTravelStationDefinition'GD_Nasturtium_FastTravel.Vday'
+RegionBalanceData(0)=(PlayThroughNumber=1,BalanceDefinitions=(GameBalanceDefinition'GD_Nasturtium_GameStages.Balance.Nasturtium_P1_GameBalance'))
+RegionBalanceData(1)=(PlayThroughNumber=2,BalanceDefinitions=(GameBalanceDefinition'GD_Nasturtium_GameStages.Balance.Nasturtium_P2_GameBalance'))
+Currencies=None
+MissionNumberBase=900
+TrainingMessageListDef=None
+AlwaysLoadedMapSoundBankName=
+AlwaysLoadedSFXBank=None
+AlwaysLoadedVoiceBank=None
+=== DownloadableContentDefinition properties ===
+VfTable_IIDlcLicenseObject=
+PackageDef=DownloadablePackageDefinition'GD_NasturtiumPackageDef.PackageDef_Nasturtium'
+ContentId=1
+LicenseMask=1
+ContentDisplayName=Wedding Day Massacre
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=190006
+NetIndex=9
+Outer=Package'GD_NasturtiumPackageDef'
+Name=ExpansionDef_NasturtiumVday
+Class=Class'WillowGame.DownloadableExpansionDefinition'
+ObjectArchetype=DownloadableExpansionDefinition'WillowGame.Default__DownloadableExpansionDefinition'
+
+*** Property dump for object 'DownloadableExpansionDefinition GD_OrchidPackageDef.ExpansionDef_Orchid' ***
+=== DownloadableExpansionDefinition properties ===
+LevelDependencyList=LevelDependencyList'GD_OrchidPackageDef.LevelList.Orchid_LevelList'
+ChallengeList=PlayerChallengeListDefinition'GD_Orchid_Challenges.ChallengeList.Orchid_ChallengeList'
+NPCDialogGroups(0)=GearboxDialogGroup'GD_Orchid_Dialog_NPC.Groups.Orchid_DialogGroup_NPC'
+NPCDialogGroups(1)=GearboxDialogGroup'GD_Orchid_DialogChapter1.Groups.Orchid_DialogGroup_Chapter1'
+NPCDialogGroups(2)=GearboxDialogGroup'GD_Orchid_DialogChapter2.Groups.Orchid_DialogGroup_Chapter2'
+NPCDialogGroups(3)=GearboxDialogGroup'GD_Orchid_DialogChapter3.Groups.Orchid_DialogGroup_Chapter3'
+NPCDialogGroups(4)=GearboxDialogGroup'GD_Orchid_DialogChapter4.Groups.Orchid_DialogGroup_Chapter4'
+NPCDialogGroups(5)=GearboxDialogGroup'GD_Orchid_DialogChapter5.Groups.Orchid_DialogGroup_Chapter5'
+NPCDialogGroups(6)=GearboxDialogGroup'GD_Orchid_DialogChapter6.Groups.Orchid_DialogGroup_Chapter6'
+NPCDialogGroups(7)=GearboxDialogGroup'GD_Orchid_DialogChapter7.Groups.Orchid_DialogGroup_Chapter7'
+NPCDialogGroups(8)=GearboxDialogGroup'GD_Orchid_DialogChapter8.Groups.Orchid_DialogGroup_Chapter8'
+NPCDialogGroups(9)=GearboxDialogGroup'GD_Orchid_DialogChapter9.Groups.Orchid_DialogGroup_Chapter9'
+NPCDialogGroups(10)=GearboxDialogGroup'GD_Orchid_VOSQ_BuryingThePast.Groups.Orchid_DialogGroup_Side_BuryingThePast'
+NPCDialogGroups(11)=GearboxDialogGroup'GD_Orchid_VOSQ_CaptainsLog.Groups.Orchid_DialogGroup_Side_CaptainsLog'
+NPCDialogGroups(12)=GearboxDialogGroup'GD_Orchid_VOSQ_CatchTetanus.Groups.Orchid_DialogGroup_Side_CatchTetanus'
+NPCDialogGroups(13)=GearboxDialogGroup'GD_Orchid_VOSQ_Declaration.Groups.Orchid_DialogGroup_Side_Declaration'
+NPCDialogGroups(14)=GearboxDialogGroup'GD_Orchid_VOSQ_Deserters.Groups.Orchid_DialogGroup_Side_Deserters'
+NPCDialogGroups(15)=GearboxDialogGroup'GD_Orchid_VOSQ_DontCopyFloppy.Groups.Orchid_DialogGroup_Side_DontCopyFloppy'
+NPCDialogGroups(16)=GearboxDialogGroup'GD_Orchid_VOSQ_FireWater.Groups.Orchid_DialogGroup_Side_FireWater'
+NPCDialogGroups(17)=GearboxDialogGroup'GD_Orchid_VOSQ_FreedomSpeech.Groups.Orchid_DialogGroup_Side_FreedomSpeech'
+NPCDialogGroups(18)=GearboxDialogGroup'GD_Orchid_VOSQ_Grendel.Groups.Orchid_DialogGroup_Side_Grendel'
+NPCDialogGroups(19)=GearboxDialogGroup'GD_Orchid_VOSQ_JockoLegUp.Groups.Orchid_DialogGroup_Side_JockoLegUp'
+NPCDialogGroups(20)=GearboxDialogGroup'GD_Orchid_VOSQ_KnowItWhenSeeIt.Groups.Orchid_DialogGroup_Side_KnowItWhenSeeIt'
+NPCDialogGroups(21)=GearboxDialogGroup'GD_Orchid_VOSQ_MansBestFriend.Groups.Orchid_DialogGroup_Side_MansBestFriend'
+NPCDialogGroups(22)=GearboxDialogGroup'GD_Orchid_VOSQ_MessageBottle.Group.Orchid_DialogGroup_Side_MessageBottle'
+NPCDialogGroups(23)=GearboxDialogGroup'GD_Orchid_VOSQ_Race.Groups.Orchid_DialogGroup_Side_Race'
+NPCDialogGroups(24)=GearboxDialogGroup'GD_Orchid_VOSQ_ScurvyDogs.Groups.Orchid_DialogGroup_Side_ScurvyDogs'
+NPCDialogGroups(25)=GearboxDialogGroup'GD_Orchid_VOSQ_SmellsVictory.Groups.Orchid_DialogGroup_Side_SmellsVictory'
+NPCDialogGroups(26)=GearboxDialogGroup'GD_Orchid_VOSQ_Wingman.Groups.Orchid_DialogGroup_Side_Wingman'
+FastTravelMapMovie=SwfMovie'Orchid_UI_FastTravelStation.OrchidFastTravelStation'
+AllSideMissionsCompleteAchievement=WA_DLC1_Achievement3
+GatewayStationDefinition=FastTravelStationDefinition'GD_Orchid_FastTravel.OasisTown.OasisTown'
+RegionBalanceData(0)=(PlayThroughNumber=1,BalanceDefinitions=(GameBalanceDefinition'GD_Orchid_GameStages.Balance.Orchid_P1_GameBalance'))
+RegionBalanceData(1)=(PlayThroughNumber=2,BalanceDefinitions=(GameBalanceDefinition'GD_Orchid_GameStages.Balance.Orchid_P2_GameBalance'))
+Currencies=CurrencyListDefinition'GD_OrchidPackageDef.Currency.Orchid_CurrencyList'
+MissionNumberBase=200
+TrainingMessageListDef=None
+AlwaysLoadedMapSoundBankName=
+AlwaysLoadedSFXBank=None
+AlwaysLoadedVoiceBank=None
+=== DownloadableContentDefinition properties ===
+VfTable_IIDlcLicenseObject=
+PackageDef=DownloadablePackageDefinition'GD_OrchidPackageDef.PackageDef_Orchid'
+ContentId=1
+LicenseMask=1
+ContentDisplayName=Pirate's Booty
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=192339
+NetIndex=7
+Outer=Package'GD_OrchidPackageDef'
+Name=ExpansionDef_Orchid
+Class=Class'WillowGame.DownloadableExpansionDefinition'
+ObjectArchetype=DownloadableExpansionDefinition'WillowGame.Default__DownloadableExpansionDefinition'
+
+*** Property dump for object 'DownloadableExpansionDefinition GD_SagePackageDef.ExpansionDef_Sage' ***
+=== DownloadableExpansionDefinition properties ===
+LevelDependencyList=LevelDependencyList'GD_SagePackageDef.LevelList.Sage_LevelList'
+ChallengeList=PlayerChallengeListDefinition'GD_Sage_Challenges.List.PlayerChallengeList_Sage'
+NPCDialogGroups(0)=GearboxDialogGroup'GD_Sage_DialogNPC.Group.DialogGroup_Sage_NPC'
+NPCDialogGroups(1)=GearboxDialogGroup'GD_Sage_DialogEpisode1.Groups.DialogGroups_Sage_Episode1'
+NPCDialogGroups(2)=GearboxDialogGroup'GD_Sage_DialogEpisode2.Group.DialogGroup_Sage_Episode2'
+NPCDialogGroups(3)=GearboxDialogGroup'GD_Sage_DialogEpisode3.Group.DialogGroup_Sage_Episode3'
+NPCDialogGroups(4)=GearboxDialogGroup'GD_Sage_DialogEpisode4.Group.DialogGroup_Sage_Episode4'
+NPCDialogGroups(5)=GearboxDialogGroup'GD_Sage_DialogEpisode5.Group.DialogGroup_Sage_Episode5'
+NPCDialogGroups(6)=None
+NPCDialogGroups(7)=None
+NPCDialogGroups(8)=GearboxDialogGroup'GD_Sage_Dialog_NakayamaRama.Group.DialogGroup_Sage_NakayamaRama'
+NPCDialogGroups(9)=GearboxDialogGroup'GD_Sage_Dialog_NowYouSeeIt.Group.DialogGroup_Sage_NowYouSeeIt'
+NPCDialogGroups(10)=GearboxDialogGroup'GD_Sage_Dialog_Pukey.Group.DialogGroup_Sage_Pukey'
+NPCDialogGroups(11)=None
+NPCDialogGroups(12)=None
+NPCDialogGroups(13)=None
+FastTravelMapMovie=SwfMovie'Sage_UI_FastTravelStation.SageFastTravelStation'
+AllSideMissionsCompleteAchievement=WA_Sage_CompleteSideMissions
+GatewayStationDefinition=FastTravelStationDefinition'GD_Sage_FastTravel.Underground'
+RegionBalanceData(0)=(PlayThroughNumber=1,BalanceDefinitions=(GameBalanceDefinition'GD_Sage_GameStages.Balance.Sage_P1_GameBalance'))
+RegionBalanceData(1)=(PlayThroughNumber=2,BalanceDefinitions=(GameBalanceDefinition'GD_Sage_GameStages.Balance.Sage_P2_GameBalance'))
+Currencies=CurrencyListDefinition'GD_SagePackageDef.Currency.Sage_CurrencyList'
+MissionNumberBase=400
+TrainingMessageListDef=None
+AlwaysLoadedMapSoundBankName=
+AlwaysLoadedSFXBank=None
+AlwaysLoadedVoiceBank=None
+=== DownloadableContentDefinition properties ===
+VfTable_IIDlcLicenseObject=
+PackageDef=DownloadablePackageDefinition'GD_SagePackageDef.PackageDef_Sage'
+ContentId=1
+LicenseMask=1
+ContentDisplayName=Hammerlock's Hunt
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=195070
+NetIndex=7
+Outer=Package'GD_SagePackageDef'
+Name=ExpansionDef_Sage
+Class=Class'WillowGame.DownloadableExpansionDefinition'
+ObjectArchetype=DownloadableExpansionDefinition'WillowGame.Default__DownloadableExpansionDefinition'
+

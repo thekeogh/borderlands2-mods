@@ -1,0 +1,550 @@
+*** Property dump for object 'DownloadablePackageDefinition WillowGame.Default__DownloadablePackageDefinition' ***
+=== DownloadablePackageDefinition properties ===
+VfTable_IIDlcLicenseObject=
+PackageId=0
+PackageMask=0
+PackageDisplayName=
+DLCName=
+SeasonPassId=0
+bUsesExtendedLicensing=0
+AppliedLicense=None
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=3855
+NetIndex=20800
+Outer=Package'WillowGame'
+Name=Default__DownloadablePackageDefinition
+Class=Class'WillowGame.DownloadablePackageDefinition'
+ObjectArchetype=GBXDefinition'Engine.Default__GBXDefinition'
+
+*** Property dump for object 'DownloadablePackageDefinition GD_AlliumPackageDef.PackageDef_Allium' ***
+=== DownloadablePackageDefinition properties ===
+VfTable_IIDlcLicenseObject=
+PackageId=19
+PackageMask=15
+PackageDisplayName=Headhunter Pack Content
+DLCName=Allium
+SeasonPassId=0
+bUsesExtendedLicensing=1
+AppliedLicense=None
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=164063
+NetIndex=12
+Outer=Package'GD_AlliumPackageDef'
+Name=PackageDef_Allium
+Class=Class'WillowGame.DownloadablePackageDefinition'
+ObjectArchetype=DownloadablePackageDefinition'WillowGame.Default__DownloadablePackageDefinition'
+
+*** Property dump for object 'DownloadablePackageDefinition GD_AnecanaPackageDef.PackageDef_Anecana' ***
+=== DownloadablePackageDefinition properties ===
+VfTable_IIDlcLicenseObject=
+PackageId=24
+PackageMask=1
+PackageDisplayName=Anecana
+DLCName=Anecana
+SeasonPassId=2
+bUsesExtendedLicensing=0
+AppliedLicense=None
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=164519
+NetIndex=0
+Outer=Package'GD_AnecanaPackageDef'
+Name=PackageDef_Anecana
+Class=Class'WillowGame.DownloadablePackageDefinition'
+ObjectArchetype=DownloadablePackageDefinition'WillowGame.Default__DownloadablePackageDefinition'
+
+*** Property dump for object 'DownloadablePackageDefinition GD_AnemonePackageDef.PackageDef_Anemone' ***
+=== DownloadablePackageDefinition properties ===
+VfTable_IIDlcLicenseObject=
+PackageId=22
+PackageMask=3
+PackageDisplayName=Commander Lilith and the Fight for Sanctuary
+DLCName=Anemone
+SeasonPassId=0
+bUsesExtendedLicensing=0
+AppliedLicense=None
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=171926
+NetIndex=12
+Outer=Package'GD_AnemonePackageDef'
+Name=PackageDef_Anemone
+Class=Class'WillowGame.DownloadablePackageDefinition'
+ObjectArchetype=DownloadablePackageDefinition'WillowGame.Default__DownloadablePackageDefinition'
+
+*** Property dump for object 'DownloadablePackageDefinition GD_AsterPackageDef.PackageDef_Aster' ***
+=== DownloadablePackageDefinition properties ===
+VfTable_IIDlcLicenseObject=
+PackageId=9
+PackageMask=7
+PackageDisplayName=Dragon Keep
+DLCName=Aster
+SeasonPassId=1
+bUsesExtendedLicensing=1
+AppliedLicense=DownloadablePackageLicense'GD_AsterPackageDef.PackageDef_Aster:DownloadablePackageLicense_0'
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=182406
+NetIndex=10
+Outer=Package'GD_AsterPackageDef'
+Name=PackageDef_Aster
+Class=Class'WillowGame.DownloadablePackageDefinition'
+ObjectArchetype=DownloadablePackageDefinition'WillowGame.Default__DownloadablePackageDefinition'
+
+*** Property dump for object 'DownloadablePackageDefinition GD_CommDay2013PackageDef.PackageDef_CommDay2013' ***
+=== DownloadablePackageDefinition properties ===
+VfTable_IIDlcLicenseObject=
+PackageId=18
+PackageMask=1
+PackageDisplayName=Community Day 2013 Customizations
+DLCName=CommDay2013
+SeasonPassId=0
+bUsesExtendedLicensing=0
+AppliedLicense=DownloadablePackageLicense'GD_CommDay2013PackageDef.PackageDef_CommDay2013:DownloadablePackageLicense_0'
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=183581
+NetIndex=2
+Outer=Package'GD_CommDay2013PackageDef'
+Name=PackageDef_CommDay2013
+Class=Class'WillowGame.DownloadablePackageDefinition'
+ObjectArchetype=DownloadablePackageDefinition'WillowGame.Default__DownloadablePackageDefinition'
+
+*** Property dump for object 'DownloadablePackageDefinition GD_FlaxPackageDef.PackageDef_Flax' ***
+=== DownloadablePackageDefinition properties ===
+VfTable_IIDlcLicenseObject=
+PackageId=5
+PackageMask=3
+PackageDisplayName=Bloody Harvest
+DLCName=Flax
+SeasonPassId=0
+bUsesExtendedLicensing=0
+AppliedLicense=None
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=184014
+NetIndex=9
+Outer=Package'GD_FlaxPackageDef'
+Name=PackageDef_Flax
+Class=Class'WillowGame.DownloadablePackageDefinition'
+ObjectArchetype=DownloadablePackageDefinition'WillowGame.Default__DownloadablePackageDefinition'
+
+*** Property dump for object 'DownloadablePackageDefinition GD_Gardenia01PackageDef.PackageDef_Gardenia01' ***
+=== DownloadablePackageDefinition properties ===
+VfTable_IIDlcLicenseObject=
+PackageId=7
+PackageMask=32767
+PackageDisplayName=Costume Pack
+DLCName=Gardenia01
+SeasonPassId=0
+bUsesExtendedLicensing=1
+AppliedLicense=None
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=184481
+NetIndex=16
+Outer=Package'GD_Gardenia01PackageDef'
+Name=PackageDef_Gardenia01
+Class=Class'WillowGame.DownloadablePackageDefinition'
+ObjectArchetype=DownloadablePackageDefinition'WillowGame.Default__DownloadablePackageDefinition'
+
+*** Property dump for object 'DownloadablePackageDefinition GD_Gardenia04PackageDef.PackageDef_Gardenia04' ***
+=== DownloadablePackageDefinition properties ===
+VfTable_IIDlcLicenseObject=
+PackageId=16
+PackageMask=511
+PackageDisplayName=Costume Pack 2
+DLCName=Gardenia04
+SeasonPassId=0
+bUsesExtendedLicensing=1
+AppliedLicense=None
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=184527
+NetIndex=9
+Outer=Package'GD_Gardenia04PackageDef'
+Name=PackageDef_Gardenia04
+Class=Class'WillowGame.DownloadablePackageDefinition'
+ObjectArchetype=DownloadablePackageDefinition'WillowGame.Default__DownloadablePackageDefinition'
+
+*** Property dump for object 'DownloadablePackageDefinition GD_Gardenia05PackageDef.PackageDef_Gardenia05' ***
+=== DownloadablePackageDefinition properties ===
+VfTable_IIDlcLicenseObject=
+PackageId=17
+PackageMask=63
+PackageDisplayName=Costume Pack 3
+DLCName=Gardenia05
+SeasonPassId=0
+bUsesExtendedLicensing=1
+AppliedLicense=None
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=184562
+NetIndex=6
+Outer=Package'GD_Gardenia05PackageDef'
+Name=PackageDef_Gardenia05
+Class=Class'WillowGame.DownloadablePackageDefinition'
+ObjectArchetype=DownloadablePackageDefinition'WillowGame.Default__DownloadablePackageDefinition'
+
+*** Property dump for object 'DownloadablePackageDefinition GD_GladiolusPackageDef.PackageDef_Gladiolus' ***
+=== DownloadablePackageDefinition properties ===
+VfTable_IIDlcLicenseObject=
+PackageId=8
+PackageMask=3
+PackageDisplayName=Ultimate Upgrade Pack
+DLCName=Gladiolus
+SeasonPassId=1
+bUsesExtendedLicensing=1
+AppliedLicense=DownloadablePackageLicense'GD_GladiolusPackageDef.PackageDef_Gladiolus:DownloadablePackageLicense_0'
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=185100
+NetIndex=2
+Outer=Package'GD_GladiolusPackageDef'
+Name=PackageDef_Gladiolus
+Class=Class'WillowGame.DownloadablePackageDefinition'
+ObjectArchetype=DownloadablePackageDefinition'WillowGame.Default__DownloadablePackageDefinition'
+
+*** Property dump for object 'DownloadablePackageDefinition GD_IrisPackageDef.PackageDef_Iris' ***
+=== DownloadablePackageDefinition properties ===
+VfTable_IIDlcLicenseObject=
+PackageId=3
+PackageMask=3
+PackageDisplayName=Campaign of Carnage
+DLCName=Iris
+SeasonPassId=1
+bUsesExtendedLicensing=0
+AppliedLicense=None
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=187957
+NetIndex=9
+Outer=Package'GD_IrisPackageDef'
+Name=PackageDef_Iris
+Class=Class'WillowGame.DownloadablePackageDefinition'
+ObjectArchetype=DownloadablePackageDefinition'WillowGame.Default__DownloadablePackageDefinition'
+
+*** Property dump for object 'DownloadablePackageDefinition GD_LilacPackageDef.PackageDef_Lilac' ***
+=== DownloadablePackageDefinition properties ===
+VfTable_IIDlcLicenseObject=
+PackageId=6
+PackageMask=1
+PackageDisplayName=Psycho Pack
+DLCName=Lilac
+SeasonPassId=0
+bUsesExtendedLicensing=0
+AppliedLicense=None
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=171937
+NetIndex=3
+Outer=Package'GD_LilacPackageDef'
+Name=PackageDef_Lilac
+Class=Class'WillowGame.DownloadablePackageDefinition'
+ObjectArchetype=DownloadablePackageDefinition'WillowGame.Default__DownloadablePackageDefinition'
+
+*** Property dump for object 'DownloadablePackageDefinition GD_LobeliaPackageDef.PackageDef_Lobelia' ***
+=== DownloadablePackageDefinition properties ===
+VfTable_IIDlcLicenseObject=
+PackageId=10
+PackageMask=3
+PackageDisplayName=Ultimate Upgrade Pack 2
+DLCName=Lobelia
+SeasonPassId=0
+bUsesExtendedLicensing=0
+AppliedLicense=None
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=185108
+NetIndex=11
+Outer=Package'GD_LobeliaPackageDef'
+Name=PackageDef_Lobelia
+Class=Class'WillowGame.DownloadablePackageDefinition'
+ObjectArchetype=DownloadablePackageDefinition'WillowGame.Default__DownloadablePackageDefinition'
+
+*** Property dump for object 'DownloadablePackageDefinition GD_LootChest2PackageDef.PackageDef_LootChest2' ***
+=== DownloadablePackageDefinition properties ===
+VfTable_IIDlcLicenseObject=
+PackageId=14
+PackageMask=1
+PackageDisplayName=Loot Chest 2 customizations
+DLCName=LootChest2
+SeasonPassId=0
+bUsesExtendedLicensing=0
+AppliedLicense=DownloadablePackageLicense'GD_LootChest2PackageDef.PackageDef_LootChest2:DownloadablePackageLicense_0'
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=189182
+NetIndex=2
+Outer=Package'GD_LootChest2PackageDef'
+Name=PackageDef_LootChest2
+Class=Class'WillowGame.DownloadablePackageDefinition'
+ObjectArchetype=DownloadablePackageDefinition'WillowGame.Default__DownloadablePackageDefinition'
+
+*** Property dump for object 'DownloadablePackageDefinition GD_MancanaPackageDef.PackageDef_Mancana' ***
+=== DownloadablePackageDefinition properties ===
+VfTable_IIDlcLicenseObject=
+PackageId=23
+PackageMask=1
+PackageDisplayName=Mancana
+DLCName=Mancana
+SeasonPassId=2
+bUsesExtendedLicensing=0
+AppliedLicense=None
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=189235
+NetIndex=0
+Outer=Package'GD_MancanaPackageDef'
+Name=PackageDef_Mancana
+Class=Class'WillowGame.DownloadablePackageDefinition'
+ObjectArchetype=DownloadablePackageDefinition'WillowGame.Default__DownloadablePackageDefinition'
+
+*** Property dump for object 'DownloadablePackageDefinition GD_NasturtiumPackageDef.PackageDef_Nasturtium' ***
+=== DownloadablePackageDefinition properties ===
+VfTable_IIDlcLicenseObject=
+PackageId=20
+PackageMask=15
+PackageDisplayName=Additional Headhunter Pack Content
+DLCName=Nasturtium
+SeasonPassId=0
+bUsesExtendedLicensing=1
+AppliedLicense=None
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=189989
+NetIndex=12
+Outer=Package'GD_NasturtiumPackageDef'
+Name=PackageDef_Nasturtium
+Class=Class'WillowGame.DownloadablePackageDefinition'
+ObjectArchetype=DownloadablePackageDefinition'WillowGame.Default__DownloadablePackageDefinition'
+
+*** Property dump for object 'DownloadablePackageDefinition GD_OrchidPackageDef.PackageDef_Orchid' ***
+=== DownloadablePackageDefinition properties ===
+VfTable_IIDlcLicenseObject=
+PackageId=1
+PackageMask=3
+PackageDisplayName=Pirate's Booty
+DLCName=Orchid
+SeasonPassId=1
+bUsesExtendedLicensing=0
+AppliedLicense=None
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=192485
+NetIndex=9
+Outer=Package'GD_OrchidPackageDef'
+Name=PackageDef_Orchid
+Class=Class'WillowGame.DownloadablePackageDefinition'
+ObjectArchetype=DownloadablePackageDefinition'WillowGame.Default__DownloadablePackageDefinition'
+
+*** Property dump for object 'DownloadablePackageDefinition GD_PN2PackageDef.PackageDef_PN2' ***
+=== DownloadablePackageDefinition properties ===
+VfTable_IIDlcLicenseObject=
+PackageId=12
+PackageMask=1
+PackageDisplayName=Poker Night at the Inventory 2 Customizations
+DLCName=PN2
+SeasonPassId=0
+bUsesExtendedLicensing=0
+AppliedLicense=DownloadablePackageLicense'GD_PN2PackageDef.PackageDef_PN2:DownloadablePackageLicense_0'
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=194044
+NetIndex=2
+Outer=Package'GD_PN2PackageDef'
+Name=PackageDef_PN2
+Class=Class'WillowGame.DownloadablePackageDefinition'
+ObjectArchetype=DownloadablePackageDefinition'WillowGame.Default__DownloadablePackageDefinition'
+
+*** Property dump for object 'DownloadablePackageDefinition GD_PeonyPackageDef.PackageDef_Peony' ***
+=== DownloadablePackageDefinition properties ===
+VfTable_IIDlcLicenseObject=
+PackageId=21
+PackageMask=1
+PackageDisplayName=Peony
+DLCName=Peony
+SeasonPassId=0
+bUsesExtendedLicensing=0
+AppliedLicense=DownloadablePackageLicense'GD_PeonyPackageDef.PackageDef_Peony:DownloadablePackageLicense_0'
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=193942
+NetIndex=8
+Outer=Package'GD_PeonyPackageDef'
+Name=PackageDef_Peony
+Class=Class'WillowGame.DownloadablePackageDefinition'
+ObjectArchetype=DownloadablePackageDefinition'WillowGame.Default__DownloadablePackageDefinition'
+
+*** Property dump for object 'DownloadablePackageDefinition GD_SagePackageDef.PackageDef_Sage' ***
+=== DownloadablePackageDefinition properties ===
+VfTable_IIDlcLicenseObject=
+PackageId=4
+PackageMask=3
+PackageDisplayName=Hammerlock's Hunt
+DLCName=Sage
+SeasonPassId=1
+bUsesExtendedLicensing=0
+AppliedLicense=None
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=195220
+NetIndex=9
+Outer=Package'GD_SagePackageDef'
+Name=PackageDef_Sage
+Class=Class'WillowGame.DownloadablePackageDefinition'
+ObjectArchetype=DownloadablePackageDefinition'WillowGame.Default__DownloadablePackageDefinition'
+
+*** Property dump for object 'DownloadablePackageDefinition GD_TulipPackageDef.PackageDef_Tulip' ***
+=== DownloadablePackageDefinition properties ===
+VfTable_IIDlcLicenseObject=
+PackageId=2
+PackageMask=1
+PackageDisplayName=Mechromancer
+DLCName=Tulip
+SeasonPassId=2
+bUsesExtendedLicensing=0
+AppliedLicense=None
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=171939
+NetIndex=3
+Outer=Package'GD_TulipPackageDef'
+Name=PackageDef_Tulip
+Class=Class'WillowGame.DownloadablePackageDefinition'
+ObjectArchetype=DownloadablePackageDefinition'WillowGame.Default__DownloadablePackageDefinition'
+

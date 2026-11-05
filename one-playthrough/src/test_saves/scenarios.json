@@ -1,0 +1,192 @@
+[
+  {
+    "number": 2,
+    "name": "OP 02 Shield Lock",
+    "kind": "reward",
+    "level": 10,
+    "stage": 5,
+    "target": "GD_Episode02.M_Ep2a_MoreGuns",
+    "station": "GD_FastTravelStations.Zone1.SouthernShelfTown",
+    "slots": 2,
+    "goal": "Locked equipment reward: mission accepted at 5, player now 10",
+    "steps": [
+      "F10 after loading; mission should be ready to turn in at level 5, player 10.",
+      "Arm Capture next mission screen; turn in Cleaning up the Berg to Hammerlock. Note mission level, shield level, XP and cash.",
+      "Collect the shield, F10 immediately; save-quit/reload, F10. The accepted stage should remain 5; native item variation is allowed."
+    ]
+  },
+  {
+    "number": 3,
+    "name": "OP 03 Fourth Slot",
+    "kind": "reward",
+    "level": 20,
+    "stage": 16,
+    "target": "GD_Episode09.M_Ep9_GetBackToSanctuary",
+    "station": "GD_FastTravelStations.Sanctuary.Sanctuary",
+    "slots": 3,
+    "goal": "Fourth weapon-slot reward in low-level UVHM",
+    "steps": [
+      "F10 after loading; player 20, Bright Lights Flying City ready at 16, three weapon slots.",
+      "Arm mission capture; follow the turn-in marker to Roland. Record SDU versus class mod/other reward.",
+      "Collect reward, F10; check slot four, then save-quit/reload and F10. A different native reward is a finding; do not insert an SDU manually."
+    ]
+  },
+  {
+    "number": 4,
+    "name": "OP 04 World L10",
+    "kind": "world",
+    "level": 10,
+    "stage": 10,
+    "target": "GD_Episode05.M_Ep5_ThePhoenix",
+    "station": "GD_FastTravelStations.Zone1.IceEast",
+    "slots": 3,
+    "goal": "Native enemy variation, dropped gear, vendors, ammo and money",
+    "steps": [
+      "Equip the provided gear, then F10 before fighting near Three Horns Divide fast travel. Note enemy names/levels.",
+      "Kill a few nearby enemies; collect money/ammo and one dropped item, open a nearby chest if convenient; F10.",
+      "Check nearby weapon/ammo/medical vendors and their item levels/prices. F10 while the menu is open if possible; otherwise just after closing.",
+      "Save-quit/reload, F10. No need to travel far or finish Hunting the Firehawk."
+    ]
+  },
+  {
+    "number": 5,
+    "name": "OP 05 Level 49-50",
+    "kind": "boundary",
+    "level": 49,
+    "stage": 49,
+    "target": "GD_Episode05.M_Ep5_ThePhoenix",
+    "station": "GD_FastTravelStations.Zone1.IceEast",
+    "slots": 3,
+    "boundary": 50,
+    "goal": "Cross the former level-50 floor",
+    "steps": [
+      "F10 at level 49 after arrival/discovery XP finishes. The save starts 5,000 XP below level 50; report if arrival alone still levels you up.",
+      "Kill nearby XP-awarding bullymongs/enemies until you reach 50; several kills may be needed. F10 immediately after the level-up.",
+      "Owned test gear should stay level 49. Capture a fresh drop or vendor item, then save-quit/reload and F10 with newly spawned enemies.",
+      "Hunting the Firehawk was accepted at 49; its saved stage should stay 49 after levelling/reload. No need to complete it."
+    ],
+    "xp_margin": 5000
+  },
+  {
+    "number": 6,
+    "name": "OP 06 Level 60-61",
+    "kind": "boundary",
+    "level": 60,
+    "stage": 60,
+    "target": "GD_Episode05.M_Ep5_ThePhoenix",
+    "station": "GD_FastTravelStations.Zone1.IceEast",
+    "slots": 3,
+    "boundary": 61,
+    "goal": "Native tuning boundary at level 61",
+    "steps": [
+      "F10 at level 60 after arrival/discovery XP finishes. The save starts 5,000 XP below level 61; report if arrival alone still levels you up.",
+      "Kill nearby XP-awarding bullymongs/enemies until you reach 61; several kills may be needed. F10 immediately after the level-up.",
+      "Save-quit/reload, F10 near fresh enemies; accepted mission and owned kit should remain level 60. No mission turn-in needed."
+    ],
+    "xp_margin": 5000
+  },
+  {
+    "number": 7,
+    "name": "OP 07 Level 72-73",
+    "kind": "boundary",
+    "level": 72,
+    "stage": 72,
+    "target": "GD_Episode05.M_Ep5_ThePhoenix",
+    "station": "GD_FastTravelStations.Zone1.IceEast",
+    "slots": 3,
+    "boundary": 73,
+    "goal": "Native tuning boundary at level 73, OP selection remains zero",
+    "steps": [
+      "F10 at level 72 after arrival/discovery XP finishes. The save starts 5,000 XP below level 73; report if arrival alone still levels you up.",
+      "Kill nearby XP-awarding bullymongs/enemies until you reach 73; several kills may be needed. F10 immediately after the level-up.",
+      "Save-quit/reload, F10 near fresh enemies; accepted mission and owned kit should remain level 72. Do not select OP difficulty."
+    ],
+    "xp_margin": 5000
+  },
+  {
+    "number": 8,
+    "name": "OP 08 Oasis L10",
+    "kind": "arrival",
+    "level": 10,
+    "stage": 10,
+    "target": "GD_Episode05.M_Ep5_ThePhoenix",
+    "station": "GD_Orchid_FastTravel.OasisTown.OasisTown",
+    "slots": 3,
+    "goal": "Scarlett DLC arrival, automatic mission acceptance and enemy/loot scaling below 50",
+    "steps": [
+      "Let the arrival scene finish, then F10 in Oasis. Record which local mission appeared and its displayed level.",
+      "Equip the kit; fight only the nearby opening enemies, record their levels and collect a drop; F10.",
+      "Save-quit/reload, F10. No need to play through the DLC or finish its first mission."
+    ]
+  },
+  {
+    "number": 9,
+    "name": "OP 09 Tina L10",
+    "kind": "arrival",
+    "level": 10,
+    "stage": 10,
+    "target": "GD_Episode05.M_Ep5_ThePhoenix",
+    "station": "GD_Aster_FastTravel.Docks",
+    "slots": 3,
+    "goal": "Tina DLC arrival and scaling below its normal starting range",
+    "steps": [
+      "Let the arrival story/cutscene finish, then F10 in Unassuming Docks. Record the local mission and its displayed level.",
+      "Equip the kit; sample the first nearby enemies and a drop/chest, F10.",
+      "Save-quit/reload, F10. Stop if a scripted gate blocks the route; no need to complete the DLC introduction."
+    ]
+  },
+  {
+    "number": 10,
+    "name": "OP 10 Snowflake L20",
+    "kind": "boss",
+    "level": 20,
+    "stage": 20,
+    "target": "GD_Episode05.M_Ep5_ThePhoenix",
+    "station": "GD_Allium_FastTravel.Xmas",
+    "slots": 3,
+    "side": "GD_Allium_KillSnowman.M_KillSnowman",
+    "active_set_suffix": ":ObjSet_SummonSnowman",
+    "complete_objectives_before": 16,
+    "goal": "Short DLC boss encounter and native boss offsets",
+    "steps": [
+      "Equip the kit; F10 after loading Marcus Mercenary Shop. The local mission is prepared at Summon Snowman.",
+      "Follow its marker to the bell/arena and summon Tinder Snowflake; F10 with the living boss visible, before firing the strongest guns.",
+      "Use slag/healing and the provided heavy weapons to kill him; take a loot sample, F10. Fire launcher is provided as an option.",
+      "Do not slog through earlier objectives if the checkpoint fails to restore them: F10 and report the displayed objective instead."
+    ]
+  },
+  {
+    "number": 11,
+    "name": "OP 11 Level 80 Cap",
+    "kind": "cap",
+    "level": 80,
+    "stage": 80,
+    "target": "GD_Episode05.M_Ep5_ThePhoenix",
+    "station": "GD_FastTravelStations.Zone1.IceEast",
+    "slots": 3,
+    "goal": "Installed maximum-level baseline with OP zero",
+    "steps": [
+      "F10 at 80; keep OP selection zero.",
+      "Equip the kit; kill a few nearby enemies, collect a drop and inspect vendor levels. F10.",
+      "Save-quit/reload, F10. No promise that every native enemy/item equals 80; preserve native exceptions."
+    ]
+  },
+  {
+    "number": 12,
+    "name": "OP 12 Alt Reward",
+    "kind": "alternative",
+    "level": 25,
+    "stage": 20,
+    "target": "GD_Z2_Rakkaholics.M_Rakkaholics",
+    "station": "GD_FastTravelStations.Sanctuary.Sanctuary",
+    "slots": 4,
+    "main": "GD_Episode11.M_Ep11_LikeATonOf",
+    "goal": "Alternative weapon reward and accepted stage lower than the player",
+    "steps": [
+      "F10 in Sanctuary. Rakkaholics Anonymous is prepared for turn-in at 20; player is 25.",
+      "Pick Moxxi (Rubi) OR Mordecai (Sloth). Arm mission capture before opening the reward card. Tell us which recipient you chose and the displayed weapon level.",
+      "Collect reward and F10; save-quit/reload, F10. Accepted stage should remain 20; native item variation is allowed.",
+      "Optional: fully close game and re-copy this test file to try the other recipient. If neither offers a turn-in, F10 and report; do not replay the prerequisite story."
+    ]
+  }
+]

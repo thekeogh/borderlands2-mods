@@ -1,0 +1,163 @@
+{
+  "scenario": "03 / Bright Lights Flying City fourth weapon-slot reward",
+  "test_pack_version": "0.2.0",
+  "mod_version": "0.1.7",
+  "result": "Native weapon-slot SDU awarded; mission lock and reload pass",
+  "captures": [
+    {
+      "file": "one-playthrough-0.1.7-20261105T174709.601074Z-48cc16e9.json",
+      "sha256": "6d38421974d276f9d6113dbc0845e05c72b7ae0a49d01ac48746bcd69de35795",
+      "trigger": "F10",
+      "export_complete": true,
+      "errors": [],
+      "player_level": 20,
+      "playthrough": 2,
+      "op": 0,
+      "controller": "Loader.TheWorld:PersistentLevel.WillowPlayerController_8",
+      "stored_mission": {
+        "status": 3,
+        "stored_stage": 16
+      },
+      "definition_stage": 16,
+      "definition_locked": true,
+      "cash": 10000,
+      "threshold": 1,
+      "tuning_errors": {}
+    },
+    {
+      "file": "one-playthrough-0.1.7-20261105T174815.573023Z-5a675d9e.json",
+      "sha256": "1a3f3a36dc181dc79e9558b8f2085099b19bfb799dd7aba8a5d85b6430f49f08",
+      "trigger": "armed_mission_screen",
+      "export_complete": true,
+      "errors": [],
+      "player_level": 20,
+      "playthrough": 2,
+      "op": 0,
+      "controller": "Loader.TheWorld:PersistentLevel.WillowPlayerController_8",
+      "stored_mission": {
+        "status": 3,
+        "stored_stage": 16
+      },
+      "definition_stage": 16,
+      "definition_locked": true,
+      "cash": 10000,
+      "threshold": 1,
+      "tuning_errors": {}
+    },
+    {
+      "file": "one-playthrough-0.1.7-20261105T174830.374886Z-cdd5455c.json",
+      "sha256": "3a010abefc935eb1e52f53ea568f4217d6a75dbd6b7c602ea07bbcd1bb67ab92",
+      "trigger": "F10",
+      "export_complete": true,
+      "errors": [],
+      "player_level": 20,
+      "playthrough": 2,
+      "op": 0,
+      "controller": "Loader.TheWorld:PersistentLevel.WillowPlayerController_8",
+      "stored_mission": {
+        "status": 4,
+        "stored_stage": 16
+      },
+      "definition_stage": 16,
+      "definition_locked": true,
+      "cash": 10055,
+      "threshold": 1,
+      "tuning_errors": {}
+    },
+    {
+      "file": "one-playthrough-0.1.7-20261105T174854.688964Z-c570d093.json",
+      "sha256": "30e7c38a022ffa76373fcd6b3a1da408a30cc5658b0039e566608b81da24f278",
+      "trigger": "F10",
+      "export_complete": true,
+      "errors": [],
+      "player_level": 20,
+      "playthrough": 2,
+      "op": 0,
+      "controller": "Loader.TheWorld:PersistentLevel.WillowPlayerController_11",
+      "stored_mission": {
+        "status": 4,
+        "stored_stage": 16
+      },
+      "definition_stage": 16,
+      "definition_locked": true,
+      "cash": 10055,
+      "threshold": 1,
+      "tuning_errors": {}
+    }
+  ],
+  "checks": {
+    "item_reward_events": [
+      {
+        "sequence": 214,
+        "phase": "PRE",
+        "item_definition": "GD_StorageDeckUpgrade.A_Item.INV_SDU_WeaponEquipSlot",
+        "balance_definition": "GD_ItemGrades.StorageDeckUpgrades.ItemGrade_SDU_WeaponEquipSlot",
+        "game_stage": 16,
+        "grade": 16
+      },
+      {
+        "sequence": 216,
+        "phase": "POST_UNCONDITIONAL",
+        "item_definition": "GD_StorageDeckUpgrade.A_Item.INV_SDU_WeaponEquipSlot",
+        "balance_definition": "GD_ItemGrades.StorageDeckUpgrades.ItemGrade_SDU_WeaponEquipSlot",
+        "game_stage": 16,
+        "grade": 16
+      }
+    ],
+    "completion_persists_after_controller_reload": true,
+    "next_mission": "GD_Episode10.M_Ep10_BirdISTheWord",
+    "next_mission_record": {
+      "status": 1,
+      "stored_stage": 20
+    },
+    "xp_query_and_ui_payload": 2585,
+    "actual_xp_delta_available": false,
+    "actual_cash_delta": 55,
+    "expected_stage_queries_during_reward_screen": [
+      {
+        "sequence": 173,
+        "value": 20
+      },
+      {
+        "sequence": 211,
+        "value": 20
+      }
+    ]
+  },
+  "user_report": {
+    "description": "03 seemed good",
+    "explicit_four_slot_count_confirmation": false
+  },
+  "nested_diagnostic_errors": [
+    {
+      "path": "one-playthrough-0.1.7-20261105T174709.601074Z-48cc16e9.json/sections/player_resources/resource_pools/errors",
+      "errors": [
+        "ResourcePoolMap: RuntimeError: Unknown object type MapProperty"
+      ]
+    },
+    {
+      "path": "one-playthrough-0.1.7-20261105T174815.573023Z-5a675d9e.json/sections/player_resources/resource_pools/errors",
+      "errors": [
+        "ResourcePoolMap: RuntimeError: Unknown object type MapProperty"
+      ]
+    },
+    {
+      "path": "one-playthrough-0.1.7-20261105T174830.374886Z-cdd5455c.json/sections/player_resources/resource_pools/errors",
+      "errors": [
+        "ResourcePoolMap: RuntimeError: Unknown object type MapProperty"
+      ]
+    },
+    {
+      "path": "one-playthrough-0.1.7-20261105T174854.688964Z-c570d093.json/sections/player_resources/resource_pools/errors",
+      "errors": [
+        "ResourcePoolMap: RuntimeError: Unknown object type MapProperty"
+      ]
+    }
+  ],
+  "limits": [
+    "SDU item award is captured; unlocked slot capacity/persistence is not directly measured by diagnostics.",
+    "Actual XP-total delta unavailable.",
+    "GetExpectedGameStage returns20 despite locked16; rendered screen text not directly captured or separately reported for03.",
+    "Existing unsupported ResourcePoolMap reflection error only; no observed event callback or export failure."
+  ]
+}

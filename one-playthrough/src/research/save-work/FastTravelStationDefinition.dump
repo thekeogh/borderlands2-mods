@@ -1,0 +1,2383 @@
+*** Property dump for object 'FastTravelStationDefinition WillowGame.Default__FastTravelStationDefinition' ***
+=== FastTravelStationDefinition properties ===
+bInitiallyActive=False
+bSendOnly=False
+StationDescription=
+StationSign=
+InaccessibleObjective=None
+AccessibleObjective=None
+AccessibilityTime=FTAT_Always
+=== TravelStationDefinition properties ===
+StationLevelName=None
+PreviousStation=None
+DlcExpansion=None
+StationLocation=(X=0.000000,Y=0.000000,Z=0.000000)
+StationDisplayImage=None
+StationDisplayName=
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=4325
+NetIndex=4471
+Outer=Package'WillowGame'
+Name=Default__FastTravelStationDefinition
+Class=Class'WillowGame.FastTravelStationDefinition'
+ObjectArchetype=TravelStationDefinition'WillowGame.Default__TravelStationDefinition'
+
+*** Property dump for object 'FastTravelStationDefinition GD_Allium_FastTravel.Hunger' ***
+=== FastTravelStationDefinition properties ===
+bInitiallyActive=True
+bSendOnly=False
+StationDescription=Gluttony Gulch
+StationSign=Gluttony Gulch
+InaccessibleObjective=None
+AccessibleObjective=None
+AccessibilityTime=FTAT_Always
+=== TravelStationDefinition properties ===
+StationLevelName=Hunger_P
+PreviousStation=None
+DlcExpansion=DownloadableExpansionDefinition'GD_AlliumPackageDef.ExpansionDef_Allium_TG'
+StationLocation=(X=0.000000,Y=0.000000,Z=0.000000)
+StationDisplayImage=None
+StationDisplayName=Gluttony Gulch
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=164075
+NetIndex=0
+Outer=Package'GD_Allium_FastTravel'
+Name=Hunger
+Class=Class'WillowGame.FastTravelStationDefinition'
+ObjectArchetype=FastTravelStationDefinition'WillowGame.Default__FastTravelStationDefinition'
+
+*** Property dump for object 'FastTravelStationDefinition GD_Allium_FastTravel.Xmas' ***
+=== FastTravelStationDefinition properties ===
+bInitiallyActive=True
+bSendOnly=False
+StationDescription=Marcus's Mercenary Shop
+StationSign=Marcus's Mercenary Shop
+InaccessibleObjective=None
+AccessibleObjective=None
+AccessibilityTime=FTAT_Always
+=== TravelStationDefinition properties ===
+StationLevelName=Xmas_P
+PreviousStation=None
+DlcExpansion=DownloadableExpansionDefinition'GD_AlliumPackageDef.ExpansionDef_Allium_Xmas'
+StationLocation=(X=0.000000,Y=0.000000,Z=0.000000)
+StationDisplayImage=None
+StationDisplayName=Marcus's Mercenary Shop
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=164083
+NetIndex=1
+Outer=Package'GD_Allium_FastTravel'
+Name=Xmas
+Class=Class'WillowGame.FastTravelStationDefinition'
+ObjectArchetype=FastTravelStationDefinition'WillowGame.Default__FastTravelStationDefinition'
+
+*** Property dump for object 'FastTravelStationDefinition GD_Anemone_FastTravel.BackburnerIntro' ***
+=== FastTravelStationDefinition properties ===
+bInitiallyActive=False
+bSendOnly=False
+StationDescription=
+StationSign=The Backburner
+InaccessibleObjective=MissionObjectiveDefinition'GD_Anemone_Plot_Mission010.M_Anemone_PlotMission010:FindCamp'
+AccessibleObjective=None
+AccessibilityTime=FTAT_Always
+=== TravelStationDefinition properties ===
+StationLevelName=BackBurner_P
+PreviousStation=LevelTravelStationDefinition'GD_Anemone_LevelTravel.BackburnerToSanctIntro'
+DlcExpansion=DownloadableExpansionDefinition'GD_AnemonePackageDef.ExpansionDef_Anemone'
+StationLocation=(X=0.000000,Y=0.000000,Z=0.000000)
+StationDisplayImage=None
+StationDisplayName=The Backburner
+MissionDependencies(0)=(MissionDefinition=MissionDefinition'GD_Anemone_Plot_Mission010.M_Anemone_PlotMission010',MissionStatus=MS_Active,bIsObjectiveSpecific=True,MissionObjective=MissionObjectiveDefinition'GD_Anemone_Plot_Mission010.M_Anemone_PlotMission010:FightInvaders',ObjectiveStatus=EODS_Complete)
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=172097
+NetIndex=0
+Outer=Package'GD_Anemone_FastTravel'
+Name=BackburnerIntro
+Class=Class'WillowGame.FastTravelStationDefinition'
+ObjectArchetype=FastTravelStationDefinition'WillowGame.Default__FastTravelStationDefinition'
+
+*** Property dump for object 'FastTravelStationDefinition GD_Anemone_FastTravel.FastTravelStations.BackBurner' ***
+=== FastTravelStationDefinition properties ===
+bInitiallyActive=False
+bSendOnly=False
+StationDescription=
+StationSign=The Backburner
+InaccessibleObjective=None
+AccessibleObjective=MissionObjectiveDefinition'GD_Anemone_Plot_Mission010.M_Anemone_PlotMission010:FindCamp'
+AccessibilityTime=FTAT_Always
+=== TravelStationDefinition properties ===
+StationLevelName=BackBurner_P
+PreviousStation=LevelTravelStationDefinition'GD_Anemone_LevelTravel.BackburnerToSanctIntro'
+DlcExpansion=DownloadableExpansionDefinition'GD_AnemonePackageDef.ExpansionDef_Anemone'
+StationLocation=(X=0.000000,Y=0.000000,Z=0.000000)
+StationDisplayImage=None
+StationDisplayName=The Backburner
+MissionDependencies(0)=(MissionDefinition=MissionDefinition'GD_Anemone_Plot_Mission010.M_Anemone_PlotMission010',MissionStatus=MS_RequiredObjectivesComplete,bIsObjectiveSpecific=True,MissionObjective=MissionObjectiveDefinition'GD_Anemone_Plot_Mission010.M_Anemone_PlotMission010:FindCamp',ObjectiveStatus=EODS_Complete)
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=169616
+NetIndex=1
+Outer=Package'GD_Anemone_FastTravel.FastTravelStations'
+Name=BackBurner
+Class=Class'WillowGame.FastTravelStationDefinition'
+ObjectArchetype=FastTravelStationDefinition'WillowGame.Default__FastTravelStationDefinition'
+
+*** Property dump for object 'FastTravelStationDefinition GD_Anemone_FastTravel.FastTravelStations.Helios' ***
+=== FastTravelStationDefinition properties ===
+bInitiallyActive=False
+bSendOnly=False
+StationDescription=
+StationSign=Helios Fallen
+InaccessibleObjective=None
+AccessibleObjective=None
+AccessibilityTime=FTAT_Always
+=== TravelStationDefinition properties ===
+StationLevelName=Helios_P
+PreviousStation=LevelTravelStationDefinition'GD_Anemone_LevelTravel.HeliosToSandwormCavern'
+DlcExpansion=DownloadableExpansionDefinition'GD_AnemonePackageDef.ExpansionDef_Anemone'
+StationLocation=(X=0.000000,Y=0.000000,Z=0.000000)
+StationDisplayImage=None
+StationDisplayName=Helios Fallen
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=172100
+NetIndex=2
+Outer=Package'GD_Anemone_FastTravel.FastTravelStations'
+Name=Helios
+Class=Class'WillowGame.FastTravelStationDefinition'
+ObjectArchetype=FastTravelStationDefinition'WillowGame.Default__FastTravelStationDefinition'
+
+*** Property dump for object 'FastTravelStationDefinition GD_Anemone_FastTravel.FastTravelStations.OldDust' ***
+=== FastTravelStationDefinition properties ===
+bInitiallyActive=False
+bSendOnly=False
+StationDescription=
+StationSign=Dahl Abandon
+InaccessibleObjective=None
+AccessibleObjective=None
+AccessibilityTime=FTAT_Always
+=== TravelStationDefinition properties ===
+StationLevelName=OldDust_P
+PreviousStation=LevelTravelStationDefinition'GD_Anemone_LevelTravel.OldDustToBackburner'
+DlcExpansion=DownloadableExpansionDefinition'GD_AnemonePackageDef.ExpansionDef_Anemone'
+StationLocation=(X=0.000000,Y=0.000000,Z=0.000000)
+StationDisplayImage=None
+StationDisplayName=Dahl Abandon
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=172102
+NetIndex=3
+Outer=Package'GD_Anemone_FastTravel.FastTravelStations'
+Name=OldDust
+Class=Class'WillowGame.FastTravelStationDefinition'
+ObjectArchetype=FastTravelStationDefinition'WillowGame.Default__FastTravelStationDefinition'
+
+*** Property dump for object 'FastTravelStationDefinition GD_Anemone_FastTravel.FastTravelStations.ResearchCenter' ***
+=== FastTravelStationDefinition properties ===
+bInitiallyActive=False
+bSendOnly=False
+StationDescription=
+StationSign=Mt. Scarab Research Center
+InaccessibleObjective=None
+AccessibleObjective=None
+AccessibilityTime=FTAT_Always
+=== TravelStationDefinition properties ===
+StationLevelName=ResearchCenter_P
+PreviousStation=LevelTravelStationDefinition'GD_Anemone_LevelTravel.ResearchCenterToOldDust'
+DlcExpansion=DownloadableExpansionDefinition'GD_AnemonePackageDef.ExpansionDef_Anemone'
+StationLocation=(X=0.000000,Y=0.000000,Z=0.000000)
+StationDisplayImage=None
+StationDisplayName=Mt. Scarab Research Center
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=172104
+NetIndex=4
+Outer=Package'GD_Anemone_FastTravel.FastTravelStations'
+Name=ResearchCenter
+Class=Class'WillowGame.FastTravelStationDefinition'
+ObjectArchetype=FastTravelStationDefinition'WillowGame.Default__FastTravelStationDefinition'
+
+*** Property dump for object 'FastTravelStationDefinition GD_Anemone_FastTravel.Helios_OneWay' ***
+=== FastTravelStationDefinition properties ===
+bInitiallyActive=False
+bSendOnly=True
+StationDescription=
+StationSign=Helios - Fire Control Alpha
+InaccessibleObjective=None
+AccessibleObjective=None
+AccessibilityTime=FTAT_Always
+=== TravelStationDefinition properties ===
+StationLevelName=Helios_P
+PreviousStation=FastTravelStationDefinition'GD_Anemone_FastTravel.FastTravelStations.Helios'
+DlcExpansion=DownloadableExpansionDefinition'GD_AnemonePackageDef.ExpansionDef_Anemone'
+StationLocation=(X=0.000000,Y=0.000000,Z=0.000000)
+StationDisplayImage=None
+StationDisplayName=Helios - Fire Control Alpha
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=172106
+NetIndex=5
+Outer=Package'GD_Anemone_FastTravel'
+Name=Helios_OneWay
+Class=Class'WillowGame.FastTravelStationDefinition'
+ObjectArchetype=FastTravelStationDefinition'WillowGame.Default__FastTravelStationDefinition'
+
+*** Property dump for object 'FastTravelStationDefinition GD_Anemone_FastTravel.ResearchCenter_OneWay' ***
+=== FastTravelStationDefinition properties ===
+bInitiallyActive=False
+bSendOnly=True
+StationDescription=
+StationSign=Research Center - Paradise Bio-Lab
+InaccessibleObjective=None
+AccessibleObjective=None
+AccessibilityTime=FTAT_Always
+=== TravelStationDefinition properties ===
+StationLevelName=ResearchCenter_P
+PreviousStation=FastTravelStationDefinition'GD_Anemone_FastTravel.FastTravelStations.ResearchCenter'
+DlcExpansion=DownloadableExpansionDefinition'GD_AnemonePackageDef.ExpansionDef_Anemone'
+StationLocation=(X=0.000000,Y=0.000000,Z=0.000000)
+StationDisplayImage=None
+StationDisplayName=Research Center - Paradise Bio-Lab
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=172107
+NetIndex=6
+Outer=Package'GD_Anemone_FastTravel'
+Name=ResearchCenter_OneWay
+Class=Class'WillowGame.FastTravelStationDefinition'
+ObjectArchetype=FastTravelStationDefinition'WillowGame.Default__FastTravelStationDefinition'
+
+*** Property dump for object 'FastTravelStationDefinition GD_Anemone_FastTravel.SanctuaryIntro' ***
+=== FastTravelStationDefinition properties ===
+bInitiallyActive=True
+bSendOnly=False
+StationDescription=
+StationSign=Fight for Sanctuary
+InaccessibleObjective=MissionObjectiveDefinition'GD_Anemone_Plot_Mission010.M_Anemone_PlotMission010:FightInvaders'
+AccessibleObjective=None
+AccessibilityTime=FTAT_Always
+=== TravelStationDefinition properties ===
+StationLevelName=SanctIntro_P
+PreviousStation=None
+DlcExpansion=DownloadableExpansionDefinition'GD_AnemonePackageDef.ExpansionDef_Anemone'
+StationLocation=(X=0.000000,Y=0.000000,Z=0.000000)
+StationDisplayImage=None
+StationDisplayName=Fight for Sanctuary
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=172075
+NetIndex=7
+Outer=Package'GD_Anemone_FastTravel'
+Name=SanctuaryIntro
+Class=Class'WillowGame.FastTravelStationDefinition'
+ObjectArchetype=FastTravelStationDefinition'WillowGame.Default__FastTravelStationDefinition'
+
+*** Property dump for object 'FastTravelStationDefinition GD_Anemone_FastTravel.Sandworm_OneWay' ***
+=== FastTravelStationDefinition properties ===
+bInitiallyActive=False
+bSendOnly=False
+StationDescription=
+StationSign=The Burrows
+InaccessibleObjective=None
+AccessibleObjective=None
+AccessibilityTime=FTAT_Always
+=== TravelStationDefinition properties ===
+StationLevelName=Sandworm_P
+PreviousStation=LevelTravelStationDefinition'GD_Anemone_LevelTravel.SandwormCavernToOldDust'
+DlcExpansion=DownloadableExpansionDefinition'GD_AnemonePackageDef.ExpansionDef_Anemone'
+StationLocation=(X=0.000000,Y=0.000000,Z=0.000000)
+StationDisplayImage=None
+StationDisplayName=The Burrows
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=172108
+NetIndex=8
+Outer=Package'GD_Anemone_FastTravel'
+Name=Sandworm_OneWay
+Class=Class'WillowGame.FastTravelStationDefinition'
+ObjectArchetype=FastTravelStationDefinition'WillowGame.Default__FastTravelStationDefinition'
+
+*** Property dump for object 'FastTravelStationDefinition GD_Aster_FastTravel.CastleExterior' ***
+=== FastTravelStationDefinition properties ===
+bInitiallyActive=False
+bSendOnly=False
+StationDescription=Hatred's Shadow
+StationSign=Hatred's Shadow
+InaccessibleObjective=None
+AccessibleObjective=None
+AccessibilityTime=FTAT_Always
+=== TravelStationDefinition properties ===
+StationLevelName=CastleExterior_P
+PreviousStation=LevelTravelStationDefinition'GD_Aster_LevelTravel.CastleExteriorToMines'
+DlcExpansion=DownloadableExpansionDefinition'GD_AsterPackageDef.ExpansionDef_Aster'
+StationLocation=(X=0.000000,Y=0.000000,Z=0.000000)
+StationDisplayImage=None
+StationDisplayName=Hatred's Shadow
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=182431
+NetIndex=0
+Outer=Package'GD_Aster_FastTravel'
+Name=CastleExterior
+Class=Class'WillowGame.FastTravelStationDefinition'
+ObjectArchetype=FastTravelStationDefinition'WillowGame.Default__FastTravelStationDefinition'
+
+*** Property dump for object 'FastTravelStationDefinition GD_Aster_FastTravel.CastleKeep' ***
+=== FastTravelStationDefinition properties ===
+bInitiallyActive=False
+bSendOnly=False
+StationDescription=Dragon Keep
+StationSign=Dragon Keep
+InaccessibleObjective=None
+AccessibleObjective=None
+AccessibilityTime=FTAT_Always
+=== TravelStationDefinition properties ===
+StationLevelName=CastleKeep_P
+PreviousStation=LevelTravelStationDefinition'GD_Aster_LevelTravel.CastleKeepToDungeon'
+DlcExpansion=DownloadableExpansionDefinition'GD_AsterPackageDef.ExpansionDef_Aster'
+StationLocation=(X=0.000000,Y=0.000000,Z=0.000000)
+StationDisplayImage=None
+StationDisplayName=Dragon Keep
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=182434
+NetIndex=1
+Outer=Package'GD_Aster_FastTravel'
+Name=CastleKeep
+Class=Class'WillowGame.FastTravelStationDefinition'
+ObjectArchetype=FastTravelStationDefinition'WillowGame.Default__FastTravelStationDefinition'
+
+*** Property dump for object 'FastTravelStationDefinition GD_Aster_FastTravel.DarkForest' ***
+=== FastTravelStationDefinition properties ===
+bInitiallyActive=False
+bSendOnly=False
+StationDescription=The Forest
+StationSign=The Forest
+InaccessibleObjective=None
+AccessibleObjective=None
+AccessibilityTime=FTAT_Always
+=== TravelStationDefinition properties ===
+StationLevelName=Dark_Forest_P
+PreviousStation=LevelTravelStationDefinition'GD_Aster_LevelTravel.DarkForestToVillage'
+DlcExpansion=DownloadableExpansionDefinition'GD_AsterPackageDef.ExpansionDef_Aster'
+StationLocation=(X=0.000000,Y=0.000000,Z=0.000000)
+StationDisplayImage=None
+StationDisplayName=The Forest
+MissionDependencies(0)=(MissionDefinition=MissionDefinition'GD_Aster_Plot_Mission02.M_Aster_PlotMission02',MissionStatus=MS_RequiredObjectivesComplete,bIsObjectiveSpecific=True,MissionObjective=MissionObjectiveDefinition'GD_Aster_Plot_Mission02.M_Aster_PlotMission02:EnterForest',ObjectiveStatus=EODS_Complete)
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=182436
+NetIndex=2
+Outer=Package'GD_Aster_FastTravel'
+Name=DarkForest
+Class=Class'WillowGame.FastTravelStationDefinition'
+ObjectArchetype=FastTravelStationDefinition'WillowGame.Default__FastTravelStationDefinition'
+
+*** Property dump for object 'FastTravelStationDefinition GD_Aster_FastTravel.DeadForest' ***
+=== FastTravelStationDefinition properties ===
+bInitiallyActive=True
+bSendOnly=False
+StationDescription=Immortal Woods
+StationSign=Immortal Woods
+InaccessibleObjective=None
+AccessibleObjective=None
+AccessibilityTime=FTAT_Always
+=== TravelStationDefinition properties ===
+StationLevelName=Dead_Forest_P
+PreviousStation=LevelTravelStationDefinition'GD_Aster_LevelTravel.DeadForestToDarkForest'
+DlcExpansion=DownloadableExpansionDefinition'GD_AsterPackageDef.ExpansionDef_Aster'
+StationLocation=(X=0.000000,Y=0.000000,Z=0.000000)
+StationDisplayImage=None
+StationDisplayName=Immortal Woods
+MissionDependencies(0)=(MissionDefinition=MissionDefinition'GD_Aster_Plot_Mission02.M_Aster_PlotMission02',MissionStatus=MS_RequiredObjectivesComplete,bIsObjectiveSpecific=True,MissionObjective=MissionObjectiveDefinition'GD_Aster_Plot_Mission02.M_Aster_PlotMission02:PaintSymbolsWithBloodFruit',ObjectiveStatus=EODS_Complete)
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=182439
+NetIndex=3
+Outer=Package'GD_Aster_FastTravel'
+Name=DeadForest
+Class=Class'WillowGame.FastTravelStationDefinition'
+ObjectArchetype=FastTravelStationDefinition'WillowGame.Default__FastTravelStationDefinition'
+
+*** Property dump for object 'FastTravelStationDefinition GD_Aster_FastTravel.Docks' ***
+=== FastTravelStationDefinition properties ===
+bInitiallyActive=True
+bSendOnly=False
+StationDescription=Unassuming Docks of Potentially Little Importance
+StationSign=Unassuming Docks
+InaccessibleObjective=None
+AccessibleObjective=None
+AccessibilityTime=FTAT_Always
+=== TravelStationDefinition properties ===
+StationLevelName=Docks_P
+PreviousStation=None
+DlcExpansion=DownloadableExpansionDefinition'GD_AsterPackageDef.ExpansionDef_Aster'
+StationLocation=(X=0.000000,Y=0.000000,Z=0.000000)
+StationDisplayImage=None
+StationDisplayName=Unassuming Docks
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=182419
+NetIndex=4
+Outer=Package'GD_Aster_FastTravel'
+Name=Docks
+Class=Class'WillowGame.FastTravelStationDefinition'
+ObjectArchetype=FastTravelStationDefinition'WillowGame.Default__FastTravelStationDefinition'
+
+*** Property dump for object 'FastTravelStationDefinition GD_Aster_FastTravel.Dungeons' ***
+=== FastTravelStationDefinition properties ===
+bInitiallyActive=False
+bSendOnly=False
+StationDescription=Lair of Infinite Agony
+StationSign=Lair of Infinite Agony
+InaccessibleObjective=None
+AccessibleObjective=None
+AccessibilityTime=FTAT_Always
+=== TravelStationDefinition properties ===
+StationLevelName=Dungeon_P
+PreviousStation=LevelTravelStationDefinition'GD_Aster_LevelTravel.DungeonToCastleExterior'
+DlcExpansion=DownloadableExpansionDefinition'GD_AsterPackageDef.ExpansionDef_Aster'
+StationLocation=(X=0.000000,Y=0.000000,Z=0.000000)
+StationDisplayImage=None
+StationDisplayName=Lair of Infinite Agony
+MissionDependencies(0)=(MissionDefinition=MissionDefinition'GD_Aster_Plot_Mission04.M_Aster_PlotMission04',MissionStatus=MS_Active,bIsObjectiveSpecific=True,MissionObjective=MissionObjectiveDefinition'GD_Aster_Plot_Mission04.M_Aster_PlotMission04:Defeatdragon',ObjectiveStatus=EODS_Complete)
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=182442
+NetIndex=5
+Outer=Package'GD_Aster_FastTravel'
+Name=Dungeons
+Class=Class'WillowGame.FastTravelStationDefinition'
+ObjectArchetype=FastTravelStationDefinition'WillowGame.Default__FastTravelStationDefinition'
+
+*** Property dump for object 'FastTravelStationDefinition GD_Aster_FastTravel.Mines' ***
+=== FastTravelStationDefinition properties ===
+bInitiallyActive=False
+bSendOnly=False
+StationDescription=Mines of Avarice
+StationSign=Mines of Avarice
+InaccessibleObjective=None
+AccessibleObjective=None
+AccessibilityTime=FTAT_Always
+=== TravelStationDefinition properties ===
+StationLevelName=Mines_P
+PreviousStation=LevelTravelStationDefinition'GD_Aster_LevelTravel.MinesToDeadForest'
+DlcExpansion=DownloadableExpansionDefinition'GD_AsterPackageDef.ExpansionDef_Aster'
+StationLocation=(X=0.000000,Y=0.000000,Z=0.000000)
+StationDisplayImage=None
+StationDisplayName=Mines of Avarice
+MissionDependencies(0)=(MissionDefinition=MissionDefinition'GD_Aster_Plot_Mission03.M_Aster_PlotMission03',MissionStatus=MS_RequiredObjectivesComplete,bIsObjectiveSpecific=True,MissionObjective=MissionObjectiveDefinition'GD_Aster_Plot_Mission03.M_Aster_PlotMission03:HeadToTheDwarvenMines',ObjectiveStatus=EODS_Complete)
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=182445
+NetIndex=6
+Outer=Package'GD_Aster_FastTravel'
+Name=Mines
+Class=Class'WillowGame.FastTravelStationDefinition'
+ObjectArchetype=FastTravelStationDefinition'WillowGame.Default__FastTravelStationDefinition'
+
+*** Property dump for object 'FastTravelStationDefinition GD_Aster_FastTravel.Village' ***
+=== FastTravelStationDefinition properties ===
+bInitiallyActive=True
+bSendOnly=False
+StationDescription=Flamerock Refuge
+StationSign=Flamerock Refuge
+InaccessibleObjective=None
+AccessibleObjective=None
+AccessibilityTime=FTAT_Always
+=== TravelStationDefinition properties ===
+StationLevelName=Village_P
+PreviousStation=LevelTravelStationDefinition'GD_Aster_LevelTravel.VillageToDocks'
+DlcExpansion=DownloadableExpansionDefinition'GD_AsterPackageDef.ExpansionDef_Aster'
+StationLocation=(X=0.000000,Y=0.000000,Z=0.000000)
+StationDisplayImage=None
+StationDisplayName=Flamerock Refuge
+MissionDependencies(0)=(MissionDefinition=MissionDefinition'GD_Aster_Plot_Mission01.M_Aster_PlotMission01',MissionStatus=MS_RequiredObjectivesComplete,bIsObjectiveSpecific=True,MissionObjective=MissionObjectiveDefinition'GD_Aster_Plot_Mission01.M_Aster_PlotMission01:HeadToFlameStoneRidge',ObjectiveStatus=EODS_Complete)
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=182448
+NetIndex=7
+Outer=Package'GD_Aster_FastTravel'
+Name=Village
+Class=Class'WillowGame.FastTravelStationDefinition'
+ObjectArchetype=FastTravelStationDefinition'WillowGame.Default__FastTravelStationDefinition'
+
+*** Property dump for object 'FastTravelStationDefinition GD_FastTravelStations.FyrestoneOneWay' ***
+=== FastTravelStationDefinition properties ===
+bInitiallyActive=False
+bSendOnly=False
+StationDescription=Arid Nexus - Badlands
+StationSign=Arid Nexus - Badlands
+InaccessibleObjective=None
+AccessibleObjective=None
+AccessibilityTime=FTAT_Always
+=== TravelStationDefinition properties ===
+StationLevelName=Stockade_P
+PreviousStation=LevelTravelStationDefinition'GD_LevelTravelStations.StockadeToAridNexus'
+DlcExpansion=None
+StationLocation=(X=0.000000,Y=0.000000,Z=0.000000)
+StationDisplayImage=None
+StationDisplayName=Arid Nexus - Badlands
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=125950
+NetIndex=0
+Outer=Package'GD_FastTravelStations'
+Name=FyrestoneOneWay
+Class=Class'WillowGame.FastTravelStationDefinition'
+ObjectArchetype=FastTravelStationDefinition'WillowGame.Default__FastTravelStationDefinition'
+
+*** Property dump for object 'FastTravelStationDefinition GD_FastTravelStations.Interlude.Interlude' ***
+=== FastTravelStationDefinition properties ===
+bInitiallyActive=True
+bSendOnly=False
+StationDescription=No Description
+StationSign=The Dust
+InaccessibleObjective=None
+AccessibleObjective=None
+AccessibilityTime=FTAT_Always
+=== TravelStationDefinition properties ===
+StationLevelName=Interlude_P
+PreviousStation=LevelTravelStationDefinition'GD_LevelTravelStations.Interlude.InterludeToIce'
+DlcExpansion=None
+StationLocation=(X=0.000000,Y=0.000000,Z=0.000000)
+StationDisplayImage=None
+StationDisplayName=The Dust
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=125954
+NetIndex=1
+Outer=Package'GD_FastTravelStations.Interlude'
+Name=Interlude
+Class=Class'WillowGame.FastTravelStationDefinition'
+ObjectArchetype=FastTravelStationDefinition'WillowGame.Default__FastTravelStationDefinition'
+
+*** Property dump for object 'FastTravelStationDefinition GD_FastTravelStations.Interlude.Lynchwood' ***
+=== FastTravelStationDefinition properties ===
+bInitiallyActive=True
+bSendOnly=False
+StationDescription=No Description
+StationSign=Lynchwood
+InaccessibleObjective=None
+AccessibleObjective=None
+AccessibilityTime=FTAT_Always
+=== TravelStationDefinition properties ===
+StationLevelName=Grass_Lynchwood_P
+PreviousStation=LevelTravelStationDefinition'GD_LevelTravelStations.Interlude.LynchwoodToInterlude'
+DlcExpansion=None
+StationLocation=(X=0.000000,Y=0.000000,Z=0.000000)
+StationDisplayImage=None
+StationDisplayName=Lynchwood
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=125957
+NetIndex=2
+Outer=Package'GD_FastTravelStations.Interlude'
+Name=Lynchwood
+Class=Class'WillowGame.FastTravelStationDefinition'
+ObjectArchetype=FastTravelStationDefinition'WillowGame.Default__FastTravelStationDefinition'
+
+*** Property dump for object 'FastTravelStationDefinition GD_FastTravelStations.Outwash' ***
+=== FastTravelStationDefinition properties ===
+bInitiallyActive=False
+bSendOnly=False
+StationDescription=
+StationSign=The Highlands - Outwash
+InaccessibleObjective=None
+AccessibleObjective=None
+AccessibilityTime=FTAT_Always
+=== TravelStationDefinition properties ===
+StationLevelName=Outwash_P
+PreviousStation=LevelTravelStationDefinition'GD_LevelTravelStations.OutwashToFridge'
+DlcExpansion=None
+StationLocation=(X=0.000000,Y=0.000000,Z=0.000000)
+StationDisplayImage=None
+StationDisplayName=The Highlands - Outwash
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=125959
+NetIndex=3
+Outer=Package'GD_FastTravelStations'
+Name=Outwash
+Class=Class'WillowGame.FastTravelStationDefinition'
+ObjectArchetype=FastTravelStationDefinition'WillowGame.Default__FastTravelStationDefinition'
+
+*** Property dump for object 'FastTravelStationDefinition GD_FastTravelStations.Sanctuary.Sanctuary' ***
+=== FastTravelStationDefinition properties ===
+bInitiallyActive=True
+bSendOnly=False
+StationDescription=No Description
+StationSign=Sanctuary
+InaccessibleObjective=MissionObjectiveDefinition'GD_Episode08.M_Ep8_SanctuaryTakesOff:GiveEridumToLilith'
+AccessibleObjective=MissionObjectiveDefinition'GD_Episode09.M_Ep9_GetBackToSanctuary:EstablishLink'
+AccessibilityTime=FTAT_Always
+=== TravelStationDefinition properties ===
+StationLevelName=Sanctuary_P
+PreviousStation=LevelTravelStationDefinition'GD_LevelTravelStations.Zone1.SanctuaryToIce'
+DlcExpansion=None
+StationLocation=(X=0.000000,Y=0.000000,Z=0.000000)
+StationDisplayImage=None
+StationDisplayName=Sanctuary
+MissionDependencies(0)=(MissionDefinition=MissionDefinition'GD_Episode04.M_Ep4_WelcomeToSanctuary',MissionStatus=MS_Active,bIsObjectiveSpecific=True,MissionObjective=MissionObjectiveDefinition'GD_Episode04.M_Ep4_WelcomeToSanctuary:GotoSanctuaryGate',ObjectiveStatus=EODS_Complete)
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=125962
+NetIndex=4
+Outer=Package'GD_FastTravelStations.Sanctuary'
+Name=Sanctuary
+Class=Class'WillowGame.FastTravelStationDefinition'
+ObjectArchetype=FastTravelStationDefinition'WillowGame.Default__FastTravelStationDefinition'
+
+*** Property dump for object 'FastTravelStationDefinition GD_FastTravelStations.Wilhelm' ***
+=== FastTravelStationDefinition properties ===
+bInitiallyActive=False
+bSendOnly=True
+StationDescription=No Description
+StationSign=End of the Line
+InaccessibleObjective=None
+AccessibleObjective=None
+AccessibilityTime=FTAT_Always
+=== TravelStationDefinition properties ===
+StationLevelName=TundraTrain_P
+PreviousStation=LevelTravelStationDefinition'GD_LevelTravelStations.WilhelmToTundraExpress'
+DlcExpansion=None
+StationLocation=(X=0.000000,Y=0.000000,Z=0.000000)
+StationDisplayImage=None
+StationDisplayName=End of the Line
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=125967
+NetIndex=5
+Outer=Package'GD_FastTravelStations'
+Name=Wilhelm
+Class=Class'WillowGame.FastTravelStationDefinition'
+ObjectArchetype=FastTravelStationDefinition'WillowGame.Default__FastTravelStationDefinition'
+
+*** Property dump for object 'FastTravelStationDefinition GD_FastTravelStations.Zone1.Caverns' ***
+=== FastTravelStationDefinition properties ===
+bInitiallyActive=True
+bSendOnly=False
+StationDescription=No Description
+StationSign=Caustic Caverns
+InaccessibleObjective=None
+AccessibleObjective=None
+AccessibilityTime=FTAT_Always
+=== TravelStationDefinition properties ===
+StationLevelName=caverns_p
+PreviousStation=LevelTravelStationDefinition'GD_LevelTravelStations.Zone1.CavernsToSanctuaryHole'
+DlcExpansion=None
+StationLocation=(X=0.000000,Y=0.000000,Z=0.000000)
+StationDisplayImage=None
+StationDisplayName=Caustic Caverns
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=125970
+NetIndex=6
+Outer=Package'GD_FastTravelStations.Zone1'
+Name=Caverns
+Class=Class'WillowGame.FastTravelStationDefinition'
+ObjectArchetype=FastTravelStationDefinition'WillowGame.Default__FastTravelStationDefinition'
+
+*** Property dump for object 'FastTravelStationDefinition GD_FastTravelStations.Zone1.DamTop' ***
+=== FastTravelStationDefinition properties ===
+bInitiallyActive=True
+bSendOnly=True
+StationDescription=Bloodshot Ramparts
+StationSign=Bloodshot Ramparts
+InaccessibleObjective=None
+AccessibleObjective=None
+AccessibilityTime=FTAT_Always
+=== TravelStationDefinition properties ===
+StationLevelName=damtop_p
+PreviousStation=LevelTravelStationDefinition'GD_LevelTravelStations.Zone1.DamTopToDam'
+DlcExpansion=None
+StationLocation=(X=0.000000,Y=0.000000,Z=0.000000)
+StationDisplayImage=None
+StationDisplayName=Bloodshot Ramparts
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=125972
+NetIndex=7
+Outer=Package'GD_FastTravelStations.Zone1'
+Name=DamTop
+Class=Class'WillowGame.FastTravelStationDefinition'
+ObjectArchetype=FastTravelStationDefinition'WillowGame.Default__FastTravelStationDefinition'
+
+*** Property dump for object 'FastTravelStationDefinition GD_FastTravelStations.Zone1.Glacial' ***
+=== FastTravelStationDefinition properties ===
+bInitiallyActive=True
+bSendOnly=True
+StationDescription=No Description
+StationSign=Southern Shelf - Windshear Waste
+InaccessibleObjective=None
+AccessibleObjective=None
+AccessibilityTime=FTAT_Always
+=== TravelStationDefinition properties ===
+StationLevelName=Glacial_P
+PreviousStation=None
+DlcExpansion=None
+StationLocation=(X=0.000000,Y=0.000000,Z=0.000000)
+StationDisplayImage=None
+StationDisplayName=Southern Shelf
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=125974
+NetIndex=8
+Outer=Package'GD_FastTravelStations.Zone1'
+Name=Glacial
+Class=Class'WillowGame.FastTravelStationDefinition'
+ObjectArchetype=FastTravelStationDefinition'WillowGame.Default__FastTravelStationDefinition'
+
+*** Property dump for object 'FastTravelStationDefinition GD_FastTravelStations.Zone1.GlacialIgloo' ***
+=== FastTravelStationDefinition properties ===
+bInitiallyActive=True
+bSendOnly=False
+StationDescription=No Description
+StationSign=Windshear Waste - Claptrap's Place
+InaccessibleObjective=None
+AccessibleObjective=None
+AccessibilityTime=FTAT_Always
+=== TravelStationDefinition properties ===
+StationLevelName=Glacial_P
+PreviousStation=FastTravelStationDefinition'GD_FastTravelStations.Zone1.Glacial'
+DlcExpansion=None
+StationLocation=(X=0.000000,Y=0.000000,Z=0.000000)
+StationDisplayImage=None
+StationDisplayName=Claptrap's Place
+MissionDependencies(0)=(MissionDefinition=MissionDefinition'GD_Episode02.M_Ep2_Henchman',MissionStatus=MS_Active,bIsObjectiveSpecific=False,MissionObjective=None,ObjectiveStatus=EODS_Complete)
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=125975
+NetIndex=9
+Outer=Package'GD_FastTravelStations.Zone1'
+Name=GlacialIgloo
+Class=Class'WillowGame.FastTravelStationDefinition'
+ObjectArchetype=FastTravelStationDefinition'WillowGame.Default__FastTravelStationDefinition'
+
+*** Property dump for object 'FastTravelStationDefinition GD_FastTravelStations.Zone1.GoshDam' ***
+=== FastTravelStationDefinition properties ===
+bInitiallyActive=True
+bSendOnly=False
+StationDescription=No Description
+StationSign=Bloodshot Stronghold
+InaccessibleObjective=None
+AccessibleObjective=None
+AccessibilityTime=FTAT_Always
+=== TravelStationDefinition properties ===
+StationLevelName=dam_p
+PreviousStation=LevelTravelStationDefinition'GD_LevelTravelStations.Zone1.DamToIce'
+DlcExpansion=None
+StationLocation=(X=0.000000,Y=0.000000,Z=0.000000)
+StationDisplayImage=None
+StationDisplayName=Bloodshot Stronghold
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=125976
+NetIndex=10
+Outer=Package'GD_FastTravelStations.Zone1'
+Name=GoshDam
+Class=Class'WillowGame.FastTravelStationDefinition'
+ObjectArchetype=FastTravelStationDefinition'WillowGame.Default__FastTravelStationDefinition'
+
+*** Property dump for object 'FastTravelStationDefinition GD_FastTravelStations.Zone1.IceCanyon' ***
+=== FastTravelStationDefinition properties ===
+bInitiallyActive=True
+bSendOnly=False
+StationDescription=No Description
+StationSign=Frostburn Canyon
+InaccessibleObjective=None
+AccessibleObjective=None
+AccessibilityTime=FTAT_Always
+=== TravelStationDefinition properties ===
+StationLevelName=icecanyon_p
+PreviousStation=LevelTravelStationDefinition'GD_LevelTravelStations.Zone1.IceCanyonToIce'
+DlcExpansion=None
+StationLocation=(X=0.000000,Y=0.000000,Z=0.000000)
+StationDisplayImage=None
+StationDisplayName=Frostburn Canyon
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=125978
+NetIndex=11
+Outer=Package'GD_FastTravelStations.Zone1'
+Name=IceCanyon
+Class=Class'WillowGame.FastTravelStationDefinition'
+ObjectArchetype=FastTravelStationDefinition'WillowGame.Default__FastTravelStationDefinition'
+
+*** Property dump for object 'FastTravelStationDefinition GD_FastTravelStations.Zone1.IceEast' ***
+=== FastTravelStationDefinition properties ===
+bInitiallyActive=True
+bSendOnly=False
+StationDescription=Three Horns Divide
+StationSign=Three Horns Divide
+InaccessibleObjective=None
+AccessibleObjective=None
+AccessibilityTime=FTAT_Always
+=== TravelStationDefinition properties ===
+StationLevelName=Ice_P
+PreviousStation=LevelTravelStationDefinition'GD_LevelTravelStations.Zone1.IceToWaterfront'
+DlcExpansion=None
+StationLocation=(X=0.000000,Y=0.000000,Z=0.000000)
+StationDisplayImage=None
+StationDisplayName=Three Horns Divide
+MissionDependencies(0)=(MissionDefinition=MissionDefinition'GD_Episode03.M_Ep3_CatchARide',MissionStatus=MS_Active,bIsObjectiveSpecific=True,MissionObjective=MissionObjectiveDefinition'GD_Episode03.M_Ep3_CatchARide:JumpRamp',ObjectiveStatus=EODS_Complete)
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=125980
+NetIndex=12
+Outer=Package'GD_FastTravelStations.Zone1'
+Name=IceEast
+Class=Class'WillowGame.FastTravelStationDefinition'
+ObjectArchetype=FastTravelStationDefinition'WillowGame.Default__FastTravelStationDefinition'
+
+*** Property dump for object 'FastTravelStationDefinition GD_FastTravelStations.Zone1.IceWest' ***
+=== FastTravelStationDefinition properties ===
+bInitiallyActive=False
+bSendOnly=False
+StationDescription=Three Horns Valley
+StationSign=Three Horns Valley
+InaccessibleObjective=None
+AccessibleObjective=None
+AccessibilityTime=FTAT_Always
+=== TravelStationDefinition properties ===
+StationLevelName=Frost_P
+PreviousStation=LevelTravelStationDefinition'GD_LevelTravelStations.FrostToIce'
+DlcExpansion=None
+StationLocation=(X=0.000000,Y=0.000000,Z=0.000000)
+StationDisplayImage=None
+StationDisplayName=Three Horns Valley
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=125983
+NetIndex=13
+Outer=Package'GD_FastTravelStations.Zone1'
+Name=IceWest
+Class=Class'WillowGame.FastTravelStationDefinition'
+ObjectArchetype=FastTravelStationDefinition'WillowGame.Default__FastTravelStationDefinition'
+
+*** Property dump for object 'FastTravelStationDefinition GD_FastTravelStations.Zone1.SouthernShelfTown' ***
+=== FastTravelStationDefinition properties ===
+bInitiallyActive=False
+bSendOnly=False
+StationDescription=No Description
+StationSign=Southern Shelf - Liar's Berg
+InaccessibleObjective=None
+AccessibleObjective=None
+AccessibilityTime=FTAT_Always
+=== TravelStationDefinition properties ===
+StationLevelName=SouthernShelf_P
+PreviousStation=LevelTravelStationDefinition'GD_LevelTravelStations.Zone1.WaterfrontToGlacial'
+DlcExpansion=None
+StationLocation=(X=0.000000,Y=0.000000,Z=0.000000)
+StationDisplayImage=None
+StationDisplayName=Southern Shelf
+MissionDependencies(0)=(MissionDefinition=MissionDefinition'GD_Episode02.M_Ep2a_MoreGuns',MissionStatus=MS_ReadyToTurnIn,bIsObjectiveSpecific=False,MissionObjective=None,ObjectiveStatus=EODS_Complete)
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=125985
+NetIndex=14
+Outer=Package'GD_FastTravelStations.Zone1'
+Name=SouthernShelfTown
+Class=Class'WillowGame.FastTravelStationDefinition'
+ObjectArchetype=FastTravelStationDefinition'WillowGame.Default__FastTravelStationDefinition'
+
+*** Property dump for object 'FastTravelStationDefinition GD_FastTravelStations.Zone1.SouthpawFactory' ***
+=== FastTravelStationDefinition properties ===
+bInitiallyActive=True
+bSendOnly=False
+StationDescription=No Description
+StationSign=Southpaw Steam & Power
+InaccessibleObjective=None
+AccessibleObjective=None
+AccessibilityTime=FTAT_Always
+=== TravelStationDefinition properties ===
+StationLevelName=SouthpawFactory_P
+PreviousStation=LevelTravelStationDefinition'GD_LevelTravelStations.Zone1.SouthpawFactoryToIce'
+DlcExpansion=None
+StationLocation=(X=0.000000,Y=0.000000,Z=0.000000)
+StationDisplayImage=None
+StationDisplayName=Southpaw Steam & Power
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=156311
+NetIndex=15
+Outer=Package'GD_FastTravelStations.Zone1'
+Name=SouthpawFactory
+Class=Class'WillowGame.FastTravelStationDefinition'
+ObjectArchetype=FastTravelStationDefinition'WillowGame.Default__FastTravelStationDefinition'
+
+*** Property dump for object 'FastTravelStationDefinition GD_FastTravelStations.Zone1.TundraExpress' ***
+=== FastTravelStationDefinition properties ===
+bInitiallyActive=False
+bSendOnly=False
+StationDescription=No Description
+StationSign=Tundra Express
+InaccessibleObjective=None
+AccessibleObjective=None
+AccessibilityTime=FTAT_Always
+=== TravelStationDefinition properties ===
+StationLevelName=tundraexpress_p
+PreviousStation=LevelTravelStationDefinition'GD_LevelTravelStations.Zone1.TundraExpressToIce'
+DlcExpansion=None
+StationLocation=(X=0.000000,Y=0.000000,Z=0.000000)
+StationDisplayImage=None
+StationDisplayName=Tundra Express
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=125987
+NetIndex=16
+Outer=Package'GD_FastTravelStations.Zone1'
+Name=TundraExpress
+Class=Class'WillowGame.FastTravelStationDefinition'
+ObjectArchetype=FastTravelStationDefinition'WillowGame.Default__FastTravelStationDefinition'
+
+*** Property dump for object 'FastTravelStationDefinition GD_FastTravelStations.Zone1.TundraExpressSecret' ***
+=== FastTravelStationDefinition properties ===
+bInitiallyActive=False
+bSendOnly=False
+StationDescription=Tundra Express - Farmhouse
+StationSign=Tundra Express - Farmhouse
+InaccessibleObjective=None
+AccessibleObjective=None
+AccessibilityTime=FTAT_Always
+=== TravelStationDefinition properties ===
+StationLevelName=tundraexpress_p
+PreviousStation=LevelTravelStationDefinition'GD_LevelTravelStations.Zone1.TundraExpressToIce'
+DlcExpansion=None
+StationLocation=(X=0.000000,Y=0.000000,Z=0.000000)
+StationDisplayImage=None
+StationDisplayName=Tundra Express - Farmhouse
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=156312
+NetIndex=17
+Outer=Package'GD_FastTravelStations.Zone1'
+Name=TundraExpressSecret
+Class=Class'WillowGame.FastTravelStationDefinition'
+ObjectArchetype=FastTravelStationDefinition'WillowGame.Default__FastTravelStationDefinition'
+
+*** Property dump for object 'FastTravelStationDefinition GD_FastTravelStations.Zone1.TundraTrain' ***
+=== FastTravelStationDefinition properties ===
+bInitiallyActive=False
+bSendOnly=False
+StationDescription=
+StationSign=Tundra Train
+InaccessibleObjective=None
+AccessibleObjective=None
+AccessibilityTime=FTAT_Always
+=== TravelStationDefinition properties ===
+StationLevelName=None
+PreviousStation=None
+DlcExpansion=None
+StationLocation=(X=0.000000,Y=0.000000,Z=0.000000)
+StationDisplayImage=None
+StationDisplayName=Tundra Train
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=156313
+NetIndex=18
+Outer=Package'GD_FastTravelStations.Zone1'
+Name=TundraTrain
+Class=Class'WillowGame.FastTravelStationDefinition'
+ObjectArchetype=FastTravelStationDefinition'WillowGame.Default__FastTravelStationDefinition'
+
+*** Property dump for object 'FastTravelStationDefinition GD_FastTravelStations.Zone2.Cliffs' ***
+=== FastTravelStationDefinition properties ===
+bInitiallyActive=True
+bSendOnly=False
+StationDescription=No Description
+StationSign=Thousand Cuts
+InaccessibleObjective=None
+AccessibleObjective=None
+AccessibilityTime=FTAT_Always
+=== TravelStationDefinition properties ===
+StationLevelName=Grass_Cliffs_P
+PreviousStation=LevelTravelStationDefinition'GD_LevelTravelStations.Zone2.CliffsToGrass'
+DlcExpansion=None
+StationLocation=(X=0.000000,Y=0.000000,Z=0.000000)
+StationDisplayImage=None
+StationDisplayName=Thousand Cuts
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=125990
+NetIndex=19
+Outer=Package'GD_FastTravelStations.Zone2'
+Name=Cliffs
+Class=Class'WillowGame.FastTravelStationDefinition'
+ObjectArchetype=FastTravelStationDefinition'WillowGame.Default__FastTravelStationDefinition'
+
+*** Property dump for object 'FastTravelStationDefinition GD_FastTravelStations.Zone2.Cliffs_Boss' ***
+=== FastTravelStationDefinition properties ===
+bInitiallyActive=True
+bSendOnly=True
+StationDescription=No Description
+StationSign=The Bunker
+InaccessibleObjective=None
+AccessibleObjective=None
+AccessibilityTime=FTAT_Always
+=== TravelStationDefinition properties ===
+StationLevelName=Boss_Cliffs_P
+PreviousStation=LevelTravelStationDefinition'GD_LevelTravelStations.Zone2.BossCliffsToCliffs'
+DlcExpansion=None
+StationLocation=(X=0.000000,Y=0.000000,Z=0.000000)
+StationDisplayImage=None
+StationDisplayName=The Bunker
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=125993
+NetIndex=20
+Outer=Package'GD_FastTravelStations.Zone2'
+Name=Cliffs_Boss
+Class=Class'WillowGame.FastTravelStationDefinition'
+ObjectArchetype=FastTravelStationDefinition'WillowGame.Default__FastTravelStationDefinition'
+
+*** Property dump for object 'FastTravelStationDefinition GD_FastTravelStations.Zone2.Grass_A' ***
+=== FastTravelStationDefinition properties ===
+bInitiallyActive=True
+bSendOnly=False
+StationDescription=No Description
+StationSign=The Highlands - Extraction Plant
+InaccessibleObjective=None
+AccessibleObjective=None
+AccessibilityTime=FTAT_Always
+=== TravelStationDefinition properties ===
+StationLevelName=Grass_P
+PreviousStation=LevelTravelStationDefinition'GD_LevelTravelStations.Zone2.GrassToFridge'
+DlcExpansion=None
+StationLocation=(X=0.000000,Y=0.000000,Z=0.000000)
+StationDisplayImage=None
+StationDisplayName=The Highlands - Extraction Plant
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=125995
+NetIndex=21
+Outer=Package'GD_FastTravelStations.Zone2'
+Name=Grass_A
+Class=Class'WillowGame.FastTravelStationDefinition'
+ObjectArchetype=FastTravelStationDefinition'WillowGame.Default__FastTravelStationDefinition'
+
+*** Property dump for object 'FastTravelStationDefinition GD_FastTravelStations.Zone2.Grass_B' ***
+=== FastTravelStationDefinition properties ===
+bInitiallyActive=True
+bSendOnly=False
+StationDescription=No Description
+StationSign=The Highlands - Overlook
+InaccessibleObjective=None
+AccessibleObjective=None
+AccessibilityTime=FTAT_Always
+=== TravelStationDefinition properties ===
+StationLevelName=Grass_P
+PreviousStation=FastTravelStationDefinition'GD_FastTravelStations.Zone2.Grass_A'
+DlcExpansion=None
+StationLocation=(X=0.000000,Y=0.000000,Z=0.000000)
+StationDisplayImage=None
+StationDisplayName=The Highlands - Overlook
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=125997
+NetIndex=22
+Outer=Package'GD_FastTravelStations.Zone2'
+Name=Grass_B
+Class=Class'WillowGame.FastTravelStationDefinition'
+ObjectArchetype=FastTravelStationDefinition'WillowGame.Default__FastTravelStationDefinition'
+
+*** Property dump for object 'FastTravelStationDefinition GD_FastTravelStations.Zone2.Grass_C' ***
+=== FastTravelStationDefinition properties ===
+bInitiallyActive=True
+bSendOnly=False
+StationDescription=No Description
+StationSign=The Highlands - Hyperion Bridge
+InaccessibleObjective=None
+AccessibleObjective=None
+AccessibilityTime=FTAT_Always
+=== TravelStationDefinition properties ===
+StationLevelName=Grass_P
+PreviousStation=FastTravelStationDefinition'GD_FastTravelStations.Zone2.Grass_A'
+DlcExpansion=None
+StationLocation=(X=0.000000,Y=0.000000,Z=0.000000)
+StationDisplayImage=None
+StationDisplayName=The Highlands - Hyperion Bridge
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=125998
+NetIndex=23
+Outer=Package'GD_FastTravelStations.Zone2'
+Name=Grass_C
+Class=Class'WillowGame.FastTravelStationDefinition'
+ObjectArchetype=FastTravelStationDefinition'WillowGame.Default__FastTravelStationDefinition'
+
+*** Property dump for object 'FastTravelStationDefinition GD_FastTravelStations.Zone2.HyperionCity' ***
+=== FastTravelStationDefinition properties ===
+bInitiallyActive=True
+bSendOnly=False
+StationDescription=No Description
+StationSign=Opportunity
+InaccessibleObjective=None
+AccessibleObjective=None
+AccessibilityTime=FTAT_Always
+=== TravelStationDefinition properties ===
+StationLevelName=HyperionCity_P
+PreviousStation=LevelTravelStationDefinition'GD_LevelTravelStations.Zone2.HyperionCityToGrass'
+DlcExpansion=None
+StationLocation=(X=0.000000,Y=0.000000,Z=0.000000)
+StationDisplayImage=None
+StationDisplayName=Opportunity
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=125999
+NetIndex=24
+Outer=Package'GD_FastTravelStations.Zone2'
+Name=HyperionCity
+Class=Class'WillowGame.FastTravelStationDefinition'
+ObjectArchetype=FastTravelStationDefinition'WillowGame.Default__FastTravelStationDefinition'
+
+*** Property dump for object 'FastTravelStationDefinition GD_FastTravelStations.Zone2.PandoraPark' ***
+=== FastTravelStationDefinition properties ===
+bInitiallyActive=True
+bSendOnly=False
+StationDescription=No Description
+StationSign=Wildlife Exploitation Preserve
+InaccessibleObjective=None
+AccessibleObjective=None
+AccessibilityTime=FTAT_Always
+=== TravelStationDefinition properties ===
+StationLevelName=PandoraPark_P
+PreviousStation=LevelTravelStationDefinition'GD_LevelTravelStations.Zone2.PandoraParkToGrass'
+DlcExpansion=None
+StationLocation=(X=0.000000,Y=0.000000,Z=0.000000)
+StationDisplayImage=None
+StationDisplayName=Wildlife Exploitation Preserve
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=126001
+NetIndex=25
+Outer=Package'GD_FastTravelStations.Zone2'
+Name=PandoraPark
+Class=Class'WillowGame.FastTravelStationDefinition'
+ObjectArchetype=FastTravelStationDefinition'WillowGame.Default__FastTravelStationDefinition'
+
+*** Property dump for object 'FastTravelStationDefinition GD_FastTravelStations.Zone2.TheFridge' ***
+=== FastTravelStationDefinition properties ===
+bInitiallyActive=True
+bSendOnly=False
+StationDescription=No Description
+StationSign=The Fridge
+InaccessibleObjective=None
+AccessibleObjective=None
+AccessibilityTime=FTAT_Always
+=== TravelStationDefinition properties ===
+StationLevelName=Fridge_P
+PreviousStation=LevelTravelStationDefinition'GD_LevelTravelStations.Zone2.FridgeToIce'
+DlcExpansion=None
+StationLocation=(X=0.000000,Y=0.000000,Z=0.000000)
+StationDisplayImage=None
+StationDisplayName=The Fridge
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=126003
+NetIndex=26
+Outer=Package'GD_FastTravelStations.Zone2'
+Name=TheFridge
+Class=Class'WillowGame.FastTravelStationDefinition'
+ObjectArchetype=FastTravelStationDefinition'WillowGame.Default__FastTravelStationDefinition'
+
+*** Property dump for object 'FastTravelStationDefinition GD_FastTravelStations.Zone3.Ash' ***
+=== FastTravelStationDefinition properties ===
+bInitiallyActive=True
+bSendOnly=False
+StationDescription=Eridium Blight
+StationSign=Eridium Blight
+InaccessibleObjective=None
+AccessibleObjective=None
+AccessibilityTime=FTAT_Always
+=== TravelStationDefinition properties ===
+StationLevelName=Ash_P
+PreviousStation=LevelTravelStationDefinition'GD_LevelTravelStations.Zone3.AshToInterlude'
+DlcExpansion=None
+StationLocation=(X=0.000000,Y=0.000000,Z=0.000000)
+StationDisplayImage=None
+StationDisplayName=Eridium Blight
+MissionDependencies(0)=(MissionDefinition=None,MissionStatus=MS_Complete,bIsObjectiveSpecific=False,MissionObjective=None,ObjectiveStatus=EODS_Complete)
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=126006
+NetIndex=27
+Outer=Package'GD_FastTravelStations.Zone3'
+Name=Ash
+Class=Class'WillowGame.FastTravelStationDefinition'
+ObjectArchetype=FastTravelStationDefinition'WillowGame.Default__FastTravelStationDefinition'
+
+*** Property dump for object 'FastTravelStationDefinition GD_FastTravelStations.Zone3.CraterLake' ***
+=== FastTravelStationDefinition properties ===
+bInitiallyActive=True
+bSendOnly=False
+StationDescription=No Description
+StationSign=Sawtooth Cauldron
+InaccessibleObjective=None
+AccessibleObjective=None
+AccessibilityTime=FTAT_Always
+=== TravelStationDefinition properties ===
+StationLevelName=CraterLake_P
+PreviousStation=LevelTravelStationDefinition'GD_LevelTravelStations.Zone3.CraterLakeToAsh'
+DlcExpansion=None
+StationLocation=(X=0.000000,Y=0.000000,Z=0.000000)
+StationDisplayImage=None
+StationDisplayName=Sawtooth Cauldron
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=126009
+NetIndex=28
+Outer=Package'GD_FastTravelStations.Zone3'
+Name=CraterLake
+Class=Class'WillowGame.FastTravelStationDefinition'
+ObjectArchetype=FastTravelStationDefinition'WillowGame.Default__FastTravelStationDefinition'
+
+*** Property dump for object 'FastTravelStationDefinition GD_FastTravelStations.Zone3.FinalBossAscent' ***
+=== FastTravelStationDefinition properties ===
+bInitiallyActive=True
+bSendOnly=False
+StationDescription=No Description
+StationSign=Hero's Pass
+InaccessibleObjective=None
+AccessibleObjective=None
+AccessibilityTime=FTAT_Always
+=== TravelStationDefinition properties ===
+StationLevelName=FinalBossAscent_P
+PreviousStation=LevelTravelStationDefinition'GD_LevelTravelStations.Zone3.FinalBossAscentToAsh'
+DlcExpansion=None
+StationLocation=(X=0.000000,Y=0.000000,Z=0.000000)
+StationDisplayImage=None
+StationDisplayName=Hero's Pass
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=126011
+NetIndex=29
+Outer=Package'GD_FastTravelStations.Zone3'
+Name=FinalBossAscent
+Class=Class'WillowGame.FastTravelStationDefinition'
+ObjectArchetype=FastTravelStationDefinition'WillowGame.Default__FastTravelStationDefinition'
+
+*** Property dump for object 'FastTravelStationDefinition GD_FastTravelStations.Zone3.OnFireStone' ***
+=== FastTravelStationDefinition properties ===
+bInitiallyActive=True
+bSendOnly=False
+StationDescription=Arid Nexus - Boneyard
+StationSign=Arid Nexus - Boneyard
+InaccessibleObjective=None
+AccessibleObjective=None
+AccessibilityTime=FTAT_Always
+=== TravelStationDefinition properties ===
+StationLevelName=Fyrestone_P
+PreviousStation=LevelTravelStationDefinition'GD_LevelTravelStations.Zone3.FyrestoneToAsh'
+DlcExpansion=None
+StationLocation=(X=0.000000,Y=0.000000,Z=0.000000)
+StationDisplayImage=None
+StationDisplayName=Arid Nexus - Boneyard
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=126013
+NetIndex=30
+Outer=Package'GD_FastTravelStations.Zone3'
+Name=OnFireStone
+Class=Class'WillowGame.FastTravelStationDefinition'
+ObjectArchetype=FastTravelStationDefinition'WillowGame.Default__FastTravelStationDefinition'
+
+*** Property dump for object 'FastTravelStationDefinition GD_FastTravelStations.Zone3.Volcano_Boss_A' ***
+=== FastTravelStationDefinition properties ===
+bInitiallyActive=True
+bSendOnly=True
+StationDescription=No Description
+StationSign=Vault of the Warrior
+InaccessibleObjective=None
+AccessibleObjective=None
+AccessibilityTime=FTAT_Always
+=== TravelStationDefinition properties ===
+StationLevelName=Boss_Volcano_P
+PreviousStation=LevelTravelStationDefinition'GD_LevelTravelStations.Zone3.VolcanoToFinalBossAscent'
+DlcExpansion=None
+StationLocation=(X=0.000000,Y=0.000000,Z=0.000000)
+StationDisplayImage=None
+StationDisplayName=Vault of the Warrior
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=156314
+NetIndex=31
+Outer=Package'GD_FastTravelStations.Zone3'
+Name=Volcano_Boss_A
+Class=Class'WillowGame.FastTravelStationDefinition'
+ObjectArchetype=FastTravelStationDefinition'WillowGame.Default__FastTravelStationDefinition'
+
+*** Property dump for object 'FastTravelStationDefinition GD_FastTravelStations.Zone3.Volcano_Boss_B' ***
+=== FastTravelStationDefinition properties ===
+bInitiallyActive=False
+bSendOnly=True
+StationDescription=No Description
+StationSign=Talon of God - The Altar
+InaccessibleObjective=None
+AccessibleObjective=None
+AccessibilityTime=FTAT_Always
+=== TravelStationDefinition properties ===
+StationLevelName=Boss_Volcano_P
+PreviousStation=LevelTravelStationDefinition'GD_LevelTravelStations.Zone3.VolcanoToFinalBossAscent'
+DlcExpansion=None
+StationLocation=(X=0.000000,Y=0.000000,Z=0.000000)
+StationDisplayImage=None
+StationDisplayName=Talon of God
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=156315
+NetIndex=32
+Outer=Package'GD_FastTravelStations.Zone3'
+Name=Volcano_Boss_B
+Class=Class'WillowGame.FastTravelStationDefinition'
+ObjectArchetype=FastTravelStationDefinition'WillowGame.Default__FastTravelStationDefinition'
+
+*** Property dump for object 'FastTravelStationDefinition GD_Flax_FastTravel.PumpkinPatch' ***
+=== FastTravelStationDefinition properties ===
+bInitiallyActive=True
+bSendOnly=False
+StationDescription=Hallowed Hollow
+StationSign=Hallowed Hollow
+InaccessibleObjective=None
+AccessibleObjective=None
+AccessibilityTime=FTAT_Always
+=== TravelStationDefinition properties ===
+StationLevelName=Pumpkin_Patch_P
+PreviousStation=None
+DlcExpansion=DownloadableExpansionDefinition'GD_FlaxPackageDef.ExpansionDef_Flax'
+StationLocation=(X=0.000000,Y=0.000000,Z=0.000000)
+StationDisplayImage=None
+StationDisplayName=Hallowed Hollow
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=184026
+NetIndex=0
+Outer=Package'GD_Flax_FastTravel'
+Name=PumpkinPatch
+Class=Class'WillowGame.FastTravelStationDefinition'
+ObjectArchetype=FastTravelStationDefinition'WillowGame.Default__FastTravelStationDefinition'
+
+*** Property dump for object 'FastTravelStationDefinition GD_Iris_FastTravelStations.BadassBar' ***
+=== FastTravelStationDefinition properties ===
+bInitiallyActive=True
+bSendOnly=False
+StationDescription=
+StationSign=Badass Crater Bar
+InaccessibleObjective=None
+AccessibleObjective=None
+AccessibilityTime=FTAT_Always
+=== TravelStationDefinition properties ===
+StationLevelName=Iris_Moxxi_P
+PreviousStation=LevelTravelStationDefinition'GD_Iris_LevelTravelStations.Hub.MoxxiToCrater'
+DlcExpansion=DownloadableExpansionDefinition'GD_IrisPackageDef.Expansions.ExpansionDef_Iris'
+StationLocation=(X=0.000000,Y=0.000000,Z=0.000000)
+StationDisplayImage=None
+StationDisplayName=Badass Crater Bar
+MissionDependencies(0)=(MissionDefinition=MissionDefinition'GD_IrisEpisode04.M_IrisEp4_AMontage',MissionStatus=MS_Active,bIsObjectiveSpecific=True,MissionObjective=MissionObjectiveDefinition'GD_IrisEpisode04.M_IrisEp4_AMontage:MoxxisBar',ObjectiveStatus=EODS_Active)
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=187980
+NetIndex=0
+Outer=Package'GD_Iris_FastTravelStations'
+Name=BadassBar
+Class=Class'WillowGame.FastTravelStationDefinition'
+ObjectArchetype=FastTravelStationDefinition'WillowGame.Default__FastTravelStationDefinition'
+
+*** Property dump for object 'FastTravelStationDefinition GD_Iris_FastTravelStations.Beatdown' ***
+=== FastTravelStationDefinition properties ===
+bInitiallyActive=True
+bSendOnly=False
+StationDescription=
+StationSign=The Beatdown
+InaccessibleObjective=None
+AccessibleObjective=None
+AccessibilityTime=FTAT_Always
+=== TravelStationDefinition properties ===
+StationLevelName=Iris_DL2_P
+PreviousStation=LevelTravelStationDefinition'GD_Iris_LevelTravelStations.Dogleg2.BeatdownToCrater'
+DlcExpansion=DownloadableExpansionDefinition'GD_IrisPackageDef.Expansions.ExpansionDef_Iris'
+StationLocation=(X=0.000000,Y=0.000000,Z=0.000000)
+StationDisplayImage=None
+StationDisplayName=The Beatdown
+MissionDependencies(0)=(MissionDefinition=MissionDefinition'GD_IrisEpisode02.M_IrisEp2_FindBattle',MissionStatus=MS_Active,bIsObjectiveSpecific=True,MissionObjective=MissionObjectiveDefinition'GD_IrisEpisode02.M_IrisEp2_FindBattle:LeaveArena',ObjectiveStatus=EODS_Complete)
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=187985
+NetIndex=1
+Outer=Package'GD_Iris_FastTravelStations'
+Name=Beatdown
+Class=Class'WillowGame.FastTravelStationDefinition'
+ObjectArchetype=FastTravelStationDefinition'WillowGame.Default__FastTravelStationDefinition'
+
+*** Property dump for object 'FastTravelStationDefinition GD_Iris_FastTravelStations.Forge' ***
+=== FastTravelStationDefinition properties ===
+bInitiallyActive=True
+bSendOnly=False
+StationDescription=
+StationSign=Forge
+InaccessibleObjective=None
+AccessibleObjective=None
+AccessibilityTime=FTAT_Always
+=== TravelStationDefinition properties ===
+StationLevelName=Iris_DL3_P
+PreviousStation=LevelTravelStationDefinition'GD_Iris_LevelTravelStations.Dogleg3.ForgeToCrater'
+DlcExpansion=DownloadableExpansionDefinition'GD_IrisPackageDef.Expansions.ExpansionDef_Iris'
+StationLocation=(X=0.000000,Y=0.000000,Z=0.000000)
+StationDisplayImage=None
+StationDisplayName=Forge
+MissionDependencies(0)=(MissionDefinition=MissionDefinition'GD_IrisEpisode05.M_IrisEp5_CageMatch',MissionStatus=MS_Active,bIsObjectiveSpecific=True,MissionObjective=MissionObjectiveDefinition'GD_IrisEpisode05.M_IrisEp5_CageMatch:EnterForge',ObjectiveStatus=EODS_Active)
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=187988
+NetIndex=2
+Outer=Package'GD_Iris_FastTravelStations'
+Name=Forge
+Class=Class'WillowGame.FastTravelStationDefinition'
+ObjectArchetype=FastTravelStationDefinition'WillowGame.Default__FastTravelStationDefinition'
+
+*** Property dump for object 'FastTravelStationDefinition GD_Iris_FastTravelStations.Hub.IrisCrater' ***
+=== FastTravelStationDefinition properties ===
+bInitiallyActive=True
+bSendOnly=False
+StationDescription=
+StationSign=Badass Crater of Badassitude
+InaccessibleObjective=None
+AccessibleObjective=None
+AccessibilityTime=FTAT_Always
+=== TravelStationDefinition properties ===
+StationLevelName=Iris_Hub_P
+PreviousStation=None
+DlcExpansion=DownloadableExpansionDefinition'GD_IrisPackageDef.Expansions.ExpansionDef_Iris'
+StationLocation=(X=0.000000,Y=0.000000,Z=0.000000)
+StationDisplayImage=None
+StationDisplayName=Badass Crater of Badassitude
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=187972
+NetIndex=3
+Outer=Package'GD_Iris_FastTravelStations.Hub'
+Name=IrisCrater
+Class=Class'WillowGame.FastTravelStationDefinition'
+ObjectArchetype=FastTravelStationDefinition'WillowGame.Default__FastTravelStationDefinition'
+
+*** Property dump for object 'FastTravelStationDefinition GD_Iris_FastTravelStations.SouthernRaceway' ***
+=== FastTravelStationDefinition properties ===
+bInitiallyActive=True
+bSendOnly=False
+StationDescription=
+StationSign=Southern Raceway
+InaccessibleObjective=None
+AccessibleObjective=None
+AccessibilityTime=FTAT_Always
+=== TravelStationDefinition properties ===
+StationLevelName=Iris_Hub2_P
+PreviousStation=LevelTravelStationDefinition'GD_Iris_LevelTravelStations.Hub.MammaToCrater'
+DlcExpansion=DownloadableExpansionDefinition'GD_IrisPackageDef.Expansions.ExpansionDef_Iris'
+StationLocation=(X=0.000000,Y=0.000000,Z=0.000000)
+StationDisplayImage=None
+StationDisplayName=Southern Raceway
+MissionDependencies(0)=(MissionDefinition=MissionDefinition'GD_IrisEpisode03.M_IrisEp3_ChopSuey',MissionStatus=MS_Complete,bIsObjectiveSpecific=False,MissionObjective=None,ObjectiveStatus=EODS_Complete)
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=187991
+NetIndex=4
+Outer=Package'GD_Iris_FastTravelStations'
+Name=SouthernRaceway
+Class=Class'WillowGame.FastTravelStationDefinition'
+ObjectArchetype=FastTravelStationDefinition'WillowGame.Default__FastTravelStationDefinition'
+
+*** Property dump for object 'FastTravelStationDefinition GD_Lobelia_FastTravel.TestingZone' ***
+=== FastTravelStationDefinition properties ===
+bInitiallyActive=True
+bSendOnly=False
+StationDescription=The Raid on Digistruct Peak
+StationSign=The Raid on Digistruct Peak
+InaccessibleObjective=None
+AccessibleObjective=None
+AccessibilityTime=FTAT_Always
+=== TravelStationDefinition properties ===
+StationLevelName=TestingZone_P
+PreviousStation=None
+DlcExpansion=DownloadableExpansionDefinition'GD_LobeliaPackageDef.ExpansionDef_Lobelia'
+StationLocation=(X=0.000000,Y=0.000000,Z=0.000000)
+StationDisplayImage=None
+StationDisplayName=The Raid on Digistruct Peak
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=188975
+NetIndex=0
+Outer=Package'GD_Lobelia_FastTravel'
+Name=TestingZone
+Class=Class'WillowGame.FastTravelStationDefinition'
+ObjectArchetype=FastTravelStationDefinition'WillowGame.Default__FastTravelStationDefinition'
+
+*** Property dump for object 'FastTravelStationDefinition GD_Nasturtium_FastTravel.EasterTravel' ***
+=== FastTravelStationDefinition properties ===
+bInitiallyActive=True
+bSendOnly=False
+StationDescription=Wam Bam Island
+StationSign=Wam Bam Island
+InaccessibleObjective=None
+AccessibleObjective=None
+AccessibilityTime=FTAT_Always
+=== TravelStationDefinition properties ===
+StationLevelName=Easter_P
+PreviousStation=None
+DlcExpansion=DownloadableExpansionDefinition'GD_NasturtiumPackageDef.ExpansionDef_NasturtiumEaster'
+StationLocation=(X=0.000000,Y=0.000000,Z=0.000000)
+StationDisplayImage=None
+StationDisplayName=Wam Bam Island
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=190001
+NetIndex=0
+Outer=Package'GD_Nasturtium_FastTravel'
+Name=EasterTravel
+Class=Class'WillowGame.FastTravelStationDefinition'
+ObjectArchetype=FastTravelStationDefinition'WillowGame.Default__FastTravelStationDefinition'
+
+*** Property dump for object 'FastTravelStationDefinition GD_Nasturtium_FastTravel.Vday' ***
+=== FastTravelStationDefinition properties ===
+bInitiallyActive=True
+bSendOnly=False
+StationDescription=Rotgut Distillery
+StationSign=Rotgut Distillery
+InaccessibleObjective=None
+AccessibleObjective=None
+AccessibilityTime=FTAT_Always
+=== TravelStationDefinition properties ===
+StationLevelName=Distillery_P
+PreviousStation=None
+DlcExpansion=DownloadableExpansionDefinition'GD_NasturtiumPackageDef.ExpansionDef_NasturtiumVday'
+StationLocation=(X=0.000000,Y=0.000000,Z=0.000000)
+StationDisplayImage=None
+StationDisplayName=Rotgut Distillery
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=190009
+NetIndex=1
+Outer=Package'GD_Nasturtium_FastTravel'
+Name=Vday
+Class=Class'WillowGame.FastTravelStationDefinition'
+ObjectArchetype=FastTravelStationDefinition'WillowGame.Default__FastTravelStationDefinition'
+
+*** Property dump for object 'FastTravelStationDefinition GD_Orchid_FastTravel.Caves' ***
+=== FastTravelStationDefinition properties ===
+bInitiallyActive=True
+bSendOnly=False
+StationDescription=No Description
+StationSign=Hayter's Folly
+InaccessibleObjective=None
+AccessibleObjective=None
+AccessibilityTime=FTAT_Always
+=== TravelStationDefinition properties ===
+StationLevelName=Orchid_Caves_P
+PreviousStation=LevelTravelStationDefinition'GD_Orchid_LevelTravel.Caves.CavesToOasisTown'
+DlcExpansion=DownloadableExpansionDefinition'GD_OrchidPackageDef.ExpansionDef_Orchid'
+StationLocation=(X=0.000000,Y=0.000000,Z=0.000000)
+StationDisplayImage=None
+StationDisplayName=Hayter's Folly
+MissionDependencies(0)=(MissionDefinition=MissionDefinition'GD_Orchid_Plot_Mission04.M_Orchid_PlotMission04',MissionStatus=MS_Active,bIsObjectiveSpecific=True,MissionObjective=MissionObjectiveDefinition'GD_Orchid_Plot_Mission04.M_Orchid_PlotMission04:KillSandman',ObjectiveStatus=EODS_Active)
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=192520
+NetIndex=0
+Outer=Package'GD_Orchid_FastTravel'
+Name=Caves
+Class=Class'WillowGame.FastTravelStationDefinition'
+ObjectArchetype=FastTravelStationDefinition'WillowGame.Default__FastTravelStationDefinition'
+
+*** Property dump for object 'FastTravelStationDefinition GD_Orchid_FastTravel.OasisTown.OasisTown' ***
+=== FastTravelStationDefinition properties ===
+bInitiallyActive=True
+bSendOnly=False
+StationDescription=No Description
+StationSign=Oasis
+InaccessibleObjective=None
+AccessibleObjective=None
+AccessibilityTime=FTAT_Always
+=== TravelStationDefinition properties ===
+StationLevelName=Orchid_OasisTown_P
+PreviousStation=None
+DlcExpansion=DownloadableExpansionDefinition'GD_OrchidPackageDef.ExpansionDef_Orchid'
+StationLocation=(X=0.000000,Y=0.000000,Z=0.000000)
+StationDisplayImage=None
+StationDisplayName=Oasis
+MissionDependencies(0)=(MissionDefinition=None,MissionStatus=MS_Complete,bIsObjectiveSpecific=False,MissionObjective=None,ObjectiveStatus=EODS_Complete)
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=192505
+NetIndex=1
+Outer=Package'GD_Orchid_FastTravel.OasisTown'
+Name=OasisTown
+Class=Class'WillowGame.FastTravelStationDefinition'
+ObjectArchetype=FastTravelStationDefinition'WillowGame.Default__FastTravelStationDefinition'
+
+*** Property dump for object 'FastTravelStationDefinition GD_Orchid_FastTravel.Refinary' ***
+=== FastTravelStationDefinition properties ===
+bInitiallyActive=True
+bSendOnly=False
+StationDescription=No Description
+StationSign=Washburne Refinery
+InaccessibleObjective=None
+AccessibleObjective=None
+AccessibilityTime=FTAT_Always
+=== TravelStationDefinition properties ===
+StationLevelName=Orchid_Refinery_P
+PreviousStation=LevelTravelStationDefinition'GD_Orchid_LevelTravel.Refinery.RefineryToSaltFlats'
+DlcExpansion=DownloadableExpansionDefinition'GD_OrchidPackageDef.ExpansionDef_Orchid'
+StationLocation=(X=0.000000,Y=0.000000,Z=0.000000)
+StationDisplayImage=None
+StationDisplayName=Washburne Refinery
+MissionDependencies(0)=(MissionDefinition=MissionDefinition'GD_Orchid_Plot_Mission07.M_Orchid_PlotMission07',MissionStatus=MS_Active,bIsObjectiveSpecific=True,MissionObjective=MissionObjectiveDefinition'GD_Orchid_Plot_Mission07.M_Orchid_PlotMission07:EnterRefinery',ObjectiveStatus=EODS_Complete)
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=192524
+NetIndex=2
+Outer=Package'GD_Orchid_FastTravel'
+Name=Refinary
+Class=Class'WillowGame.FastTravelStationDefinition'
+ObjectArchetype=FastTravelStationDefinition'WillowGame.Default__FastTravelStationDefinition'
+
+*** Property dump for object 'FastTravelStationDefinition GD_Orchid_FastTravel.SaltFlats.SaltFlats' ***
+=== FastTravelStationDefinition properties ===
+bInitiallyActive=True
+bSendOnly=False
+StationDescription=No Description
+StationSign=Wurmwater
+InaccessibleObjective=None
+AccessibleObjective=None
+AccessibilityTime=FTAT_Always
+=== TravelStationDefinition properties ===
+StationLevelName=Orchid_SaltFlats_P
+PreviousStation=FastTravelStationDefinition'GD_Orchid_FastTravel.OasisTown.OasisTown'
+DlcExpansion=DownloadableExpansionDefinition'GD_OrchidPackageDef.ExpansionDef_Orchid'
+StationLocation=(X=0.000000,Y=0.000000,Z=0.000000)
+StationDisplayImage=None
+StationDisplayName=Wurmwater
+MissionDependencies(0)=(MissionDefinition=MissionDefinition'GD_Orchid_Plot_Mission03.M_Orchid_PlotMission03',MissionStatus=MS_Active,bIsObjectiveSpecific=True,MissionObjective=MissionObjectiveDefinition'GD_Orchid_Plot_Mission03.M_Orchid_PlotMission03:MeetPirateQueen',ObjectiveStatus=EODS_Complete)
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=192529
+NetIndex=3
+Outer=Package'GD_Orchid_FastTravel.SaltFlats'
+Name=SaltFlats
+Class=Class'WillowGame.FastTravelStationDefinition'
+ObjectArchetype=FastTravelStationDefinition'WillowGame.Default__FastTravelStationDefinition'
+
+*** Property dump for object 'FastTravelStationDefinition GD_Orchid_FastTravel.ShipGraveyard' ***
+=== FastTravelStationDefinition properties ===
+bInitiallyActive=True
+bSendOnly=False
+StationDescription=No Description
+StationSign=The Rustyards
+InaccessibleObjective=None
+AccessibleObjective=None
+AccessibilityTime=FTAT_Always
+=== TravelStationDefinition properties ===
+StationLevelName=Orchid_ShipGraveyard_P
+PreviousStation=LevelTravelStationDefinition'GD_Orchid_LevelTravel.ShipGraveyard.ShipGraveyardToSaltFlats'
+DlcExpansion=DownloadableExpansionDefinition'GD_OrchidPackageDef.ExpansionDef_Orchid'
+StationLocation=(X=0.000000,Y=0.000000,Z=0.000000)
+StationDisplayImage=None
+StationDisplayName=The Rustyards
+MissionDependencies(0)=(MissionDefinition=MissionDefinition'GD_Orchid_Plot_Mission05.M_Orchid_PlotMission05',MissionStatus=MS_Complete,bIsObjectiveSpecific=False,MissionObjective=None,ObjectiveStatus=EODS_Complete)
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=192531
+NetIndex=4
+Outer=Package'GD_Orchid_FastTravel'
+Name=ShipGraveyard
+Class=Class'WillowGame.FastTravelStationDefinition'
+ObjectArchetype=FastTravelStationDefinition'WillowGame.Default__FastTravelStationDefinition'
+
+*** Property dump for object 'FastTravelStationDefinition GD_Orchid_FastTravel.Spire' ***
+=== FastTravelStationDefinition properties ===
+bInitiallyActive=True
+bSendOnly=False
+StationDescription=No Description
+StationSign=Magnys Lighthouse
+InaccessibleObjective=None
+AccessibleObjective=None
+AccessibilityTime=FTAT_Always
+=== TravelStationDefinition properties ===
+StationLevelName=Orchid_Spire_P
+PreviousStation=LevelTravelStationDefinition'GD_Orchid_LevelTravel.Spire.SpireToSaltFlats'
+DlcExpansion=DownloadableExpansionDefinition'GD_OrchidPackageDef.ExpansionDef_Orchid'
+StationLocation=(X=0.000000,Y=0.000000,Z=0.000000)
+StationDisplayImage=None
+StationDisplayName=Magnys Lighthouse
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=192534
+NetIndex=5
+Outer=Package'GD_Orchid_FastTravel'
+Name=Spire
+Class=Class'WillowGame.FastTravelStationDefinition'
+ObjectArchetype=FastTravelStationDefinition'WillowGame.Default__FastTravelStationDefinition'
+
+*** Property dump for object 'FastTravelStationDefinition GD_Orchid_FastTravel.TopOfSpire' ***
+=== FastTravelStationDefinition properties ===
+bInitiallyActive=False
+bSendOnly=True
+StationDescription=No Description
+StationSign=Magnys Escape
+InaccessibleObjective=None
+AccessibleObjective=None
+AccessibilityTime=FTAT_Always
+=== TravelStationDefinition properties ===
+StationLevelName=Orchid_Spire_P
+PreviousStation=FastTravelStationDefinition'GD_Orchid_FastTravel.Spire'
+DlcExpansion=DownloadableExpansionDefinition'GD_OrchidPackageDef.ExpansionDef_Orchid'
+StationLocation=(X=0.000000,Y=0.000000,Z=0.000000)
+StationDisplayImage=None
+StationDisplayName=Magnys Escape
+MissionDependencies(0)=(MissionDefinition=MissionDefinition'GD_Orchid_Plot_Mission08.M_Orchid_PlotMission08',MissionStatus=MS_NotStarted,bIsObjectiveSpecific=True,MissionObjective=MissionObjectiveDefinition'GD_Orchid_Plot_Mission08.M_Orchid_PlotMission08:UseLift',ObjectiveStatus=EODS_Active)
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=192537
+NetIndex=6
+Outer=Package'GD_Orchid_FastTravel'
+Name=TopOfSpire
+Class=Class'WillowGame.FastTravelStationDefinition'
+ObjectArchetype=FastTravelStationDefinition'WillowGame.Default__FastTravelStationDefinition'
+
+*** Property dump for object 'FastTravelStationDefinition GD_Sage_FastTravel.Cliffs' ***
+=== FastTravelStationDefinition properties ===
+bInitiallyActive=False
+bSendOnly=False
+StationDescription=
+StationSign=Candlerakk's Crag
+InaccessibleObjective=None
+AccessibleObjective=None
+AccessibilityTime=FTAT_Always
+=== TravelStationDefinition properties ===
+StationLevelName=Sage_Cliffs_P
+PreviousStation=FastTravelStationDefinition'GD_Sage_FastTravel.Underground'
+DlcExpansion=DownloadableExpansionDefinition'GD_SagePackageDef.ExpansionDef_Sage'
+StationLocation=(X=0.000000,Y=0.000000,Z=0.000000)
+StationDisplayImage=None
+StationDisplayName=Candlerakk's Crag
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=195244
+NetIndex=0
+Outer=Package'GD_Sage_FastTravel'
+Name=Cliffs
+Class=Class'WillowGame.FastTravelStationDefinition'
+ObjectArchetype=FastTravelStationDefinition'WillowGame.Default__FastTravelStationDefinition'
+
+*** Property dump for object 'FastTravelStationDefinition GD_Sage_FastTravel.HyperionShip' ***
+=== FastTravelStationDefinition properties ===
+bInitiallyActive=True
+bSendOnly=True
+StationDescription=
+StationSign=H.S.S. Terminus
+InaccessibleObjective=None
+AccessibleObjective=None
+AccessibilityTime=FTAT_Always
+=== TravelStationDefinition properties ===
+StationLevelName=Sage_HyperionShip_P
+PreviousStation=LevelTravelStationDefinition'GD_Sage_LevelTravel.Sage_Travel_ShipToCliffs'
+DlcExpansion=DownloadableExpansionDefinition'GD_SagePackageDef.ExpansionDef_Sage'
+StationLocation=(X=0.000000,Y=0.000000,Z=0.000000)
+StationDisplayImage=None
+StationDisplayName=H.S.S. Terminus
+MissionDependencies(0)=(MissionDefinition=MissionDefinition'GD_Sage_Ep5.M_Sage_Mission05',MissionStatus=MS_Active,bIsObjectiveSpecific=True,MissionObjective=MissionObjectiveDefinition'GD_Sage_Ep5.M_Sage_Mission05:OpenShipDoor',ObjectiveStatus=EODS_Complete)
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=195245
+NetIndex=1
+Outer=Package'GD_Sage_FastTravel'
+Name=HyperionShip
+Class=Class'WillowGame.FastTravelStationDefinition'
+ObjectArchetype=FastTravelStationDefinition'WillowGame.Default__FastTravelStationDefinition'
+
+*** Property dump for object 'FastTravelStationDefinition GD_Sage_FastTravel.PowerStation' ***
+=== FastTravelStationDefinition properties ===
+bInitiallyActive=False
+bSendOnly=False
+StationDescription=
+StationSign=Ardorton Station
+InaccessibleObjective=None
+AccessibleObjective=None
+AccessibilityTime=FTAT_Always
+=== TravelStationDefinition properties ===
+StationLevelName=Sage_PowerStation_P
+PreviousStation=LevelTravelStationDefinition'GD_Sage_LevelTravel.Sage_Travel_PowerStationToRockForest'
+DlcExpansion=DownloadableExpansionDefinition'GD_SagePackageDef.ExpansionDef_Sage'
+StationLocation=(X=0.000000,Y=0.000000,Z=0.000000)
+StationDisplayImage=None
+StationDisplayName=Ardorton Station
+MissionDependencies(0)=(MissionDefinition=MissionDefinition'GD_Sage_Ep4.M_Sage_Mission04',MissionStatus=MS_Active,bIsObjectiveSpecific=True,MissionObjective=MissionObjectiveDefinition'GD_Sage_Ep4.M_Sage_Mission04:GotoStation',ObjectiveStatus=EODS_Complete)
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=195249
+NetIndex=2
+Outer=Package'GD_Sage_FastTravel'
+Name=PowerStation
+Class=Class'WillowGame.FastTravelStationDefinition'
+ObjectArchetype=FastTravelStationDefinition'WillowGame.Default__FastTravelStationDefinition'
+
+*** Property dump for object 'FastTravelStationDefinition GD_Sage_FastTravel.RockForest' ***
+=== FastTravelStationDefinition properties ===
+bInitiallyActive=False
+bSendOnly=False
+StationDescription=
+StationSign=Scylla's Grove
+InaccessibleObjective=None
+AccessibleObjective=None
+AccessibilityTime=FTAT_Always
+=== TravelStationDefinition properties ===
+StationLevelName=Sage_RockForest_P
+PreviousStation=LevelTravelStationDefinition'GD_Sage_LevelTravel.Sage_Travel_RockForestToUnderground'
+DlcExpansion=DownloadableExpansionDefinition'GD_SagePackageDef.ExpansionDef_Sage'
+StationLocation=(X=0.000000,Y=0.000000,Z=0.000000)
+StationDisplayImage=None
+StationDisplayName=Scylla's Grove
+MissionDependencies(0)=(MissionDefinition=MissionDefinition'GD_Sage_Ep3.M_Sage_Mission03',MissionStatus=MS_Active,bIsObjectiveSpecific=True,MissionObjective=MissionObjectiveDefinition'GD_Sage_Ep3.M_Sage_Mission03:FindScaylion',ObjectiveStatus=EODS_Active)
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=195252
+NetIndex=3
+Outer=Package'GD_Sage_FastTravel'
+Name=RockForest
+Class=Class'WillowGame.FastTravelStationDefinition'
+ObjectArchetype=FastTravelStationDefinition'WillowGame.Default__FastTravelStationDefinition'
+
+*** Property dump for object 'FastTravelStationDefinition GD_Sage_FastTravel.SageCliffs' ***
+=== FastTravelStationDefinition properties ===
+bInitiallyActive=False
+bSendOnly=False
+StationDescription=
+StationSign=Candlerakk's Crag
+InaccessibleObjective=None
+AccessibleObjective=None
+AccessibilityTime=FTAT_Always
+=== TravelStationDefinition properties ===
+StationLevelName=Sage_Cliffs_P
+PreviousStation=LevelTravelStationDefinition'GD_Sage_LevelTravel.Sage_Travel_CliffsToUnderground'
+DlcExpansion=DownloadableExpansionDefinition'GD_SagePackageDef.ExpansionDef_Sage'
+StationLocation=(X=0.000000,Y=0.000000,Z=0.000000)
+StationDisplayImage=None
+StationDisplayName=Candlerakk's Crag
+MissionDependencies(0)=(MissionDefinition=MissionDefinition'GD_Sage_Ep5.M_Sage_Mission05',MissionStatus=MS_Active,bIsObjectiveSpecific=True,MissionObjective=MissionObjectiveDefinition'GD_Sage_Ep5.M_Sage_Mission05:GoToCliffs',ObjectiveStatus=EODS_Complete)
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=195255
+NetIndex=4
+Outer=Package'GD_Sage_FastTravel'
+Name=SageCliffs
+Class=Class'WillowGame.FastTravelStationDefinition'
+ObjectArchetype=FastTravelStationDefinition'WillowGame.Default__FastTravelStationDefinition'
+
+*** Property dump for object 'FastTravelStationDefinition GD_Sage_FastTravel.Underground' ***
+=== FastTravelStationDefinition properties ===
+bInitiallyActive=True
+bSendOnly=False
+StationDescription=
+StationSign=Hunter's Grotto
+InaccessibleObjective=None
+AccessibleObjective=None
+AccessibilityTime=FTAT_Always
+=== TravelStationDefinition properties ===
+StationLevelName=Sage_Underground_P
+PreviousStation=None
+DlcExpansion=DownloadableExpansionDefinition'GD_SagePackageDef.ExpansionDef_Sage'
+StationLocation=(X=0.000000,Y=0.000000,Z=0.000000)
+StationDisplayImage=None
+StationDisplayName=Hunter's Grotto
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=195236
+NetIndex=5
+Outer=Package'GD_Sage_FastTravel'
+Name=Underground
+Class=Class'WillowGame.FastTravelStationDefinition'
+ObjectArchetype=FastTravelStationDefinition'WillowGame.Default__FastTravelStationDefinition'
+
+*** Property dump for object 'FastTravelStationDefinition GD_Sage_FastTravel.Underground_Lodge' ***
+=== FastTravelStationDefinition properties ===
+bInitiallyActive=False
+bSendOnly=False
+StationDescription=
+StationSign=Hunter's Grotto - Lodge
+InaccessibleObjective=None
+AccessibleObjective=None
+AccessibilityTime=FTAT_Always
+=== TravelStationDefinition properties ===
+StationLevelName=Sage_Underground_P
+PreviousStation=FastTravelStationDefinition'GD_Sage_FastTravel.Underground'
+DlcExpansion=DownloadableExpansionDefinition'GD_SagePackageDef.ExpansionDef_Sage'
+StationLocation=(X=0.000000,Y=0.000000,Z=0.000000)
+StationDisplayImage=None
+StationDisplayName=Hunter's Grotto - Lodge
+MissionDependencies(0)=(MissionDefinition=MissionDefinition'GD_Sage_Ep1.M_Sage_Mission01',MissionStatus=MS_Active,bIsObjectiveSpecific=True,MissionObjective=MissionObjectiveDefinition'GD_Sage_Ep1.M_Sage_Mission01:GotoLodge',ObjectiveStatus=EODS_Complete)
+=== Object properties ===
+VfTableObject=
+HashNext=
+ObjectFlags=
+HashOuterNext=
+StateFrame=
+Linker=None
+LinkerIndex=
+ObjectInternalInteger=195258
+NetIndex=6
+Outer=Package'GD_Sage_FastTravel'
+Name=Underground_Lodge
+Class=Class'WillowGame.FastTravelStationDefinition'
+ObjectArchetype=FastTravelStationDefinition'WillowGame.Default__FastTravelStationDefinition'
+

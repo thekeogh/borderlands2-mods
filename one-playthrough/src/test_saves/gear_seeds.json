@@ -1,0 +1,71 @@
+{
+  "source_repository": "https://github.com/OLoKo64/borderlands-2-item-codes",
+  "source_commit": "20b66de8ccfb529aca7b371b0c0135231427c545",
+  "license": "MIT; see ITEM-CODES-LICENSE.txt",
+  "items": [
+    {
+      "name": "Double Penetrating Unkempt Harold",
+      "base64": "hwAAAADliACFBwVACIFE2sN4hWEQwwHG/////xow/v8fxECCcRHj",
+      "is_weapon": 1,
+      "source": "https://raw.githubusercontent.com/OLoKo64/borderlands-2-item-codes/20b66de8ccfb529aca7b371b0c0135231427c545/src/legendary_seraph_unique_perlescent_weapons/pearlescent_seraph_legendary_unique_pistols.md",
+      "purpose": "Main damage gun",
+      "equipped": false
+    },
+    {
+      "name": "Shock Norfleet",
+      "base64": "hwAAAACXXABER4M/EIFEVqIYQ8GLggBFG4oJFBwo/v/TojhBAYzi",
+      "is_weapon": 1,
+      "source": "https://raw.githubusercontent.com/OLoKo64/borderlands-2-item-codes/20b66de8ccfb529aca7b371b0c0135231427c545/src/legendary_seraph_unique_perlescent_weapons/pearlescent_seraph_legendary_unique_launchers.md",
+      "purpose": "Area damage; avoid firing close to yourself",
+      "equipped": false
+    },
+    {
+      "name": "Fire Norfleet",
+      "base64": "hwAAAADrJQBER4M/EIFEVqIYQ8GLggBFG4oIFBwo/v/TojhBAYzi",
+      "is_weapon": 1,
+      "source": "https://raw.githubusercontent.com/OLoKo64/borderlands-2-item-codes/20b66de8ccfb529aca7b371b0c0135231427c545/src/legendary_seraph_unique_perlescent_weapons/pearlescent_seraph_legendary_unique_launchers.md",
+      "purpose": "Optional fire launcher for fleshy bosses; avoid nearby blasts",
+      "equipped": false
+    },
+    {
+      "name": "Grog Nozzle",
+      "base64": "hwAAAAAoYAmGJwAMEYFEMsOIhTGA8AHG/38LGB0w/v8XIAyDQYDw",
+      "is_weapon": 1,
+      "source": "https://raw.githubusercontent.com/OLoKo64/borderlands-2-item-codes/20b66de8ccfb529aca7b371b0c0135231427c545/src/legendary_seraph_unique_perlescent_weapons/pearlescent_seraph_legendary_unique_pistols.md",
+      "purpose": "Slag and healing",
+      "equipped": false
+    },
+    {
+      "name": "Infinity",
+      "base64": "hwAAAAAMFACE5wRACoFE6sOIhYEQgwHG/38JGB0w/v8rxCCDgRHj",
+      "is_weapon": 1,
+      "source": "https://raw.githubusercontent.com/OLoKo64/borderlands-2-item-codes/20b66de8ccfb529aca7b371b0c0135231427c545/src/legendary_seraph_unique_perlescent_weapons/pearlescent_seraph_legendary_unique_pistols.md",
+      "purpose": "Ammo-free backup / wound enemies for observations",
+      "equipped": false
+    },
+    {
+      "name": "The Sham",
+      "base64": "BwAAAADV1QATEVSgoxBIpAGEBMQHRFXE/////////z9VxP9/WcQ=",
+      "is_weapon": 0,
+      "source": "https://raw.githubusercontent.com/OLoKo64/borderlands-2-item-codes/20b66de8ccfb529aca7b371b0c0135231427c545/src/legendary_seraph_unique_items/legendary_seraph_unique_shields.md",
+      "purpose": "Defensive shield; initially equipped",
+      "equipped": true
+    },
+    {
+      "name": "Grounded The Bee",
+      "base64": "BwAAAAC0QwAWEWqgwxBI5AGEBEQHBFfE//////////9WxA3EWsQ=",
+      "is_weapon": 0,
+      "source": "https://raw.githubusercontent.com/OLoKo64/borderlands-2-item-codes/20b66de8ccfb529aca7b371b0c0135231427c545/src/legendary_seraph_unique_items/legendary_seraph_unique_shields.md",
+      "purpose": "Optional damage shield in backpack",
+      "equipped": false
+    },
+    {
+      "name": "Magic Missile x4",
+      "base64": "BwAAAABgIgkAFQWgEBG93v8/AaIdgwsDBkMGQwdDCEMVw///AOI=",
+      "is_weapon": 0,
+      "source": "https://raw.githubusercontent.com/OLoKo64/borderlands-2-item-codes/20b66de8ccfb529aca7b371b0c0135231427c545/src/legendary_seraph_unique_items/legendary_seraph_unique_grenades.md",
+      "purpose": "Slag grenade; initially equipped",
+      "equipped": true
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "scenario": "Plan B turn-in / third weapon slot",
+  "candidate_version": "0.1.1",
+  "mod_version": "0.1.7",
+  "candidate_sha256": "879cdcc865ee1ae4edcaeb6f6b8b9e778afc7696c2ffd2ff050521bf3177ae34",
+  "game_session": "2026-11-05 16:37\u201316:39 UTC",
+  "checks": {
+    "all_five_exports_complete": true,
+    "export_collector_errors": [],
+    "observer_callback_errors": [],
+    "uvhm_index": 2,
+    "player_level": 1,
+    "selected_op": 0,
+    "tuning_threshold": 1,
+    "tuning_errors": [],
+    "sanctuary_map_names_captured": true,
+    "plan_b_ready_stage": 1,
+    "plan_b_completed_stage": 1,
+    "next_mission": "Hunting the Firehawk",
+    "next_mission_accepted_stage": 1,
+    "mission_states_persisted_after_controller_reload": true,
+    "reward_item_definition": "GD_StorageDeckUpgrade.A_Item.INV_SDU_WeaponEquipSlot",
+    "reward_balance_definition": "GD_ItemGrades.StorageDeckUpgrades.ItemGrade_SDU_WeaponEquipSlot",
+    "reward_item_stage": 1,
+    "reward_xp_query_and_ui_payload": 35,
+    "cash_before": 0,
+    "cash_after": 10
+  },
+  "user_report": {
+    "weapon_slot_upgrade_observed": true,
+    "description": "got an SDU slot; all seemed good"
+  },
+  "limits": [
+    "Unlocked slot count is not directly captured; CurrentNumOfHolsteredWeaponSlots counts holstered weapons, not proven unlock capacity",
+    "Actual XP-total delta remains unavailable",
+    "Fourth weapon slot and higher-level Plan B reward selection remain untested"
+  ],
+  "source_logs": [
+    {
+      "name": "one-playthrough-0.1.7-20261105T163707.368306Z-fce8c766.json",
+      "sha256": "8eb1e840d6e1014a2f5d1ac01e136f748a252af0d3382412466704ce1039e44f"
+    },
+    {
+      "name": "one-playthrough-0.1.7-20261105T163830.398448Z-14b744b1.json",
+      "sha256": "256a85c82ffea8136c5f95e0f6c0a4158344ea8eea1bfc2691a099bea9d4edc5"
+    },
+    {
+      "name": "one-playthrough-0.1.7-20261105T163847.899922Z-5718ccca.json",
+      "sha256": "49597a2d390214fe1b3b693d820402c676cc6a8a3d0837eb10a4827e9d84d73b"
+    },
+    {
+      "name": "one-playthrough-0.1.7-20261105T163909.628769Z-7f771dde.json",
+      "sha256": "c9a49e5bc806a399d720a24e2a2aa41112c7f5c4fda5000e39c6ee6171f43090"
+    },
+    {
+      "name": "one-playthrough-0.1.7-20261105T163926.342041Z-4c86b3bb.json",
+      "sha256": "28f64bd2afcc50bda0bcbe7fe9f941511c07b105410d73ced2c07707f5fbadc8"
+    }
+  ]
+}

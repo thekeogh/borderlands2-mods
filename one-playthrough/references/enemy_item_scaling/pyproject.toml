@@ -1,0 +1,24 @@
+[project]
+name = "enemy_item_scaling"
+version = "0.10"
+authors = [{ name = "CalebEaston" }]
+description = """\
+For Borderlands 2 and Borderlands: The Pre-Sequel (the Pre-Sequel side should work but is \
+untested so far). Scales enemies, loot and missions to your level. I wanted to make the \
+gameplay loop somewhat resemble the more modern Borderlands entries.
+
+Each bound is its own setting: raise under-levelled enemies, loot or missions, cap over-levelled \
+enemies or loot, or leave any of them vanilla.
+"""
+
+[project.urls]
+"Source Code" = "https://github.com/CalebEaston/bl2-and-tps-enemy-and-item-scaling-sdk"
+Issues = "https://github.com/CalebEaston/bl2-and-tps-enemy-and-item-scaling-sdk/issues"
+Changelog = "https://github.com/CalebEaston/bl2-and-tps-enemy-and-item-scaling-sdk/blob/main/src/enemy_item_scaling/Readme.md"
+
+[tool.sdkmod]
+name = "Enemy and Item Scaling"
+download = "https://github.com/CalebEaston/bl2-and-tps-enemy-and-item-scaling-sdk/releases/latest/download/enemy_item_scaling.sdkmod"
+supported_games = ["BL2", "TPS"]
+coop_support = "HostOnly"
+license = { name = "GPL3", url = "https://choosealicense.com/licenses/gpl-3.0/" }

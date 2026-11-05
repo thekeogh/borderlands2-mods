@@ -1,0 +1,10 @@
+Game=TPS
+Name=Disable Logitech Stuff
+ValueName=Enable
+EnabledValue=195
+DisabledValue=86
+Offset=-1
+ValueRange=1
+PatchSignature=8B F1 57 33 FF 89 3E 89 7E 04 89 7E 08 E8 ?? ?? ?? ?? 0F 57 C0 88 46 0C 89 7E 10 89 7E 14 89 7E 18 89 7E 1C 89 7E 20 89 7E 24 89 7E 28 89 7E 2C 5F F3 0F 11 46
+UiElement=1
+DONE!
