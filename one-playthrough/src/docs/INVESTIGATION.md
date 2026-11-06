@@ -846,3 +846,87 @@ exports, tuning restoration and package/archive protections. Ad hoc guarded-map 
 check confirms unsupported property never read and valid resource values survive.
 No executable/save/gameplay or UI correction introduced. Actual1.0.0 game load remains
 unobserved; gameplay evidence comes from unchanged0.1.7 tuning/observers and test reports.
+
+
+## Always-on mission following1.1.0 — 2026-11-06
+
+User explicitly changes the vanilla mission-lock requirement: bake in mission following
+without an option. Raises only accepted statuses1/2/3 in actual local UVHM2/OP0; never
+lowers a higher saved/definition stage or touches completed/unaccepted records. Independent
+implementation in missions.py, informed by existing reflected hooks and reference behavior,
+without copying reference code. Updates native mission definition/stored record together;
+partial writes read back and attempt owned-value rollback. No direct saves, sidecars or
+reward rewrites. Persistence is intentional and not reversed on disable.
+
+Reconciles at enable/load/accept/status/level-up boundaries and before reward completion.
+Explicit event mission paths only; no tracked-mission guessing. Temporary per-mission
+payout-depth guard prevents turn-in XP level-up from changing that payment's stage while
+allowing other unfinished missions to rise. Hook callbacks preserve args/return/flow.
+F10 snapshots only, with bounded change history, scope/hook/error/payout state; no console
+or automatic startup export. Tuning, recorder, reflection and activity byte-identical to1.0.0.
+
+79 offline tests pass, including new policy scope/status/identity, persistence, higher-stage
+preservation, native recipient flag preservation, nested reward payment ordering, invalid
+stage rejection, partial rollback, hook lifecycle and F10 read-only checks. These establish
+contracts, not in-game hook behavior. Prior acceptance-lock tests are not evidence for the
+new following behavior. Reuse unchanged0.2.2 saves02(5→10),12(20→25),03(16→20 +native
+SDU safeguard),05(49→50 +owned gear49). Test10 remains skipped. Game validation pending.
+No additional EXE changes or enemy-scaling edits. 1.0.0 to be archived as rollback artifact;
+raised mission stages already saved will not downgrade automatically with the old mod.
+
+
+##1.1.0 test02 in game — 2026-11-06 13:10–13:11 UTC
+
+Four root logs confirm player10 UVHM2/OP0. Captured mission-scaling change explicitly
+raises Cleaning up the Berg saved/definition5→10 at ApplyMissionSaveGameData POST.
+Ready/completed/reloaded mission stays10; shield grade/stage10. Getter/card XP1528 and
+actual cash10000→10027; cash persists through controller2→5 reload. Older completed
+My First Gun/Blindsided remain5. All14 mission hook phases register; no mission-scaling,
+payout guard, export or nested collector errors (unsupported map noise now absent).
+User reports all looked good. On-load mission following/reward/reload checks pass.
+This does not yet establish live level-up following, alternative rewards or SDU conditions
+under new policy;12/03/05 pending. Source evidence:test_saves/results/test_02_1.1.0.json.
+User reorganised logs: current exports in root logs/, not old numbered folders. No writes
+to user logs. No new runtime changes or release needed. Continue12 as planned.
+
+
+##1.1.0 test12 received — 2026-11-06 13:14–13:15 UTC
+
+Four captures confirm native status1→3→4→4, player25 UVHM2/OP0, stored/locked20→25
+explicitly raised on ApplyMissionSaveGameData POST; completed25 persists controller8→11
+reload. No mission/export/nested errors,14 hook phases registered, payout guards empty.
+XP getter/card3772, cash0/unchanged. Native grant bGrantAltReward=true, ReceiveWeaponReward
+Rubi stage/grade25. This is not Sloth; user reports passed but recipient not named.
+Asked Moxxi vs Mordecai to distinguish intended alternate route from prior wrong-branch
+fixture failure. Level-following/reward-stage/reload checks pass; recipient-route judgment
+pending reply. Do not misreport Sloth. No runtime changes.
+Evidence: src/test_saves/results/test_12_1.1.0.json.
+
+
+1.1.0 test12 clarification: user intentionally chose Moxxi. Captured alternative=true
+and Rubi25 are therefore correct; mission following/reward branch/reload test passes.
+Default Sloth route not separately retested on1.1.0; no regression indicated. Continue03.
+
+
+##1.1.0 test03 validated — 2026-11-06 13:19–13:20 UTC
+
+Four captures confirm Bright Lights saved/locked16→20 on load at player20 UVHM2/OP0.
+Native ReceiveItemReward contains weapon-slot SDU, grade/stage20; no reward override.
+XP query/card3820, cash10000→10086. Completed20 and cash persist controller14→17
+reload. All14 mission hook phases registered; no exporter/scaler/nested errors, payout
+guards empty. User says in-game passed. Native SDU eligibility survived this stage raise;
+direct unlock-capacity count remains unexposed. Only requested live level-up05 remains.
+No runtime changes. Evidence: src/test_saves/results/test_03_1.1.0.json.
+
+
+##1.1.0 final focused validation — 2026-11-06 13:22–13:28 UTC
+
+Four test05 captures49/49/50/50 explicitly record mission49→50 in saved record and
+definition at OnExpLevelChange POST. Equipped weapon remains49. Ice_P→Sanctuary_P
+travel preserves active50; fresh vendor stage50/stock48–50. All14 hooks registered,
+no scaler/export/nested errors. Same controller throughout, so do not call final capture
+a save-quit reload; raised-stage completion/reward reloads already evidenced02/03/12.
+User reports all good. Requested focused1.1.0 tests02/12/03/05 complete; no runtime
+changes after test. Payout-induced level-up guard remains offline-tested, not deliberately
+triggered in game. Test10 skipped by user. Broader campaign/edge cases remain ongoing
+playthrough evidence. F10 retained. Sources:test_05_1.1.0.json and mission_follow_1.1.0_summary.json.

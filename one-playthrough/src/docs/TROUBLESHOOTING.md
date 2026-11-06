@@ -17,8 +17,12 @@ A HUD message confirms a saved JSON when available. In menus or during loading, 
 
 A report can be marked partial because optional values are unavailable or samples are bounded. This does not by itself mean gameplay or the JSON export failed. Report export failures with the message shown in the status option.
 
-## Known level-label mismatch
+## Mission-stage reports
 
-The turn-in card may display the player's current level even when the journal and accepted mission level are lower. The tested equipment rewards retain the accepted stage. This cosmetic discrepancy is known; capture a report if the actual reward or saved mission level changes unexpectedly.
+F10 includes `implementation.mission_scaling`: scope, hook registration, errors, recent before/after stage changes and any in-flight reward transaction. Saved records and mission definitions remain side by side in the mission comparison.
+
+In 1.1.0, unfinished missions should rise with your level and persist on reload. Completed missions and already-owned gear should stay unchanged. A mission that is already higher than you remains higher. Existing pending reward items are not regenerated.
+
+The turn-in label still follows the game's own UI query. A remaining mismatch does not by itself establish that the actual reward stage is wrong; capture both the screen and the collected reward if unsure.
 
 F10 observes current state and bounded recent events. It does not rescale actors, change mission state, grant rewards or force a game save. Reports include stages, tuning, nearby actors, sampled vendor/equipped gear and recent mission/reward/UI activity; they do not dump the full inventory or account identifiers.

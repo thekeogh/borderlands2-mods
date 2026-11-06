@@ -8,6 +8,7 @@ from mods_base import ButtonOption, CoopSupport, Game, build_mod, keybind
 
 from .diagnostics import Diagnostics
 from .observers import Observers
+from .missions import MissionScaling
 from .tuning import UVHMTuning
 from .version import AUTHOR, DISPLAY_NAME, VERSION
 
@@ -33,6 +34,8 @@ def notify(title, message, failed=False):
 observers = Observers()
 tuning = UVHMTuning()
 observers.tuning = tuning
+missions = MissionScaling(observers.recorder.record)
+observers.mission_scaling = missions
 diagnostics = Diagnostics(observers, notify)
 observers.capture_callback = diagnostics.export
 
@@ -67,9 +70,11 @@ export_now = ButtonOption(
 def on_enable():
     tuning.enable()
     observers.enable()
+    missions.enable()
 
 
 def on_disable():
+    missions.disable()
     observers.disable()
     tuning.disable()
     notify("Restart required", "UVHM threshold restoration attempted. Quit/restart to clear existing actor effects.",
@@ -79,7 +84,7 @@ def on_disable():
 mod = build_mod(
     name=DISPLAY_NAME, author=AUTHOR, version=VERSION,
     supported_games=Game.BL2, coop_support=CoopSupport.Incompatible,
-    description=f"{VERSION}: activates native UVHM tuning from level 1. "
+    description=f"{VERSION}: native UVHM from level 1; accepted missions follow your level. "
                 "Requires a patched EXE and genuine UVHM save. F10 exports JSON. "
                 "Enable before loading; restart after disabling. Solo only.",
     keybinds=[capture], options=[capture_next_screen, export_now, export_status],

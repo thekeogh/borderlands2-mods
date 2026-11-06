@@ -95,7 +95,7 @@ class Diagnostics:
             "trigger": trigger, "build_kind": "native UVHM from level 1; external EXE patch required",
             "capture_mode": "observational",
             "export_complete": False, "partial": True, "errors": [],
-            "limitations": ["Only the first UVHM tuning activation threshold is corrected by this build.",
+            "limitations": ["SDK changes first UVHM tuning threshold and unfinished accepted mission stages.",
                             "Observed query returns may include other mods' overrides; no native bypass is claimed.",
                             "Diagnostic samples are bounded; unavailable values do not imply zero.",
                             "The executable's patch status cannot be established by this report."],
@@ -241,7 +241,8 @@ class Diagnostics:
         for path in selected:
             item = {"mission_path": safe_text(path),
                     "player_record": records.get(path, unavailable("no saved record found within bounded scan")),
-                    "correction": unavailable("no mission correction; observing native records"),
+                    "correction": {"policy": "unfinished accepted missions rise to player level; never lowered",
+                                   "persistence": "native mission record; raised levels remain in save"},
                     "observed_events_for_same_mission": history["mission_observations"].get(path, []),
                     "lifecycle_events": history.get("mission_lifecycle", {}).get(path, []),
                     "displayed_level": unavailable("read the same mission's captured UI payload; not inferred from definition"),
@@ -275,7 +276,7 @@ class Diagnostics:
                 "record_scan_limit": 512, "mission_sample_limit": 32,
                 "truncated": (total is not None and total > 512) or len(set(paths)) > 32,
                 "record_access_note": note,
-                "acceptance_policy": "observing existing game records only; no writes, migration or sidecar locks"}
+                "acceptance_policy": "active/ready missions follow player level; completed missions retained; no sidecar"}
 
     def ui(self, history):
         screens = [name for name in self.observers.discovery if re.search(r"GFxMovie|GFxObject|Provider", name, re.I)]

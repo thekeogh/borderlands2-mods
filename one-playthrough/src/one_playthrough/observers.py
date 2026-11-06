@@ -74,6 +74,7 @@ class Observers:
         self.enabled = self.collecting = self.armed = self._observing = self._installing = False
         self.capture_callback = None
         self.tuning = None
+        self.mission_scaling = None
         self._last = {}
 
     def enable(self):
@@ -234,13 +235,18 @@ class Observers:
         tuning = self.tuning.snapshot() if self.tuning is not None else None
         changed = bool(tuning and tuning["owns_edit"])
         active = changed and tuning["current"] == 1
+        missions = self.mission_scaling.snapshot() if self.mission_scaling is not None else None
+        mission_active = bool(missions and missions["enabled"] and missions["scope"] == "UVHM/OP0")
         differences = ([{"object": tuning["object"], "field": tuning["field"],
                          "original": tuning["original"], "current": tuning["current"]}] if changed else [])
         return {"enabled": self.enabled, "hooks": registered, "pending_or_unavailable": dict(self.pending),
                 "discovered_mission_classes": dict(self.discovery), "discovered_ui_classes": dict(self.discovery),
                 "native_pipeline_hits": hits, "hook_health": "events observed" if hits else "no events observed yet",
-                "active_corrections": ["UVHM tuning activation threshold 50 to 1"] if active else [],
-                "original_current_differences": differences, "gameplay_writes": changed,
+                "active_corrections": (["UVHM tuning activation threshold 50 to 1"] if active else [])
+                                      + (["accepted mission stages follow player level"] if mission_active else []),
+                "original_current_differences": differences,
+                "gameplay_writes": changed or bool(missions and missions["change_count"]),
                 "uvhm_threshold": tuning,
+                "mission_scaling": missions,
                 "capture_next_ui_armed": self.armed,
                 "capture_policy": "exact targets; no pickup polling/physics hooks; compact event snapshots"}

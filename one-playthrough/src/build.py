@@ -14,8 +14,8 @@ SOURCE = Path(__file__).resolve().parent
 DIST = SOURCE.parent / "dist"
 PACKAGE = "one_playthrough"
 REQUIRED = ("__init__.py", "core.py", "reflection.py", "activity.py", "observers.py", "diagnostics.py",
-            "tuning.py", "version.py", "pyproject.toml")
-GUIDES = ("INSTALL.md", "TROUBLESHOOTING.md", "RELEASE_NOTES.md")
+            "tuning.py", "missions.py", "version.py", "pyproject.toml")
+GUIDES = ("INSTALL.md", "TROUBLESHOOTING.md", "RELEASE_NOTES.md", "TESTING.md")
 
 
 def validate_source(source=SOURCE):

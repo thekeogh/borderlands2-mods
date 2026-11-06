@@ -1,28 +1,26 @@
-# One Playthrough 1.0.0
+# One Playthrough 1.1.0
 
-Author: **keogh**. First stable release, following in-game testing of 0.1.7.
+Author: **keogh**. Accepted missions now follow the player; no option or additional EXE patch.
 
-## Changes from 0.1.7
+## Mission policy
 
-- Version and public descriptions updated for release.
-- F10 JSON, manual export and one-shot mission-screen capture retained.
-- Removed the repeated attempt to reflect the SDK-unsupported `ResourcePoolMap` property during F10 collection. Supported pool/value samples remain.
-- Release includes install and troubleshooting guides; historical investigation and test records remain in the source workspace.
+- Active, required-objectives-complete and ready-to-turn-in mission stages rise to at least the player's current level in UVHM/OP0.
+- Higher mission stages are preserved. Completed missions are not rescaled.
+- Writes update the mission definition and native saved mission record; stages persist through ordinary game saves/reloads, including after disabling this feature.
+- Reconciles on enable, native level-up, loading, acceptance/status changes, mission cards and before reward completion.
+- Native reward definitions, pools, recipient choices and item variation remain intact. Ordinary equipment/XP/cash generation sees the raised stage; already-owned or already-generated pending items are not rewritten.
+- Reward payment is guarded against changing its mission stage halfway through a level-up caused by that payment.
 
-The gameplay tuning module and observer hooks are unchanged from tested 0.1.7. Experiments, discovery dumps and automatic startup exports remain excluded. Files are written only on a manual export or an explicitly armed mission-screen capture; recent diagnostic history is bounded in memory.
+Enemy/loot scaling, bosses, combat, regeneration and UVHM tuning are unchanged from 1.0.0. F10 remains observational and writes only JSON on request or explicitly armed mission-screen capture. No console logging or automatic startup export.
 
-## In-game evidence
+## Validation
 
-The preceding build was tested for low-level UVHM and regeneration; accepted mission/reward stages across level changes and reloads; native third/fourth weapon-slot SDUs; enemies, vendors and loot observations; level boundaries 49→50, 60→61 and 72→73; Scarlett and Tina DLC introductions; level 80 at OP0; and the corrected Mordecai/Sloth reward checkpoint.
+Offline checks cover scope guards, record/definition agreement, completed/higher-stage preservation, recipient flags, payout level-up ordering, partial-write rollback, hook lifecycle and F10 read-only behavior. These checks do not prove real game hook behavior. Reuse the existing test saves as described in [Testing](TESTING.md); in-game 1.1.0 validation is pending.
 
-These were focused tests, not a full campaign or a controlled comparison of every combat multiplier. The optional DLC boss checkpoint was skipped at the user's request. Synthetic DLC saves initially spawned in Windshear; normal fast travel allowed the DLC tests to proceed. An incorrectly prepared recipient-choice test save was corrected without changing runtime reward logic.
+The previous release's tests establish the unchanged scaling baseline. They established mission locking under the old policy and must not be presented as evidence for the new following policy. Synthetic save 12's recipient state was corrected in pack 0.2.2; use that corrected save.
 
-## Known issue and prerequisites
+## Prerequisites and presentation
 
-The turn-in card can show player level instead of accepted mission level. Tested mission data and rewards remain correct; no presentation workaround was added.
+Keep the working patched EXE and genuine UVHM save. Solo BL2, OP0. Ordinary New Game remains Normal mode.
 
-Keep the working patched executable and use a genuine UVHM save. The SDK mod does not apply or verify the EXE patch. The user's verified patched EXE SHA-256 is:
-
-`8bbe6e31f3bf5c9f83f9943c7c643ad4a950388ee03e4f4d705f4f10e9c3f1eb`
-
-Normal New Game remains Normal mode. Solo BL2/OP0 only.
+The native turn-in level label is not patched. It should commonly agree now that the mission follows the player; higher mission stages and a turn-in level-up can still produce differences. Raised saved mission stages are not rolled back on disable/removal.

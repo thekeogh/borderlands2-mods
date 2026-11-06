@@ -1,0 +1,461 @@
+{
+  "scenario": "03 / fourth-slot SDU after mission stage follows player",
+  "mod_version": "1.1.0",
+  "test_save_pack": "0.2.2",
+  "result": "Mission16\u219220, native SDU20 award and completion/reload pass",
+  "captures": [
+    {
+      "file": "logs/one-playthrough-1.1.0-20261106T131928.085464Z-a5f0032b.json",
+      "sha256": "542c97fae0e3d0ced180697bfd636fbbc812e5bf186316be8791b78388217209",
+      "export_complete": true,
+      "errors": [],
+      "player_level": 20,
+      "playthrough": 2,
+      "op": 0,
+      "controller": "Loader.TheWorld:PersistentLevel.WillowPlayerController_14",
+      "mission_record": {
+        "status": 3,
+        "stored_stage": 20
+      },
+      "definition_stage": 20,
+      "definition_locked": true,
+      "mission_scaling": {
+        "enabled": true,
+        "scope": "UVHM/OP0",
+        "policy": "unfinished accepted missions rise to player level; never lowered",
+        "saved_stages_persist": true,
+        "last_boundary": "WillowClientDisableLoadingMovie:POST_UNCONDITIONAL",
+        "change_count": 10,
+        "recent_changes": [
+          {
+            "mission_path": "GD_Episode09.M_Ep9_GetBackToSanctuary",
+            "saved_before": 16,
+            "definition_before": 16,
+            "current": 20,
+            "player_level": 20,
+            "boundary": "ApplyMissionSaveGameData:POST_UNCONDITIONAL"
+          }
+        ],
+        "errors": {},
+        "reward_transactions": {},
+        "registered_hooks": [
+          {
+            "target": "WillowGame.WillowPlayerController:AcceptMission",
+            "phase": "POST_UNCONDITIONAL",
+            "registered": true
+          },
+          {
+            "target": "WillowGame.WillowPlayerController:ApplyMissionSaveGameData",
+            "phase": "POST_UNCONDITIONAL",
+            "registered": true
+          },
+          {
+            "target": "WillowGame.WillowPlayerController:ClientReceiveMissionStatus",
+            "phase": "POST_UNCONDITIONAL",
+            "registered": true
+          },
+          {
+            "target": "WillowGame.WillowPlayerController:OnExpLevelChange",
+            "phase": "POST_UNCONDITIONAL",
+            "registered": true
+          },
+          {
+            "target": "WillowGame.WillowPlayerController:PopulateGameMissionDataFromSavegame",
+            "phase": "POST_UNCONDITIONAL",
+            "registered": true
+          },
+          {
+            "target": "WillowGame.WillowPlayerController:SpawningProcessComplete",
+            "phase": "POST_UNCONDITIONAL",
+            "registered": true
+          },
+          {
+            "target": "WillowGame.WillowPlayerController:UpdateMissionStatus",
+            "phase": "PRE",
+            "registered": true
+          },
+          {
+            "target": "WillowGame.WillowPlayerController:UpdateMissionStatus",
+            "phase": "POST_UNCONDITIONAL",
+            "registered": true
+          },
+          {
+            "target": "WillowGame.WillowPlayerController:WillowClientDisableLoadingMovie",
+            "phase": "POST_UNCONDITIONAL",
+            "registered": true
+          },
+          {
+            "target": "WillowGame.WillowPlayerController:ServerCompleteMission",
+            "phase": "PRE",
+            "registered": true
+          },
+          {
+            "target": "WillowGame.WillowPlayerController:ServerGrantMissionRewards",
+            "phase": "PRE",
+            "registered": true
+          },
+          {
+            "target": "WillowGame.WillowPlayerController:ServerGrantMissionRewards",
+            "phase": "POST_UNCONDITIONAL",
+            "registered": true
+          },
+          {
+            "target": "WillowGame.WillowPlayerController:WillowClientShowLoadingMovie",
+            "phase": "PRE",
+            "registered": true
+          },
+          {
+            "target": "WillowGame.QuestAcceptGFxMovie:SetRewardCard",
+            "phase": "PRE",
+            "registered": true
+          }
+        ],
+        "disable_policy": "raised mission stages remain in save; no guessed rollback"
+      },
+      "cash": 10000
+    },
+    {
+      "file": "logs/one-playthrough-1.1.0-20261106T131956.938760Z-4f6d19c2.json",
+      "sha256": "cb1629628b749e62d835b8714a186f8c30725b5a1c8187a14f04d9a15d584d7e",
+      "export_complete": true,
+      "errors": [],
+      "player_level": 20,
+      "playthrough": 2,
+      "op": 0,
+      "controller": "Loader.TheWorld:PersistentLevel.WillowPlayerController_14",
+      "mission_record": {
+        "status": 3,
+        "stored_stage": 20
+      },
+      "definition_stage": 20,
+      "definition_locked": true,
+      "mission_scaling": {
+        "enabled": true,
+        "scope": "UVHM/OP0",
+        "policy": "unfinished accepted missions rise to player level; never lowered",
+        "saved_stages_persist": true,
+        "last_boundary": "SetRewardCard:PRE",
+        "change_count": 10,
+        "recent_changes": [
+          {
+            "mission_path": "GD_Episode09.M_Ep9_GetBackToSanctuary",
+            "saved_before": 16,
+            "definition_before": 16,
+            "current": 20,
+            "player_level": 20,
+            "boundary": "ApplyMissionSaveGameData:POST_UNCONDITIONAL"
+          }
+        ],
+        "errors": {},
+        "reward_transactions": {},
+        "registered_hooks": [
+          {
+            "target": "WillowGame.WillowPlayerController:AcceptMission",
+            "phase": "POST_UNCONDITIONAL",
+            "registered": true
+          },
+          {
+            "target": "WillowGame.WillowPlayerController:ApplyMissionSaveGameData",
+            "phase": "POST_UNCONDITIONAL",
+            "registered": true
+          },
+          {
+            "target": "WillowGame.WillowPlayerController:ClientReceiveMissionStatus",
+            "phase": "POST_UNCONDITIONAL",
+            "registered": true
+          },
+          {
+            "target": "WillowGame.WillowPlayerController:OnExpLevelChange",
+            "phase": "POST_UNCONDITIONAL",
+            "registered": true
+          },
+          {
+            "target": "WillowGame.WillowPlayerController:PopulateGameMissionDataFromSavegame",
+            "phase": "POST_UNCONDITIONAL",
+            "registered": true
+          },
+          {
+            "target": "WillowGame.WillowPlayerController:SpawningProcessComplete",
+            "phase": "POST_UNCONDITIONAL",
+            "registered": true
+          },
+          {
+            "target": "WillowGame.WillowPlayerController:UpdateMissionStatus",
+            "phase": "PRE",
+            "registered": true
+          },
+          {
+            "target": "WillowGame.WillowPlayerController:UpdateMissionStatus",
+            "phase": "POST_UNCONDITIONAL",
+            "registered": true
+          },
+          {
+            "target": "WillowGame.WillowPlayerController:WillowClientDisableLoadingMovie",
+            "phase": "POST_UNCONDITIONAL",
+            "registered": true
+          },
+          {
+            "target": "WillowGame.WillowPlayerController:ServerCompleteMission",
+            "phase": "PRE",
+            "registered": true
+          },
+          {
+            "target": "WillowGame.WillowPlayerController:ServerGrantMissionRewards",
+            "phase": "PRE",
+            "registered": true
+          },
+          {
+            "target": "WillowGame.WillowPlayerController:ServerGrantMissionRewards",
+            "phase": "POST_UNCONDITIONAL",
+            "registered": true
+          },
+          {
+            "target": "WillowGame.WillowPlayerController:WillowClientShowLoadingMovie",
+            "phase": "PRE",
+            "registered": true
+          },
+          {
+            "target": "WillowGame.QuestAcceptGFxMovie:SetRewardCard",
+            "phase": "PRE",
+            "registered": true
+          }
+        ],
+        "disable_policy": "raised mission stages remain in save; no guessed rollback"
+      },
+      "cash": 10000
+    },
+    {
+      "file": "logs/one-playthrough-1.1.0-20261106T132009.379829Z-c9bf8ad3.json",
+      "sha256": "04f382779689582f62904ada21717d5312fb4375189cdd531810868b63610f98",
+      "export_complete": true,
+      "errors": [],
+      "player_level": 20,
+      "playthrough": 2,
+      "op": 0,
+      "controller": "Loader.TheWorld:PersistentLevel.WillowPlayerController_14",
+      "mission_record": {
+        "status": 4,
+        "stored_stage": 20
+      },
+      "definition_stage": 20,
+      "definition_locked": true,
+      "mission_scaling": {
+        "enabled": true,
+        "scope": "UVHM/OP0",
+        "policy": "unfinished accepted missions rise to player level; never lowered",
+        "saved_stages_persist": true,
+        "last_boundary": "SetRewardCard:PRE",
+        "change_count": 10,
+        "recent_changes": [
+          {
+            "mission_path": "GD_Episode09.M_Ep9_GetBackToSanctuary",
+            "saved_before": 16,
+            "definition_before": 16,
+            "current": 20,
+            "player_level": 20,
+            "boundary": "ApplyMissionSaveGameData:POST_UNCONDITIONAL"
+          }
+        ],
+        "errors": {},
+        "reward_transactions": {},
+        "registered_hooks": [
+          {
+            "target": "WillowGame.WillowPlayerController:AcceptMission",
+            "phase": "POST_UNCONDITIONAL",
+            "registered": true
+          },
+          {
+            "target": "WillowGame.WillowPlayerController:ApplyMissionSaveGameData",
+            "phase": "POST_UNCONDITIONAL",
+            "registered": true
+          },
+          {
+            "target": "WillowGame.WillowPlayerController:ClientReceiveMissionStatus",
+            "phase": "POST_UNCONDITIONAL",
+            "registered": true
+          },
+          {
+            "target": "WillowGame.WillowPlayerController:OnExpLevelChange",
+            "phase": "POST_UNCONDITIONAL",
+            "registered": true
+          },
+          {
+            "target": "WillowGame.WillowPlayerController:PopulateGameMissionDataFromSavegame",
+            "phase": "POST_UNCONDITIONAL",
+            "registered": true
+          },
+          {
+            "target": "WillowGame.WillowPlayerController:SpawningProcessComplete",
+            "phase": "POST_UNCONDITIONAL",
+            "registered": true
+          },
+          {
+            "target": "WillowGame.WillowPlayerController:UpdateMissionStatus",
+            "phase": "PRE",
+            "registered": true
+          },
+          {
+            "target": "WillowGame.WillowPlayerController:UpdateMissionStatus",
+            "phase": "POST_UNCONDITIONAL",
+            "registered": true
+          },
+          {
+            "target": "WillowGame.WillowPlayerController:WillowClientDisableLoadingMovie",
+            "phase": "POST_UNCONDITIONAL",
+            "registered": true
+          },
+          {
+            "target": "WillowGame.WillowPlayerController:ServerCompleteMission",
+            "phase": "PRE",
+            "registered": true
+          },
+          {
+            "target": "WillowGame.WillowPlayerController:ServerGrantMissionRewards",
+            "phase": "PRE",
+            "registered": true
+          },
+          {
+            "target": "WillowGame.WillowPlayerController:ServerGrantMissionRewards",
+            "phase": "POST_UNCONDITIONAL",
+            "registered": true
+          },
+          {
+            "target": "WillowGame.WillowPlayerController:WillowClientShowLoadingMovie",
+            "phase": "PRE",
+            "registered": true
+          },
+          {
+            "target": "WillowGame.QuestAcceptGFxMovie:SetRewardCard",
+            "phase": "PRE",
+            "registered": true
+          }
+        ],
+        "disable_policy": "raised mission stages remain in save; no guessed rollback"
+      },
+      "cash": 10086
+    },
+    {
+      "file": "logs/one-playthrough-1.1.0-20261106T132026.074552Z-b0101414.json",
+      "sha256": "3365bd014f459b094cff5fe8ba1c5d889317c3e9855bfba982a161d55ac9462e",
+      "export_complete": true,
+      "errors": [],
+      "player_level": 20,
+      "playthrough": 2,
+      "op": 0,
+      "controller": "Loader.TheWorld:PersistentLevel.WillowPlayerController_17",
+      "mission_record": {
+        "status": 4,
+        "stored_stage": 20
+      },
+      "definition_stage": 20,
+      "definition_locked": true,
+      "mission_scaling": {
+        "enabled": true,
+        "scope": "UVHM/OP0",
+        "policy": "unfinished accepted missions rise to player level; never lowered",
+        "saved_stages_persist": true,
+        "last_boundary": "WillowClientDisableLoadingMovie:POST_UNCONDITIONAL",
+        "change_count": 10,
+        "recent_changes": [],
+        "errors": {},
+        "reward_transactions": {},
+        "registered_hooks": [
+          {
+            "target": "WillowGame.WillowPlayerController:AcceptMission",
+            "phase": "POST_UNCONDITIONAL",
+            "registered": true
+          },
+          {
+            "target": "WillowGame.WillowPlayerController:ApplyMissionSaveGameData",
+            "phase": "POST_UNCONDITIONAL",
+            "registered": true
+          },
+          {
+            "target": "WillowGame.WillowPlayerController:ClientReceiveMissionStatus",
+            "phase": "POST_UNCONDITIONAL",
+            "registered": true
+          },
+          {
+            "target": "WillowGame.WillowPlayerController:OnExpLevelChange",
+            "phase": "POST_UNCONDITIONAL",
+            "registered": true
+          },
+          {
+            "target": "WillowGame.WillowPlayerController:PopulateGameMissionDataFromSavegame",
+            "phase": "POST_UNCONDITIONAL",
+            "registered": true
+          },
+          {
+            "target": "WillowGame.WillowPlayerController:SpawningProcessComplete",
+            "phase": "POST_UNCONDITIONAL",
+            "registered": true
+          },
+          {
+            "target": "WillowGame.WillowPlayerController:UpdateMissionStatus",
+            "phase": "PRE",
+            "registered": true
+          },
+          {
+            "target": "WillowGame.WillowPlayerController:UpdateMissionStatus",
+            "phase": "POST_UNCONDITIONAL",
+            "registered": true
+          },
+          {
+            "target": "WillowGame.WillowPlayerController:WillowClientDisableLoadingMovie",
+            "phase": "POST_UNCONDITIONAL",
+            "registered": true
+          },
+          {
+            "target": "WillowGame.WillowPlayerController:ServerCompleteMission",
+            "phase": "PRE",
+            "registered": true
+          },
+          {
+            "target": "WillowGame.WillowPlayerController:ServerGrantMissionRewards",
+            "phase": "PRE",
+            "registered": true
+          },
+          {
+            "target": "WillowGame.WillowPlayerController:ServerGrantMissionRewards",
+            "phase": "POST_UNCONDITIONAL",
+            "registered": true
+          },
+          {
+            "target": "WillowGame.WillowPlayerController:WillowClientShowLoadingMovie",
+            "phase": "PRE",
+            "registered": true
+          },
+          {
+            "target": "WillowGame.QuestAcceptGFxMovie:SetRewardCard",
+            "phase": "PRE",
+            "registered": true
+          }
+        ],
+        "disable_policy": "raised mission stages remain in save; no guessed rollback"
+      },
+      "cash": 10086
+    }
+  ],
+  "checks": {
+    "mission16_to20": true,
+    "native_weapon_slot_sdu_awarded": [
+      {
+        "stage": 20,
+        "grade": 20,
+        "item": "GD_StorageDeckUpgrade.A_Item.INV_SDU_WeaponEquipSlot",
+        "balance": "GD_ItemGrades.StorageDeckUpgrades.ItemGrade_SDU_WeaponEquipSlot"
+      }
+    ],
+    "xp_query_and_card": 3820,
+    "actual_cash_paid": 86,
+    "mission_completed20_persists_after_reload": true,
+    "all_mission_hooks_registered": true,
+    "all_errors": []
+  },
+  "user_report": "03 passed in game",
+  "limits": [
+    "SDU item award captured; unlocked slot capacity itself not directly exposed.",
+    "Actual total XP delta unavailable; XP amount from query/card.",
+    "Live level-up mission-following test05 remains pending."
+  ]
+}

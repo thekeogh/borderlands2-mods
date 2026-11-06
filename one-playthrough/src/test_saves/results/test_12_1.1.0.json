@@ -1,0 +1,475 @@
+{
+  "scenario": "12 / mission follows player and alternate reward generated at raised stage",
+  "mod_version": "1.1.0",
+  "test_save_pack": "0.2.2",
+  "result": "In-game mission20\u219225, intended Moxxi/Rubi25, completion/reload checks pass",
+  "captures": [
+    {
+      "file": "logs/one-playthrough-1.1.0-20261106T131441.794434Z-67e0a31b.json",
+      "sha256": "7d99ea0d6951d3dfff73b82570f345a49ddd15efa115685cb0f0fae3dee3a289",
+      "export_complete": true,
+      "errors": [],
+      "player_level": 25,
+      "playthrough": 2,
+      "op": 0,
+      "controller": "Loader.TheWorld:PersistentLevel.WillowPlayerController_8",
+      "mission_record": {
+        "status": 1,
+        "stored_stage": 25
+      },
+      "definition_stage": 25,
+      "definition_locked": true,
+      "mission_scaling": {
+        "enabled": true,
+        "scope": "UVHM/OP0",
+        "policy": "unfinished accepted missions rise to player level; never lowered",
+        "saved_stages_persist": true,
+        "last_boundary": "WillowClientDisableLoadingMovie:POST_UNCONDITIONAL",
+        "change_count": 7,
+        "recent_changes": [
+          {
+            "mission_path": "GD_Z2_Rakkaholics.M_Rakkaholics",
+            "saved_before": 20,
+            "definition_before": 20,
+            "current": 25,
+            "player_level": 25,
+            "boundary": "ApplyMissionSaveGameData:POST_UNCONDITIONAL"
+          }
+        ],
+        "errors": {},
+        "reward_transactions": {},
+        "registered_hooks": [
+          {
+            "target": "WillowGame.WillowPlayerController:AcceptMission",
+            "phase": "POST_UNCONDITIONAL",
+            "registered": true
+          },
+          {
+            "target": "WillowGame.WillowPlayerController:ApplyMissionSaveGameData",
+            "phase": "POST_UNCONDITIONAL",
+            "registered": true
+          },
+          {
+            "target": "WillowGame.WillowPlayerController:ClientReceiveMissionStatus",
+            "phase": "POST_UNCONDITIONAL",
+            "registered": true
+          },
+          {
+            "target": "WillowGame.WillowPlayerController:OnExpLevelChange",
+            "phase": "POST_UNCONDITIONAL",
+            "registered": true
+          },
+          {
+            "target": "WillowGame.WillowPlayerController:PopulateGameMissionDataFromSavegame",
+            "phase": "POST_UNCONDITIONAL",
+            "registered": true
+          },
+          {
+            "target": "WillowGame.WillowPlayerController:SpawningProcessComplete",
+            "phase": "POST_UNCONDITIONAL",
+            "registered": true
+          },
+          {
+            "target": "WillowGame.WillowPlayerController:UpdateMissionStatus",
+            "phase": "PRE",
+            "registered": true
+          },
+          {
+            "target": "WillowGame.WillowPlayerController:UpdateMissionStatus",
+            "phase": "POST_UNCONDITIONAL",
+            "registered": true
+          },
+          {
+            "target": "WillowGame.WillowPlayerController:WillowClientDisableLoadingMovie",
+            "phase": "POST_UNCONDITIONAL",
+            "registered": true
+          },
+          {
+            "target": "WillowGame.WillowPlayerController:ServerCompleteMission",
+            "phase": "PRE",
+            "registered": true
+          },
+          {
+            "target": "WillowGame.WillowPlayerController:ServerGrantMissionRewards",
+            "phase": "PRE",
+            "registered": true
+          },
+          {
+            "target": "WillowGame.WillowPlayerController:ServerGrantMissionRewards",
+            "phase": "POST_UNCONDITIONAL",
+            "registered": true
+          },
+          {
+            "target": "WillowGame.WillowPlayerController:WillowClientShowLoadingMovie",
+            "phase": "PRE",
+            "registered": true
+          },
+          {
+            "target": "WillowGame.QuestAcceptGFxMovie:SetRewardCard",
+            "phase": "PRE",
+            "registered": true
+          }
+        ],
+        "disable_policy": "raised mission stages remain in save; no guessed rollback"
+      },
+      "cash": 10000
+    },
+    {
+      "file": "logs/one-playthrough-1.1.0-20261106T131519.200546Z-360d365a.json",
+      "sha256": "bef8f9382651237f461b1166bd6121f0d48a64ad02a997536a600fdaa130192e",
+      "export_complete": true,
+      "errors": [],
+      "player_level": 25,
+      "playthrough": 2,
+      "op": 0,
+      "controller": "Loader.TheWorld:PersistentLevel.WillowPlayerController_8",
+      "mission_record": {
+        "status": 3,
+        "stored_stage": 25
+      },
+      "definition_stage": 25,
+      "definition_locked": true,
+      "mission_scaling": {
+        "enabled": true,
+        "scope": "UVHM/OP0",
+        "policy": "unfinished accepted missions rise to player level; never lowered",
+        "saved_stages_persist": true,
+        "last_boundary": "SetRewardCard:PRE",
+        "change_count": 7,
+        "recent_changes": [
+          {
+            "mission_path": "GD_Z2_Rakkaholics.M_Rakkaholics",
+            "saved_before": 20,
+            "definition_before": 20,
+            "current": 25,
+            "player_level": 25,
+            "boundary": "ApplyMissionSaveGameData:POST_UNCONDITIONAL"
+          }
+        ],
+        "errors": {},
+        "reward_transactions": {},
+        "registered_hooks": [
+          {
+            "target": "WillowGame.WillowPlayerController:AcceptMission",
+            "phase": "POST_UNCONDITIONAL",
+            "registered": true
+          },
+          {
+            "target": "WillowGame.WillowPlayerController:ApplyMissionSaveGameData",
+            "phase": "POST_UNCONDITIONAL",
+            "registered": true
+          },
+          {
+            "target": "WillowGame.WillowPlayerController:ClientReceiveMissionStatus",
+            "phase": "POST_UNCONDITIONAL",
+            "registered": true
+          },
+          {
+            "target": "WillowGame.WillowPlayerController:OnExpLevelChange",
+            "phase": "POST_UNCONDITIONAL",
+            "registered": true
+          },
+          {
+            "target": "WillowGame.WillowPlayerController:PopulateGameMissionDataFromSavegame",
+            "phase": "POST_UNCONDITIONAL",
+            "registered": true
+          },
+          {
+            "target": "WillowGame.WillowPlayerController:SpawningProcessComplete",
+            "phase": "POST_UNCONDITIONAL",
+            "registered": true
+          },
+          {
+            "target": "WillowGame.WillowPlayerController:UpdateMissionStatus",
+            "phase": "PRE",
+            "registered": true
+          },
+          {
+            "target": "WillowGame.WillowPlayerController:UpdateMissionStatus",
+            "phase": "POST_UNCONDITIONAL",
+            "registered": true
+          },
+          {
+            "target": "WillowGame.WillowPlayerController:WillowClientDisableLoadingMovie",
+            "phase": "POST_UNCONDITIONAL",
+            "registered": true
+          },
+          {
+            "target": "WillowGame.WillowPlayerController:ServerCompleteMission",
+            "phase": "PRE",
+            "registered": true
+          },
+          {
+            "target": "WillowGame.WillowPlayerController:ServerGrantMissionRewards",
+            "phase": "PRE",
+            "registered": true
+          },
+          {
+            "target": "WillowGame.WillowPlayerController:ServerGrantMissionRewards",
+            "phase": "POST_UNCONDITIONAL",
+            "registered": true
+          },
+          {
+            "target": "WillowGame.WillowPlayerController:WillowClientShowLoadingMovie",
+            "phase": "PRE",
+            "registered": true
+          },
+          {
+            "target": "WillowGame.QuestAcceptGFxMovie:SetRewardCard",
+            "phase": "PRE",
+            "registered": true
+          }
+        ],
+        "disable_policy": "raised mission stages remain in save; no guessed rollback"
+      },
+      "cash": 10000
+    },
+    {
+      "file": "logs/one-playthrough-1.1.0-20261106T131530.010197Z-26a1d156.json",
+      "sha256": "f096094ad2dfe64b0fef4c0f92b22f649dc5e235736d35b11825ae15f73df339",
+      "export_complete": true,
+      "errors": [],
+      "player_level": 25,
+      "playthrough": 2,
+      "op": 0,
+      "controller": "Loader.TheWorld:PersistentLevel.WillowPlayerController_8",
+      "mission_record": {
+        "status": 4,
+        "stored_stage": 25
+      },
+      "definition_stage": 25,
+      "definition_locked": true,
+      "mission_scaling": {
+        "enabled": true,
+        "scope": "UVHM/OP0",
+        "policy": "unfinished accepted missions rise to player level; never lowered",
+        "saved_stages_persist": true,
+        "last_boundary": "SetRewardCard:PRE",
+        "change_count": 7,
+        "recent_changes": [
+          {
+            "mission_path": "GD_Z2_Rakkaholics.M_Rakkaholics",
+            "saved_before": 20,
+            "definition_before": 20,
+            "current": 25,
+            "player_level": 25,
+            "boundary": "ApplyMissionSaveGameData:POST_UNCONDITIONAL"
+          }
+        ],
+        "errors": {},
+        "reward_transactions": {},
+        "registered_hooks": [
+          {
+            "target": "WillowGame.WillowPlayerController:AcceptMission",
+            "phase": "POST_UNCONDITIONAL",
+            "registered": true
+          },
+          {
+            "target": "WillowGame.WillowPlayerController:ApplyMissionSaveGameData",
+            "phase": "POST_UNCONDITIONAL",
+            "registered": true
+          },
+          {
+            "target": "WillowGame.WillowPlayerController:ClientReceiveMissionStatus",
+            "phase": "POST_UNCONDITIONAL",
+            "registered": true
+          },
+          {
+            "target": "WillowGame.WillowPlayerController:OnExpLevelChange",
+            "phase": "POST_UNCONDITIONAL",
+            "registered": true
+          },
+          {
+            "target": "WillowGame.WillowPlayerController:PopulateGameMissionDataFromSavegame",
+            "phase": "POST_UNCONDITIONAL",
+            "registered": true
+          },
+          {
+            "target": "WillowGame.WillowPlayerController:SpawningProcessComplete",
+            "phase": "POST_UNCONDITIONAL",
+            "registered": true
+          },
+          {
+            "target": "WillowGame.WillowPlayerController:UpdateMissionStatus",
+            "phase": "PRE",
+            "registered": true
+          },
+          {
+            "target": "WillowGame.WillowPlayerController:UpdateMissionStatus",
+            "phase": "POST_UNCONDITIONAL",
+            "registered": true
+          },
+          {
+            "target": "WillowGame.WillowPlayerController:WillowClientDisableLoadingMovie",
+            "phase": "POST_UNCONDITIONAL",
+            "registered": true
+          },
+          {
+            "target": "WillowGame.WillowPlayerController:ServerCompleteMission",
+            "phase": "PRE",
+            "registered": true
+          },
+          {
+            "target": "WillowGame.WillowPlayerController:ServerGrantMissionRewards",
+            "phase": "PRE",
+            "registered": true
+          },
+          {
+            "target": "WillowGame.WillowPlayerController:ServerGrantMissionRewards",
+            "phase": "POST_UNCONDITIONAL",
+            "registered": true
+          },
+          {
+            "target": "WillowGame.WillowPlayerController:WillowClientShowLoadingMovie",
+            "phase": "PRE",
+            "registered": true
+          },
+          {
+            "target": "WillowGame.QuestAcceptGFxMovie:SetRewardCard",
+            "phase": "PRE",
+            "registered": true
+          }
+        ],
+        "disable_policy": "raised mission stages remain in save; no guessed rollback"
+      },
+      "cash": 10000
+    },
+    {
+      "file": "logs/one-playthrough-1.1.0-20261106T131544.916149Z-36937bbf.json",
+      "sha256": "076c2ca1b0a01eba116f56278e557e6758f90e36aa46c41f01b4ab001e3328de",
+      "export_complete": true,
+      "errors": [],
+      "player_level": 25,
+      "playthrough": 2,
+      "op": 0,
+      "controller": "Loader.TheWorld:PersistentLevel.WillowPlayerController_11",
+      "mission_record": {
+        "status": 4,
+        "stored_stage": 25
+      },
+      "definition_stage": 25,
+      "definition_locked": true,
+      "mission_scaling": {
+        "enabled": true,
+        "scope": "UVHM/OP0",
+        "policy": "unfinished accepted missions rise to player level; never lowered",
+        "saved_stages_persist": true,
+        "last_boundary": "WillowClientDisableLoadingMovie:POST_UNCONDITIONAL",
+        "change_count": 7,
+        "recent_changes": [],
+        "errors": {},
+        "reward_transactions": {},
+        "registered_hooks": [
+          {
+            "target": "WillowGame.WillowPlayerController:AcceptMission",
+            "phase": "POST_UNCONDITIONAL",
+            "registered": true
+          },
+          {
+            "target": "WillowGame.WillowPlayerController:ApplyMissionSaveGameData",
+            "phase": "POST_UNCONDITIONAL",
+            "registered": true
+          },
+          {
+            "target": "WillowGame.WillowPlayerController:ClientReceiveMissionStatus",
+            "phase": "POST_UNCONDITIONAL",
+            "registered": true
+          },
+          {
+            "target": "WillowGame.WillowPlayerController:OnExpLevelChange",
+            "phase": "POST_UNCONDITIONAL",
+            "registered": true
+          },
+          {
+            "target": "WillowGame.WillowPlayerController:PopulateGameMissionDataFromSavegame",
+            "phase": "POST_UNCONDITIONAL",
+            "registered": true
+          },
+          {
+            "target": "WillowGame.WillowPlayerController:SpawningProcessComplete",
+            "phase": "POST_UNCONDITIONAL",
+            "registered": true
+          },
+          {
+            "target": "WillowGame.WillowPlayerController:UpdateMissionStatus",
+            "phase": "PRE",
+            "registered": true
+          },
+          {
+            "target": "WillowGame.WillowPlayerController:UpdateMissionStatus",
+            "phase": "POST_UNCONDITIONAL",
+            "registered": true
+          },
+          {
+            "target": "WillowGame.WillowPlayerController:WillowClientDisableLoadingMovie",
+            "phase": "POST_UNCONDITIONAL",
+            "registered": true
+          },
+          {
+            "target": "WillowGame.WillowPlayerController:ServerCompleteMission",
+            "phase": "PRE",
+            "registered": true
+          },
+          {
+            "target": "WillowGame.WillowPlayerController:ServerGrantMissionRewards",
+            "phase": "PRE",
+            "registered": true
+          },
+          {
+            "target": "WillowGame.WillowPlayerController:ServerGrantMissionRewards",
+            "phase": "POST_UNCONDITIONAL",
+            "registered": true
+          },
+          {
+            "target": "WillowGame.WillowPlayerController:WillowClientShowLoadingMovie",
+            "phase": "PRE",
+            "registered": true
+          },
+          {
+            "target": "WillowGame.QuestAcceptGFxMovie:SetRewardCard",
+            "phase": "PRE",
+            "registered": true
+          }
+        ],
+        "disable_policy": "raised mission stages remain in save; no guessed rollback"
+      },
+      "cash": 10000
+    }
+  ],
+  "checks": {
+    "mission20_to25": true,
+    "status_progression": [
+      1,
+      3,
+      4,
+      4
+    ],
+    "reward": [
+      {
+        "stage": 25,
+        "grade": 25,
+        "balance": "GD_Weap_Pistol.A_Weapons_Unique.Pistol_Maliwan_3_Rubi"
+      }
+    ],
+    "alternative_branch": true,
+    "xp_query_and_card": 3772,
+    "cash_query": 0,
+    "actual_cash_delta": 0,
+    "reload_evidenced_by_controller_recreation": true,
+    "mission25_persists": true,
+    "all_nested_errors": []
+  },
+  "user_report": "12 passed from a game point of view",
+  "recipient_confirmation": {
+    "status": "confirmed",
+    "recipient": "Moxxi",
+    "choice": "intentional",
+    "expected_reward": "Rubi",
+    "observed_reward": "Rubi25"
+  },
+  "limits": [
+    "Do not call Sloth/default route verified from these logs.",
+    "Actual total XP delta unavailable; captured XP query/card3772.",
+    "SDU03 and live level-up05 still pending."
+  ]
+}

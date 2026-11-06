@@ -296,3 +296,42 @@ Metadata/version1.0.0 and author keogh, first F10 works, no automatic startup JS
 no packaged console logging. New release guides document EXE prerequisite, unchanged
 gameplay, known cosmetic level-label mismatch and sampled validation limits. Existing
 logs/research preserved. No live1.0.0 claim; preceding gameplay modules tested in0.1.7.
+
+
+1.1.0 mission-following build:79 offline tests pass. New tests cover accepted statuses,
+completed/higher-stage preservation, local UVHM/OP scope, definition+record writes,
+scripted acceptance, explicit UI identity, level-up vs load events, native reward branch
+flags, nested payout guards, turn-in XP level-up ordering, invalid stages, partial-write
+rollback, idempotent load/disable, hook install/remove and observational F10. Tuning and
+world scaling unchanged from1.0.0. Existing test-save bytes unchanged. Real1.1.0 game
+hooks/rewards/SDUs/reload await02/12/03/05 retests; no in-game success claim yet.
+
+
+1.1.0 test02: four actual-game captures verify native saved/definition5→10, shield10,
+XP query/card1528, actualcash+27, completed10 persisted on reload; old completed records
+remain5. All mission hooks registered; no exporter/scaler/nested errors. User reports good.
+Live level-up, SDU and alternate-reward1.1.0 retests still pending.
+
+
+1.1.0 test12: four game captures verify20→25, active/ready/completed/reloaded25,
+Rubi25 via native alternative branch, XP query/card3772, cash0, no errors. User says
+passed; recipient confirmation asked (Moxxi intended vs Mordecai unexpected Rubi).
+Do not claim Sloth/default route validated.03/05 still pending.
+
+
+1.1.0 test12 clarification: user intentionally chose Moxxi. Captured alternative=true
+and Rubi25 are therefore correct; mission following/reward branch/reload test passes.
+Default Sloth route not separately retested on1.1.0; no regression indicated. Continue03.
+
+
+1.1.0 test03: four game captures verify16→20, native weapon-slot SDU20 award,
+XP query/card3820, actualcash+86, completed20/cash persisted on reload. User reports
+passed. No errors. Direct unlocked-slot count unavailable; live-following05 pending.
+
+
+1.1.0 test05 final: four captures verify actual OnExpLevelChange49→50 updates both
+mission stages, weapon49 unchanged, active50 across Ice→Sanctuary travel. New vendor50.
+No errors. Same controller: no separate05 save-quit evidence;02/03/12 prove raised-stage
+completion/reward reloads. Chosen focused tests complete and user reports all good.
+No runtime changes needed;79 offline checks plus focused in-game observations support
+normal playthrough. Whole campaign and payout-induced level-up edge remain unproven.

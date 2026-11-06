@@ -1,0 +1,32 @@
+{
+  "mod_version": "1.1.0",
+  "pack_version": "0.2.2",
+  "save_sha256": {
+    "Save7F06.sav": "39c71c941f17ed9c65754f11f8a4e6b4d3c04e2c4b205e0681d8521f8a11f862",
+    "Save7F0A.sav": "56f01a5c00067c313850651d7c1e5225800949c4836cba163232400b8b27ee4e",
+    "Save7F07.sav": "2f8a21fb5c4a64070562e235c7b20b380d9ca553934467132834095603ffab49",
+    "Save7F05.sav": "54048f8cdd8a8089e3fd99d010ca28be2c386111561b654b46693445fa4d46b6",
+    "Save7F0C.sav": "aa80eda4ac3b25b70d083d1bad244bbf0ba8589d0beed569622af9b7e7778874",
+    "Save7F0B.sav": "81c47c699fd2baa628bef8fe3ef39fc490de96d43bf3470229cd761f809bcdfa",
+    "Save7F04.sav": "7ab6a2ca747720662d7e1860fa29f977edfb1ea835258e1d5790186cd294ba23",
+    "Save7F03.sav": "7877ad20c6481e344051f9f6070ffb10c91fc63d1304527372ddfce01150c8bb",
+    "Save7F02.sav": "a2451495a4a7c559944b8eaf234594798b29a4ea297b490596af4da17c901483",
+    "Save7F09.sav": "cadeb316323501b2a20494f079fd95008c67d356fb67109de01a0d02cdfaa5fd",
+    "Save7F08.sav": "8562c55b301f07e0013f95e16f255f963d5fbc22a1a29b7d0485d1393dbeb171"
+  },
+  "retest_order": [
+    2,
+    12,
+    3,
+    5
+  ],
+  "expected_mission_stages": {
+    "02": 10,
+    "12": 25,
+    "03": 20,
+    "05_before": 49,
+    "05_after_level_up": 50
+  },
+  "test_10": "remains skipped",
+  "game_validation": "pending"
+}

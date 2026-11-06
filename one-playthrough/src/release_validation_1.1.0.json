@@ -1,0 +1,25 @@
+{
+  "version": "1.1.0",
+  "author": "keogh",
+  "offline_tests_passed": 79,
+  "sdkmod_sha256": "a5e36d2faf4cd04b02ca0670ee81e4e0da305e6776d04539b0153958d7d91be9",
+  "sdkmod_bytes": 25486,
+  "layout_and_source_matches": true,
+  "unchanged_from_1_0_0": [
+    "tuning.py",
+    "core.py",
+    "reflection.py",
+    "activity.py"
+  ],
+  "previous_release_archived": true,
+  "test_saves_and_original_save_and_exe_unchanged": true,
+  "gameplay_scope": "UVHM/OP0; unfinished accepted missions follow player; higher stages preserved; no option",
+  "persistence": "raised native saved stages persist; disabling does not restore original levels",
+  "first_live_1_1_0_validation": "Focused02/12/03/05 tests passed; see test_saves/results/mission_follow_1.1.0_summary.json",
+  "retest": [
+    2,
+    12,
+    3,
+    5
+  ]
+}

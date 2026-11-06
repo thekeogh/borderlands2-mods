@@ -1,0 +1,19 @@
+{
+  "mod_version": "1.1.0",
+  "focused_in_game_retests": {
+    "02": "passed: mission5\u219210, shield10, XP1528/cash27, reload",
+    "12": "passed: mission20\u219225, intended Moxxi/Rubi25, reload",
+    "03": "passed: mission16\u219220, native slot SDU retained, reload",
+    "05": "passed: native live49\u219250 event raises mission, owned weapon49, travel"
+  },
+  "test10": "skipped by user, no further request",
+  "offline_tests": 79,
+  "remaining_limits": [
+    "Not full-campaign validation",
+    "Turn-in level UI unchanged",
+    "Payout-induced level-up guard tested offline, not deliberately triggered in game",
+    "Exact full-combat balance equivalence not comprehensively measured"
+  ],
+  "runtime_changes_after_tests": "none",
+  "status": "chosen focused tests complete; ready for normal playthrough"
+}

@@ -1,8 +1,8 @@
 [project]
 name = "one_playthrough"
-version = "1.0.0"
+version = "1.1.0"
 authors = [{ name = "keogh" }]
-description = "Native UVHM tuning from level 1. Requires external EXE patch and genuine UVHM save. F10 exports JSON. Enable before loading; restart after disabling. Solo only."
+description = "Native UVHM from level 1; accepted missions follow your level. Requires external EXE patch and genuine UVHM save. F10 exports JSON. Enable before loading; restart after disabling. Solo only."
 
 [tool.sdkmod]
 name = "One Playthrough"

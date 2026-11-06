@@ -781,7 +781,7 @@ class EngineContractTests(unittest.TestCase):
                 entry.on_disable()
         registration = registrations[0]
         self.assertEqual(registration["author"], "keogh")
-        self.assertEqual(registration["version"], "1.0.0")
+        self.assertEqual(registration["version"], "1.1.0")
         self.assertEqual(registration["keybinds"][0].key, "F10")
         self.assertFalse(registration["commands"])
 
