@@ -21,7 +21,7 @@ import build_plan_b as common
 
 HERE = Path(__file__).resolve().parent
 ROOT = common.ROOT
-VERSION = "0.2.1"
+VERSION = "0.2.2"
 DESTINATION = ROOT / "dist" / ("TestSaves-" + VERSION)
 SOURCE = ROOT / "saves/Save0001.sav"
 ALLOWED_FIELDS = {2, 3, 4, 6, 11, 13, 16, 17, 18, 19, 20, 21, 34, 36, 37, 53, 54}
@@ -43,9 +43,7 @@ def ref_value(block, field):
 
 class PackBuilder:
     def __init__(self):
-        revision = subprocess.check_output(["git", "-C", str(common.EDITOR), "rev-parse", "HEAD"], text=True).strip()
-        if revision != common.EDITOR_COMMIT:
-            raise RuntimeError("Unreviewed save-editor checkout")
+        common.verify_editor()
         sys.path.insert(0, str(common.EDITOR))
         from borderlands.bl2 import AppBL2
         from borderlands.savefile import BaseApp
@@ -112,8 +110,14 @@ class PackBuilder:
             counts = [n if i < special["complete_objectives_before"] else 0 for i, n in enumerate(maxima)]
             active_set = sets.index(path + special["active_set_suffix"])
         if special and special["kind"] == "alternative":
-            # Collected boxes; interaction with either recipient must choose the branch.
+            # Stay active until interaction completes a recipient objective. Ready status
+            # with neither recipient complete does not establish a valid recipient choice.
             counts = [maxima[0]] + [0] * (len(maxima) - 1)
+            branches = [i for i, path in enumerate(sets)
+                        if path in self.data["MissionObjectiveSetBranchingDefinition"]]
+            if len(branches) != 1:
+                raise RuntimeError("Expected one recipient-choice objective set")
+            active_set = branches[0]
         dlc = ref_value(block, "DlcExpansion")
         package_id = 0
         if dlc:
@@ -146,7 +150,7 @@ class PackBuilder:
 
         kind, target = scenario["kind"], scenario["target"]
         if kind == "alternative":
-            ensure(target, 3, special=scenario)
+            ensure(target, 1, special=scenario)
             main = scenario["main"]
             ensure(main, 1, scenario["level"])
             tracked = target
@@ -271,7 +275,9 @@ def instructions(records):
 
 **11 new checkpoints · Keep One Playthrough 0.1.7 and your patched EXE.**
 
-**Revision 0.2.1:** boundary saves **05, 06 and 07** now start **5,000 XP below** the next level to allow for arrival/discovery XP. If you installed 0.2.0, replace only those three saves; the others are byte-identical. No earlier tests need repeating.
+**Revision 0.2.2:** replace only **12** (`Save7F0C.sav`) if you installed 0.2.1. It now stays **active at the recipient choice**, rather than already ready to claim. Talk/interact with your chosen recipient before opening the reward card. This correction still needs an in-game check. All other saves are byte-identical.
+
+**Earlier revision 0.2.1:** boundary saves **05, 06 and 07** now start **5,000 XP below** the next level to allow for arrival/discovery XP. If upgrading from 0.2.0, replace **05/06/07 and 12**. No completed tests need repeating.
 
 Original `saves/Save0001.sav` is untouched. These are synthetic test characters with unique names/IDs. The already-passed Plan B save 01 is not repeated.
 
@@ -281,7 +287,7 @@ Original `saves/Save0001.sav` is untouched. These are synthetic test characters 
 2. Select the **OP test character by name**, choosing **UVHM** if prompted.
 3. Start with **02 → 03 → 04**. Then try **08 / 09 / 10 / 12**, followed by **05 / 06 / 07 / 11**.
 
-You can report a partial batch; no need to finish all eleven at once.
+You can report a partial batch; no need to finish all eleven at once. **Test 10 is skipped at your request to avoid DLC spoilers; it remains unverified.**
 
 > **Filename numbering is hexadecimal:** `Save7F0A.sav` = test **10**, `Save7F0B.sav` = **11**, `Save7F0C.sav` = **12**. In-game character names use ordinary test numbers.
 

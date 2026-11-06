@@ -92,12 +92,12 @@ class Diagnostics:
         path = new_report_path(self.directory, VERSION)
         report = {
             "schema_version": 4, "utc": utc_now(), "mod_version": VERSION, "author": AUTHOR,
-            "trigger": trigger, "build_kind": "native UVHM from level 1; early access; external EXE patch required",
+            "trigger": trigger, "build_kind": "native UVHM from level 1; external EXE patch required",
             "capture_mode": "observational",
             "export_complete": False, "partial": True, "errors": [],
             "limitations": ["Only the first UVHM tuning activation threshold is corrected by this build.",
                             "Observed query returns may include other mods' overrides; no native bypass is claimed.",
-                            "Gameplay, hook firing, UI routing and scaling require in-game validation.",
+                            "Diagnostic samples are bounded; unavailable values do not imply zero.",
                             "The executable's patch status cannot be established by this report."],
             "versions": {"python": sys.version.split()[0],
                          "mods_base": getattr(mods_base, "__version__", unavailable("not exposed")),

@@ -71,6 +71,12 @@ def verify():
             assert len(counts) == len(mission["objective_maxima"])
             assert all(0 <= count <= maximum for count, maximum in zip(counts, mission["objective_maxima"]))
             assert raw[6][0][1] == mission["active_set_index"]
+        if config["kind"] == "alternative":
+            # Recipient objectives must be completed in-game before reward selection.
+            raw = records[config["target"]]
+            assert raw[2][0][1] == 1
+            assert builder.read_packed(raw[5][0][1], 0) == [10, 0, 0]
+            assert raw[6][0][1] == 1
         assert player[53][:len(builder.baseline[53])] == builder.baseline[53]
         new_items = player[53][len(builder.baseline[53]):]
         weapons = player.get(54, [])

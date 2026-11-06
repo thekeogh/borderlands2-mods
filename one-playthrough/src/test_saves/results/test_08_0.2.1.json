@@ -1,0 +1,665 @@
+{
+  "scenario": "08 / Scarlett DLC arrival below50",
+  "test_pack_version": "0.2.1",
+  "mod_version": "0.1.7",
+  "result": "DLC arrival/scaling/mission reload checks pass after manual travel; prepared starting destination failed",
+  "captures": [
+    {
+      "file": "one-playthrough-0.1.7-20261106T093639.939011Z-03822dc8.json",
+      "sha256": "c4d2a9e0a83003e1f6ca7f66408fafd13f2a268f331b5f0d4ade2bdcac865d06",
+      "export_complete": true,
+      "errors": [],
+      "player_level": 10,
+      "playthrough": 2,
+      "op": 0,
+      "controller": "Loader.TheWorld:PersistentLevel.WillowPlayerController_2",
+      "threshold": 1,
+      "tuning_errors": {},
+      "map_names": [
+        "Glacial_P",
+        "Glacial_Light",
+        "Glacial_Audio",
+        "Glacial_Dynamic",
+        "Glacial_FX",
+        "Glacial_Skybox",
+        "Glacial_Tundra"
+      ],
+      "dlc_mission": [],
+      "ai_samples": [],
+      "vendor_stages": [],
+      "stock_levels": [],
+      "equipped": [
+        {
+          "slot": "Weapon",
+          "stage": 10,
+          "level": 10
+        }
+      ]
+    },
+    {
+      "file": "one-playthrough-0.1.7-20261106T093836.976028Z-29c4e3d2.json",
+      "sha256": "811e35b08794ce91d69543c984db5769ce9efa6e5238c8e0f0bb4f2e2044c72b",
+      "export_complete": true,
+      "errors": [],
+      "player_level": 10,
+      "playthrough": 2,
+      "op": 0,
+      "controller": "Loader.TheWorld:PersistentLevel.WillowPlayerController_2",
+      "threshold": 1,
+      "tuning_errors": {},
+      "map_names": [
+        "Orchid_OasisTown_P",
+        "Orchid_OasisTown_Dynamic",
+        "Orchid_OasisTown_Combat",
+        "Orchid_OasisTown_Skybox",
+        "Orchid_OasisTown_Audio",
+        "Orchid_OasisTown_Light"
+      ],
+      "dlc_mission": [],
+      "ai_samples": [
+        {
+          "object": {
+            "path": "Orchid_OasisTown_Dynamic.TheWorld:PersistentLevel.WillowAIPawn_2",
+            "class": "WillowAIPawn"
+          },
+          "stage": 0,
+          "level": 0,
+          "inventory_stage": 0
+        }
+      ],
+      "vendor_stages": [],
+      "stock_levels": [],
+      "equipped": [
+        {
+          "slot": "Weapon",
+          "stage": 10,
+          "level": 10
+        }
+      ]
+    },
+    {
+      "file": "one-playthrough-0.1.7-20261106T093900.064625Z-cb82b7d4.json",
+      "sha256": "571ca2ae990eeda6b7c36d9a6096676df61606001e203cc79810ebce21b47659",
+      "export_complete": true,
+      "errors": [],
+      "player_level": 10,
+      "playthrough": 2,
+      "op": 0,
+      "controller": "Loader.TheWorld:PersistentLevel.WillowPlayerController_2",
+      "threshold": 1,
+      "tuning_errors": {},
+      "map_names": [
+        "Orchid_OasisTown_P",
+        "Orchid_OasisTown_Dynamic",
+        "Orchid_OasisTown_Combat",
+        "Orchid_OasisTown_Skybox",
+        "Orchid_OasisTown_Audio",
+        "Orchid_OasisTown_Light"
+      ],
+      "dlc_mission": [
+        {
+          "path": "GD_Orchid_Plot.M_Orchid_PlotMission01",
+          "record": {
+            "status": 1,
+            "stored_stage": 10
+          },
+          "definition_stage": 10,
+          "locked": true
+        }
+      ],
+      "ai_samples": [
+        {
+          "object": {
+            "path": "Orchid_OasisTown_Dynamic.TheWorld:PersistentLevel.WillowAIPawn_2",
+            "class": "WillowAIPawn"
+          },
+          "stage": 0,
+          "level": 0,
+          "inventory_stage": 0
+        }
+      ],
+      "vendor_stages": [],
+      "stock_levels": [],
+      "equipped": [
+        {
+          "slot": "Weapon",
+          "stage": 10,
+          "level": 10
+        }
+      ]
+    },
+    {
+      "file": "one-playthrough-0.1.7-20261106T094017.953397Z-2f8d79b8.json",
+      "sha256": "7da6a9ed2202214b6b8e18f21719966f3bc18503500625c971258db79afbd8d4",
+      "export_complete": true,
+      "errors": [],
+      "player_level": 10,
+      "playthrough": 2,
+      "op": 0,
+      "controller": "Loader.TheWorld:PersistentLevel.WillowPlayerController_2",
+      "threshold": 1,
+      "tuning_errors": {},
+      "map_names": [
+        "Orchid_OasisTown_P",
+        "Orchid_OasisTown_Dynamic",
+        "Orchid_OasisTown_Combat",
+        "Orchid_OasisTown_Skybox",
+        "Orchid_OasisTown_Audio",
+        "Orchid_OasisTown_Light"
+      ],
+      "dlc_mission": [
+        {
+          "path": "GD_Orchid_Plot.M_Orchid_PlotMission01",
+          "record": {
+            "status": 1,
+            "stored_stage": 10
+          },
+          "definition_stage": 10,
+          "locked": true
+        }
+      ],
+      "ai_samples": [
+        {
+          "object": {
+            "path": "Orchid_OasisTown_P.TheWorld:PersistentLevel.WillowAIPawn_1",
+            "class": "WillowAIPawn"
+          },
+          "stage": 10,
+          "level": 10,
+          "inventory_stage": 8
+        },
+        {
+          "object": {
+            "path": "Orchid_OasisTown_P.TheWorld:PersistentLevel.WillowAIPawn_2",
+            "class": "WillowAIPawn"
+          },
+          "stage": 10,
+          "level": 10,
+          "inventory_stage": 10
+        },
+        {
+          "object": {
+            "path": "Orchid_OasisTown_P.TheWorld:PersistentLevel.WillowAIPawn_3",
+            "class": "WillowAIPawn"
+          },
+          "stage": 10,
+          "level": 11,
+          "inventory_stage": 10
+        },
+        {
+          "object": {
+            "path": "Orchid_OasisTown_P.TheWorld:PersistentLevel.WillowAIPawn_0",
+            "class": "WillowAIPawn"
+          },
+          "stage": 10,
+          "level": 10,
+          "inventory_stage": 9
+        },
+        {
+          "object": {
+            "path": "Orchid_OasisTown_P.TheWorld:PersistentLevel.WillowAIPawn_4",
+            "class": "WillowAIPawn"
+          },
+          "stage": 10,
+          "level": 10,
+          "inventory_stage": 10
+        },
+        {
+          "object": {
+            "path": "Orchid_OasisTown_Dynamic.TheWorld:PersistentLevel.WillowAIPawn_2",
+            "class": "WillowAIPawn"
+          },
+          "stage": 0,
+          "level": 0,
+          "inventory_stage": 0
+        }
+      ],
+      "vendor_stages": [],
+      "stock_levels": [],
+      "equipped": [
+        {
+          "slot": "Weapon",
+          "stage": 10,
+          "level": 10
+        }
+      ]
+    },
+    {
+      "file": "one-playthrough-0.1.7-20261106T094300.551058Z-90b7af02.json",
+      "sha256": "64ad39e96061c5320898a8d00b11b1d559f158c65c6c7c6291b365532a0d1607",
+      "export_complete": true,
+      "errors": [],
+      "player_level": 10,
+      "playthrough": 2,
+      "op": 0,
+      "controller": "Loader.TheWorld:PersistentLevel.WillowPlayerController_2",
+      "threshold": 1,
+      "tuning_errors": {},
+      "map_names": [
+        "Orchid_OasisTown_P",
+        "Orchid_OasisTown_Dynamic",
+        "Orchid_OasisTown_Combat",
+        "Orchid_OasisTown_Skybox",
+        "Orchid_OasisTown_Audio",
+        "Orchid_OasisTown_Light"
+      ],
+      "dlc_mission": [
+        {
+          "path": "GD_Orchid_Plot.M_Orchid_PlotMission01",
+          "record": {
+            "status": 1,
+            "stored_stage": 10
+          },
+          "definition_stage": 10,
+          "locked": true
+        }
+      ],
+      "ai_samples": [
+        {
+          "object": {
+            "path": "Orchid_OasisTown_P.TheWorld:PersistentLevel.WillowAIPawn_11",
+            "class": "WillowAIPawn"
+          },
+          "stage": 10,
+          "level": 11,
+          "inventory_stage": 11
+        },
+        {
+          "object": {
+            "path": "Orchid_OasisTown_P.TheWorld:PersistentLevel.WillowAIPawn_8",
+            "class": "WillowAIPawn"
+          },
+          "stage": 10,
+          "level": 10,
+          "inventory_stage": 11
+        },
+        {
+          "object": {
+            "path": "Orchid_OasisTown_P.TheWorld:PersistentLevel.WillowAIPawn_12",
+            "class": "WillowAIPawn"
+          },
+          "stage": 10,
+          "level": 11,
+          "inventory_stage": 10
+        },
+        {
+          "object": {
+            "path": "Orchid_OasisTown_P.TheWorld:PersistentLevel.WillowAIPawn_6",
+            "class": "WillowAIPawn"
+          },
+          "stage": 10,
+          "level": 10,
+          "inventory_stage": 8
+        },
+        {
+          "object": {
+            "path": "Orchid_OasisTown_P.TheWorld:PersistentLevel.WillowAIPawn_9",
+            "class": "WillowAIPawn"
+          },
+          "stage": 10,
+          "level": 11,
+          "inventory_stage": 9
+        },
+        {
+          "object": {
+            "path": "Orchid_OasisTown_P.TheWorld:PersistentLevel.WillowAIPawn_10",
+            "class": "WillowAIPawn"
+          },
+          "stage": 10,
+          "level": 10,
+          "inventory_stage": 11
+        },
+        {
+          "object": {
+            "path": "Orchid_OasisTown_P.TheWorld:PersistentLevel.WillowAIPawn_7",
+            "class": "WillowAIPawn"
+          },
+          "stage": 10,
+          "level": 10,
+          "inventory_stage": 10
+        },
+        {
+          "object": {
+            "path": "Orchid_OasisTown_P.TheWorld:PersistentLevel.WillowAIPawn_4",
+            "class": "WillowAIPawn"
+          },
+          "stage": 10,
+          "level": 10,
+          "inventory_stage": 10
+        },
+        {
+          "object": {
+            "path": "Orchid_OasisTown_P.TheWorld:PersistentLevel.WillowAIPawn_5",
+            "class": "WillowAIPawn"
+          },
+          "stage": 10,
+          "level": 11,
+          "inventory_stage": 9
+        },
+        {
+          "object": {
+            "path": "Orchid_OasisTown_P.TheWorld:PersistentLevel.WillowAIPawn_0",
+            "class": "WillowAIPawn"
+          },
+          "stage": 10,
+          "level": 10,
+          "inventory_stage": 9
+        },
+        {
+          "object": {
+            "path": "Orchid_OasisTown_P.TheWorld:PersistentLevel.WillowAIPawn_3",
+            "class": "WillowAIPawn"
+          },
+          "stage": 10,
+          "level": 11,
+          "inventory_stage": 10
+        },
+        {
+          "object": {
+            "path": "Orchid_OasisTown_Dynamic.TheWorld:PersistentLevel.WillowAIPawn_2",
+            "class": "WillowAIPawn"
+          },
+          "stage": 0,
+          "level": 0,
+          "inventory_stage": 0
+        }
+      ],
+      "vendor_stages": [
+        10
+      ],
+      "stock_levels": [
+        8,
+        9,
+        10
+      ],
+      "equipped": [
+        {
+          "slot": "Weapon",
+          "stage": 10,
+          "level": 10
+        }
+      ]
+    },
+    {
+      "file": "one-playthrough-0.1.7-20261106T094319.959969Z-65f0b9a9.json",
+      "sha256": "5cdcf0905958f823a4c3600077c4fecf8315d2c51590d1d7d90bdf50e373fbcf",
+      "export_complete": true,
+      "errors": [],
+      "player_level": 10,
+      "playthrough": 2,
+      "op": 0,
+      "controller": "Loader.TheWorld:PersistentLevel.WillowPlayerController_2",
+      "threshold": 1,
+      "tuning_errors": {},
+      "map_names": [
+        "Orchid_OasisTown_P",
+        "Orchid_OasisTown_Dynamic",
+        "Orchid_OasisTown_Combat",
+        "Orchid_OasisTown_Skybox",
+        "Orchid_OasisTown_Audio",
+        "Orchid_OasisTown_Light"
+      ],
+      "dlc_mission": [
+        {
+          "path": "GD_Orchid_Plot.M_Orchid_PlotMission01",
+          "record": {
+            "status": 1,
+            "stored_stage": 10
+          },
+          "definition_stage": 10,
+          "locked": true
+        }
+      ],
+      "ai_samples": [
+        {
+          "object": {
+            "path": "Orchid_OasisTown_P.TheWorld:PersistentLevel.WillowAIPawn_3",
+            "class": "WillowAIPawn"
+          },
+          "stage": 10,
+          "level": 11,
+          "inventory_stage": 10
+        },
+        {
+          "object": {
+            "path": "Orchid_OasisTown_P.TheWorld:PersistentLevel.WillowAIPawn_0",
+            "class": "WillowAIPawn"
+          },
+          "stage": 10,
+          "level": 10,
+          "inventory_stage": 9
+        },
+        {
+          "object": {
+            "path": "Orchid_OasisTown_P.TheWorld:PersistentLevel.WillowAIPawn_5",
+            "class": "WillowAIPawn"
+          },
+          "stage": 10,
+          "level": 11,
+          "inventory_stage": 9
+        },
+        {
+          "object": {
+            "path": "Orchid_OasisTown_P.TheWorld:PersistentLevel.WillowAIPawn_9",
+            "class": "WillowAIPawn"
+          },
+          "stage": 10,
+          "level": 11,
+          "inventory_stage": 9
+        },
+        {
+          "object": {
+            "path": "Orchid_OasisTown_P.TheWorld:PersistentLevel.WillowAIPawn_10",
+            "class": "WillowAIPawn"
+          },
+          "stage": 10,
+          "level": 10,
+          "inventory_stage": 11
+        },
+        {
+          "object": {
+            "path": "Orchid_OasisTown_P.TheWorld:PersistentLevel.WillowAIPawn_4",
+            "class": "WillowAIPawn"
+          },
+          "stage": 10,
+          "level": 10,
+          "inventory_stage": 10
+        },
+        {
+          "object": {
+            "path": "Orchid_OasisTown_P.TheWorld:PersistentLevel.WillowAIPawn_6",
+            "class": "WillowAIPawn"
+          },
+          "stage": 10,
+          "level": 10,
+          "inventory_stage": 8
+        },
+        {
+          "object": {
+            "path": "Orchid_OasisTown_P.TheWorld:PersistentLevel.WillowAIPawn_2",
+            "class": "WillowAIPawn"
+          },
+          "stage": 10,
+          "level": 10,
+          "inventory_stage": 10
+        },
+        {
+          "object": {
+            "path": "Orchid_OasisTown_P.TheWorld:PersistentLevel.WillowAIPawn_7",
+            "class": "WillowAIPawn"
+          },
+          "stage": 10,
+          "level": 10,
+          "inventory_stage": 10
+        },
+        {
+          "object": {
+            "path": "Orchid_OasisTown_P.TheWorld:PersistentLevel.WillowAIPawn_1",
+            "class": "WillowAIPawn"
+          },
+          "stage": 10,
+          "level": 10,
+          "inventory_stage": 8
+        },
+        {
+          "object": {
+            "path": "Orchid_OasisTown_P.TheWorld:PersistentLevel.WillowAIPawn_11",
+            "class": "WillowAIPawn"
+          },
+          "stage": 10,
+          "level": 11,
+          "inventory_stage": 11
+        },
+        {
+          "object": {
+            "path": "Orchid_OasisTown_P.TheWorld:PersistentLevel.WillowAIPawn_8",
+            "class": "WillowAIPawn"
+          },
+          "stage": 10,
+          "level": 10,
+          "inventory_stage": 11
+        }
+      ],
+      "vendor_stages": [
+        10
+      ],
+      "stock_levels": [
+        8,
+        9,
+        10
+      ],
+      "equipped": [
+        {
+          "slot": "Weapon",
+          "stage": 10,
+          "level": 10
+        }
+      ]
+    },
+    {
+      "file": "one-playthrough-0.1.7-20261106T094350.277482Z-ad4ead66.json",
+      "sha256": "88f0292c0a41c2d794744e371fde8f87ca765ae54e091e81fd39c768e816a222",
+      "export_complete": true,
+      "errors": [],
+      "player_level": 10,
+      "playthrough": 2,
+      "op": 0,
+      "controller": "Loader.TheWorld:PersistentLevel.WillowPlayerController_5",
+      "threshold": 1,
+      "tuning_errors": {},
+      "map_names": [
+        "Orchid_OasisTown_P",
+        "Orchid_OasisTown_Dynamic",
+        "Orchid_OasisTown_Combat",
+        "Orchid_OasisTown_Skybox",
+        "Orchid_OasisTown_Audio",
+        "Orchid_OasisTown_Light"
+      ],
+      "dlc_mission": [
+        {
+          "path": "GD_Orchid_Plot.M_Orchid_PlotMission01",
+          "record": {
+            "status": 1,
+            "stored_stage": 10
+          },
+          "definition_stage": 10,
+          "locked": true
+        }
+      ],
+      "ai_samples": [
+        {
+          "object": {
+            "path": "Orchid_OasisTown_Dynamic.TheWorld:PersistentLevel.WillowAIPawn_2",
+            "class": "WillowAIPawn"
+          },
+          "stage": 0,
+          "level": 0,
+          "inventory_stage": 0
+        }
+      ],
+      "vendor_stages": [],
+      "stock_levels": [],
+      "equipped": [
+        {
+          "slot": "Weapon",
+          "stage": 10,
+          "level": 10
+        }
+      ]
+    }
+  ],
+  "checks": {
+    "initial_windshear_map_captured": true,
+    "manual_oasis_travel_captured": true,
+    "dlc_mission_automatically_assigned": "A Warm Welcome",
+    "dlc_mission_stage": 10,
+    "dlc_mission_persisted_after_reload": true,
+    "controller_reload_evidenced": true,
+    "ai_stage": 10,
+    "ai_levels": [
+      10,
+      11
+    ],
+    "vendor_stage": 10,
+    "sampled_stock_levels": [
+      8,
+      9,
+      10
+    ]
+  },
+  "user_report": {
+    "initial_spawn": "Windshear Waste instead of Oasis; manually fast travelled as instructed",
+    "gameplay": "all looked good; enemies on level",
+    "fresh_drop_level": 11
+  },
+  "nested_diagnostic_errors": [
+    {
+      "path": "one-playthrough-0.1.7-20261106T093639.939011Z-03822dc8.json/sections/player_resources/resource_pools/errors",
+      "errors": [
+        "ResourcePoolMap: RuntimeError: Unknown object type MapProperty"
+      ]
+    },
+    {
+      "path": "one-playthrough-0.1.7-20261106T093836.976028Z-29c4e3d2.json/sections/player_resources/resource_pools/errors",
+      "errors": [
+        "ResourcePoolMap: RuntimeError: Unknown object type MapProperty"
+      ]
+    },
+    {
+      "path": "one-playthrough-0.1.7-20261106T093900.064625Z-cb82b7d4.json/sections/player_resources/resource_pools/errors",
+      "errors": [
+        "ResourcePoolMap: RuntimeError: Unknown object type MapProperty"
+      ]
+    },
+    {
+      "path": "one-playthrough-0.1.7-20261106T094017.953397Z-2f8d79b8.json/sections/player_resources/resource_pools/errors",
+      "errors": [
+        "ResourcePoolMap: RuntimeError: Unknown object type MapProperty"
+      ]
+    },
+    {
+      "path": "one-playthrough-0.1.7-20261106T094300.551058Z-90b7af02.json/sections/player_resources/resource_pools/errors",
+      "errors": [
+        "ResourcePoolMap: RuntimeError: Unknown object type MapProperty"
+      ]
+    },
+    {
+      "path": "one-playthrough-0.1.7-20261106T094319.959969Z-65f0b9a9.json/sections/player_resources/resource_pools/errors",
+      "errors": [
+        "ResourcePoolMap: RuntimeError: Unknown object type MapProperty"
+      ]
+    },
+    {
+      "path": "one-playthrough-0.1.7-20261106T094350.277482Z-ad4ead66.json/sections/player_resources/resource_pools/errors",
+      "errors": [
+        "ResourcePoolMap: RuntimeError: Unknown object type MapProperty"
+      ]
+    }
+  ],
+  "limits": [
+    "Prepared DLC destination did not load directly; root cause not established and not attributed to runtime mod.",
+    "Fresh level11 drop is user visual evidence; ground-item contained levels are not directly captured.",
+    "Reload capture preserves map/mission but samples only a stage0 dynamic pawn, so fresh post-reload hostile levels are not measured.",
+    "Only bounded observations of opening DLC content; whole DLC remains unvalidated."
+  ]
+}

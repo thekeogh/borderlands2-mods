@@ -1,0 +1,160 @@
+{
+  "scenario": "12 / Rakkaholics recipient choice",
+  "test_pack_version": "0.2.1",
+  "mod_version": "0.1.7",
+  "result": "Reward branch mismatch: user chose Mordecai, game selected alternative Rubi; level lock/completion/reload pass",
+  "captures": [
+    {
+      "file": "one-playthrough-0.1.7-20261106T100959.505286Z-00bcc086.json",
+      "sha256": "d7d2ff5120d5148be41c677e4474d591244f002588b3a7ea94bf136622b3d405",
+      "export_complete": true,
+      "errors": [],
+      "player_level": 25,
+      "playthrough": 2,
+      "op": 0,
+      "controller": "Loader.TheWorld:PersistentLevel.WillowPlayerController_20",
+      "threshold": 1,
+      "tuning_errors": {},
+      "mission_record": {
+        "status": 3,
+        "stored_stage": 20
+      },
+      "definition_stage": 20,
+      "definition_locked": true
+    },
+    {
+      "file": "one-playthrough-0.1.7-20261106T101115.671608Z-30108c34.json",
+      "sha256": "3c7be5521e88c927dd39a467a8baec87f01a4b39c99f22b76ab7cca569c5295e",
+      "export_complete": true,
+      "errors": [],
+      "player_level": 25,
+      "playthrough": 2,
+      "op": 0,
+      "controller": "Loader.TheWorld:PersistentLevel.WillowPlayerController_20",
+      "threshold": 1,
+      "tuning_errors": {},
+      "mission_record": {
+        "status": 3,
+        "stored_stage": 20
+      },
+      "definition_stage": 20,
+      "definition_locked": true
+    },
+    {
+      "file": "one-playthrough-0.1.7-20261106T101156.320536Z-8745b36d.json",
+      "sha256": "f5750e9f6c885a6bc7463add29972436bb235c0dc9b94ec16375c3c5a9b30c67",
+      "export_complete": true,
+      "errors": [],
+      "player_level": 25,
+      "playthrough": 2,
+      "op": 0,
+      "controller": "Loader.TheWorld:PersistentLevel.WillowPlayerController_20",
+      "threshold": 1,
+      "tuning_errors": {},
+      "mission_record": {
+        "status": 4,
+        "stored_stage": 20
+      },
+      "definition_stage": 20,
+      "definition_locked": true
+    },
+    {
+      "file": "one-playthrough-0.1.7-20261106T101223.834467Z-a028ae84.json",
+      "sha256": "675510c0dab67cbe72bc33c9504434ae7ea58b19f32a4690b41e775664cede2d",
+      "export_complete": true,
+      "errors": [],
+      "player_level": 25,
+      "playthrough": 2,
+      "op": 0,
+      "controller": "Loader.TheWorld:PersistentLevel.WillowPlayerController_23",
+      "threshold": 1,
+      "tuning_errors": {},
+      "mission_record": {
+        "status": 4,
+        "stored_stage": 20
+      },
+      "definition_stage": 20,
+      "definition_locked": true
+    }
+  ],
+  "checks": {
+    "branch_selection": [
+      {
+        "sequence": 833,
+        "phase": "PRE",
+        "alternative": true
+      },
+      {
+        "sequence": 844,
+        "phase": "POST_UNCONDITIONAL",
+        "alternative": true
+      }
+    ],
+    "weapon_reward": [
+      {
+        "sequence": 864,
+        "phase": "PRE",
+        "stage": 20,
+        "grade": 20,
+        "balance": "GD_Weap_Pistol.A_Weapons_Unique.Pistol_Maliwan_3_Rubi"
+      },
+      {
+        "sequence": 866,
+        "phase": "POST_UNCONDITIONAL",
+        "stage": 20,
+        "grade": 20,
+        "balance": "GD_Weap_Pistol.A_Weapons_Unique.Pistol_Maliwan_3_Rubi"
+      }
+    ],
+    "mission_stage20_persisted": true,
+    "controller_reload_evidenced": true,
+    "xp_query_values": [
+      2547
+    ]
+  },
+  "user_report": {
+    "recipient": "Mordecai",
+    "expected": "Sloth",
+    "received": "Rubi",
+    "levels_looked_correct": true
+  },
+  "hypothesis": "Synthetic checkpoint incorrectly marked ready3 with both recipient objective counts0, potentially bypassing recipient-objective completion. Causality not yet established.",
+  "revision": {
+    "pack": "0.2.2",
+    "only_changed_save": "Save7F0C.sav",
+    "only_nested_change": "Rakkaholics status3\u21921, leaving active recipient-choice set1 and progress[10,0,0]",
+    "game_validation": "passed: see test_12_0.2.2.json"
+  },
+  "nested_diagnostic_errors": [
+    {
+      "path": "one-playthrough-0.1.7-20261106T100959.505286Z-00bcc086.json/sections/player_resources/resource_pools/errors",
+      "errors": [
+        "ResourcePoolMap: RuntimeError: Unknown object type MapProperty"
+      ]
+    },
+    {
+      "path": "one-playthrough-0.1.7-20261106T101115.671608Z-30108c34.json/sections/player_resources/resource_pools/errors",
+      "errors": [
+        "ResourcePoolMap: RuntimeError: Unknown object type MapProperty"
+      ]
+    },
+    {
+      "path": "one-playthrough-0.1.7-20261106T101156.320536Z-8745b36d.json/sections/player_resources/resource_pools/errors",
+      "errors": [
+        "ResourcePoolMap: RuntimeError: Unknown object type MapProperty"
+      ]
+    },
+    {
+      "path": "one-playthrough-0.1.7-20261106T101223.834467Z-a028ae84.json/sections/player_resources/resource_pools/errors",
+      "errors": [
+        "ResourcePoolMap: RuntimeError: Unknown object type MapProperty"
+      ]
+    }
+  ],
+  "limits": [
+    "NPC named Mordecai comes from user report; captured MissionDirector pawn path alone does not identify its name.",
+    "No evidence that SDK threshold edit caused wrong branch; no runtime reward override introduced.",
+    "Rendered mission card level still not directly captured."
+  ],
+  "resolution": "Status-only fixture correction restored natural Mordecai/Sloth route; no runtime mod edits."
+}

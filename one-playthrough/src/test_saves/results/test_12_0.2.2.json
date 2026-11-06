@@ -1,0 +1,154 @@
+{
+  "scenario": "12 / corrected recipient-choice checkpoint",
+  "test_pack_version": "0.2.2",
+  "mod_version": "0.1.7",
+  "result": "Mordecai route passes: native default Sloth20; active\u2192ready\u2192completed20 and reload verified",
+  "captures": [
+    {
+      "file": "one-playthrough-0.1.7-20261106T102004.849726Z-6970b662.json",
+      "sha256": "2d1b1985df94907cf7f200413616e895ecf69a3f08e58222884c580750fdc356",
+      "export_complete": true,
+      "errors": [],
+      "player_level": 25,
+      "playthrough": 2,
+      "op": 0,
+      "controller": "Loader.TheWorld:PersistentLevel.WillowPlayerController_2",
+      "threshold": 1,
+      "tuning_errors": {},
+      "mission_record": {
+        "status": 1,
+        "stored_stage": 20
+      },
+      "definition_stage": 20,
+      "definition_locked": true
+    },
+    {
+      "file": "one-playthrough-0.1.7-20261106T102150.191772Z-03269914.json",
+      "sha256": "92c54dfd4a350a528f27b96d2b5621ec8c0bea95981c38d4e36b01be87e22b71",
+      "export_complete": true,
+      "errors": [],
+      "player_level": 25,
+      "playthrough": 2,
+      "op": 0,
+      "controller": "Loader.TheWorld:PersistentLevel.WillowPlayerController_2",
+      "threshold": 1,
+      "tuning_errors": {},
+      "mission_record": {
+        "status": 3,
+        "stored_stage": 20
+      },
+      "definition_stage": 20,
+      "definition_locked": true
+    },
+    {
+      "file": "one-playthrough-0.1.7-20261106T102213.681974Z-8bff2be2.json",
+      "sha256": "a252c530c2ae84e1f8cd7c984f524d3df9a950210e3b90bf701fb8469588711c",
+      "export_complete": true,
+      "errors": [],
+      "player_level": 25,
+      "playthrough": 2,
+      "op": 0,
+      "controller": "Loader.TheWorld:PersistentLevel.WillowPlayerController_2",
+      "threshold": 1,
+      "tuning_errors": {},
+      "mission_record": {
+        "status": 4,
+        "stored_stage": 20
+      },
+      "definition_stage": 20,
+      "definition_locked": true
+    },
+    {
+      "file": "one-playthrough-0.1.7-20261106T102244.537066Z-bebb756a.json",
+      "sha256": "3e7c3f9d50c77f41ed246a9095c14d075dd56b3e5dc5e9433b1304cc2c241081",
+      "export_complete": true,
+      "errors": [],
+      "player_level": 25,
+      "playthrough": 2,
+      "op": 0,
+      "controller": "Loader.TheWorld:PersistentLevel.WillowPlayerController_5",
+      "threshold": 1,
+      "tuning_errors": {},
+      "mission_record": {
+        "status": 4,
+        "stored_stage": 20
+      },
+      "definition_stage": 20,
+      "definition_locked": true
+    }
+  ],
+  "checks": {
+    "branch_selection": [
+      {
+        "sequence": 146,
+        "phase": "PRE",
+        "alternative": false
+      },
+      {
+        "sequence": 157,
+        "phase": "POST_UNCONDITIONAL",
+        "alternative": false
+      }
+    ],
+    "weapon_reward": [
+      {
+        "sequence": 177,
+        "phase": "PRE",
+        "stage": 20,
+        "grade": 20,
+        "balance": "GD_Weap_SniperRifles.A_Weapons_Unique.Sniper_Dahl_3_Sloth"
+      },
+      {
+        "sequence": 179,
+        "phase": "POST_UNCONDITIONAL",
+        "stage": 20,
+        "grade": 20,
+        "balance": "GD_Weap_SniperRifles.A_Weapons_Unique.Sniper_Dahl_3_Sloth"
+      }
+    ],
+    "native_status_sequence": [
+      1,
+      3,
+      4,
+      4
+    ],
+    "mission_stage20_persisted_at_player25": true,
+    "controller_reload_evidenced": true
+  },
+  "user_report": {
+    "before_retry": "Mission no longer green/ready; Bring beer to Mordecai OR Moxxi objectives now displayed",
+    "outcome": "all seemed to work perfectly"
+  },
+  "nested_diagnostic_errors": [
+    {
+      "path": "one-playthrough-0.1.7-20261106T102004.849726Z-6970b662.json/sections/player_resources/resource_pools/errors",
+      "errors": [
+        "ResourcePoolMap: RuntimeError: Unknown object type MapProperty"
+      ]
+    },
+    {
+      "path": "one-playthrough-0.1.7-20261106T102150.191772Z-03269914.json/sections/player_resources/resource_pools/errors",
+      "errors": [
+        "ResourcePoolMap: RuntimeError: Unknown object type MapProperty"
+      ]
+    },
+    {
+      "path": "one-playthrough-0.1.7-20261106T102213.681974Z-8bff2be2.json/sections/player_resources/resource_pools/errors",
+      "errors": [
+        "ResourcePoolMap: RuntimeError: Unknown object type MapProperty"
+      ]
+    },
+    {
+      "path": "one-playthrough-0.1.7-20261106T102244.537066Z-bebb756a.json/sections/player_resources/resource_pools/errors",
+      "errors": [
+        "ResourcePoolMap: RuntimeError: Unknown object type MapProperty"
+      ]
+    }
+  ],
+  "conclusion": "Changing only synthetic mission status3\u21921 allowed natural recipient objective completion and default Sloth selection. Previous wrong Rubi resulted from the prepared checkpoint state in this tested comparison; no runtime reward/scaling changes needed.",
+  "limits": [
+    "Moxxi route from corrected checkpoint not separately tested; optional retry is not a required remaining task.",
+    "Broader campaign/reward variants remain unvalidated; visible turn-in level mismatch still open.",
+    "ResourcePoolMap reflection error remains known diagnostic limitation."
+  ]
+}

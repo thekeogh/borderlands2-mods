@@ -1,0 +1,7 @@
+{
+  "scenario": "10 / DLC boss checkpoint",
+  "status": "skipped_by_user",
+  "reason": "User has not played this DLC; avoid spoilers.",
+  "validation": "unverified",
+  "instruction": "Do not ask user to perform this scenario as a remaining obligation."
+}

@@ -40,6 +40,25 @@ def sha(data):
     return hashlib.sha256(data).hexdigest()
 
 
+def verify_editor():
+    """Verify the pinned sources even when the checkout is vendored without .git."""
+    hashes = Path(__file__).with_name("editor_snapshot_hashes.json")
+    if hashes.exists():
+        manifest = json.loads(hashes.read_text())
+        if manifest["commit"] != EDITOR_COMMIT:
+            raise RuntimeError("Unreviewed editor source manifest")
+        actual = {str(p.relative_to(EDITOR)) for p in EDITOR.rglob("*.py")}
+        if actual != set(manifest["files"]):
+            raise RuntimeError("Editor source file list differs from pinned upstream")
+        for name, digest in manifest["files"].items():
+            if sha((EDITOR / name).read_bytes()) != digest:
+                raise RuntimeError("Editor source differs from pinned upstream: " + name)
+        return
+    if not (EDITOR / ".git").exists() or subprocess.check_output(
+            ["git", "-C", str(EDITOR), "rev-parse", "HEAD"], text=True).strip() != EDITOR_COMMIT:
+        raise RuntimeError("Unreviewed save-editor checkout")
+
+
 def saved_station():
     """Save fields use ResourceName, not a definition's UObject path."""
     cache = WORK / "gibbed-travel-stations.json"
@@ -149,8 +168,7 @@ def expansion_state(player, read_protobuf):
 def build(source, destination):
     if destination.exists():
         raise RuntimeError("Destination exists; refusing to overwrite a test-save release")
-    if subprocess.check_output(["git", "-C", str(EDITOR), "rev-parse", "HEAD"], text=True).strip() != EDITOR_COMMIT:
-        raise RuntimeError("Save editor checkout differs from the reviewed revision")
+    verify_editor()
     sys.path.insert(0, str(EDITOR))
     from borderlands.bl2 import AppBL2
     from borderlands.savefile import BaseApp

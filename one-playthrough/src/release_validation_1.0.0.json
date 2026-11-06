@@ -1,0 +1,25 @@
+{
+  "version": "1.0.0",
+  "author": "keogh",
+  "offline_tests_passed": 63,
+  "sdkmod_sha256": "24df8404488893a404aaa91159c2d69c062c5011c3887d0aa7faf7ca3d8316ff",
+  "sdkmod_bytes": 21942,
+  "source_archive_layout_integrity": true,
+  "previous_0_1_7_archived_and_verified": true,
+  "unchanged_from_0_1_7": [
+    "tuning.py",
+    "observers.py",
+    "core.py",
+    "reflection.py"
+  ],
+  "original_save_and_patched_exe_unchanged": true,
+  "diagnostic_map_filter_guard_passed": true,
+  "known_cosmetic_turn_in_level_issue": "deliberately unchanged",
+  "first_live_1_0_0_load": "not observed; gameplay modules unchanged from tested0.1.7",
+  "files": [
+    "INSTALL.md",
+    "RELEASE_NOTES.md",
+    "TROUBLESHOOTING.md",
+    "one_playthrough.sdkmod"
+  ]
+}

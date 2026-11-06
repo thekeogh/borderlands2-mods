@@ -252,3 +252,47 @@ errors. User reports looked good. Exact combat tuning/table selection remains un
 Test07 / pack0.2.1: three game captures verify72→73 and reload at OP0; mission
 and equipped weapon72, fresh AI stage73/levels72–75, vendors73/stock71–73.
 No new errors. User reports looked good. Exact combat tuning transition unmeasured.
+
+
+Test08 / pack0.2.1: seven game captures verify manual Oasis travel, native A Warm
+Welcome assignment/lock10 and reload persistence, AI10–11 at stage10, vendor stage10
+stock8–10. User reports fresh11 drop. Prepared save incorrectly started in Windshear;
+manual travel completed the gameplay test. No new runtime errors. Whole DLC and fresh
+post-reload hostile levels not established; direct checkpoint destination issue remains.
+
+
+Test09 / pack0.2.1: seven game captures verify Docks arrival, A Role-Playing Game
+assignment/lock10 and reload persistence, stage10 AI levels9–11. User reports fresh10
+shotgun. Initial synthetic destination loads Windshear before DLC travel, as in08;
+gameplay observations pass after travel. Only known reflection error; no runtime changes.
+
+
+Test11 / pack0.2.1: six game captures verify level80 OP0 and reload, mission/weapon80,
+AI stage80/levels79–82, vendors80/stock78–80. User reports several good drops; no exact
+ground-item levels captured. No new errors. Test10 skipped by explicit user preference
+to avoid DLC spoilers; remains unverified. Test12 outstanding.
+
+
+Test12/0.2.1: wrong recipient reward observed and captured (alternative=true/Rubi20
+after user reports Mordecai); accepted-stage/completion/reload20 pass. Cause unproven.
+Pack0.2.2 candidate status-only repair keeps mission active until recipient interaction.
+All11 offline checks pass, only12 binary differs from0.2.1, old archive verified.
+File hashes prove vendored editor matches pinned upstream25 Python sources. README
+preserves user's completion strikeouts and omitted spoiler test. In-game retry pending.
+
+
+Corrected12 / pack0.2.2: four game captures verify natural active→ready→completed20
+progression at player25, bGrantAltReward=false and Sloth stage/grade20, completion
+persisted after reload. User confirms worked perfectly. Previous Rubi mismatch resolved
+by mission-status-only fixture correction, with mod0.1.7 unchanged. All chosen checkpoint
+tests now complete;10 intentionally skipped. Corrected Moxxi route optional/unverified,
+UI mission-level label still open, broad campaign/balance equivalence not fully tested.
+
+
+Stable1.0.0 release validation:63 offline tests pass. Tuning, observers, recorder and
+reflection byte-identical to tested0.1.7. F10-only resource filter avoids unsupported
+ResourcePoolMap read while retaining valid pool values (guarded-object check passes).
+Metadata/version1.0.0 and author keogh, first F10 works, no automatic startup JSON,
+no packaged console logging. New release guides document EXE prerequisite, unchanged
+gameplay, known cosmetic level-label mismatch and sampled validation limits. Existing
+logs/research preserved. No live1.0.0 claim; preceding gameplay modules tested in0.1.7.

@@ -1,0 +1,483 @@
+{
+  "scenario": "09 / Tina DLC arrival below50",
+  "test_pack_version": "0.2.1",
+  "mod_version": "0.1.7",
+  "result": "Docks arrival, mission assignment/scaling and reload checks pass; initial checkpoint starts in Windshear",
+  "captures": [
+    {
+      "file": "one-playthrough-0.1.7-20261106T094850.873956Z-2af2aeb4.json",
+      "sha256": "50db9d6427896ef48007e0656e5f33b61bf36f359fe2a68dc101599a3e29e6ec",
+      "export_complete": true,
+      "errors": [],
+      "player_level": 10,
+      "playthrough": 2,
+      "op": 0,
+      "controller": "Loader.TheWorld:PersistentLevel.WillowPlayerController_8",
+      "threshold": 1,
+      "tuning_errors": {},
+      "map_names": [
+        "Glacial_P",
+        "Glacial_Light",
+        "Glacial_Audio",
+        "Glacial_Dynamic",
+        "Glacial_FX",
+        "Glacial_Skybox",
+        "Glacial_Tundra"
+      ],
+      "dlc_mission": [],
+      "ai_samples": [
+        {
+          "object": {
+            "path": "Glacial_Dynamic.TheWorld:PersistentLevel.WillowAIPawn_0",
+            "class": "WillowAIPawn"
+          },
+          "stage": 0,
+          "level": 0
+        }
+      ],
+      "equipped": [
+        {
+          "slot": "Weapon",
+          "stage": 10,
+          "level": 10
+        }
+      ]
+    },
+    {
+      "file": "one-playthrough-0.1.7-20261106T095716.904924Z-1f121640.json",
+      "sha256": "ddf983efe6d3f84b98eaba090f3b2aac63820a82052af585b713d792469ee712",
+      "export_complete": true,
+      "errors": [],
+      "player_level": 10,
+      "playthrough": 2,
+      "op": 0,
+      "controller": "Loader.TheWorld:PersistentLevel.WillowPlayerController_8",
+      "threshold": 1,
+      "tuning_errors": {},
+      "map_names": [
+        "Docks_P",
+        "DOCKS_LIGHT",
+        "Docks_Audio",
+        "Docks_Combat",
+        "Docks_Dynamic",
+        "Docks_FX",
+        "Docks_Skybox",
+        "Docks_Mission"
+      ],
+      "dlc_mission": [
+        {
+          "path": "GD_Aster_Plot_Mission01.M_Aster_PlotMission01",
+          "record": {
+            "status": 1,
+            "stored_stage": 10
+          },
+          "definition_stage": 10,
+          "locked": true
+        }
+      ],
+      "ai_samples": [
+        {
+          "object": {
+            "path": "Docks_P.TheWorld:PersistentLevel.WillowAIPawn_14",
+            "class": "WillowAIPawn"
+          },
+          "stage": 10,
+          "level": 10
+        }
+      ],
+      "equipped": [
+        {
+          "slot": "Weapon",
+          "stage": 10,
+          "level": 10
+        }
+      ]
+    },
+    {
+      "file": "one-playthrough-0.1.7-20261106T095811.074338Z-5b7c22ef.json",
+      "sha256": "d5bbcfc7fe8cc3cd9bf8fd2c5182cb6b64593bc9e51e2dfc2eb2d5670f92da0f",
+      "export_complete": true,
+      "errors": [],
+      "player_level": 10,
+      "playthrough": 2,
+      "op": 0,
+      "controller": "Loader.TheWorld:PersistentLevel.WillowPlayerController_8",
+      "threshold": 1,
+      "tuning_errors": {},
+      "map_names": [
+        "Docks_P",
+        "DOCKS_LIGHT",
+        "Docks_Audio",
+        "Docks_Combat",
+        "Docks_Dynamic",
+        "Docks_FX",
+        "Docks_Skybox",
+        "Docks_Mission"
+      ],
+      "dlc_mission": [
+        {
+          "path": "GD_Aster_Plot_Mission01.M_Aster_PlotMission01",
+          "record": {
+            "status": 1,
+            "stored_stage": 10
+          },
+          "definition_stage": 10,
+          "locked": true
+        }
+      ],
+      "ai_samples": [
+        {
+          "object": {
+            "path": "Docks_P.TheWorld:PersistentLevel.WillowAIPawn_14",
+            "class": "WillowAIPawn"
+          },
+          "stage": 10,
+          "level": 10
+        }
+      ],
+      "equipped": [
+        {
+          "slot": "Weapon",
+          "stage": 10,
+          "level": 10
+        }
+      ]
+    },
+    {
+      "file": "one-playthrough-0.1.7-20261106T095820.736773Z-5dcb56fd.json",
+      "sha256": "2670aa60637d04dea7a5cd2d98e8f63312d4089cda5969f8b782482493b4465c",
+      "export_complete": true,
+      "errors": [],
+      "player_level": 10,
+      "playthrough": 2,
+      "op": 0,
+      "controller": "Loader.TheWorld:PersistentLevel.WillowPlayerController_8",
+      "threshold": 1,
+      "tuning_errors": {},
+      "map_names": [
+        "Docks_P",
+        "DOCKS_LIGHT",
+        "Docks_Audio",
+        "Docks_Combat",
+        "Docks_Dynamic",
+        "Docks_FX",
+        "Docks_Skybox",
+        "Docks_Mission"
+      ],
+      "dlc_mission": [
+        {
+          "path": "GD_Aster_Plot_Mission01.M_Aster_PlotMission01",
+          "record": {
+            "status": 1,
+            "stored_stage": 10
+          },
+          "definition_stage": 10,
+          "locked": true
+        }
+      ],
+      "ai_samples": [
+        {
+          "object": {
+            "path": "Docks_P.TheWorld:PersistentLevel.WillowAIPawn_14",
+            "class": "WillowAIPawn"
+          },
+          "stage": 10,
+          "level": 10
+        }
+      ],
+      "equipped": [
+        {
+          "slot": "Weapon",
+          "stage": 10,
+          "level": 10
+        }
+      ]
+    },
+    {
+      "file": "one-playthrough-0.1.7-20261106T095831.265129Z-134d8bd9.json",
+      "sha256": "3dcd740e506d45c21b41a9f83b24d89e20e61b9e540c65daeb5c7f5713438c48",
+      "export_complete": true,
+      "errors": [],
+      "player_level": 10,
+      "playthrough": 2,
+      "op": 0,
+      "controller": "Loader.TheWorld:PersistentLevel.WillowPlayerController_8",
+      "threshold": 1,
+      "tuning_errors": {},
+      "map_names": [
+        "Docks_P",
+        "DOCKS_LIGHT",
+        "Docks_Audio",
+        "Docks_Combat",
+        "Docks_Dynamic",
+        "Docks_FX",
+        "Docks_Skybox",
+        "Docks_Mission"
+      ],
+      "dlc_mission": [
+        {
+          "path": "GD_Aster_Plot_Mission01.M_Aster_PlotMission01",
+          "record": {
+            "status": 1,
+            "stored_stage": 10
+          },
+          "definition_stage": 10,
+          "locked": true
+        }
+      ],
+      "ai_samples": [
+        {
+          "object": {
+            "path": "Docks_P.TheWorld:PersistentLevel.WillowAIPawn_15",
+            "class": "WillowAIPawn"
+          },
+          "stage": 10,
+          "level": 9
+        },
+        {
+          "object": {
+            "path": "Docks_P.TheWorld:PersistentLevel.WillowAIPawn_17",
+            "class": "WillowAIPawn"
+          },
+          "stage": 10,
+          "level": 10
+        },
+        {
+          "object": {
+            "path": "Docks_P.TheWorld:PersistentLevel.WillowAIPawn_16",
+            "class": "WillowAIPawn"
+          },
+          "stage": 10,
+          "level": 11
+        },
+        {
+          "object": {
+            "path": "Docks_P.TheWorld:PersistentLevel.WillowAIPawn_14",
+            "class": "WillowAIPawn"
+          },
+          "stage": 10,
+          "level": 10
+        }
+      ],
+      "equipped": [
+        {
+          "slot": "Weapon",
+          "stage": 10,
+          "level": 10
+        }
+      ]
+    },
+    {
+      "file": "one-playthrough-0.1.7-20261106T100002.576085Z-71dd7e20.json",
+      "sha256": "7dfe4fd79741813137588cadfdf4438f04760bd96e0de15800fcbdf79b82f23f",
+      "export_complete": true,
+      "errors": [],
+      "player_level": 10,
+      "playthrough": 2,
+      "op": 0,
+      "controller": "Loader.TheWorld:PersistentLevel.WillowPlayerController_8",
+      "threshold": 1,
+      "tuning_errors": {},
+      "map_names": [
+        "Docks_P",
+        "DOCKS_LIGHT",
+        "Docks_Audio",
+        "Docks_Combat",
+        "Docks_Dynamic",
+        "Docks_FX",
+        "Docks_Skybox",
+        "Docks_Mission"
+      ],
+      "dlc_mission": [
+        {
+          "path": "GD_Aster_Plot_Mission01.M_Aster_PlotMission01",
+          "record": {
+            "status": 1,
+            "stored_stage": 10
+          },
+          "definition_stage": 10,
+          "locked": true
+        }
+      ],
+      "ai_samples": [
+        {
+          "object": {
+            "path": "Docks_P.TheWorld:PersistentLevel.WillowAIPawn_16",
+            "class": "WillowAIPawn"
+          },
+          "stage": 10,
+          "level": 11
+        },
+        {
+          "object": {
+            "path": "Docks_P.TheWorld:PersistentLevel.DeployableTurretActor_0",
+            "class": "DeployableTurretActor"
+          },
+          "stage": 10,
+          "level": 10
+        },
+        {
+          "object": {
+            "path": "Docks_P.TheWorld:PersistentLevel.WillowAIPawn_15",
+            "class": "WillowAIPawn"
+          },
+          "stage": 10,
+          "level": 9
+        },
+        {
+          "object": {
+            "path": "Docks_P.TheWorld:PersistentLevel.WillowAIPawn_18",
+            "class": "WillowAIPawn"
+          },
+          "stage": 10,
+          "level": 9
+        },
+        {
+          "object": {
+            "path": "Docks_P.TheWorld:PersistentLevel.WillowAIPawn_17",
+            "class": "WillowAIPawn"
+          },
+          "stage": 10,
+          "level": 10
+        },
+        {
+          "object": {
+            "path": "Docks_P.TheWorld:PersistentLevel.WillowAIPawn_14",
+            "class": "WillowAIPawn"
+          },
+          "stage": 10,
+          "level": 10
+        }
+      ],
+      "equipped": [
+        {
+          "slot": "Weapon",
+          "stage": 10,
+          "level": 10
+        }
+      ]
+    },
+    {
+      "file": "one-playthrough-0.1.7-20261106T100030.118581Z-0262ac82.json",
+      "sha256": "37dfa8c0c49d4027c095b303b43632989184f3528a2ea88a2b943bf475573122",
+      "export_complete": true,
+      "errors": [],
+      "player_level": 10,
+      "playthrough": 2,
+      "op": 0,
+      "controller": "Loader.TheWorld:PersistentLevel.WillowPlayerController_11",
+      "threshold": 1,
+      "tuning_errors": {},
+      "map_names": [
+        "Docks_P",
+        "DOCKS_LIGHT",
+        "Docks_Audio",
+        "Docks_Combat",
+        "Docks_Dynamic",
+        "Docks_FX",
+        "Docks_Skybox",
+        "Docks_Mission"
+      ],
+      "dlc_mission": [
+        {
+          "path": "GD_Aster_Plot_Mission01.M_Aster_PlotMission01",
+          "record": {
+            "status": 1,
+            "stored_stage": 10
+          },
+          "definition_stage": 10,
+          "locked": true
+        }
+      ],
+      "ai_samples": [
+        {
+          "object": {
+            "path": "Docks_P.TheWorld:PersistentLevel.WillowAIPawn_19",
+            "class": "WillowAIPawn"
+          },
+          "stage": 10,
+          "level": 9
+        }
+      ],
+      "equipped": [
+        {
+          "slot": "Weapon",
+          "stage": 10,
+          "level": 10
+        }
+      ]
+    }
+  ],
+  "checks": {
+    "initial_windshear_map_captured": true,
+    "subsequent_docks_travel_captured": true,
+    "new_dlc_mission": "A Role-Playing Game",
+    "dlc_mission_stage": 10,
+    "mission_stage_persisted_after_reload": true,
+    "reload_evidenced_by_controller_recreation": true,
+    "ai_stage": 10,
+    "ai_levels": [
+      9,
+      10,
+      11
+    ],
+    "reload_ai_sample_level": 9
+  },
+  "user_report": {
+    "gameplay": "all seemed good; enemies and mission on level",
+    "fresh_drop": {
+      "type": "shotgun",
+      "level": 10
+    }
+  },
+  "nested_diagnostic_errors": [
+    {
+      "path": "one-playthrough-0.1.7-20261106T094850.873956Z-2af2aeb4.json/sections/player_resources/resource_pools/errors",
+      "errors": [
+        "ResourcePoolMap: RuntimeError: Unknown object type MapProperty"
+      ]
+    },
+    {
+      "path": "one-playthrough-0.1.7-20261106T095716.904924Z-1f121640.json/sections/player_resources/resource_pools/errors",
+      "errors": [
+        "ResourcePoolMap: RuntimeError: Unknown object type MapProperty"
+      ]
+    },
+    {
+      "path": "one-playthrough-0.1.7-20261106T095811.074338Z-5b7c22ef.json/sections/player_resources/resource_pools/errors",
+      "errors": [
+        "ResourcePoolMap: RuntimeError: Unknown object type MapProperty"
+      ]
+    },
+    {
+      "path": "one-playthrough-0.1.7-20261106T095820.736773Z-5dcb56fd.json/sections/player_resources/resource_pools/errors",
+      "errors": [
+        "ResourcePoolMap: RuntimeError: Unknown object type MapProperty"
+      ]
+    },
+    {
+      "path": "one-playthrough-0.1.7-20261106T095831.265129Z-134d8bd9.json/sections/player_resources/resource_pools/errors",
+      "errors": [
+        "ResourcePoolMap: RuntimeError: Unknown object type MapProperty"
+      ]
+    },
+    {
+      "path": "one-playthrough-0.1.7-20261106T100002.576085Z-71dd7e20.json/sections/player_resources/resource_pools/errors",
+      "errors": [
+        "ResourcePoolMap: RuntimeError: Unknown object type MapProperty"
+      ]
+    },
+    {
+      "path": "one-playthrough-0.1.7-20261106T100030.118581Z-0262ac82.json/sections/player_resources/resource_pools/errors",
+      "errors": [
+        "ResourcePoolMap: RuntimeError: Unknown object type MapProperty"
+      ]
+    }
+  ],
+  "limits": [
+    "Direct prepared DLC starting destination fails as with08; initial Glacial_P then Docks_P captured. Root cause not established.",
+    "Fresh level10 shotgun is user visual evidence; ground-item levels not directly exposed.",
+    "No vendor stock sampled in this batch.",
+    "Bounded opening-DLC observations do not validate whole DLC."
+  ]
+}

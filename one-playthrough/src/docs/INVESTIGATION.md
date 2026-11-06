@@ -744,3 +744,105 @@ No top-level/tuning/event errors; only known nested ResourcePoolMap reflection e
 User reports looked good. Captured transition/reload checks pass; exact combat tuning
 multiplier/table selection remains unmeasured. No runtime changes. Continue08.
 Evidence: src/test_saves/results/test_07_0.2.1.json.
+
+
+## Test08 in-game result — 2026-11-06 09:36–09:43 UTC
+
+Seven logs/08 captures complete. Player10, UVHM2/OP0 threshold1 throughout; only known
+nested ResourcePoolMap errors. Prepared save initially loads Glacial_P/Windshear, not
+Oasis: direct DLC destination fixture failed, cause unproven. User manually fast travelled;
+subsequent map lists confirm Orchid_OasisTown_P. A Warm Welcome is initially absent,
+then natively assigned active/locked10 via UpdateMissionStatus; remains10 through
+controller2→5 reload in Oasis. Stage10 AI samples show10/11; vendor stage10 stock8–10.
+User reports on-level enemies and fresh level11 drop. Drop level is visual evidence;
+JSON does not directly expose contained ground-item levels. Reload captures only dynamic
+stage0 pawn, so post-reload hostile levels unmeasured. Gameplay/DLC intro checks pass
+after travel; starting checkpoint destination remains separate unresolved fixture issue.
+No runtime/save/EXE changes. Evidence: src/test_saves/results/test_08_0.2.1.json. Continue09.
+
+
+## Test09 in-game result — 2026-11-06 09:48–10:00 UTC
+
+Seven logs/09 exports complete; player10, UVHM2/OP0 threshold1, only known nested
+ResourcePoolMap reflection errors. First snapshot Glacial_P with no Aster intro mission;
+subsequent Docks_P records A Role-Playing Game active/locked10. Stage10 AI levels9/10/11
+preserve variation; after controller8→11 reload, Docks_P, mission10 and stage10/level9
+AI persist. Equipped weapon10 throughout. User reports mission/enemies on level and
+fresh10 shotgun drop, latter visual evidence rather than directly logged ground level.
+No vendor stock sampled. Initial destination issue recurs in synthetic DLC checkpoint,
+separate from successful travel/intro/scaling/reload observations; cause unresolved.
+No runtime/EXE/save changes. Evidence: src/test_saves/results/test_09_0.2.1.json. Continue10.
+
+
+## Test11 in-game result — 2026-11-06 10:04–10:07 UTC
+
+Six logs/11 exports complete: player80 UVHM2/OP0 threshold1, mission active/locked80
+and equipped weapon80 throughout controller14→17 reload. Stage80 AI retain levels79–82,
+vendor stage80 sampled stock78–80 both before/after reload. User reports several drops
+looked good; exact ground-item levels not directly logged. No top-level/tuning/event
+errors, only known ResourcePoolMap reflection issue. Captured baseline/reload checks
+pass; no controlled mod-off comparison or exact combat/cap-enforcement claim.
+User explicitly skips test10 to avoid spoilers for unseen DLC. Leave unverified and do
+not request it again. Next12 is the final remaining requested checkpoint. No runtime edits.
+Evidence: src/test_saves/results/test_11_0.2.1.json and test_10_skipped.json.
+
+
+## Test12 branch mismatch and candidate correction — 2026-11-06 10:09–10:12 UTC
+
+Four logs/12 exports complete, player25 UVHM2/OP0, threshold1. Rakkaholics remains
+ready/completed/reloaded at stored/locked20. User interacted with Mordecai expecting Sloth,
+but ServerGrantMissionRewards explicitly receives bGrantAltReward=true. Pending data
+and ReceiveWeaponReward PRE/POST show Rubi, grade/stage20. Default/alt definitions still
+Sloth/Rubi respectively. Recipient pawn path is captured but named identity comes from
+user. Mission-specific XP query2547. No top-level/tuning/event errors; only ResourcePoolMap.
+
+Suspect synthetic fixture: status3 was pre-inserted while objective counts[10,0,0] left
+neither recipient complete. Do not attribute this to SDK scaling or change native rewards.
+Candidate pack0.2.2 changes ONLY that mission status3→1 in test12, preserving choice set1,
+counts[10,0,0], all other missions/levels/inventory/identity. Other ten saves byte-identical.
+Source builder now generates active branch-choice status/set; verifier checks it. All11
+structural/gear checks pass and old archive/hashes validate. Retry Mordecai through natural
+interaction; outcome still unverified. User's README strikeouts/omitted test10 preserved.
+
+Editor source .git was removed/vendored under parent repository. Old git-HEAD guard
+correctly failed before release mutation; compared all25 upstream Python source files
+byte-for-byte with pinned2f9f17d4a159d64a962c8f998d679c860293da7a via primary codeload
+archive. Added offline file-list/SHA256 verification so parent HEAD is not mistaken for
+dependency revision. No upstream source, user save, runtime mod or EXE changed.
+Evidence: src/test_saves/results/test_12_0.2.1.json; repair_recipient_choice.py.
+
+
+## Corrected test12 validated — 2026-11-06 10:20–10:22 UTC
+
+Four additional logs/12 exports complete, player25 UVHM2/OP0 threshold1. Rakkaholics
+progresses active1→ready3→completed4→completed4, stored/locked20 throughout. User
+observed proper recipient-choice objectives before handover. ServerGrantMissionRewards
+now bGrantAltReward=false; ReceiveWeaponReward PRE/POST explicitly Sloth, grade/stage20.
+Controller2→5 reload preserves completed20. Only known nested ResourcePoolMap error.
+
+Only test12's mission status changed between candidates, with identical runtime mod,
+mission/reward definitions, inventory and stage. This controlled correction establishes
+the earlier wrong Rubi arose from the synthetic ready-without-recipient fixture in this
+test. No runtime reward override or EXE change needed. User reports worked perfectly.
+Chosen test batch is complete;10 remains deliberately skipped for spoilers. Corrected
+Moxxi route is optional/unverified. Turn-in level presentation mismatch remains open;
+synthetic DLC starting destination issue remains in fixture tooling. Whole campaign/DLC,
+full balance/cap equivalence and other native exceptions are not comprehensively proven.
+Evidence: src/test_saves/results/test_12_0.2.2.json.
+
+
+## Stable release1.0.0 — 2026-11-06
+
+User accepts tested gameplay, deliberately defers cosmetic turn-in label issue and requests
+release cleanup while retaining F10. Version/author1.0.0/keogh, early-access descriptions
+removed. Gameplay tuning, observers, recorder and reflection remain byte-identical to
+0.1.7. Only F10 collection change excludes ResourcePoolMap, a repeatedly unsupported
+MapProperty; supported pool/value snapshots preserved. No console or automatic startup
+logging; bounded recent history, F10/manual/armed mission-screen export retained.
+Release packaging now ships INSTALL, TROUBLESHOOTING and RELEASE_NOTES instead of
+historical investigation/test records. Source research and user logs preserved. Existing
+63 offline tests pass, including registration/version/F10, no startup export, read-only
+exports, tuning restoration and package/archive protections. Ad hoc guarded-map snapshot
+check confirms unsupported property never read and valid resource values survive.
+No executable/save/gameplay or UI correction introduced. Actual1.0.0 game load remains
+unobserved; gameplay evidence comes from unchanged0.1.7 tuning/observers and test reports.

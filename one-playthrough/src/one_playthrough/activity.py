@@ -23,10 +23,11 @@ def player_resources(pc):
     result = {"controller": Snapshot().object(pc, RESOURCES),
               "replication_info": Snapshot().object(pri, RESOURCES) if isinstance(pri, UObject) else pri,
               "pawn": Snapshot().object(pawn, RESOURCES) if isinstance(pawn, UObject) else pawn}
-    # One explicit manager hop. Pool data may still be opaque; do not invent counts.
+    # One explicit manager hop. ResourcePoolMap is a verified unsupported MapProperty;
+    # keep pool/value samples without repeatedly attempting that opaque map read.
     manager = read(pc, "ResourcePoolManager")  # Actual owner confirmed by 0.1.2 reports.
     result["resource_pools"] = (Snapshot(max_nodes=160, max_depth=4, max_array=6).object(
-        manager, re.compile(r"pool|resource|value|current", re.I)) if isinstance(manager, UObject) else manager)
+        manager, re.compile(r"^(?!ResourcePoolMap$).*(?:pool|resource|value|current)", re.I)) if isinstance(manager, UObject) else manager)
     return result
 
 

@@ -81,7 +81,7 @@ mod = build_mod(
     supported_games=Game.BL2, coop_support=CoopSupport.Incompatible,
     description=f"{VERSION}: activates native UVHM tuning from level 1. "
                 "Requires a patched EXE and genuine UVHM save. F10 exports JSON. "
-                "Enable before loading; restart after disabling. Solo only; early access.",
+                "Enable before loading; restart after disabling. Solo only.",
     keybinds=[capture], options=[capture_next_screen, export_now, export_status],
     hooks=[], commands=[], on_enable=on_enable, on_disable=on_disable,
 )

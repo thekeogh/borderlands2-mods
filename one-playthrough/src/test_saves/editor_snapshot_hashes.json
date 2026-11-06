@@ -1,0 +1,32 @@
+{
+  "repository": "https://github.com/loot-midget/borderlands2",
+  "commit": "2f9f17d4a159d64a962c8f998d679c860293da7a",
+  "source_url": "https://codeload.github.com/loot-midget/borderlands2/zip/2f9f17d4a159d64a962c8f998d679c860293da7a",
+  "files": {
+    "bl2_save_edit.py": "9042a4eb758898bcab609fdaf24ad4577904b90f4831118d51771ee594a61082",
+    "borderlands/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "borderlands/base_save_edit.py": "763588d3360760882187c18e75379570f61482f71d43db0aa6c5bbc85abaec0b",
+    "borderlands/bl2.py": "2df9320200a79587e0c40373d3e740f150cfc22f9bf8983a9a449eea9ea2776a",
+    "borderlands/bl2_data.py": "c1fc4e82cb76e8ba17fbda4f1a29f0c3d1ea7cfbb45245330c815c97a783708b",
+    "borderlands/bl2_explorer_achievements.py": "7dfc42b967ef9b54a189379e7e57f82bb3bba8ee66340d71fd262bf9e9d80932",
+    "borderlands/bl2_routines.py": "2788481e15392807a6086d311abfd1a51f3141233a76719bfda02a240db02e47",
+    "borderlands/bl2_skill_data.py": "8d567c2814ba3a6f5eb8c2bcec550de71731c99f11b20eaddcf1d782acb74800",
+    "borderlands/bl2_skill_tree.py": "b89ac74912e4d60659a5b881067636ba045bf125a010736dd3ed47a45407eb07",
+    "borderlands/bltps.py": "f7e5ef6475bcd15aae027dfe29b1dd8ec3499ed130bb9618dd399e9e7c339844",
+    "borderlands/bltps_data.py": "0f9f7cd6f3b827c8858e6ee32bebe83aef1f6fb2b72e917901802226b0730266",
+    "borderlands/challenges.py": "5474505de44d063c25000f029326005ce5c042e418455cfc3d0885ae848e9bf6",
+    "borderlands/config.py": "15595c19069d337e26eb113a2f49b6a974a661bab3f42b5f652f79351edb6ed8",
+    "borderlands/datautil/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "borderlands/datautil/bitstreams.py": "5a0ae2eb989c89d37fafe87422abe0ce9b1c8606a37fd0cf5c19a16cd7096757",
+    "borderlands/datautil/common.py": "100e77c4373952e0e89d2eb7c7b726890730d13b36e0429862c5d3678491e8aa",
+    "borderlands/datautil/data_types.py": "6d80f3376c569c61598e637aea8b97c23476b75b12429bcb871eaf785559f4a5",
+    "borderlands/datautil/errors.py": "43e5c70390e5287a03f195290dc6c9215135050b5ffa3da8b4b5c8693f755c65",
+    "borderlands/datautil/huffman.py": "8ebedb4cbe7d579030aeb7b0d2f50415f0d4e414710b8cddff0e3745916bd15d",
+    "borderlands/datautil/lzo1x.py": "0994c4304d4dc9b3b8af127e22cd72f41dabdfbd9a6506198b6b99aaec46b359",
+    "borderlands/datautil/protobuf.py": "c6a44f902fc3df700f25908bf24ce7636c7abb338bb9019ba55ea224fae0f832",
+    "borderlands/savefile.py": "336016a3ac65473aa53df154e4de1e70426f0fa96e2aaf93637985a4ce5ac73f",
+    "py3_port_tests.py": "70abb9b33719b118fa917777b831086ceeb5683076909fce88cccc0677a9aef2",
+    "scripts/skills_extractor.py": "0c3b8ca11914bfb37f67a34feb744b00eb241639e34be5e62b7a7bcf4373aa2c",
+    "tps_save_edit.py": "5e91395de3dc6ae6655d9bd654d653d4ef1a0fd8a8acfc2d6a3a66d0120e0c5c"
+  }
+}
